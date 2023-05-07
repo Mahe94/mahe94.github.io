@@ -12,7 +12,10 @@ profile:
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
+I'm currently a Post-Doctoral Fellow at the Department of Computer Science and Engineering, Indian Institute of Technology Delhi. My research interest lies in the world of public-key cryptography and quantum cryptography.
+
+I completed my PhD and MTech degree under the guidance of Prof. Manindra Agrawal at the Department of Computer Science and Engineering, Indian Institute of Technology, Kanpur. During that time, I was actively working on the cryptanalysis of symmetric-key cryptosystems and variants of subset-sum problem.
