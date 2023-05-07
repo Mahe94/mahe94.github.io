@@ -6,7 +6,7 @@ subtitle: <a href='https://www.cse.iitd.ac.in/'>Department of Computer Science &
 
 profile:
   align: right
-  image: mahe.jpg
+  image: mahe.jpeg
   image_circular: false # crops the image to make it circular
   address: 
 
