@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About Me
 permalink: /
 subtitle: <a href='https://www.cse.iitd.ac.in/'>Department of Computer Science & Engineering</a>, <a href='https://home.iitd.ac.in/)/'>IIT Delhi</a>, New Delhi, India
 
