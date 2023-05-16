@@ -3,8 +3,8 @@
   contents:
     - name: Full Name
       value: Mahesh Sreekumar Rajasree
-    - name: Date of Birth
-      value: 20th January 1994
+    #- name: Date of Birth
+    #  value: 20th January 1994
     - name: Languages
       value: English, Malayalam, Hindi
 
