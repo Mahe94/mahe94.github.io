@@ -2,7 +2,7 @@
 layout: post
 title:  Gwalior Trip
 date:   2023-05-15 
-description: A treat for completing Phd 
+description: Exploring History, Food, and Adventure for Completing Phd 
 tags: indian-trip trip phd
 categories: trip-posts
 ---
