@@ -2,7 +2,7 @@
 layout: post
 title:  My PhD Oral Defense
 date:   2023-05-09 
-description: The chaos! 
+description: The Rollercoaster of Emotions and Technical Hurdles!
 tags: phd defense
 categories: phd-posts
 ---
