@@ -19,7 +19,7 @@ Our first stop was Al Jawahar Restaurant, a legendary establishment known for it
 
 Keen to explore more, we made our way to Lalu Kababee Caters, where an array of delectable kebabs awaited us. The succulent kababs, tantalizingly dipped in butter, showcased the mastery of the culinary artisans behind these delightful creations. Each bite was a burst of flavors that delighted our palates.
 
-Our gastronomic adventure wasn't complete without indulging in the quintessential chicken biryani. We visited a charming restaurant in Chandni Chowk, known for its aromatic and flavorsome biryanis. The fragrant rice, tender chicken, and carefully blended spices came together to create a truly memorable experience.
+Our gastronomic adventure wasn't complete without indulging in the quintessential chicken biryani. We visited Taufiq Dilpasand Biryani  in Chandni Chowk, known for its aromatic and flavorsome biryanis. The fragrant rice, tender chicken, and carefully blended spices came together to create a truly memorable experience.
 
 **The Grand Finale:**
-To conclude our extraordinary food trip, we decided to treat ourselves to a traditional Indian dessert: kulfi. We sought out a renowned kulfi vendor, reveling in the delightful flavors of this creamy frozen dessert. It was the perfect ending to our culinary journey, leaving us with a sweet aftertaste and memories to cherish.
+To conclude our extraordinary food trip, we decided to treat ourselves to a traditional Indian dessert: kulfi. We sought out a renowned kulfi vendor named Kuremals Kulfi, reveling in the delightful flavors of this creamy frozen dessert. It was the perfect ending to our culinary journey, leaving us with a sweet aftertaste and memories to cherish.
