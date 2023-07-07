@@ -8,14 +8,22 @@ nav: true
 nav_order: 4
 ---
 
+* Talks
+    * On the Subset Sum Problem, CSE, IUST Jammu & Kashmir 2022.
+    * Cryptanalysis of KECCAK & Algorithms for Lattice Problems, PMRF Symposium 2021
+
+
+---
+
 * Conference/Workshop Talks
     * Efficient reductions and algorithms for Subset Product, CALDAM 2023
 	* On the bases of Z^n lattice, SYNACS 2022
 	* On the hardness of monomial prediction problem, WCC 2022
+    * Cryptanalysis of Round-Reduced KECCAK using Non-Linear Structures, INDOCRYPT 2019
 
 ---
 
-* SIGTACS Talks
+* SIGTACS (CSE, IITK) Talks
     * An Algebraic Algorithm for Hamming Subset-Sum Problem
     * Cryptanalysis of Round-Reduced KECCAK using Non-linear Structures (Jan 2020) 
     * Leftover Hash Lemma (Oct 2019) [Lecture note by Leo Reyzin]
