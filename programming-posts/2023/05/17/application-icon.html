@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Challenges of a PhD Journey | Mahesh Sreekumar Rajasree</title>
+    <title>How to Add an Icon to Ubuntu Application | Mahesh Sreekumar Rajasree</title>
     <meta name="author" content="Mahesh Sreekumar Rajasree">
-    <meta name="description" content="An Eye-Opening Encounter">
+    <meta name="description" content="Just a Matter of Creating a File (and Maybe a Bit of Shell Programming)">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -38,7 +38,7 @@
     <link rel="shortcut icon" href="/assets/img/mahe.jpeg">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://mahe94.github.io/blog/2023/is-phd-good/">
+    <link rel="canonical" href="https://mahe94.github.io/programming-posts/2023/05/17/application-icon.html">
 
     <!-- Dark Mode -->
     
@@ -76,10 +76,6 @@
                 <a class="nav-link" href="/">About Me</a>
               </li>
               
-              <!-- Blog -->
-              <li class="nav-item active">
-                <a class="nav-link" href="/blog/">Blog<span class="sr-only">(current)</span></a>
-              </li>
 
               <!-- Other pages -->
               <li class="nav-item ">
@@ -124,17 +120,17 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Challenges of a PhD Journey</h1>
-    <p class="post-meta">May 16, 2023</p>
+    <h1 class="post-title">How to Add an Icon to Ubuntu Application</h1>
+    <p class="post-meta">May 17, 2023</p>
     <p class="post-tags">
       <a href="/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
         ·  
-        <a href="/blog/tag/phd">
-          <i class="fas fa-hashtag fa-sm"></i> phd</a>  
+        <a href="/blog/tag/ubuntu">
+          <i class="fas fa-hashtag fa-sm"></i> ubuntu</a>  
           
         ·  
-        <a href="/blog/category/phd-posts">
-          <i class="fas fa-tag fa-sm"></i> phd-posts</a>  
+        <a href="/blog/category/programming-posts">
+          <i class="fas fa-tag fa-sm"></i> programming-posts</a>  
           
 
     </p>
@@ -144,19 +140,46 @@
     
     <div id="markdown-content">
       <p><strong>Introduction:</strong>
-While having my breakfast at the ICH canteen in IIT Delhi, I had an unexpected encounter with a PhD student from the CSE department who was nearing the completion his degree. Our conversation shed light on the arduous path we both had traversed during our respective doctoral journeys. Little did I know that his story would uncover the harsh realities faced by PhD students, leaving me pondering the complexities and uncertainties that lie within this academic pursuit.</p>
+When installing a new program on Ubuntu, it’s common to encounter missing application icons. This can be frustrating, especially when there’s no icon displayed on the sidebar when you load the application. In this tutorial, we will guide you through the process of adding an icon to such applications, ensuring a more visually appealing and organized user interface.</p>
 
-<p><strong>A Shared Struggle:</strong>
-As we sat down for breakfast, I recognized this student from the times he sought solace in my lab for his online meetings. Our discussion naturally gravitated towards our experiences in pursuing a PhD, and I soon realized that his struggles mirrored my own. It took him a staggering eight years to complete his doctoral studies, having previously obtained an M.Tech from IIT Delhi. Comparatively, my own journey encompassed five years of PhD research and a two-year M.Tech program.</p>
+<p><strong>Step 1 - Locating the Application.Desktop File:</strong>
+To begin, navigate to the <code class="language-plaintext highlighter-rouge">/usr/share/application/</code> directory and search for the <code class="language-plaintext highlighter-rouge">application_name.desktop</code> file. If this file does not exist, don’t worry - we can create one with the following content.</p>
 
-<p><strong>The Unfortunate Encounter:</strong>
-It was during this conversation that he unveiled a distressing truth about his PhD experience—an abusive advisor. He had taken the courageous step of lodging a formal complaint with the department, hoping for a resolution. However, the unfortunate reality was that his advisor’s seniority shielded him from any repercussions. To his dismay, his complaint appeared to have backfired, resulting in his advisor refusing to sign his thesis. In a final blow, even the Head of the Department declined to provide the necessary signature. Nonetheless, he remained undeterred, drawing strength from the supportive faculty members who rallied behind him. With their assistance, he made the difficult decision to submit his thesis without the signatures, determined to see his hard work acknowledged.</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>Desktop Entry]
+<span class="nv">Type</span><span class="o">=</span>Application
+<span class="nv">Name</span><span class="o">=</span> <span class="c">#application name</span>
+<span class="nv">Exec</span><span class="o">=</span> <span class="c">#path to application file</span>
+<span class="nv">Icon</span><span class="o">=</span> <span class="c">#path to application icon</span>
+Comment[en_US]<span class="o">=</span>&lt;What you want the mouse over text to be&gt;
+</code></pre></div></div>
 
-<p><strong>Reflecting on the PhD Experience:</strong>
-The encounter left me questioning the prevalent animosity often directed towards PhD students. Why do some supervisors perceive their guidance as a favor rather than a responsibility? If they lack interest in mentoring, why do they fail to communicate this clearly? These questions gnaw at my thoughts, as I consider the profound impact these experiences can have on an individual’s academic and personal life. One can’t help but wonder if pursuing a PhD is a viable choice when the landscape can change so unpredictably. The supportive mentor of today may transform into an adversary tomorrow, leaving students in a state of profound confusion.</p>
+<p><em>Modifying the Script:</em> In the <code class="language-plaintext highlighter-rouge">application_name.desktop</code> file, ensure you replace <code class="language-plaintext highlighter-rouge">#application name</code> with the actual name of the application, <code class="language-plaintext highlighter-rouge">#path to application file</code> with the path to the application’s file, and <code class="language-plaintext highlighter-rouge">#path to application icon</code> with the path to the application’s icon file. This information is essential for the system to locate and display the correct icon.</p>
 
-<p><strong>The Perplexing Dilemma:</strong>
-As I conclude this encounter with the PhD student, I find myself grappling with the responsibility of advising others on whether to embark on this academic journey. How can one confidently steer someone towards or away from a PhD when the terrain is fraught with uncertainty? The realization that people are capable of change further deepens the dilemma, blurring the line between guidance and disillusionment.</p>
+<p><strong>Step 2 - Restarting (if necessary):</strong>
+In some cases, you may need to restart your machine for the changes to take effect. However, in many instances, a restart is not required.</p>
+
+<p><strong>Step 3 - Updating the Exec Path:</strong>
+Sometimes, when an application requires an update, the <code class="language-plaintext highlighter-rouge">Exec</code> path in the <code class="language-plaintext highlighter-rouge">application_name.desktop</code> file needs to be modified. To simplify this process, you can use the following bash script:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="nb">echo</span> <span class="s2">"Updating Application Icon"</span>
+<span class="nv">FILE_NAME</span><span class="o">=</span><span class="si">$(</span>find <span class="nb">.</span> <span class="nt">-type</span> f <span class="nt">-name</span> <span class="s2">"application_name*.AppImage"</span><span class="si">)</span>
+
+<span class="nv">FILE_NAME</span><span class="o">=</span><span class="k">${</span><span class="nv">FILE_NAME</span><span class="p">##*/</span><span class="k">}</span> <span class="c">#formatting commands</span>
+<span class="nb">echo</span> <span class="s2">"</span><span class="nv">$FILE_NAME</span><span class="s2">"</span>
+
+<span class="nb">sed</span> <span class="nt">-i</span> <span class="nt">-r</span> <span class="s2">"s#^(Exec=/home/username/Programs/application_name/).*#</span><span class="se">\1</span><span class="nv">$FILE_NAME</span><span class="s2">#"</span> /usr/share/applications/application_name.desktop
+<span class="nb">echo</span> <span class="s2">"Updated"</span>
+</code></pre></div></div>
+
+<p><em>Understanding the Script:</em>
+This script extracts the latest filename of the application using the <code class="language-plaintext highlighter-rouge">find</code> command. Sometimes, the output of the <code class="language-plaintext highlighter-rouge">find</code> command needs formatting, which is done with the help of the <code class="language-plaintext highlighter-rouge">sed</code> command. The <code class="language-plaintext highlighter-rouge">sed</code> command ensures that the <code class="language-plaintext highlighter-rouge">Exec</code> path in the <code class="language-plaintext highlighter-rouge">application_name.desktop</code> file is always up to date. The <code class="language-plaintext highlighter-rouge">\1</code> inserts the contents of the first capture group which is what matches between the first set of parentheses.</p>
+
+<p><strong>Step 4 - Running the Script on Start Up:</strong>
+To make the script run automatically on start up, we just need to run <code class="language-plaintext highlighter-rouge">crontab -e</code> on terminal and add the following line at the end of the file.</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@reboot /path/to/script
+</code></pre></div></div>
 
     </div>
   </article>
@@ -175,31 +198,31 @@ As I conclude this encounter with the PhD student, I find myself grappling with 
   
 
   <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/application-icon/">How to Add an Icon to Ubuntu Application</a>
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/phd-posts/2023/05/16/is-phd-good.html">Challenges of a PhD Journey</a>
   </li>
 
   
 
   <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/gwalior-trip/">Gwalior Trip</a>
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/trip-posts/2023/05/15/gwalior-trip.html">Gwalior Trip</a>
   </li>
 
   
 
   <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/phd-defense/">My PhD Oral Defense</a>
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/phd-posts/2023/05/09/phd-defense.html">My PhD Oral Defense</a>
   </li>
 
   
 
   <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/jama-masjid-muzi-delhi/">A Day in Delhi with Muzafar - Exploring Food and Friendship</a>
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/food-posts/2023/05/09/jama-masjid-muzi-delhi.html">A Day in Delhi with Muzafar - Exploring Food and Friendship</a>
   </li>
 
   
 
   <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/jama-masjid-delhi/">A Gastronomic Adventure in the Heart of Delhi</a>
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/food-posts/2023/04/10/jama-masjid-delhi.html">A Gastronomic Adventure in the Heart of Delhi</a>
   </li>
 
 </div>

@@ -10,9 +10,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>How to Add an Icon to Ubuntu Application | Mahesh Sreekumar Rajasree</title>
+    <title>submenus | Mahesh Sreekumar Rajasree</title>
     <meta name="author" content="Mahesh Sreekumar Rajasree">
-    <meta name="description" content="Just a Matter of Creating a File (and Maybe a Bit of Shell Programming)">
+    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -38,7 +39,7 @@
     <link rel="shortcut icon" href="/assets/img/mahe.jpeg">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://mahe94.github.io/blog/2023/application-icon/">
+    <link rel="canonical" href="https://mahe94.github.io/_pages/dropdown.html">
 
     <!-- Dark Mode -->
     
@@ -76,10 +77,6 @@
                 <a class="nav-link" href="/">About Me</a>
               </li>
               
-              <!-- Blog -->
-              <li class="nav-item active">
-                <a class="nav-link" href="/blog/">Blog<span class="sr-only">(current)</span></a>
-              </li>
 
               <!-- Other pages -->
               <li class="nav-item ">
@@ -119,117 +116,20 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- _layouts/post.html -->
+        <!-- page.html -->
+        <div class="post">
 
-<div class="post">
+          <header class="post-header">
+            <h1 class="post-title">submenus</h1>
+            <p class="post-description"></p>
+          </header>
 
-  <header class="post-header">
-    <h1 class="post-title">How to Add an Icon to Ubuntu Application</h1>
-    <p class="post-meta">May 17, 2023</p>
-    <p class="post-tags">
-      <a href="/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
-        ·  
-        <a href="/blog/tag/ubuntu">
-          <i class="fas fa-hashtag fa-sm"></i> ubuntu</a>  
-          
-        ·  
-        <a href="/blog/category/programming-posts">
-          <i class="fas fa-tag fa-sm"></i> programming-posts</a>  
-          
+          <article>
+            
 
-    </p>
-  </header>
+          </article>
 
-  <article class="post-content">
-    
-    <div id="markdown-content">
-      <p><strong>Introduction:</strong>
-When installing a new program on Ubuntu, it’s common to encounter missing application icons. This can be frustrating, especially when there’s no icon displayed on the sidebar when you load the application. In this tutorial, we will guide you through the process of adding an icon to such applications, ensuring a more visually appealing and organized user interface.</p>
-
-<p><strong>Step 1 - Locating the Application.Desktop File:</strong>
-To begin, navigate to the <code class="language-plaintext highlighter-rouge">/usr/share/application/</code> directory and search for the <code class="language-plaintext highlighter-rouge">application_name.desktop</code> file. If this file does not exist, don’t worry - we can create one with the following content.</p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>Desktop Entry]
-<span class="nv">Type</span><span class="o">=</span>Application
-<span class="nv">Name</span><span class="o">=</span> <span class="c">#application name</span>
-<span class="nv">Exec</span><span class="o">=</span> <span class="c">#path to application file</span>
-<span class="nv">Icon</span><span class="o">=</span> <span class="c">#path to application icon</span>
-Comment[en_US]<span class="o">=</span>&lt;What you want the mouse over text to be&gt;
-</code></pre></div></div>
-
-<p><em>Modifying the Script:</em> In the <code class="language-plaintext highlighter-rouge">application_name.desktop</code> file, ensure you replace <code class="language-plaintext highlighter-rouge">#application name</code> with the actual name of the application, <code class="language-plaintext highlighter-rouge">#path to application file</code> with the path to the application’s file, and <code class="language-plaintext highlighter-rouge">#path to application icon</code> with the path to the application’s icon file. This information is essential for the system to locate and display the correct icon.</p>
-
-<p><strong>Step 2 - Restarting (if necessary):</strong>
-In some cases, you may need to restart your machine for the changes to take effect. However, in many instances, a restart is not required.</p>
-
-<p><strong>Step 3 - Updating the Exec Path:</strong>
-Sometimes, when an application requires an update, the <code class="language-plaintext highlighter-rouge">Exec</code> path in the <code class="language-plaintext highlighter-rouge">application_name.desktop</code> file needs to be modified. To simplify this process, you can use the following bash script:</p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
-
-<span class="nb">echo</span> <span class="s2">"Updating Application Icon"</span>
-<span class="nv">FILE_NAME</span><span class="o">=</span><span class="si">$(</span>find <span class="nb">.</span> <span class="nt">-type</span> f <span class="nt">-name</span> <span class="s2">"application_name*.AppImage"</span><span class="si">)</span>
-
-<span class="nv">FILE_NAME</span><span class="o">=</span><span class="k">${</span><span class="nv">FILE_NAME</span><span class="p">##*/</span><span class="k">}</span> <span class="c">#formatting commands</span>
-<span class="nb">echo</span> <span class="s2">"</span><span class="nv">$FILE_NAME</span><span class="s2">"</span>
-
-<span class="nb">sed</span> <span class="nt">-i</span> <span class="nt">-r</span> <span class="s2">"s#^(Exec=/home/username/Programs/application_name/).*#</span><span class="se">\1</span><span class="nv">$FILE_NAME</span><span class="s2">#"</span> /usr/share/applications/application_name.desktop
-<span class="nb">echo</span> <span class="s2">"Updated"</span>
-</code></pre></div></div>
-
-<p><em>Understanding the Script:</em>
-This script extracts the latest filename of the application using the <code class="language-plaintext highlighter-rouge">find</code> command. Sometimes, the output of the <code class="language-plaintext highlighter-rouge">find</code> command needs formatting, which is done with the help of the <code class="language-plaintext highlighter-rouge">sed</code> command. The <code class="language-plaintext highlighter-rouge">sed</code> command ensures that the <code class="language-plaintext highlighter-rouge">Exec</code> path in the <code class="language-plaintext highlighter-rouge">application_name.desktop</code> file is always up to date. The <code class="language-plaintext highlighter-rouge">\1</code> inserts the contents of the first capture group which is what matches between the first set of parentheses.</p>
-
-<p><strong>Step 4 - Running the Script on Start Up:</strong>
-To make the script run automatically on start up, we just need to run <code class="language-plaintext highlighter-rouge">crontab -e</code> on terminal and add the following line at the end of the file.</p>
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@reboot /path/to/script
-</code></pre></div></div>
-
-    </div>
-  </article>
-
-
-  
-    
-    <br>
-    <hr>
-    <br>
-    <ul class="list-disc pl-8"></ul>
-
-    <!-- Adds related posts to the end of an article -->
-    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
-    <p class="mb-2">Here are some more articles you might like to read next:</p>
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/is-phd-good/">Challenges of a PhD Journey</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/gwalior-trip/">Gwalior Trip</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/phd-defense/">My PhD Oral Defense</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/jama-masjid-muzi-delhi/">A Day in Delhi with Muzafar - Exploring Food and Friendship</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/jama-masjid-delhi/">A Gastronomic Adventure in the Heart of Delhi</a>
-  </li>
-
-</div>
+        </div>
 
       
     </div>
