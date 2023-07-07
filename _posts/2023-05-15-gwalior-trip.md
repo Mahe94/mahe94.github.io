@@ -12,8 +12,12 @@ In this blog post, I'll take you through the exciting journey I had with my frie
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0312.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0312.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
+</div>
+
+<div class="caption">
+    Entrance of Man Singh Palace
 </div>
 
 **Heading to Gwalior:**
@@ -24,29 +28,33 @@ After overcoming the shoe mishap and reuniting with Prateek, our adventure began
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0160.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0160.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0165.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0165.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0167.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0167.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0169.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0169.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0170.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0170.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0156.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0156.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
+</div>
+
+<div class="caption">
+    Poha, Jalebi, Channa, Dhokla and Lassi
 </div>
 
 Our first destination was the magnificent Tomb of Mohammed Ghaus & Tansen. With a slight detour due to misleading directions from Google Maps, we sought help from locals to guide us to this remarkable landmark. After spending quality time at the tomb, we planned to visit the sun temple, only to discover it was closed for renovations.
@@ -54,17 +62,21 @@ Our first destination was the magnificent Tomb of Mohammed Ghaus & Tansen. With 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0189.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0189.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0209.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0209.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0218.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0218.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
+</div>
+
+<div class="caption">
+    Tomb of Mohammed Ghaus & Tansen
 </div>
 
 Undeterred by this setback, we returned to our hotel to escape the scorching heat and take a quick nap. Around 2 PM, we had to switch rooms due to some confusion but managed to settle in comfortably. For lunch, we headed to Kwality restaurant, where Muzafar and I indulged in mouthwatering dishes like chicken lollipop, chicken biryani, kulcha, and mutton rogan gosh. Energized by the delicious meal, we proceeded to explore Jai Vilas Palace, a grand structure belonging to the Scindia family. Unfortunately, photography was not allowed inside the museum, but the opulent interiors left an indelible impression on us.
@@ -77,26 +89,26 @@ On the following day, we embarked on an early morning trek to Gwalior Fort, star
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0373.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0373.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
  </div>
 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0347.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0347.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0371.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0371.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0271.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0271.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0377.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0377.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -109,10 +121,10 @@ Afterward, we relished a hot bowl of Maggi for breakfast before visiting the stu
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0407.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0407.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0430.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0430.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -120,60 +132,80 @@ Our exploration continued with visits to Teli Ka Mandir, followed by a downhill 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0457.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0457.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0478.JPG" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0474.JPG" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0477.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0478.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0481.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0474.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0482.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0477.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Gwalior/DSC_0481.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Gwalior/DSC_0482.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
  </div>
+
+ <div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Gwalior/DSC_0495.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0490.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Gwalior/20230514_111357.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+
+</div>
 
 The journey continued to Gopachal Parvat, where we took an auto rickshaw. As Muzafar grew tired, he decided to return to the hotel, while Prateek, Bhargav, and I trekked barefoot uphill to a Jain temple. The scorching ground compelled us to seek shade and cool our soles, but upon reaching the top, the sight of partially destroyed Jain statues left us awestruck.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0502.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0502.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
  </div>
 
 
  <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0505.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0505.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0508.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0508.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
  </div>
 
   <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0510.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0510.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Gwalior/DSC_0517.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gwalior/DSC_0517.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
  </div>
 
 **Relaxation and Farewell:**
 Returning to the hotel, we visited India Coffee House for refreshments, and later enjoyed a vegetarian thali, khichdi, roti, and paneer at a nearby restaurant. Our sightseeing continued with a visit to a cricket stadium, which turned out to be closed. As our journey back home approached, we opted for a light dinner at a kachori eatery before purchasing bananas and juice from DB mall. Finally, my friends bid me farewell at 8:30 PM, while I eagerly awaited my bus at 9:30 PM, cherishing the memories created during this incredible trip.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Gwalior/20230514_194434.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Gwalior/20230514_195537.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
 
 **Conclusion:**
 My trip to Gwalior was filled with laughter, unexpected moments, and awe-inspiring sights. From exploring historical monuments to savoring delicious local cuisine, every experience was truly unforgettable. Gwalior's rich heritage and warm hospitality left a lasting impression on me. I can't wait to plan my next adventure and create more cherished memories.
