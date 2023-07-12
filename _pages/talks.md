@@ -9,6 +9,7 @@ nav_order: 4
 ---
 
 * Talks
+    * Incompressible Cryptography, TrustLab, IIT Bombay 2023 (Online)	
     * On the Subset Sum Problem, CSE, IUST Jammu & Kashmir 2022.
     * Cryptanalysis of KECCAK & Algorithms for Lattice Problems, PMRF Symposium 2021
 
