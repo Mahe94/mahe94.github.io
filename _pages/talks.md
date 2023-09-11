@@ -17,9 +17,10 @@ nav_order: 4
 ---
 
 * Conference/Workshop Talks
+    * On the Variants of Subset Sum: Projected and Unbounded, SYNASC 2023 	
     * Efficient reductions and algorithms for Subset Product, CALDAM 2023
-	* On the bases of Z^n lattice, SYNACS 2022
-	* On the hardness of monomial prediction problem, WCC 2022
+    * On the bases of Z^n lattice, SYNACS 2022
+    * On the hardness of monomial prediction problem, WCC 2022
     * Cryptanalysis of Round-Reduced KECCAK using Non-Linear Structures, INDOCRYPT 2019
 
 ---
