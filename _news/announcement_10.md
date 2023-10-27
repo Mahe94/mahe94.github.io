@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Visited and Talk at MSR, Bangalore.
+Visited and Talk at MSR, Bangalore
