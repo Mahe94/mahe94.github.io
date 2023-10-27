@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Visited ICTS
+Visited ICTS, Bangalore 
