@@ -10,7 +10,8 @@ nav_order: 4
 
 * Talks
     * Incompressible Encryption beyond Public Key Encryption, Microsoft Research, Bangalore 2023 (Online)	   
-    * Incompressible Cryptography, TrustLab, IIT Bombay 2023 (Online)	
+    * Incompressible Cryptography, TrustLab, IIT Bombay 2023 (Online)
+    * Cryptography: Performing a Task Securely, STEM Mentorship Program, IIT Delhi 2023 	
     * On the Subset Sum Problem, CSE, IUST Jammu & Kashmir 2022.
     * Cryptanalysis of KECCAK & Algorithms for Lattice Problems, PMRF Symposium 2021
 
