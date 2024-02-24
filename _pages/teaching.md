@@ -8,13 +8,11 @@ nav: true
 nav_order: 5
 ---
 * __Courses Taught__
-  
   	* Special Topics in Theoretical Computer Science
   	  	* COL863 at CSE, IITD 2024
   	  	  
 * __Teaching Assistance__
-  
-  	* Special Topics in Cryptography
+ 	* Special Topics in Cryptography
   		* COL872 at CSE, IITD 2023
 	* Modern Cryptology
 		* CS961 at Emaster Program, IITK 2023, 2022
