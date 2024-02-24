@@ -9,21 +9,21 @@ nav_order: 4
 ---
 
 * Talks
-    * `Incompressible Encryption beyond Public Key Encryption`, Microsoft Research, Bangalore 2023   
-    * Incompressible Cryptography, TrustLab, IIT Bombay 2023 (Online)
-    * Cryptography: Performing a Task Securely, STEM Mentorship Program, IIT Delhi 2023 	
-    * On the Subset Sum Problem, CSE, IUST Jammu & Kashmir 2022.
-    * Cryptanalysis of KECCAK & Algorithms for Lattice Problems, PMRF Symposium 2021
+    * _Incompressible Encryption beyond Public Key Encryption_, Microsoft Research, Bangalore 2023   
+    * _Incompressible Cryptography_, TrustLab, IIT Bombay 2023 (Online)
+    * _Cryptography: Performing a Task Securely_, STEM Mentorship Program, IIT Delhi 2023 	
+    * _On the Subset Sum Problem_, CSE, IUST Jammu & Kashmir 2022.
+    * _Cryptanalysis of KECCAK & Algorithms for Lattice Problems_, PMRF Symposium 2021
 
 
 ---
 
 * Conference/Workshop Talks
-    * On the Variants of Subset Sum: Projected and Unbounded, SYNASC 2023 	
-    * Efficient reductions and algorithms for Subset Product, CALDAM 2023
-    * On the bases of Z^n lattice, SYNACS 2022
-    * On the hardness of monomial prediction problem, WCC 2022
-    * Cryptanalysis of Round-Reduced KECCAK using Non-Linear Structures, INDOCRYPT 2019
+    * _On the Variants of Subset Sum: Projected and Unbounded_, SYNASC 2023 	
+    * _Efficient reductions and algorithms for Subset Product_, CALDAM 2023
+    * _On the bases of Z^n lattice_, SYNACS 2022
+    * _On the hardness of monomial prediction problem_, WCC 2022
+    * _Cryptanalysis of Round-Reduced KECCAK using Non-Linear Structures_, INDOCRYPT 2019
 
 ---
 
