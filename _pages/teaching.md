@@ -8,6 +8,8 @@ nav: true
 nav_order: 5
 ---
 * __Courses Taught__
+	* Introduction to Computer Science
+		* COL100 at IITD 2024 (Co-taught with Dr. Ramneek Kaur and Dr. Prasad Chaugule)
 	* Special Topics in Theoretical Computer Science
 		* COL863 at CSE, IITD 2024 (Course offered by Prof. Nikhil Balaji) 	  
 * __Teaching Assistance__
