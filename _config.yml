@@ -93,6 +93,7 @@ wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
 dblp_url: 216/6012.html
 stackoverflow_id: # your stackoverflow id
+stackexchange_id: 21726955
 kaggle_id: # your kaggle id
 lastfm_id: # your lastfm id
 spotify_id: # your spotify id
