@@ -16,7 +16,7 @@ nav_order: 5
 * __Supervision__
 	* Abhinav Kumar, Dual Degree, CSE, IITD 2023-24 [<a>Thesis</a>]
 	* Dhairya Gupta, Dual Degree, CSE, IITD 2023-24 [<a>Thesis</a>]
-	* Naman Gupta, BTech, CSE, IITK 2018-19 [<a href="../assets/naman.pdf">Thesis</a>]
+	* Naman Gupta, BTech, CSE, IITK 2018-19 [<a href="../assets/pdf/naman.pdf">Thesis</a>]
 
 * __Teaching Assistance__
 	* Special Topics in Cryptography
