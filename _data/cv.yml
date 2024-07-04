@@ -55,6 +55,10 @@
       items:
         - Best Student Presentation award in CALDAM 2023
 
+- title: Stack Exchange Flairs
+  type: list
+  contents:
+    - <a href="https://crypto.stackexchange.com/users/116220/mahesh-s-r"><img src="https://crypto.stackexchange.com/users/flair/116220.png" width="208" height="58" alt="profile for Mahesh S R at Cryptography Stack Exchange, Q&amp;A for software developers, mathematicians and others interested in cryptography" title="profile for Mahesh S R at Cryptography Stack Exchange, Q&amp;A for software developers, mathematicians and others interested in cryptography"></a>
 
 - title: Other Interests
   type: list
