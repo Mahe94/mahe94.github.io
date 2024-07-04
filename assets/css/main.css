@@ -172,7 +172,7 @@ blockquote {
   background-color: var(--global-card-bg-color);
 }
 .card img {
-  width: 100%;
+  width: auto;
 }
 .card .card-title {
   color: var(--global-text-color);
