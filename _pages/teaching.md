@@ -14,7 +14,7 @@ nav_order: 5
 		* <a href="https://sites.google.com/view/nikhilbalaji/holi2024">COL863 at CSE, IITD 2024</a> (Course offered by Prof. Nikhil Balaji)
 
 * __Supervision__
-	* Abhinav Kumar, Dual Degree, CSE, IITD 2023-24 [<a>Thesis</a>]
+	* Abhinav Kumar, Dual Degree, CSE, IITD 2023-24 [<a href="../assets/pdf/abhinav.pdf">Thesis</a>]
 	* Dhairya Gupta, Dual Degree, CSE, IITD 2023-24 [<a href="../assets/pdf/dhairya.pdf">Thesis</a>]
 	* Harihar Swaminathan, BTech, CSE, IITD 2023-24 [<a href="../assets/pdf/harihar.pdf">Slides</a>]
 	* Naman Gupta, BTech, CSE, IITK 2018-19 [<a href="../assets/pdf/naman.pdf">Thesis</a>]
