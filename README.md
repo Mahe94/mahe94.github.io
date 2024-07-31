@@ -6,7 +6,9 @@ Your contents can be updated in page -> about.md. To change the layout, go to la
 
 # Publications
 
-To add a new publication, go to bibliography -> papers.bib and add your bib entry. To get an underline under your name, go to config.yml file and update last_name and first_name under scholar field.
+To add a new publication, go to bibliography -> papers.bib and add your bib entry. You may need to add the year information in the "years" field in the publications.md file and add your coauthors in the coauthors.yml file.
+
+To get an underline under your name, go to config.yml file and update last_name and first_name under the scholar field.
 
 To add a publication to Selected Publication on About me tab, in the bib entry, add the field selected={true}.
 
