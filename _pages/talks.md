@@ -9,8 +9,9 @@ nav_order: 4
 ---
 
 * Talks
-    * _Incompressible Encryption beyond Public Key Encryption_, University of Wollongong, Australia 2023
-    * _Incompressible Encryption beyond Public Key Encryption_, IIST, Trivandrum 2023    
+    * _Leakage-Resilience meets Incompressibility_, IIIT-Hyderabad, India 2024
+    * _Incompressible Encryption beyond Public Key Encryption_, University of Wollongong, Australia 2024
+    * _Incompressible Encryption beyond Public Key Encryption_, IIST, Trivandrum 2024    
     * _Incompressible Encryption beyond Public Key Encryption_, Microsoft Research, Bangalore 2023   
     * _Incompressible Cryptography_, TrustLab, IIT Bombay 2023 (Online)
     * _Cryptography: Performing a Task Securely_, STEM Mentorship Program, IIT Delhi 2023 	
