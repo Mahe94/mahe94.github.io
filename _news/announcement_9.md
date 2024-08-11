@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Visited <a herf="https://www.icts.res.in/">International Center for Theoretical Sciences</a>, Bangalore 
+Visited <a href="https://www.icts.res.in/">International Center for Theoretical Sciences</a>, Bangalore 
