@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Visited <a herf="https://trustlab.iitb.ac.in/">TrustLab</a>, IIT Bombay
+Visited <a href="https://trustlab.iitb.ac.in/">TrustLab</a>, IIT Bombay
