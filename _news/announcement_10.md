@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Visited and Talk at MSR, Bangalore
+Visited and Talk at <a herf="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research Lab</a>, Bangalore
