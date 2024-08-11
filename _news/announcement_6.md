@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-(Online) Talk at TrustLab, IIT Bombay
+(Online) Talk at <a href="https://trustlab.iitb.ac.in/">TrustLab</a>, IIT Bombay
