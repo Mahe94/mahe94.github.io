@@ -9,6 +9,7 @@ nav_order: 6
 ---
 
 * Cryptography
+    * <a href="https://crypto.stackexchange.com/a/112747/116220">KEM with CCA security without using PKE</a>
     * <a href="https://crypto.stackexchange.com/a/112595/116220">Pseudo One Time Pad against Computational Unbounded Adversary</a>
     * <a href="https://crypto.stackexchange.com/a/111589/116220">Is semantic security equvalent to IND-CPA?</a>
     * <a href="https://crypto.stackexchange.com/a/112130/116220">How to prove the conclusion "linear operation XOR does not affect the division property"?</a>
