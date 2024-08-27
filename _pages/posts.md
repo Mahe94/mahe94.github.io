@@ -9,6 +9,7 @@ nav_order: 6
 ---
 
 * Cryptography
+    * <a href="https://crypto.stackexchange.com/a/112774/116220">In lattice, does converting a "bad" basis to a "good" basis constitute a hard problem?</a>
     * <a href="https://crypto.stackexchange.com/a/112747/116220">KEM with CCA security without using PKE</a>
     * <a href="https://crypto.stackexchange.com/a/112595/116220">Pseudo One Time Pad against Computational Unbounded Adversary</a>
     * <a href="https://crypto.stackexchange.com/a/111589/116220">Is semantic security equvalent to IND-CPA?</a>
