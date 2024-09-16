@@ -22,6 +22,8 @@ nav_order: 4
 ---
 
 * Conference/Workshop Talks
+    * _Complexity of Monomial Prediction in Cryptography and Machine Learning_, SYNASC 2024
+    * _On the Maximum Distance Sublattice Problem and Closest Vector Problem_, SYNASC 2024 
     * _On the Variants of Subset Sum: Projected and Unbounded_, SYNASC 2023 	
     * _Efficient reductions and algorithms for Subset Product_, CALDAM 2023
     * _On the bases of Z^n lattice_, SYNACS 2022
