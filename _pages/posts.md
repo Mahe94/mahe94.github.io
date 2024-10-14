@@ -9,7 +9,8 @@ nav_order: 6
 ---
 
 * Cryptography
-    * <a href="https://crypto.stackexchange.com/a/113192/116220">How to prove that 𝐿 is in NP∖P?
+    * <a href="https://crypto.stackexchange.com/a/113218/116220">Probabilistic polynomial-time Turing machine with one-way function</a>
+    * <a href="https://crypto.stackexchange.com/a/113192/116220">How to prove that 𝐿 is in NP∖P</a>?
     * <a href="https://crypto.stackexchange.com/a/113144/116220">AKS Primality-Testing Algorithm</a>
     * <a href="https://crypto.stackexchange.com/a/112774/116220">In lattice, does converting a "bad" basis to a "good" basis constitute a hard problem?</a>
     * <a href="https://crypto.stackexchange.com/a/112747/116220">KEM with CCA security without using PKE</a>
