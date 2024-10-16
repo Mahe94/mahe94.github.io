@@ -9,6 +9,7 @@ nav_order: 6
 ---
 
 * Cryptography
+    * <a href="https://crypto.stackexchange.com/a/113243/116220">Decryption using randomness</a>
     * <a href="https://crypto.stackexchange.com/a/113218/116220">Probabilistic polynomial-time Turing machine with one-way function</a>
     * <a href="https://crypto.stackexchange.com/a/113192/116220">How to prove that 𝐿 is in NP∖P</a>?
     * <a href="https://crypto.stackexchange.com/a/113144/116220">AKS Primality-Testing Algorithm</a>
