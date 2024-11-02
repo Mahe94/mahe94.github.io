@@ -9,6 +9,7 @@ nav_order: 6
 ---
 
 * Cryptography
+    * <a href="https://crypto.stackexchange.com/a/113362/116220">How to prove selectively-secure scheme is adaptively secure when message space is small?</a>
     * <a href="https://crypto.stackexchange.com/q/113281/116220">Injective PRG from one-way functions</a>
     * <a href="https://crypto.stackexchange.com/a/113243/116220">Decryption using randomness</a>
     * <a href="https://crypto.stackexchange.com/a/113218/116220">Probabilistic polynomial-time Turing machine with one-way function</a>
