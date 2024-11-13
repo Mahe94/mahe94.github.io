@@ -9,6 +9,7 @@ nav_order: 4
 ---
 
 * Talks
+    * _Leakage-Resilience meets Incompressibility_, IIT-Delhi, India 2024
     * _Leakage-Resilience meets Incompressibility_, IIIT-Hyderabad, India 2024
     * _Incompressible Encryption beyond Public Key Encryption_, University of Wollongong, Australia 2024
     * _Incompressible Encryption beyond Public Key Encryption_, IIST, Trivandrum 2024    
