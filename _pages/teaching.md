@@ -15,7 +15,7 @@ nav_order: 5
 
 * __Supervision__
 	* Dual Degree
- 		* Shankh Gupta, CSE, IITD 2024-25
+		* Shankh Gupta, CSE, IITD 2024-25
 		* Abhinav Kumar, CSE, IITD 2023-24 [<a href="../assets/pdf/abhinav.pdf">Thesis</a>]
 		* Dhairya Gupta, CSE, IITD 2023-24 [<a href="../assets/pdf/dhairya.pdf">Thesis</a>]
 	* BTech
