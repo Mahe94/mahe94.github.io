@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Attended <a href='https://tcc.iacr.org/2024/'>Theory of Cryptography Conference, TCC 2024<a>, Milan, Italy. 
+Attended <a href='https://tcc.iacr.org/2024/'>Theory of Cryptography Conference, TCC 2024</a>, Milan, Italy. 
