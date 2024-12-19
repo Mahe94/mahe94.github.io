@@ -2,7 +2,7 @@
 layout: about
 title: About Me
 permalink: /
-subtitle: <a href='https://www.cse.iitd.ac.in/'>Department of Computer Science & Engineering</a>, <a href='https://home.iitd.ac.in/)/'>IIT Delhi</a>, New Delhi, India
+subtitle: <a href='https://cispa.de/en'>CISPA Helmholtz Center for Information Security</a>, Sankt Ingbert, Germany
 
 profile:
   align: right
@@ -15,7 +15,7 @@ latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-I am currently a <b>Post-Doctoral Researcher</b> at <a href='https://cispa.de/en'>CISPA Helmholtz Center for Information Security</a>, hosted by <a href='https://sites.google.com/site/nicodoettling/'>Prof. Nico Döttling</a>. My research focuses on public-key cryptography and quantum cryptography.
+I am currently a <b>Post-Doctoral Researcher</b> at CISPA Helmholtz Center for Information Security, hosted by <a href='https://sites.google.com/site/nicodoettling/'>Prof. Nico Döttling</a>. My research focuses on public-key cryptography and quantum cryptography.
 
 Previously, I was a Post-Doctoral Fellow in the Department of Computer Science and Engineering, Indian Institute of Technology Delhi, where I worked under the guidance of <a href='https://web.iitd.ac.in/~kvenkata/'>Prof. Venkata Koppula</a>.
 
