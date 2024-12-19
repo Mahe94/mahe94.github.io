@@ -15,9 +15,11 @@ nav_order: 5
 
 * __Supervision__
 	* Dual Degree
+ 		* Shankh Gupta, CSE, IITD 2024-25
 		* Abhinav Kumar, CSE, IITD 2023-24 [<a href="../assets/pdf/abhinav.pdf">Thesis</a>]
 		* Dhairya Gupta, CSE, IITD 2023-24 [<a href="../assets/pdf/dhairya.pdf">Thesis</a>]
 	* BTech
+		* <a href='https://ab271202.github.io/'>Anish Banerjee</a>, CSE, IITD 2024-25
 		* Harihar Swaminathan, CSE, IITD 2023-24 [<a href="../assets/pdf/harihar.pdf">Slides</a>]
 		* Naman Gupta, CSE, IITK 2018-19 [<a href="../assets/pdf/naman.pdf">Thesis</a>]
 	* Interns
