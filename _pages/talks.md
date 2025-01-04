@@ -23,7 +23,7 @@ nav_order: 4
 ---
 
 * Conference/Workshop Talks
-    *_Leakage-Resilient Key-Dependent Message Secure Encryption Schemes_, INDOCRYPT 2024
+    * _Leakage-Resilient Key-Dependent Message Secure Encryption Schemes_, INDOCRYPT 2024
     * _Complexity of Monomial Prediction in Cryptography and Machine Learning_, SYNASC 2024
     * _On the Maximum Distance Sublattice Problem and Closest Vector Problem_, SYNASC 2024 
     * _On the Variants of Subset Sum: Projected and Unbounded_, SYNASC 2023 	
