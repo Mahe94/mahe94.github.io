@@ -17,7 +17,7 @@ nav_order: 4
     * _Incompressible Cryptography_, TrustLab, IIT Bombay 2023 (Online) [<a href='https://youtu.be/k2pbL3cd9f8?list=PLeHhvTGj_0A-1pM3KQEn5MwyvPG0lmb9d'>Video</a>]
     * _Cryptography: Performing a Task Securely_, STEM Mentorship Program, IIT Delhi 2023 	
     * _On the Subset Sum Problem_, CSE, IUST Jammu & Kashmir 2022.
-    * _Cryptanalysis of KECCAK & Algorithms for Lattice Problems_, PMRF Symposium 2021
+    * _Cryptanalysis of KECCAK & Algorithms for Lattice Problems_, PMRF Symposium 2021 [<a href="https://youtu.be/5l_gCF5caNg">Video</a>]
 
 
 ---
