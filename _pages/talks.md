@@ -14,7 +14,7 @@ nav_order: 4
     * _Incompressible Encryption beyond Public Key Encryption_, University of Wollongong, Australia 2024
     * _Incompressible Encryption beyond Public Key Encryption_, IIST, Trivandrum 2024    
     * _Incompressible Encryption beyond Public Key Encryption_, Microsoft Research, Bangalore 2023   
-    * _Incompressible Cryptography_, TrustLab, IIT Bombay 2023 (Online)
+    * _Incompressible Cryptography_, TrustLab, IIT Bombay 2023 (Online) [<a href='https://youtu.be/k2pbL3cd9f8?list=PLeHhvTGj_0A-1pM3KQEn5MwyvPG0lmb9d'>Video</a>]
     * _Cryptography: Performing a Task Securely_, STEM Mentorship Program, IIT Delhi 2023 	
     * _On the Subset Sum Problem_, CSE, IUST Jammu & Kashmir 2022.
     * _Cryptanalysis of KECCAK & Algorithms for Lattice Problems_, PMRF Symposium 2021
@@ -23,6 +23,7 @@ nav_order: 4
 ---
 
 * Conference/Workshop Talks
+    * _Incompressible Functional Encryption_, ITCS 2025 [<a href='https://youtu.be/Kpc0q8SE3OA?list=PLeHhvTGj_0A90DKvYgkSKQwy4UAByJ6va'>Video</a>]
     * _Leakage-Resilient Key-Dependent Message Secure Encryption Schemes_, INDOCRYPT 2024
     * _Complexity of Monomial Prediction in Cryptography and Machine Learning_, SYNASC 2024
     * _On the Maximum Distance Sublattice Problem and Closest Vector Problem_, SYNASC 2024 
@@ -37,6 +38,6 @@ nav_order: 4
 * SIGTACS (CSE, IITK) Talks
     * An Algebraic Algorithm for Hamming Subset-Sum Problem
     * Cryptanalysis of Round-Reduced KECCAK using Non-linear Structures (Jan 2020) 
-    * Leftover Hash Lemma (Oct 2019) [Lecture note by Leo Reyzin]
-    * Lattices in Computer Science (Jun 2017) [Lecture notes by Oded Regev]
+    * Leftover Hash Lemma (Oct 2019) [<a href='https://www.cs.bu.edu/~reyzin/teaching/s11cs937/notes-leo-1.pdf'>Lecture note by Leo Reyzin</a>][<a href='https://youtu.be/AsUUVQmp2Kc?list=PLeHhvTGj_0A-1pM3KQEn5MwyvPG0lmb9d'>Video</a>]
+    * Lattices in Computer Science (Jun 2017) [<a href='https://cims.nyu.edu/~regev/teaching/lattices_fall_2009/'>Lecture notes by Oded Regev</a>]
     * A Deterministic Exponential Time Algorithm for some lattice problems (Feb 2017)
