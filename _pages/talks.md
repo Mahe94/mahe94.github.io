@@ -32,6 +32,8 @@ nav_order: 4
     * _On the bases of Z^n lattice_, SYNACS 2022 <br> [<a href='../assets/pdf/slides/SYNASC 2022.pdf'>Slides</a>]
     * _On the hardness of monomial prediction problem_, WCC 2022 <br> [<a href='../assets/pdf/slides/WCC 2022.pdf'>Slides</a>]
     * _Cryptanalysis of Round-Reduced KECCAK using Non-Linear Structures_, INDOCRYPT 2019 <br> [<a href='../assets/pdf/slides/INDOCRYPT_2019.pdf'>Slides</a>]
+
+
 ---
 
 * Informal Talks
