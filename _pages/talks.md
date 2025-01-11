@@ -23,16 +23,16 @@ nav_order: 4
 ---
 
 * Conference/Workshop Talks
-    * _Incompressible Functional Encryption_, ITCS 2025 [<a href='https://youtu.be/Kpc0q8SE3OA?list=PLeHhvTGj_0A90DKvYgkSKQwy4UAByJ6va'>Video</a>][<a href='../assets/pdf/slides/ITCS 2025.pdf'>Slides</a>]
+    * _Incompressible Functional Encryption_, ITCS 2025 <br> [<a href='https://youtu.be/Kpc0q8SE3OA?list=PLeHhvTGj_0A90DKvYgkSKQwy4UAByJ6va'>Video</a>][<a href='../assets/pdf/slides/ITCS 2025.pdf'>Slides</a>]
     * _Leakage-Resilient Key-Dependent Message Secure Encryption Schemes_, INDOCRYPT 2024 [<a href='../assets/pdf/slides/INDOCRYPT 2024.pdf'>Slides</a>]
     * _Complexity of Monomial Prediction in Cryptography and Machine Learning_, SYNASC 2024 [<a href='../assets/pdf/slides/SYNASC 2024(1).pdf'>Slides</a>]
     * _On the Maximum Distance Sublattice Problem and Closest Vector Problem_, SYNASC 2024 [<a href='../assets/pdf/slides/'>Slides</a>]
-    * _On the Variants of Subset Sum: Projected and Unbounded_, SYNASC 2023 
-    * _Efficient reductions and algorithms for Subset Product_, CALDAM 2023 
+    * _On the Variants of Subset Sum: Projected and Unbounded_, SYNASC 2023 [<a href='../assets/pdf/slides/SYNASC2023.pdf'>Slides</a>]
+    * _Efficient reductions and algorithms for Subset Product_, CALDAM 2023 [<a href='../assets/pdf/slides/CALDAM2023.pdf'>Slides</a>]
     * _On the bases of Z^n lattice_, SYNACS 2022 [<a href='../assets/pdf/slides/SYNASC 2022.pdf'>Slides</a>]
     * _On the hardness of monomial prediction problem_, WCC 2022 [<a href='../assets/pdf/slides/WCC 2022.pdf'>Slides</a>]
-    * _Cryptanalysis of Round-Reduced KECCAK using Non-Linear Structures_, INDOCRYPT 2019 
-
+    * _Cryptanalysis of Round-Reduced KECCAK using Non-Linear Structures_, INDOCRYPT 2019 [<a href='../assets/pdf/slides/INDOCRYPT_2019.pdf
+'>Slides</a>]
 ---
 
 * SIGTACS (CSE, IITK) Talks
