@@ -8,7 +8,7 @@ nav: true
 nav_order: 4
 ---
 
-* Talks
+* Invited Talks
     * _Leakage-Resilience meets Incompressibility_, IIT-Delhi, India 2024 <br> [<a href='../assets/pdf/slides/Leakage-Incompressible.pdf'>Slides</a>]
     * _Leakage-Resilience meets Incompressibility_, IIIT-Hyderabad, India 2024 <br> [<a href='../assets/pdf/slides/Leakage-Incompressible.pdf'>Slides</a>]
     * _Incompressible Encryption beyond Public Key Encryption_, University of Wollongong, Australia 2024 <br> [<a href='../assets/pdf/slides/Main-Incompressible_Encryption.pdf'>Slides</a>]
@@ -31,13 +31,12 @@ nav_order: 4
     * _Efficient reductions and algorithms for Subset Product_, CALDAM 2023 <br> [<a href='../assets/pdf/slides/CALDAM2023.pdf'>Slides</a>]
     * _On the bases of Z^n lattice_, SYNACS 2022 <br> [<a href='../assets/pdf/slides/SYNASC 2022.pdf'>Slides</a>]
     * _On the hardness of monomial prediction problem_, WCC 2022 <br> [<a href='../assets/pdf/slides/WCC 2022.pdf'>Slides</a>]
-    * _Cryptanalysis of Round-Reduced KECCAK using Non-Linear Structures_, INDOCRYPT 2019 <br> [<a href='../assets/pdf/slides/INDOCRYPT_2019.pdf
-'>Slides</a>]
+    * _Cryptanalysis of Round-Reduced KECCAK using Non-Linear Structures_, INDOCRYPT 2019 <br> [<a href='../assets/pdf/slides/INDOCRYPT_2019.pdf'>Slides</a>]
 ---
 
-* SIGTACS (CSE, IITK) Talks
+* Informal Talks
     * An Algebraic Algorithm for Hamming Subset-Sum Problem
     * Cryptanalysis of Round-Reduced KECCAK using Non-linear Structures (Jan 2020) 
-    * Leftover Hash Lemma (Oct 2019) [<a href='https://www.cs.bu.edu/~reyzin/teaching/s11cs937/notes-leo-1.pdf'>Lecture note by Leo Reyzin</a>][<a href='https://youtu.be/AsUUVQmp2Kc?list=PLeHhvTGj_0A-1pM3KQEn5MwyvPG0lmb9d'>Video</a>]
-    * Lattices in Computer Science (Jun 2017) [<a href='https://cims.nyu.edu/~regev/teaching/lattices_fall_2009/'>Lecture notes by Oded Regev</a>]
+    * Leftover Hash Lemma (Oct 2019) <br> [<a href='https://www.cs.bu.edu/~reyzin/teaching/s11cs937/notes-leo-1.pdf'>Lecture note by Leo Reyzin</a>][<a href='https://youtu.be/AsUUVQmp2Kc?list=PLeHhvTGj_0A-1pM3KQEn5MwyvPG0lmb9d'>Video</a>]
+    * Lattices in Computer Science (Jun 2017) <br> [<a href='https://cims.nyu.edu/~regev/teaching/lattices_fall_2009/'>Lecture notes by Oded Regev</a>]
     * A Deterministic Exponential Time Algorithm for some lattice problems (Feb 2017)
