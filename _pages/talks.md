@@ -37,6 +37,7 @@ nav_order: 4
 ---
 
 * Informal Talks
+    * ITCS Graduating Bits ITCS [<a href='../assets/pdf/slides/ITCS Graduating Bits.pdf'>Slides</a>]
     * An Algebraic Algorithm for Hamming Subset-Sum Problem
     * Cryptanalysis of Round-Reduced KECCAK using Non-linear Structures (Jan 2020) 
     * Leftover Hash Lemma (Oct 2019) [<a href='https://www.cs.bu.edu/~reyzin/teaching/s11cs937/notes-leo-1.pdf'>Lecture note by Leo Reyzin</a>][<a href='https://youtu.be/AsUUVQmp2Kc?list=PLeHhvTGj_0A-1pM3KQEn5MwyvPG0lmb9d'>Video</a>]
