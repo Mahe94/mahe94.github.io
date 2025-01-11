@@ -23,7 +23,7 @@ nav_order: 4
 ---
 
 * Conference/Workshop Talks
-    * _Incompressible Functional Encryption_, ITCS 2025 [<a href='https://youtu.be/Kpc0q8SE3OA?list=PLeHhvTGj_0A90DKvYgkSKQwy4UAByJ6va'>Video</a>][<a href='../assets/pdf/slides/ITCS 2025'>Slides</a>]
+    * _Incompressible Functional Encryption_, ITCS 2025 [<a href='https://youtu.be/Kpc0q8SE3OA?list=PLeHhvTGj_0A90DKvYgkSKQwy4UAByJ6va'>Video</a>][<a href='../assets/pdf/slides/ITCS 2025.pdf'>Slides</a>]
     * _Leakage-Resilient Key-Dependent Message Secure Encryption Schemes_, INDOCRYPT 2024
     * _Complexity of Monomial Prediction in Cryptography and Machine Learning_, SYNASC 2024
     * _On the Maximum Distance Sublattice Problem and Closest Vector Problem_, SYNASC 2024 
