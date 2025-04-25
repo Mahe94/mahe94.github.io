@@ -9,6 +9,7 @@ nav_order: 6
 ---
 
 * Cryptography
+    * <a href="https://crypto.stackexchange.com/a/114902/116220">How to complete security definition</a>
     * <a href="https://crypto.stackexchange.com/a/114755/116220">CPA Security: Does there exist a ciphertext shared by 2 or more plaintexts in randomized encryption</a>
     * <a href="https://crypto.stackexchange.com/a/114752/116220">What is the difference between a selective model and a full (adaptive) model in Functional Encryption?</a>
     * <a href="https://crypto.stackexchange.com/a/113383/116220">How to define anonymity in cryptography and how to prove the anonymity of a security solution?</a>
