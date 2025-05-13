@@ -23,6 +23,7 @@ nav_order: 4
 ---
 
 * Conference/Workshop Talks
+    * _Non-Committing Identity-Based Encryption: Constructions and Applications_, PKC 2025 [<a href='../assets/pdf/slides/PKC 2025.pdf'>Slides</a>]
     * _Incompressible Functional Encryption_, ITCS 2025 [<a href='https://youtu.be/Kpc0q8SE3OA?list=PLeHhvTGj_0A90DKvYgkSKQwy4UAByJ6va'>Video</a>][<a href='../assets/pdf/slides/ITCS 2025.pdf'>Slides</a>]
     * _Leakage-Resilient Key-Dependent Message Secure Encryption Schemes_, INDOCRYPT 2024 [<a href='../assets/pdf/slides/INDOCRYPT 2024.pdf'>Slides</a>]
     * _Complexity of Monomial Prediction in Cryptography and Machine Learning_, SYNASC 2024 [<a href='../assets/pdf/slides/SYNASC 2024(1).pdf'>Slides</a>]
