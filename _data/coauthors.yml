@@ -61,3 +61,15 @@
 "Müller":
   - firstname: ["Anne"]
     url: https://cispa.de/de/people/c01anmu
+
+"Joux":
+  - firstname: ["Antoine"]
+    url: https://cispa.de/en/people/c01anjo
+
+"Węgrzycki":
+  - firstname: ["Karol"]
+    url: https://people.mpi-inf.mpg.de/~kwegrzyc/
+
+"Bhati":
+  - firstname: ["Deepak"]
+    url: 
