@@ -21,4 +21,4 @@ Previously, I was a Post-Doctoral Fellow in the Department of Computer Science a
 
 I completed my PhD and MTech degree under the guidance of <a href='https://sites.google.com/view/manindra/home'>Prof. Manindra Agrawal</a> in the Department of Computer Science and Engineering, Indian Institute of Technology, Kanpur. During that time, I was actively working on the cryptanalysis of symmetric-key cryptosystems and variants of subset-sum problem.
 
-My <i>Erd<span>&#337;</span>s</i> number is 4 (Me -> <a href='https://www.cse.iitk.ac.in/users/skmehta/'>Shashank K. Mehta</a> -> Jitender S. Deogun -> Zsolt Tuza -> Paul Erd<span>&#337;</span>s).
+My <i>Erd<span>&#337;</span>s</i> number is 3 (Me -> <a href='https://cispa.de/en/people/c01anjo'>Antoine Joux</a> -> Andrew M. Odlyzko -> Paul Erd<span>&#337;</span>s).
