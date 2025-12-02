@@ -35,25 +35,34 @@
       institution: Indian Institute of Technology Delhi
       year: 2023
       description:
-        - Supervisor. Prof. Venkata Koppula and Prof. Rishab Goyal
+        - Supervisor. Prof. Venkata Koppula
+    - title: Post-Doctoral Researcher
+      institution: CISPA Helmholtz Center for Information Security
+      year: 2025
+      description:
+        - Host. Prof. Nico Döttling
 
 
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2017
-      items: 
-        - Awarded Academic Excellence, IIT Kanpur
-    - year: 2018
-      items: 
-        - Prime Minister’s Research Fellowship
-    - year: 2022
+    - year: 2025
       items:
-        - Best Student Presentation award in CALDAM 2022
+        - Outstanding Paper Award in TCC 2025
     - year: 2023
       items:
         - Best Student Presentation award in CALDAM 2023
+    - year: 2022
+      items:
+        - Best Student Presentation award in CALDAM 2022
+    - year: 2018
+      items: 
+        - Prime Minister’s Research Fellowship
+    - year: 2017
+      items: 
+        - Awarded Academic Excellence, IIT Kanpur
+    
 
 - title: Stack Exchange Flairs
   type: list
