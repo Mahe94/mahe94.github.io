@@ -126,6 +126,11 @@
         {%- endif -%}
         {% assign entrytype_text = entrytype | strip_html | strip %}
         {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
+        
+        {% if entry.award -%}
+          <!-- Award block -->
+            <b>{{ (entry.award) }}</b>
+          {%- endif -%}
         <div class="periodical">
           {{ periodical | strip }}
         </div>
@@ -221,11 +226,6 @@
           <div class="abstract hidden">
             <p>{{ entry.abstract }}</p>
           </div>
-          {%- endif -%}
-
-          {% if entry.award -%}
-          <!-- Award block -->
-            <b>{{ (entry.award) }}</b>
           {%- endif -%}
 
           {% if entry.bibtex_show -%}
