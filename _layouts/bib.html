@@ -126,17 +126,16 @@
         {%- endif -%}
         {% assign entrytype_text = entrytype | strip_html | strip %}
         {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
-        
-        {% if entry.award -%}
-          <!-- Award block -->
-            <b>{{ (entry.award) }}</b>
-          {%- endif -%}
         <div class="periodical">
           {{ periodical | strip }}
         </div>
         <div class="periodical">
           {{ entry.note | strip }}
         </div>
+        {% if entry.award -%}
+          <!-- Award block -->
+            <b>{{ (entry.award) }}</b>
+          {%- endif -%}
 
           <!-- Links/Buttons -->
           <div class="links">
