@@ -223,6 +223,11 @@
           </div>
           {%- endif -%}
 
+          {% if entry.award -%}
+          <!-- Award block -->
+            <b>{{ (entry.award) }}</b>
+          {%- endif -%}
+
           {% if entry.bibtex_show -%}
           <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
