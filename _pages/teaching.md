@@ -8,6 +8,8 @@ nav: true
 nav_order: 5
 ---
 * __Courses Taught__
+	* Cryptography
+		 * 	At Universität des Saarlandes 2025 (Course offered by Prof. Nico Döttling and Prof. Lucjan Hanzlik)
 	* Introduction to Computer Science
 		* <a href="https://kumarmadhukar.github.io/courses/col100-summer24/index.html">COL100 at IITD 2024</a> (Co-taught with Professor Kumar Madhukar, Dr Ramneek Kaur and Dr Prasad Chaugule)
 	* Special Topics in Theoretical Computer Science
