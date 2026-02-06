@@ -20,6 +20,52 @@ nav_order: 1
 <br><br>
 
 <header class="post-header">
+  <h1 class="thesis-title">Manuscripts</h1>
+  <p class="post-description"></p>
+</header>
+
+<div class="publications">
+  <h2 class="year">2025</h2>
+  <ol class="bibliography">
+    <li>
+      <!-- _layouts/bib.html -->
+      <div class="row">
+      <!-- <div class="col-sm-2 abbr"></div> -->
+
+      <!-- Entry bib key -->
+      <divclass="col-sm-8">
+      <!-- Title -->
+      <div>A Note on Non-Committing Encryption in the Quantum Random Oracle Model</div>
+      <!-- Author -->
+      <div class="author">
+
+
+      <em>Anish Banerjee, Shankh Gupta, Venkata Koppula, Mahesh Sreekumar Rajasree</em>
+      </div>
+
+
+      </div>
+
+      <!-- Links/Buttons -->
+      <div class="links">
+        <a href="/assets/pdf/QNCE.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+      </div>
+
+      <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+      <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+      </div>
+
+
+      </div>
+      </div>
+    </li>
+  </ol>
+</div>
+
+<br><br>
+
+<header class="post-header">
   <h1 class="thesis-title">Theses</h1>
   <p class="post-description"></p>
 </header>
@@ -35,13 +81,14 @@ nav_order: 1
       <!-- Entry bib key -->
       <div id="phd2023" class="col-sm-8">
       <!-- Title -->
-      <div class="title"><a href="/assets/bibliography/phd_thesis.pdf">Analysis of Symmetric-Key Cryptosystems and Subset-Sum Problem</a></div>
+      <div class="title">Analysis of Symmetric-Key Cryptosystems and Subset-Sum Problem</div>
       <!-- Author -->
       <div class="author">
 
 
       <em>Mahesh Sreekumar Rajasree</em>
       </div>
+
 
       <!-- Journal/Book title and date -->
 
@@ -55,7 +102,7 @@ nav_order: 1
 
       <!-- Links/Buttons -->
       <div class="links">
-       
+        <a href="/assets/bibliography/phd_thesis.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
       </div>
 
       <div class="badges">
@@ -78,7 +125,7 @@ nav_order: 1
       <!-- Entry bib key -->
       <div id="mtech2023" class="col-sm-8">
       <!-- Title -->
-      <div class="title"><a href="/assets/bibliography/mtech_thesis.pdf">New Results and Proofs in Lattice Theory</a></div>
+      <div class="title">New Results and Proofs in Lattice Theory</div>
       <!-- Author -->
       <div class="author">
 
@@ -92,12 +139,10 @@ nav_order: 1
       <div class="periodical">
       <em>MTech Thesis, IIT Kanpur, India</em>, 2023
       </div>
-      <div class="periodical">
-
-      </div>
 
       <!-- Links/Buttons -->
       <div class="links">
+        <a href="/assets/bibliography/mtech_thesis.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
       </div>
 
       <div class="badges">
@@ -125,13 +170,14 @@ nav_order: 1
       <!-- Entry bib key -->
       <div id="phd2023" class="col-sm-8">
       <!-- Title -->
-      <div class="title"><a href="/assets/bibliography/btech_thesis.pdf">Firewall For Preventing Anonymous Proxy Usage</a></div>
+      <div class="title">Firewall For Preventing Anonymous Proxy Usage</div>
       <!-- Author -->
       <div class="author">
 
 
       Anant Kandikuppa, <em>Mahesh Sreekumar Rajasree</em>, Sri Harsha Vipparti
       </div>
+
 
       <!-- Journal/Book title and date -->
 
@@ -145,6 +191,7 @@ nav_order: 1
 
       <!-- Links/Buttons -->
       <div class="links">
+        <a href="/assets/bibliography/btech_thesis.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
       </div>
 
       <div class="badges">
