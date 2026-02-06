@@ -33,14 +33,14 @@ nav_order: 1
       <!-- <div class="col-sm-2 abbr"></div> -->
 
       <!-- Entry bib key -->
-      <divclass="col-sm-8">
+      <div class="col-sm-8">
       <!-- Title -->
-      <div>A Note on Non-Committing Encryption in the Quantum Random Oracle Model</div>
+      <div class="title">A Note on Non-Committing Encryption in the Quantum Random Oracle Model</div>
       <!-- Author -->
       <div class="author">
 
 
-      <em>Anish Banerjee, Shankh Gupta, Venkata Koppula, Mahesh Sreekumar Rajasree</em>
+      Anish Banerjee, Shankh Gupta, Venkata Koppula, <em>Mahesh Sreekumar Rajasree</em>
       </div>
 
 
