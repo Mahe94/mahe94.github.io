@@ -35,7 +35,7 @@ nav_order: 1
         <!-- Entry bib key -->
         <div class="col-sm-8">
         <!-- Title -->
-        <div class="title">Non-Committing Attribute andIdentity Based Encryption: Constructionsand Applications</div>
+        <div class="title">Non-Committing Attribute and Identity Based Encryption: Constructions and Applications</div>
         
         <!-- Author -->
         <div class="author">
