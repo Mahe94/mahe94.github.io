@@ -23,7 +23,7 @@ nav_order: 5
 	* BTech
 		* <a href='https://ab271202.github.io/'>Anish Banerjee</a>, CSE, IITD 2024-25
 		* Harihar Swaminathan, CSE, IITD 2023-24 [<a href="../assets/pdf/harihar.pdf">Slides</a>]
-		* Naman Gupta, CSE, IITK 2018-19 [<a href="../assets/pdf/naman.pdf">Thesis</a>]
+		* Naman Verma, CSE, IITK 2018-19 [<a href="../assets/pdf/naman.pdf">Thesis</a>]
 	* Interns
 		* Sundar R, BTech Intern from IIIT-SriCity, Avionics, IIST 2024 [<a href="../assets/pdf/sundar.pdf">Slides</a>]
 		* Aiswarya G Raj, MTech Intern from CET-Trivandrum, Avionics, IIST 2024 [<a href="../assets/pdf/aiswarya.pdf">Slides</a>]
