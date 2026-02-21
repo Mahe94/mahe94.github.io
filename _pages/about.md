@@ -19,6 +19,8 @@ I am currently a <b>Post-Doctoral Researcher</b> at CISPA Helmholtz Center for I
 
 Previously, I was a Post-Doctoral Fellow in the Department of Computer Science and Engineering, Indian Institute of Technology Delhi, where I worked under the guidance of <a href='https://web.iitd.ac.in/~kvenkata/'>Prof. Venkata Koppula</a>.
 
-I completed my PhD and MTech degree under the guidance of <a href='https://sites.google.com/view/manindra/home'>Prof. Manindra Agrawal</a> in the Department of Computer Science and Engineering, Indian Institute of Technology, Kanpur. During that time, I was actively working on the cryptanalysis of symmetric-key cryptosystems and variants of subset-sum problem.
+I completed my PhD (as a \href{https://pmrf.in}{Prime Minister’s Research Fellow}) and MTech degree under the guidance of <a href='https://sites.google.com/view/manindra/home'>Prof. Manindra Agrawal</a> in the Department of Computer Science and Engineering, Indian Institute of Technology, Kanpur. During that time, I was actively working on the cryptanalysis of symmetric-key cryptosystems and variants of subset-sum problem.
 
 My <i>Erd<span>&#337;</span>s</i> number is 3 (Me -> <a href='https://cispa.de/en/people/c01anjo'>Antoine Joux</a> -> Andrew M. Odlyzko -> Paul Erd<span>&#337;</span>s).
+
+I am currently on the <b>academic job market</b> and seeking tenure-track Assistant Professor positions in Computer Science beginning in the 2026–2027 academic year. I would greatly appreciate any information regarding relevant openings or potential opportunities.
