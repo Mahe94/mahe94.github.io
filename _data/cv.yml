@@ -62,13 +62,28 @@
     - year: 2017
       items: 
         - Awarded <a href="https://mahe94.github.io/assets/pdf/excellence_certificate.pdf">Academic Excellence</a>, IIT Kanpur
-    
 
+- title: Professional Activities
+  type: list
+  contents:
+    - Reviewed papers for INDOCRYPT 2021, MFCS 2023, FSTTCS 2023, Journal of Cryptology, EUROCRYPT 2023, ASIACRYPT 2024, ITCS 2025, EUROCRYPT 2025, PKC 2025, ICALP 2025, CRYPTO 2025, STOC 2026, ICALP 2026.
+    - Part of the Indian team for the < a href="https://iitk.ac.in/institute-and-uow-cloud-computing">Australian-India Cyber and Critical Technology Partnership</a> (AICCTP). The partnership involves activities that facilitate Australia-India research partnerships to strengthen  understanding of ethical frameworks for emerging and critical technologies, and the development of best practices on translating ethical frameworks into practical action and initiatives that encourage the development of technical critical technology standards that advance Australia and India’s interests.
+
+- title: Volunteer Works
+  type: list
+  contents:
+    - Lecture delivered at Continuing Education Programme for employees at Centre For Railway Information Systems, IIT Delhi 2024.
+    - Lecture delivered at <a href="https://home.iitd.ac.in/show.php?id=397&in_sections=News">STEM Mentorship Program for High School Girl Students</a>, IIT Delhi 2023.
+    - Volunteer at <a href="https://www.fsttcs.org.in/archives/2017/#oc">Foundations of Software Technology and Theoretical Computer Science</a>, FSTTCS 2017.
+    - Volunteer at <a href="https://cse.iitk.ac.in/doc/CSAW'17%20agenda-1%20(002).pdf">Cybersecurity Awareness Week</a> CSAW 2017.
+    - Head Coordinator of <a href="https://sigtacs.github.io">Special Interest Group on Theoretical Aspects of Computer Science</a> SIGTACS at IIT Kanpur.
+  
 - title: Stack Exchange Flairs
   type: list
   contents:
     - <a href="https://crypto.stackexchange.com/users/116220/mahesh-s-r"><img src="https://crypto.stackexchange.com/users/flair/116220.png?theme=clean" width="208" height="58" alt="profile for Mahesh S R at Cryptography Stack Exchange, Q&amp;A for software developers, mathematicians and others interested in cryptography" title="profile for Mahesh S R at Cryptography Stack Exchange, Q&amp;A for software developers, mathematicians and others interested in cryptography"></a> <a href="https://math.stackexchange.com/users/932011/mahesh-s-r"><img src="https://math.stackexchange.com/users/flair/932011.png?theme=clean" width="208" height="58" alt="profile for Mahesh S R at Mathematics Stack Exchange, Q&amp;A for people studying math at any level and professionals in related fields" title="profile for Mahesh S R at Mathematics Stack Exchange, Q&amp;A for people studying math at any level and professionals in related fields"></a> 
     - <a href="https://stackexchange.com/users/21726955"><img src="https://stackexchange.com/users/flair/21726955.png?theme=clean" width="208" height="58" alt="profile for Mahesh S R on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Mahesh S R on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
+    
 - title: Other Interests
   type: list
   contents:
