@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Visiting <a \href="https://www.mimuw.edu.pl/en/">Faculty of Mathematics, Informatics, and Mechanics, University of Warsaw</a>. 
+Visiting <a href="https://www.mimuw.edu.pl/en/">Faculty of Mathematics, Informatics, and Mechanics, University of Warsaw</a>. 
