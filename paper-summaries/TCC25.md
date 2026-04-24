@@ -1,14 +1,12 @@
 ---
 layout: paper-summary
-title: "Separating Pseudorandom Codes from Local Oracles"
+title: "Paper Summary: Separating Pseudorandom Codes from Local Oracles"
 paper_authors: "Nico Dottling, Anne Muller, Mahesh Sreekumar Rajasree"
 venue: "TCC 2025"
 permalink: /paper-summaries/TCC25/
 ---
 
-# Paper Summary: Separating Pseudorandom Codes from Local Oracles
-
-## Everyone
+## For Everyone
 
 Modern digital systems often need two properties at the same time.
 
@@ -56,7 +54,7 @@ This gives a clearer understanding of why pseudorandom codes are difficult to co
 
 ---
 
-## Researcher
+## For Researcher
 
 This paper studies the assumption complexity of **pseudorandom codes** (PRCs), recently introduced by Christ and Gunn. A PRC is an error-correcting code whose codewords are computationally indistinguishable from uniformly random strings. The decoder uses a secret key and should recover the message even after the codeword is corrupted by noise, while an adversary without the key should not distinguish codewords from random strings.
 
@@ -118,7 +116,7 @@ The main conceptual contribution is the identification of **locality** as a barr
 
 ---
 
-## Computer Scientist
+## For Computer Scientist
 
 This paper studies the relationship between **error correction**, **pseudorandomness**, and **black-box cryptographic constructions**.
 
@@ -128,3 +126,107 @@ The object considered in the paper is a secret-key pseudorandom code
 
 ```text
 PRC = (KeyGen, Encode, Decode).
+```
+
+The encoder and decoder share a secret key `sk`. The encoder maps a message `m` to a binary string `c`. The decoder takes a noisy word `c + e` and should recover `m`. The pseudorandomness requirement says that oracle access to `Encode(sk, ·)` should be indistinguishable from oracle access to a function that returns fresh uniform strings of the same length.
+
+The robustness notion is with respect to a Bernoulli channel. Each bit is flipped independently with some constant probability. Thus the decoder should tolerate a constant fraction of random bit errors.
+
+The central question is whether binary PRCs with constant noise tolerance can be constructed from generic cryptographic primitives in a black-box way. More precisely, can we build such PRCs from objects like random oracles, one-way functions, or trapdoor permutations, if the construction only accesses them as oracles?
+
+The paper proves that the answer is negative for a broad class of oracles called **local oracles**.
+
+A local oracle is an oracle where a polynomial-size set of previous query-answer pairs can only make polynomially many future queries meaningfully related. For all unrelated queries, there is a simulator that can generate a consistent-looking answer without knowing the previous query history. Random oracles are local: unless a query has already been asked, its answer is fresh and independent. The paper also argues that trapdoor permutation oracles are local, although the relation among queries is more subtle because evaluation and inversion queries can constrain each other.
+
+The main theorem states that for any constant noise parameter, there is no black-box construction of binary secret-key PRCs robust to the Bernoulli channel from any local oracle. Since random oracles and trapdoor permutation oracles are local, this rules out black-box constructions from these common generic sources.
+
+The reason this is plausible is that PRCs themselves are highly non-local. If an oracle implements an ideal PRC and one asks for an encoding of `m`, obtaining a codeword `c`, then every word in a large Hamming ball around `c` must decode to `m`. For constant relative error radius, this ball contains exponentially many points. Thus one encoding query creates exponentially many related decoding queries. This violates locality.
+
+The proof is a black-box separation in the Impagliazzo–Rudich style. The construction has oracle access to `O`, and the adversary is computationally unbounded but can make only polynomially many oracle queries. The aim is to show that every candidate construction can be broken by such an adversary.
+
+The first observation is simple. Suppose the decoder makes no oracle queries. Then an unbounded adversary can query the challenge oracle on many random messages and receive strings `x_1, ..., x_N`. It can brute-force over all possible keys and test whether some key decodes the samples correctly. If the samples are genuine codewords, the real key works. If the samples are uniformly random strings paired with independent random messages, then with overwhelming probability no key explains many of them.
+
+So oracle-free decoders are insecure in this black-box model.
+
+The real issue is that the decoder may query `O`. The technical core of the paper shows how to remove these oracle queries.
+
+Fix a secret key and consider the first oracle query made by the decoder on input `x`. This gives a query function
+
+```text
+Quer_sk(x).
+```
+
+If `x = c + e` is a noisy version of a codeword, and the oracle query is important for decoding, then `Quer_sk(c + e)` must behave robustly under the noise. Otherwise, the decoder would ask a query unrelated to what the encoder ever asked, and for a local oracle the answer could be simulated. In such a case, the oracle would not be essential.
+
+The paper formalizes this using global and local weights.
+
+For a query `q`, define its global weight as
+
+```text
+w(q) = Pr_u[Quer(u) = q],
+```
+
+where `u` is uniform over the Boolean cube.
+
+Define its local weight around `x` as
+
+```text
+ell_x(q) = Pr_e[Quer(x + e) = q],
+```
+
+where `e` is Bernoulli noise.
+
+A point `x` is exceptional if there exists a query `q` such that `q` has small global weight but large local weight around `x`. Intuitively, around such an `x`, the query function behaves like a local error-correcting decoder for `q`: many noisy versions of `x` map to the same rare query.
+
+The paper proves that exceptional points are rare. This is where the Bonami–Beckner hypercontractivity theorem enters. The theorem controls how much a function on the Boolean cube can concentrate after applying noise. Applied to the indicator-like function for the event `Quer(x) = q`, it gives a bound of the following form:
+
+```text
+E_u[ell_u(q)^{1+t}] <= w(q)^{(1+t)/(1+rho^2 t)}.
+```
+
+This implies that if `q` is globally light, then it cannot be locally heavy around many points. A union bound over all light queries, together with norm interpolation, yields a bound on the probability that a uniformly random `u` is exceptional. Importantly, the bound does not depend on the size of the query space.
+
+The next step transfers this statement from uniformly random strings to PRC codewords. If codewords were exceptional with noticeably larger probability than uniform strings, then an adversary could distinguish codewords from uniform strings by checking exceptionality. This would already violate pseudorandomness. Hence, for any secure candidate PRC, codewords are exceptional only with small probability.
+
+Now the oracle query can be compiled out.
+
+For the decoder’s first query function, the adversary learns all globally heavy queries. There are at most `1/epsilon` such queries, so for inverse-polynomial `epsilon`, this is still polynomially many. The answers to these queries are stored in an augmented secret key.
+
+The new decoder works as follows.
+
+- If the decoder’s first oracle query is globally heavy, answer it using the stored table.
+- If the query is globally light and unrelated to the encoder’s previous oracle queries, simulate the answer using the local-oracle simulator.
+- If the query is globally light but related to the encoder’s previous oracle queries, the simulation may fail.
+
+The third case is the only bad case. It is controlled as follows. Locality says that there are only polynomially many queries related to the encoder’s query history. Non-exceptionality says that each globally light query has small local probability around the codeword. A union bound over the polynomially many related queries gives a small failure probability.
+
+Thus one oracle query of the decoder can be removed while adding only a small correctness error and polynomial-size auxiliary information. Repeating this argument removes all decoder oracle queries.
+
+After all oracle queries are removed, the earlier brute-force attack against oracle-free decoders applies. The adversary samples many challenge strings, adds Bernoulli noise, and checks whether there exists an augmented key that decodes a large fraction of them correctly. Genuine codewords pass this test because of robustness. Uniform random strings fail because their labels are independent of the strings, and a Chernoff bound plus union bound over keys rules out a good decoder with high probability.
+
+This yields a polynomial-query distinguisher, contradicting the assumed pseudorandomness of the black-box construction.
+
+The proof therefore has three main ingredients:
+
+1. **Locality of the oracle.**  
+   Local oracles allow simulation of unrelated queries and have only polynomially many queries related to a polynomial query history.
+
+2. **Hypercontractivity on the Boolean cube.**  
+   The Bonami–Beckner theorem shows that globally rare decoder queries cannot be locally frequent around many points.
+
+3. **Oracle-query compilation.**  
+   Heavy queries can be learned, light unrelated queries can be simulated, and light related queries occur with small probability.
+
+The paper also proves a complementary positive result for large alphabets. Let the alphabet size be `q = 2^lambda`. The construction uses a `$`-CPA secure secret-key encryption scheme, a Reed–Solomon code over `F_q`, and a pseudorandom permutation over the alphabet symbols.
+
+The encoder first encrypts the message, then encodes the ciphertext using a Reed–Solomon code, and finally applies a pseudorandom permutation to the symbols. The decoder applies the inverse permutation, Reed–Solomon decodes, and decrypts.
+
+The proof of pseudorandomness uses hybrids. First, replace the encryption outputs by uniform strings using pseudorandom ciphertext security. Then, replace the pseudorandom permutation outputs by uniform symbols using PRP security. Since the alphabet is exponentially large in the security parameter, symbol collisions occur only with negligible probability across polynomially many samples. Therefore, the permuted Reed–Solomon codeword is indistinguishable from a uniformly random word over the large alphabet.
+
+This positive result shows that the binary alphabet is essential to the separation. Over large alphabets, one-way functions suffice. Over binary alphabets, however, black-box access to local cryptographic primitives is insufficient for constant-noise-tolerant PRCs.
+
+The main takeaway is:
+
+> Binary pseudorandom codes require non-local, noise-resilient structure. Generic black-box cryptographic primitives such as random oracles and trapdoor permutations do not provide this structure.
+
+This helps explain why existing PRC constructions rely on coding-related assumptions such as LPN, McEliece-type assumptions, planted XOR or hyperloop assumptions, or local weak pseudorandom functions. These assumptions already contain some form of robustness to noise, which appears necessary for constructing binary pseudorandom codes.
