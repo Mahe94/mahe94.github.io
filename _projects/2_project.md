@@ -1,80 +1,68 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: assets/img/3.jpg
+title: Incompressible Cryptography
+description: Cryptographic systems where ciphertexts cannot be meaningfully compressed
+img: assets/img/IC.jpg
 importance: 2
-category: work
+category: Work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Modern cryptography typically focuses on hiding *information*. Incompressible cryptography takes a different perspective: it asks whether we can design systems where ciphertexts are not only secure, but also inherently **non-compressible**.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Intuitively, a ciphertext is *incompressible* if it cannot be represented using significantly fewer bits without losing essential information. This notion captures a strong form of pseudorandomness and structural complexity: even if an adversary does not learn the plaintext, they also cannot “summarize” or “shrink” the ciphertext in any meaningful way.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+This project develops the theory of incompressible cryptographic primitives, their constructions, and their limitations.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Motivation
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+Why should ciphertexts be incompressible?
 
+In many modern settings—such as cloud storage, secure outsourcing, and large-scale data systems—compression plays a central role. If encrypted data could be significantly compressed, this may reveal hidden structure or redundancy, potentially weakening security guarantees.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+More fundamentally, incompressibility captures a deeper question:
 
+> Can we design encryption schemes whose outputs behave like *truly random objects* not only statistically, but also structurally?
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+This connects cryptography with ideas from information theory, complexity theory, and coding theory.
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+## Core Ideas
+
+The project explores the following themes.
+
+- **Incompressibility as a security notion**: Formalizing what it means for a ciphertext to resist compression.
+- **Connections to pseudorandomness**: Understanding how incompressibility relates to pseudorandom generators and pseudorandom codes.
+- **Leakage resilience**: Studying whether incompressibility provides protection against partial information leakage.
+- **Key-dependent message (KDM) security**: Investigating how incompressibility interacts with advanced security notions.
+- **Efficiency vs. structure trade-offs**: Understanding the limits of achieving incompressibility while maintaining efficient encryption.
+
+## Research Direction
+
+Incompressible cryptography lies at the intersection of several areas:
+
+- Cryptographic constructions (encryption, commitments, pseudorandom objects)
+- Coding theory (structure vs. randomness)
+- Computational complexity (lower bounds and barriers)
+
+A key goal is to understand both **what can be built** and **what cannot be built** under standard assumptions.
+
+## Results
+
+This project has led to several results, including:
+
+### Constructions
+
+We construct encryption schemes that achieve incompressibility under appropriate assumptions, showing that strong forms of structural randomness are achievable in cryptography.
+
+### Barriers
+
+We also identify fundamental limitations, demonstrating that certain natural approaches to incompressibility cannot work.  
+These barriers help clarify the exact power required to achieve incompressible ciphertexts.
+
+### Advanced security guarantees
+
+We study incompressibility in combination with stronger notions such as:
+
+- Leakage resilience  
+- Key-dependent message (KDM) security  
+
+These results show that incompressibility can coexist with rich and demanding cryptographic guarantees.
