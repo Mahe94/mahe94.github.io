@@ -192,7 +192,7 @@
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
           {%- if entry.summary %}
-            <a href="{{ entry.summary | relative_url }}">Summary for different audiences</a>
+            <a href="{{ entry.summary | relative_url }}" class="btn btn-sm z-depth-0" role="button">Summary for different audiences</a>
           {%- endif %}
           </div>
           {% if site.badges %}
