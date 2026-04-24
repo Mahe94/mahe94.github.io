@@ -83,7 +83,10 @@ blockquote {
   background-color: var(--global-card-bg-color);
 
   img {
-    width: auto;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
   }
 
   .card-title {
