@@ -1,81 +1,59 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
+title: Subset Sum Algorithms
+description: Faster algorithms and structural insights for subset-sum-type problems
+img: assets/img/SSUM.jpg
+importance: 2
 category: Work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Subset sum is one of the most fundamental problems in theoretical computer science.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Given numbers \(a_1,\ldots,a_n\) and a target \(t\), the goal is to decide whether some subset of the numbers adds up exactly to \(t\). Despite its simple statement, subset sum sits at the intersection of algorithms, complexity theory, cryptography, and lattice problems.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+This project studies faster algorithms and structural variants of subset-sum-type problems.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Motivation
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+Subset sum is a central benchmark for understanding the limits of algorithmic techniques. It is also deeply connected to cryptography, especially to problems used in post-quantum cryptography and lattice-based constructions.
 
+A major goal is to understand when subset sum is genuinely hard and when additional structure can be exploited to design faster algorithms.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Core Questions
 
+This project focuses on questions such as:
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- Can we design faster algorithms for dense subset sum instances?
+- What happens when many different subsets have the same sum?
+- Can lattice techniques improve subset-sum algorithms?
+- How do subset-sum variants behave in modular settings?
+- What are the right lower-bound assumptions for these problems?
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+## Research Direction
+
+The project studies several related problems, including:
+
+- Classical subset sum
+- Modular subset sum
+- Equal subset sum
+- Pigeonhole equal sums
+- Projection subset sum
+- Lattice-based formulations of subset-sum problems
+
+The broader aim is to develop a clearer algorithmic picture of subset sum and its variants, especially in regimes that are important for cryptography and fine-grained complexity.
+
+## Results
+
+This project includes results on faster algorithms for subset-sum-type problems, especially in settings with many collisions or strong pigeonhole structure.
+
+### Faster algorithms for equal sums
+
+We study variants where the goal is to find two different subsets with the same sum. These problems naturally arise when the number of possible subsets exceeds the number of possible sums.
+
+### Algorithms for dense regimes
+
+We give improved algorithms in parameter regimes where many solutions or collisions are guaranteed to exist.
+
+### Modular variants
+
+We also study modular versions of subset-sum-type problems, where sums are considered modulo an integer. These variants are important both algorithmically and cryptographically.
