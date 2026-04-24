@@ -3,7 +3,7 @@ layout: page
 title: Incompressible Cryptography
 description: Cryptographic systems where ciphertexts cannot be meaningfully compressed
 img: assets/img/IC.jpg
-importance: 2
+importance: 3
 category: Work
 ---
 
