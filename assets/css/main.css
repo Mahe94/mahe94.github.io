@@ -492,6 +492,9 @@ footer.sticky-bottom {
 }
 .projects .card img {
   width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
 }
 .projects .card-item {
   width: auto;
