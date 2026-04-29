@@ -3,7 +3,7 @@ layout: page
 title: Cryptanalysis of Practical Symmetric-Key Cryptosystems
 description: Distinguishers and structural analysis of practical symmetric-key designs
 img: assets/img/symmetric-key.png
-importance: 4
+importance: 5
 category: Work
 ---
 
