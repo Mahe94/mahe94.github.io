@@ -3,7 +3,7 @@ layout: page
 title: Lattice Problems and Geometry of Integer Lattices
 description: Structural, algorithmic, and complexity-theoretic questions in lattice theory
 img: assets/img/lattices.png
-importance: 5
+importance: 6
 category: Work
 ---
 
