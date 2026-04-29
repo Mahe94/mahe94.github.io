@@ -3,7 +3,7 @@ layout: page
 title: Subset Sum Algorithms
 description: Faster algorithms and structural insights for subset-sum-type problems
 img: assets/img/SSUM.png
-importance: 2
+importance: 3
 category: Work
 ---
 
