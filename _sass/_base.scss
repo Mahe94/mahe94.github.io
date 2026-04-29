@@ -518,8 +518,8 @@ footer.sticky-bottom {
     }
 
     img {
-      width: 100%;
-      height: auto;
+      width: 100% !important;
+      height: auto !important;
       object-fit: contain;
       object-position: center;
       display: block;
