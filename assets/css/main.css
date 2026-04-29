@@ -501,8 +501,8 @@ footer.sticky-bottom {
   width: 100%;
 }
 .projects .card-img img {
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: auto !important;
   object-fit: contain;
   object-position: center;
   display: block;
