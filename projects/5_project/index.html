@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>project 5 | Mahesh Sreekumar Rajasree</title>
+    <title>Lattice Problems and Geometry of Integer Lattices | Mahesh Sreekumar Rajasree</title>
     <meta name="author" content="Mahesh Sreekumar Rajasree">
-    <meta name="description" content="a project with a background image">
+    <meta name="description" content="Structural, algorithmic, and complexity-theoretic questions in lattice theory">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -152,169 +152,115 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">project 5</h1>
-            <p class="post-description">a project with a background image</p>
+            <h1 class="post-title">Lattice Problems and Geometry of Integer Lattices</h1>
+            <p class="post-description">Structural, algorithmic, and complexity-theoretic questions in lattice theory</p>
           </header>
 
           <article>
-            <p>Every project has a beautiful feature showcase page.
-It’s easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.</p>
+            <p>Lattices are fundamental mathematical objects with deep connections to geometry, number theory, algorithms, complexity theory, and cryptography.</p>
 
-<p>To give your project a background in the portfolio page, just add the img tag to the front matter like so:</p>
+<p>A lattice is a discrete additive subgroup of Euclidean space. Equivalently, it can be viewed as the set of all integer linear combinations of a collection of basis vectors. Despite this simple definition, lattices exhibit rich geometric structure and give rise to many difficult algorithmic problems.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-layout: page
-title: project
-description: a project with a background image
-img: /assets/img/12.jpg
----
-</code></pre></div></div>
+<p>This project studies structural and algorithmic questions about lattices, especially integer lattices such as (\mathbb{Z}^n), lattice bases, sublattices, and computational problems such as the Closest Vector Problem. The broader aim is to understand how geometric properties of lattices influence algorithmic hardness, reductions between lattice problems, and the structure of lattice bases.</p>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+<h2 id="motivation">Motivation</h2>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/1-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/1-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/1-1400.webp"></source>
-    
+<p>Lattices play a central role in modern theoretical computer science.</p>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/1.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+<p>They are used in the design of post-quantum cryptographic schemes, in algorithms for integer programming and number theory, and in the study of computational hardness. Many important lattice problems are believed to be difficult even for quantum computers, which is one of the reasons lattices form a major foundation of post-quantum cryptography.</p>
 
-  </picture>
+<p>At the same time, lattices are also beautiful geometric objects. A lattice basis may look very different from another basis of the same lattice, and the geometry of these bases can strongly affect the complexity of algorithmic tasks. Understanding which bases exist, how short or long they can be, and how they relate to each other is a fundamental question in lattice theory.</p>
 
-</figure>
+<p>This project investigates such questions from both structural and computational viewpoints. The goal is to understand not only how hard lattice problems are, but also what the internal geometry of lattices reveals about these problems.</p>
 
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+<h2 id="core-questions">Core Questions</h2>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/3-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/3-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/3-1400.webp"></source>
-    
+<p>This project focuses on questions such as:</p>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/3.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+<ul>
+  <li>What structural properties do bases of (\mathbb{Z}^n) satisfy?</li>
+  <li>When can a given integer vector be extended to a basis of (\mathbb{Z}^n)?</li>
+  <li>How short can the remaining basis vectors be made after fixing one vector?</li>
+  <li>How are sublattices related to classical lattice problems such as the Closest Vector Problem?</li>
+  <li>Can new lattice problems be reduced to well-studied problems such as CVP?</li>
+  <li>What is the computational complexity of finding sublattices satisfying geometric constraints?</li>
+  <li>How do lattice-theoretic properties interact with subset-sum-type and integer-combination problems?</li>
+</ul>
 
-  </picture>
+<h2 id="research-direction">Research Direction</h2>
 
-</figure>
+<p>The project studies several themes in lattice theory and lattice algorithms, including:</p>
 
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+<ul>
+  <li>Bases of the integer lattice (\mathbb{Z}^n)</li>
+  <li>Primitive integer vectors and unimodular matrices</li>
+  <li>Structural properties of lattice bases</li>
+  <li>Sublattice problems</li>
+  <li>The Maximum Distance Sublattice Problem</li>
+  <li>Connections between sublattice problems and the Closest Vector Problem</li>
+  <li>Geometric and algebraic methods in lattice theory</li>
+  <li>Algorithmic questions related to integer combinations and subset-sum-type problems</li>
+</ul>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/5-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/5-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/5-1400.webp"></source>
-    
+<p>The broader aim is to develop a clearer understanding of the relationship between the geometry of lattice bases and the complexity of computational lattice problems.</p>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+<h2 id="results">Results</h2>
 
-  </picture>
+<p>This project includes works on both structural lattice theory and computational lattice problems.</p>
 
-</figure>
+<h3 id="bases-of-mathbbzn">Bases of (\mathbb{Z}^n)</h3>
 
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+<p>The integer lattice (\mathbb{Z}^n) is one of the most basic and important lattices. However, even for this lattice, there are interesting structural questions about its possible bases.</p>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/5-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/5-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/5-1400.webp"></source>
-    
+<p>One line of work studies bases of (\mathbb{Z}^n), with a focus on how integer vectors can appear inside unimodular bases. Such questions are closely related to primitive vectors, unimodular matrices, and the geometry of integer bases.</p>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+<p>The motivation is to understand how constrained a lattice basis can be when one or more of its vectors are fixed in advance. This type of question lies at the intersection of elementary lattice theory, integer linear algebra, and the geometry of numbers.</p>
 
-  </picture>
+<h3 id="maximum-distance-sublattice-problem">Maximum Distance Sublattice Problem</h3>
 
-</figure>
+<p>Another direction studies the Maximum Distance Sublattice Problem.</p>
 
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+<p>Sublattices arise naturally when one restricts a lattice to a smaller-rank or finite-index structure. Understanding the geometry of sublattices is important for both structural lattice theory and computational lattice problems.</p>
 
-<p>You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, <em>bled</em> for your project, and then… you reveal its glory in the next row of images.</p>
+<p>This work studies the relationship between the Maximum Distance Sublattice Problem and the Closest Vector Problem. Since CVP is one of the central computational problems in lattice theory, reductions to or from CVP help clarify the algorithmic complexity of new lattice problems.</p>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <figure>
+<h3 id="closest-vector-problem">Closest Vector Problem</h3>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/6-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/6-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/6-1400.webp"></source>
-    
+<p>The Closest Vector Problem asks, given a lattice and a target point, to find the lattice point closest to the target.</p>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/6.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+<p>CVP is one of the most important lattice problems. It is central in lattice algorithms, computational geometry, and post-quantum cryptography. Understanding how other lattice problems relate to CVP helps identify their computational difficulty and places them within the broader landscape of lattice complexity.</p>
 
-  </picture>
+<p>This project studies CVP through its relationship with sublattice problems, especially problems involving distance constraints and geometric optimization over lattices.</p>
 
-</figure>
+<h3 id="lattice-theory-and-integer-combination-problems">Lattice theory and integer-combination problems</h3>
 
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <figure>
+<p>Lattice problems are closely connected to integer-combination problems such as subset sum and related variants.</p>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/11-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/11-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/11-1400.webp"></source>
-    
+<p>Many subset-sum-type problems can be represented geometrically using lattices, and lattice methods often provide a useful way to understand their structure. Conversely, subset-sum-type questions can lead to interesting lattice instances and geometric problems.</p>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/11.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+<p>This project therefore also explores the boundary between lattice theory, subset-sum-type problems, and integer linear algebra.</p>
 
-  </picture>
+<h2 id="related-publications">Related Publications</h2>
 
-</figure>
+<p>This project includes the following papers and works.</p>
 
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-<p>The code is simple.
-Just wrap your images with <code class="language-plaintext highlighter-rouge">&lt;div class="col-sm"&gt;</code> and place them inside <code class="language-plaintext highlighter-rouge">&lt;div class="row"&gt;</code> (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" rel="external nofollow noopener" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add <code class="language-plaintext highlighter-rouge">img-fluid</code> class to each; for rounded corners and shadows use <code class="language-plaintext highlighter-rouge">rounded</code> and <code class="language-plaintext highlighter-rouge">z-depth-1</code> classes.
-Here’s the code for the last row of images above:</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-content-sm-center"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-8 mt-3 mt-md-0"</span><span class="nt">&gt;</span>
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4 mt-3 mt-md-0"</span><span class="nt">&gt;</span>
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
-
+<ul>
+  <li>
+    <p><strong>On the Maximum Distance Sublattice Problem and Closest Vector Problem</strong><br>
+Rajendra Kumar, Shashank Mehta, and Mahesh Sreekumar Rajasree.<br>
+In <em>26th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing - SYNASC 2024</em>.</p>
+  </li>
+  <li>
+    <p><strong>On the bases of (\mathbb{Z}^n) lattice</strong><br>
+Shashank Mehta and Mahesh Sreekumar Rajasree.<br>
+In <em>24th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing - SYNASC 2022</em>.</p>
+  </li>
+  <li>
+    <p><strong>New Results and Proofs in Lattice Theory</strong><br>
+Mahesh Sreekumar Rajasree.<br>
+MTech Thesis, IIT Kanpur, India, 2023.</p>
+  </li>
+</ul>
 
           </article>
 
