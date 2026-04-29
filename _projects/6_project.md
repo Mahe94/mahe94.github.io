@@ -3,7 +3,7 @@ layout: page
 title: Quantum Cryptography
 description: Quantum-secure primitives, pseudorandomness, and cryptography in quantum models
 img: assets/img/quantum-cryptography.png
-importance: 6
+importance: 2
 category: Work
 ---
 
