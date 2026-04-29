@@ -1,80 +1,103 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Cryptanalysis of Practical Symmetric-Key Cryptosystems
+description: Distinguishers and structural analysis of practical symmetric-key designs
+img: assets/img/symmetric-key.png
+importance: 4
+category: Work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Symmetric-key cryptography is the backbone of modern secure communication.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+It includes block ciphers, stream ciphers, hash functions, authenticated encryption schemes, and permutation-based constructions. These primitives are used everywhere: in secure messaging, internet protocols, embedded devices, lightweight cryptography, and post-quantum secure systems.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+This project studies the security of practical symmetric-key cryptosystems through cryptanalysis. The goal is to understand whether proposed designs behave like ideal cryptographic objects, or whether their internal structure can be exploited to obtain attacks, distinguishers, weak keys, or key-recovery methods.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Motivation
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+A symmetric-key primitive may have a clean and elegant design, but its security depends on the absence of hidden exploitable structure.
 
+Cryptanalysis plays an important role in this process. It tests the security margins of practical designs, identifies weaknesses in reduced-round versions, and develops new techniques that help the community understand why certain constructions are secure or insecure.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+This is especially important for lightweight cryptography, where schemes are designed under strict efficiency constraints. Such constraints often lead to compact internal structures, small-state designs, or carefully optimized nonlinear layers. These features make the schemes efficient, but they also make detailed cryptanalytic evaluation essential.
 
+## Core Questions
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+This project focuses on questions such as:
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+- Can we find distinguishers for reduced-round symmetric-key primitives?
+- Do practical designs contain exploitable nonlinear structures?
+- Can weak keys lead to key-recovery attacks?
+- How hard is it to predict monomials arising from cryptographic Boolean functions?
+- Can zero-sum distinguishers reveal non-random behavior in permutation-based designs?
+- What do these attacks say about the security margin of practical cryptographic schemes?
+
+## Research Direction
+
+The project studies several themes in symmetric-key cryptanalysis, including:
+
+- Cryptanalysis of Keccak and round-reduced Keccak
+- Cryptanalysis of Ascon
+- Weak-key and key-recovery attacks on TinyJAMBU
+- Nonlinear structures in cryptographic permutations
+- Zero-sum distinguishers
+- Monomial prediction problems
+- Algebraic and combinatorial methods in symmetric-key cryptanalysis
+
+The broader aim is to develop a clearer understanding of how structural properties of practical symmetric-key primitives can be used in attacks, and how such analysis can guide the design of more secure cryptosystems.
+
+## Results
+
+This project includes several works on practical symmetric-key cryptanalysis, especially for permutation-based and lightweight cryptographic designs.
+
+### Cryptanalysis of Keccak
+
+Keccak is the permutation-based design underlying SHA-3. We studied the cryptanalysis of reduced-round Keccak, including attacks based on nonlinear structures.
+
+These works investigate how structural properties of Keccak can be used to distinguish reduced-round versions from ideal random behavior. The goal is not to break full SHA-3, but to understand the security margin of the design and the limits of known cryptanalytic techniques.
+
+### Cryptanalysis of Ascon
+
+Ascon is a lightweight authenticated encryption scheme and has become an important design in modern symmetric-key cryptography.
+
+We studied the hardness of monomial prediction and zero-sum distinguishers for Ascon. This line of work examines whether algebraic properties of the primitive can be exploited to obtain distinguishers, and how difficult such attacks are as the number of rounds increases.
+
+### Weak keys and key recovery for TinyJAMBU
+
+TinyJAMBU is a lightweight authenticated encryption scheme designed for constrained environments.
+
+We studied weak keys and key-recovery attacks for TinyJAMBU. This work investigates whether certain classes of keys lead to weaker behavior and whether such weaknesses can be turned into concrete attacks.
+
+### Monomial prediction and algebraic cryptanalysis
+
+Monomial prediction is a technique used to analyze the algebraic behavior of symmetric-key primitives. It studies how certain monomials propagate through the rounds of a cryptographic construction.
+
+This project also studies the complexity of monomial prediction, both from a cryptographic perspective and from a broader computational perspective. Understanding this complexity helps clarify when monomial-prediction-based attacks are feasible and when they become computationally hard.
+
+## Related Publications
+
+This project includes the following papers and works.
+
+- **Cryptanalysis of 1-round KECCAK**  
+  Rajendra Kumar, Mahesh Sreekumar Rajasree, and Hoda AlKhzaimi.  
+  In *AFRICACRYPT 2018*.
+
+- **Cryptanalysis of round-reduced Keccak using non-linear structures**  
+  Mahesh Sreekumar Rajasree.  
+  In *INDOCRYPT 2019*.
+
+- **On the hardness of monomial prediction and zero-sum distinguishers for Ascon**  
+  Pranjal Dutta, Mahesh Sreekumar Rajasree, and Santanu Sarkar.  
+  In *WCC 2022*.
+
+- **Weak-keys and key-recovery attack for TinyJAMBU**  
+  Pranjal Dutta, Mahesh Sreekumar Rajasree, and Santanu Sarkar.  
+  In *Scientific Reports, 2022*.
+
+- **Complexity of Monomial Prediction in Cryptography and Machine Learning**  
+  Pranjal Dutta, Mahesh Sreekumar Rajasree, and Santanu Sarkar.  
+  In *SYNASC 2024*.
+
+- **Analysis of Symmetric-Key Cryptosystems and Subset-Sum Problem**  
+  Mahesh Sreekumar Rajasree.  
+  PhD Thesis, IIT Kanpur, 2023.
