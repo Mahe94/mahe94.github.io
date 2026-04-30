@@ -9,6 +9,12 @@ related_publications: true
 bibliography_query: "@*[project_incompressible=true]"
 ---
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/IC.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 Modern cryptography typically focuses on hiding *information*. Incompressible cryptography takes a different perspective: it asks whether we can design systems where ciphertexts are not only secure, but also inherently **non-compressible**.
 
 Intuitively, a ciphertext is *incompressible* if it cannot be represented using significantly fewer bits without losing essential information. This notion captures a strong form of pseudorandomness and structural complexity: even if an adversary does not learn the plaintext, they also cannot “summarize” or “shrink” the ciphertext in any meaningful way.
