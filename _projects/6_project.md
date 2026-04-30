@@ -5,7 +5,15 @@ description: Quantum-secure primitives, pseudorandomness, and cryptography in qu
 img: assets/img/quantum-cryptography.png
 importance: 2
 category: Work
+related_publications: true
+bibliography_query: "@*[project_quantum=true]"
 ---
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/quantum-cryptography.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 Quantum cryptography studies how cryptographic security changes when computation, information, and adversaries are quantum.
 
@@ -78,21 +86,3 @@ A long-term direction of this project is to understand whether one can construct
 3. they look pseudorandom or maximally mixed to efficient adversaries.
 
 This direction is motivated by the search for quantum analogues of pseudorandom codes and by the broader question of how to combine cryptographic pseudorandomness with quantum error correction.
-
-## Results
-
-This project includes several works and ongoing directions related to quantum-secure cryptography, pseudorandomness, and cryptographic security in quantum models.
-
-### Non-committing encryption in the quantum random oracle model
-
-The manuscript **A Note on Non-Committing Encryption in the Quantum Random Oracle Model** studies the security of non-committing encryption in the QROM. The work revisits classical non-committing encryption techniques and investigates whether they remain secure when the adversary can make quantum superposition queries to the random oracle.
-
-The main purpose of this line of work is to understand how far classical programmable-random-oracle techniques can be pushed in a quantum setting. Since quantum adversaries interact with the oracle in a fundamentally different way, the proof techniques must account for the possibility of superposition queries and the limitations of classical reprogramming arguments.
-
-## Related Publications
-
-This project includes the following papers and works.
-
-- **A Note on Non-Committing Encryption in the Quantum Random Oracle Model**  
-  Anish Banerjee, Shankh Gupta, Venkata Koppula, and Mahesh Sreekumar Rajasree.  
-  Manuscript, 2025.
