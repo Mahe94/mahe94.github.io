@@ -15,14 +15,14 @@ layout: default
 
         {% if page.related_publications %}
 
-        ## Related publications
-        
-        {% if page.bibliography_query %}
-        {% bibliography -f {{ site.scholar.bibliography }} -q {{ page.bibliography_query }} %}
-        {% else %}
-        {% bibliography --cited_in_order %}
-        {% endif %}
-        
+        <h2>References</h2>
+            <div class="publications">
+                {% if page.bibliography_query %}
+                        {% bibliography -f {{ site.scholar.bibliography }} -q {{ page.bibliography_query }} %}
+                {% else %}
+                        {% bibliography --cited_in_order %}
+                {% endif %}
+            </div>
         {% endif %}
 
         </div>
