@@ -210,50 +210,6 @@
   <li>What new techniques are needed to prove security in quantum-access settings?</li>
 </ul>
 
-<h2 id="research-direction">Research Direction</h2>
-
-<p>The project studies several related themes in quantum cryptography and quantum-secure cryptography.</p>
-
-<h3 id="non-committing-encryption-in-quantum-models">Non-committing encryption in quantum models</h3>
-
-<p>Non-committing encryption is a powerful primitive in which ciphertexts can later be explained as encryptions of different messages. This property is useful in secure multiparty computation, simulation-based security, and settings where ciphertext equivocation is essential.</p>
-
-<p>Classically, non-committing encryption has deep connections to the random oracle model and to programmable random oracles. A central question is whether such techniques remain secure when the adversary can query the random oracle in superposition. This leads naturally to the quantum random oracle model, where classical reprogramming techniques must be handled with much greater care.</p>
-
-<p>This project studies whether classical non-committing encryption constructions can be lifted to the quantum random oracle model, and what additional arguments are needed to handle quantum adversaries.</p>
-
-<h3 id="quantum-secure-pseudorandomness">Quantum-secure pseudorandomness</h3>
-
-<p>Pseudorandomness is one of the central ideas in cryptography. In the quantum setting, pseudorandomness becomes richer and more subtle. One can ask whether classical outputs remain pseudorandom to quantum distinguishers, whether quantum states can be pseudorandom, and whether pseudorandom objects can also support error correction or other forms of robustness.</p>
-
-<p>This project investigates pseudorandomness through the lens of pseudorandom codes and related primitives. Pseudorandom codes combine two requirements: their codewords should look random, while still being decodable under noise. This combination is especially interesting from a quantum perspective, because quantum cryptographic constructions often require both hiding and robustness.</p>
-
-<h3 id="pseudorandom-codes-and-oracle-separations">Pseudorandom codes and oracle separations</h3>
-
-<p>Pseudorandom codes are error-correcting codes whose codewords are computationally indistinguishable from random strings. They provide a clean meeting point between coding theory and cryptography.</p>
-
-<p>This project studies the foundations of pseudorandom codes, including black-box separations and limitations of constructing them from general oracle-based assumptions. Such results help clarify whether pseudorandom codes require coding-theoretic hardness assumptions, or whether they can be built from more standard cryptographic assumptions.</p>
-
-<p>These questions are also relevant to quantum cryptography, where one may hope to use pseudorandom-code-like objects as ingredients in robust quantum encodings, quantum pseudorandom codes, or quantum-secure authentication and encryption mechanisms.</p>
-
-<h3 id="quantum-secure-public-key-primitives">Quantum-secure public-key primitives</h3>
-
-<p>Quantum security also affects advanced public-key primitives such as identity-based encryption, hierarchical identity-based encryption, and non-committing variants of these schemes. These primitives are important because they go beyond ordinary encryption and support richer key structures, simulations, or adaptive security guarantees.</p>
-
-<p>This project studies such primitives both as independent cryptographic objects and as possible building blocks for more advanced quantum-secure constructions.</p>
-
-<h3 id="robust-quantum-encodings">Robust quantum encodings</h3>
-
-<p>A long-term direction of this project is to understand whether one can construct quantum encodings that simultaneously satisfy three properties:</p>
-
-<ol>
-  <li>they encode quantum information,</li>
-  <li>they tolerate a meaningful level of noise, and</li>
-  <li>they look pseudorandom or maximally mixed to efficient adversaries.</li>
-</ol>
-
-<p>This direction is motivated by the search for quantum analogues of pseudorandom codes and by the broader question of how to combine cryptographic pseudorandomness with quantum error correction.</p>
-
           </article>
 
         
