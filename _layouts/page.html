@@ -13,4 +13,16 @@ layout: default
             {{ content }}
           </article>
 
+        {% if page.related_publications %}
+
+        ## Related publications
+        
+        {% if page.bibliography_query %}
+        {% bibliography -f {{ site.scholar.bibliography }} -q {{ page.bibliography_query }} %}
+        {% else %}
+        {% bibliography --cited_in_order %}
+        {% endif %}
+        
+        {% endif %}
+
         </div>
