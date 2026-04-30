@@ -5,6 +5,8 @@ description: Cryptographic systems where ciphertexts cannot be meaningfully comp
 img: assets/img/IC.jpg
 importance: 4
 category: Work
+related_publications: true
+bibliography_query: "@*[project_incompressible=true]"
 ---
 
 Modern cryptography typically focuses on hiding *information*. Incompressible cryptography takes a different perspective: it asks whether we can design systems where ciphertexts are not only secure, but also inherently **non-compressible**.
