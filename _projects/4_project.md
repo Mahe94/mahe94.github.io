@@ -81,31 +81,3 @@ We studied weak keys and key-recovery attacks for TinyJAMBU. This work investiga
 Monomial prediction is a technique used to analyze the algebraic behavior of symmetric-key primitives. It studies how certain monomials propagate through the rounds of a cryptographic construction.
 
 This project also studies the complexity of monomial prediction, both from a cryptographic perspective and from a broader computational perspective. Understanding this complexity helps clarify when monomial-prediction-based attacks are feasible and when they become computationally hard.
-
-## Related Publications
-
-This project includes the following papers and works.
-
-- **Cryptanalysis of 1-round KECCAK**  
-  Rajendra Kumar, Mahesh Sreekumar Rajasree, and Hoda AlKhzaimi.  
-  In *AFRICACRYPT 2018*.
-
-- **Cryptanalysis of round-reduced Keccak using non-linear structures**  
-  Mahesh Sreekumar Rajasree.  
-  In *INDOCRYPT 2019*.
-
-- **On the hardness of monomial prediction and zero-sum distinguishers for Ascon**  
-  Pranjal Dutta, Mahesh Sreekumar Rajasree, and Santanu Sarkar.  
-  In *WCC 2022*.
-
-- **Weak-keys and key-recovery attack for TinyJAMBU**  
-  Pranjal Dutta, Mahesh Sreekumar Rajasree, and Santanu Sarkar.  
-  In *Scientific Reports, 2022*.
-
-- **Complexity of Monomial Prediction in Cryptography and Machine Learning**  
-  Pranjal Dutta, Mahesh Sreekumar Rajasree, and Santanu Sarkar.  
-  In *SYNASC 2024*.
-
-- **Analysis of Symmetric-Key Cryptosystems and Subset-Sum Problem**  
-  Mahesh Sreekumar Rajasree.  
-  PhD Thesis, IIT Kanpur, 2023.
