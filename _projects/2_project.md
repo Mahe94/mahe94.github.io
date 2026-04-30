@@ -15,9 +15,9 @@ bibliography_query: "@*[project_incompressible=true]"
     </div>
 </div>
 
-Modern cryptography typically focuses on hiding *information*. Incompressible cryptography takes a different perspective: it asks whether we can design systems where ciphertexts are not only secure, but also inherently **non-compressible**.
+Modern cryptography typically focuses on hiding *information*. Incompressible cryptography takes a different perspective: it asks whether we can design systems where ciphertexts are not only secure, but also inherently **incompressible**.
 
-Intuitively, a ciphertext is *incompressible* if it cannot be represented using significantly fewer bits without losing essential information. This notion captures a strong form of pseudorandomness and structural complexity: even if an adversary does not learn the plaintext, they also cannot “summarize” or “shrink” the ciphertext in any meaningful way.
+Intuitively, a ciphertext is *incompressible* if it cannot be represented using significantly fewer bits while still preserving its cryptographic usefulness. In particular, even if an adversary later receives the secret key, it should not be able to compress a ciphertext into a much shorter form from which the original message can still be meaningfully recovered.
 
 This project develops the theory of incompressible cryptographic primitives, their constructions, and their limitations.
 
@@ -25,13 +25,17 @@ This project develops the theory of incompressible cryptographic primitives, the
 
 Why should ciphertexts be incompressible?
 
-In many modern settings—such as cloud storage, secure outsourcing, and large-scale data systems—compression plays a central role. If encrypted data could be significantly compressed, this may reveal hidden structure or redundancy, potentially weakening security guarantees.
+In many modern settings—such as cloud storage, secure outsourcing, distributed backup systems, and large-scale data management—compression is a natural and powerful tool. Data is often compressed to reduce storage costs, transmission time, or bandwidth usage.
 
-More fundamentally, incompressibility captures a deeper question:
+For encrypted data, however, compression raises a subtle security question. Suppose an adversary obtains a ciphertext today, but does not yet know the secret key. If the adversary can compress the ciphertext into a much shorter string while preserving enough information for future decryption, then it may store only this compressed version. Later, if the secret key is leaked, stolen, or otherwise compromised, the adversary may still be able to recover the original message from the compressed ciphertext.
 
-> Can we design encryption schemes whose outputs behave like *truly random objects* not only statistically, but also structurally?
+Incompressible cryptography is designed to rule out precisely this kind of attack. It asks for encryption schemes where ciphertexts cannot be meaningfully compressed before key compromise. Even if the secret key is revealed after the compression takes place, the compressed ciphertext should not retain enough information to recover the encrypted message.
 
-This connects cryptography with ideas from information theory, complexity theory, and coding theory.
+More fundamentally, incompressibility captures the following question:
+
+> Can we design encryption schemes whose ciphertexts remain secure even against adversaries who first compress the ciphertext and only later obtain the secret key?
+
+This perspective is different from standard encryption security. Standard secrecy usually protects the message as long as the secret key remains hidden. Incompressibility asks for a stronger, post-compromise guarantee: the ciphertext should be so information-rich, or structurally resistant to compression, that an adversary must essentially store the whole ciphertext in order to benefit from a future key leakage.
 
 ## Core Ideas
 
