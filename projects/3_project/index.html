@@ -157,7 +157,28 @@
           </header>
 
           <article>
-            <p>Subset sum is one of the most fundamental problems in theoretical computer science.</p>
+            <div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/SSUM-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/SSUM-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/SSUM-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/SSUM.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<p>Subset sum is one of the most fundamental problems in theoretical computer science.</p>
 
 <p>Given numbers (a_1,\ldots,a_n) and a target (t), the goal is to decide whether some subset of the numbers adds up exactly to (t). Despite its simple statement, subset sum sits at the intersection of algorithms, complexity theory, cryptography, and lattice problems.</p>
 
@@ -196,24 +217,282 @@
 
 <p>The broader aim is to develop a clearer algorithmic picture of subset sum and its variants, especially in regimes that are important for cryptography and fine-grained complexity.</p>
 
-<h2 id="results">Results</h2>
-
-<p>This project includes results on faster algorithms for subset-sum-type problems, especially in settings with many collisions or strong pigeonhole structure.</p>
-
-<h3 id="faster-algorithms-for-equal-sums">Faster algorithms for equal sums</h3>
-
-<p>We study variants where the goal is to find two different subsets with the same sum. These problems naturally arise when the number of possible subsets exceeds the number of possible sums.</p>
-
-<h3 id="algorithms-for-dense-regimes">Algorithms for dense regimes</h3>
-
-<p>We give improved algorithms in parameter regimes where many solutions or collisions are guaranteed to exist.</p>
-
-<h3 id="modular-variants">Modular variants</h3>
-
-<p>We also study modular versions of subset-sum-type problems, where sums are considered modulo an integer. These variants are important both algorithmically and cryptographically.</p>
-
           </article>
 
+        
+
+        <h2>References</h2>
+            <div class="publications">
+                
+                        <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <!-- <div class="col-sm-2 abbr"></div> -->
+
+        <!-- Entry bib key -->
+        <div id="bhati2026AvgPHES" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Pigeonhole Equal Subset Sum: Subexponential Algorithm, Tight Lower Bounds and Average-Case Analysis</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Deepak Bhati, <a href="https://sites.google.com/view/pduttashomepage" rel="external nofollow noopener" target="_blank">Pranjal Dutta</a>, <a href="https://cispa.de/en/people/c01anjo" rel="external nofollow noopener" target="_blank">Antoine Joux</a>, and
+          <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Mahesh Sreekumar Rajasree, Karol Węgrzycki' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Submission</em>, 2026
+        </div>
+        <div class="periodical">
+          
+        </div>
+        <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <!-- <div class="col-sm-2 abbr"></div> -->
+
+        <!-- Entry bib key -->
+        <div id="bhati2026WPHES" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Weak Pigeonhole Equal-Sums made Simpler and Faster</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Deepak Bhati, <a href="https://sites.google.com/view/pduttashomepage" rel="external nofollow noopener" target="_blank">Pranjal Dutta</a>, <a href="https://cispa.de/en/people/c01anjo" rel="external nofollow noopener" target="_blank">Antoine Joux</a>, and
+          <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Mahesh Sreekumar Rajasree, Karol Węgrzycki' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Submission</em>, 2026
+        </div>
+        <div class="periodical">
+          
+        </div>
+        <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <!-- <div class="col-sm-2 abbr"></div> -->
+
+        <!-- Entry bib key -->
+        <div id="dutta2023unbounded" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">On the Variants of Subset Sum: Projected and Unbounded</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://sites.google.com/view/pduttashomepage" rel="external nofollow noopener" target="_blank">Pranjal Dutta</a>, and <em>Mahesh Sreekumar Rajasree</em>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In 25th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing - SYNASC</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+        <!-- Links/Buttons -->
+          <div class="links">
+            <a href="/assets/pdf/SYNASC_2023.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="https://ieeexplore.ieee.org/document/10522690" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="/assets/pdf/slides/SYNASC2023.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <!-- <div class="col-sm-2 abbr"></div> -->
+
+        <!-- Entry bib key -->
+        <div id="dutta2021efficient" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Efficient reductions and algorithms for variants of Subset Sum</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://sites.google.com/view/pduttashomepage" rel="external nofollow noopener" target="_blank">Pranjal Dutta</a>, and <em>Mahesh Sreekumar Rajasree</em>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv</em>, 2021
+        </div>
+        <div class="periodical">
+          
+        </div>
+        <!-- Links/Buttons -->
+          <div class="links">
+            <a href="https://arxiv.org/pdf/2112.11020" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <!-- <div class="col-sm-2 abbr"></div> -->
+
+        <!-- Entry bib key -->
+        <div id="dutta2022algebraic" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Algebraic Algorithms for Variants of Subset Sum</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://sites.google.com/view/pduttashomepage" rel="external nofollow noopener" target="_blank">Pranjal Dutta</a>, and <em>Mahesh Sreekumar Rajasree</em>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Conference on Algorithms and Discrete Applied Mathematics - CALDAM</em>, 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+        <!-- Award block -->
+            <div class="font-weight-bold">Best Student Presentation Award</div>
+<!-- Links/Buttons -->
+          <div class="links">
+            <a href="/assets/pdf/CALDAM_2022.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="https://link.springer.com/chapter/10.1007/978-3-030-95018-7_19" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <!-- <div class="col-sm-2 abbr"></div> -->
+
+        <!-- Entry bib key -->
+        <div id="dutta2023efficient" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Efficient Reductions and Algorithms for Subset Product</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://sites.google.com/view/pduttashomepage" rel="external nofollow noopener" target="_blank">Pranjal Dutta</a>, and <em>Mahesh Sreekumar Rajasree</em>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Conference on Algorithms and Discrete Applied Mathematics - CALDAM</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+        <!-- Award block -->
+            <div class="font-weight-bold">Best Student Presentation Award</div>
+<!-- Links/Buttons -->
+          <div class="links">
+            <a href="/assets/pdf/CALDAM_2023.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="https://link.springer.com/chapter/10.1007/978-3-031-25211-2_1" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="/assets/pdf/slides/CALDAM2023.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+</ol>
+                
+            </div>
         
 
         </div>
