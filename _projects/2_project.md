@@ -52,25 +52,3 @@ Incompressible cryptography lies at the intersection of several areas:
 - Computational complexity (lower bounds and barriers)
 
 A key goal is to understand both **what can be built** and **what cannot be built** under standard assumptions.
-
-## Results
-
-This project has led to several results, including:
-
-### Constructions
-
-We construct encryption schemes that achieve incompressibility under appropriate assumptions, showing that strong forms of structural randomness are achievable in cryptography.
-
-### Barriers
-
-We also identify fundamental limitations, demonstrating that certain natural approaches to incompressibility cannot work.  
-These barriers help clarify the exact power required to achieve incompressible ciphertexts.
-
-### Advanced security guarantees
-
-We study incompressibility in combination with stronger notions such as:
-
-- Leakage resilience  
-- Key-dependent message (KDM) security  
-
-These results show that incompressibility can coexist with rich and demanding cryptographic guarantees.
