@@ -5,7 +5,15 @@ description: Faster algorithms and structural insights for subset-sum-type probl
 img: assets/img/SSUM.png
 importance: 3
 category: Work
+related_publications: true
+bibliography_query: "@*[project_subsetsum=true]"
 ---
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/SSUM.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 Subset sum is one of the most fundamental problems in theoretical computer science.
 
@@ -41,19 +49,3 @@ The project studies several related problems, including:
 - Lattice-based formulations of subset-sum problems
 
 The broader aim is to develop a clearer algorithmic picture of subset sum and its variants, especially in regimes that are important for cryptography and fine-grained complexity.
-
-## Results
-
-This project includes results on faster algorithms for subset-sum-type problems, especially in settings with many collisions or strong pigeonhole structure.
-
-### Faster algorithms for equal sums
-
-We study variants where the goal is to find two different subsets with the same sum. These problems naturally arise when the number of possible subsets exceeds the number of possible sums.
-
-### Algorithms for dense regimes
-
-We give improved algorithms in parameter regimes where many solutions or collisions are guaranteed to exist.
-
-### Modular variants
-
-We also study modular versions of subset-sum-type problems, where sums are considered modulo an integer. These variants are important both algorithmically and cryptographically.
