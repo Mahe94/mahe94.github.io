@@ -8,6 +8,8 @@ nav: true
 nav_order: 6
 ---
 
+This page collects some of my answers on Cryptography Stack Exchange and Mathematics Stack Exchange. I used these platforms to clarify ideas, explain definitions, work through proof techniques, and discuss questions that arise naturally in cryptography, lattices, complexity theory, and related areas. The answers linked here are informal, but I hope they are useful to students and researchers looking for accessible explanations of technical concepts.
+
 * Cryptography
     * <a href="https://crypto.stackexchange.com/a/114902/116220">How to complete security definition</a>
     * <a href="https://crypto.stackexchange.com/a/114755/116220">CPA Security: Does there exist a ciphertext shared by 2 or more plaintexts in randomized encryption</a>
