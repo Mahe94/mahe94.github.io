@@ -178,17 +178,13 @@
     </div>
 </div>
 
-<p>Symmetric-key cryptography is the backbone of modern secure communication.</p>
-
-<p>It includes block ciphers, stream ciphers, hash functions, authenticated encryption schemes, and permutation-based constructions. These primitives are used everywhere: in secure messaging, internet protocols, embedded devices, lightweight cryptography, and post-quantum secure systems.</p>
+<p>Symmetric-key cryptography is the backbone of modern secure communication.It includes block ciphers, stream ciphers, hash functions, authenticated encryption schemes, and permutation-based constructions. These primitives are used everywhere: in secure messaging, internet protocols, embedded devices, lightweight cryptography, and post-quantum secure systems.</p>
 
 <p>This project studies the security of practical symmetric-key cryptosystems through cryptanalysis. The goal is to understand whether proposed designs behave like ideal cryptographic objects, or whether their internal structure can be exploited to obtain attacks, distinguishers, weak keys, or key-recovery methods.</p>
 
 <h2 id="motivation">Motivation</h2>
 
-<p>A symmetric-key primitive may have a clean and elegant design, but its security depends on the absence of hidden exploitable structure.</p>
-
-<p>Cryptanalysis plays an important role in this process. It tests the security margins of practical designs, identifies weaknesses in reduced-round versions, and develops new techniques that help the community understand why certain constructions are secure or insecure.</p>
+<p>A symmetric-key primitive may have a clean and elegant design, but its security depends on the absence of hidden exploitable structure. Cryptanalysis plays an important role in this process. It tests the security margins of practical designs, identifies weaknesses in reduced-round versions, and develops new techniques that help the community understand why certain constructions are secure or insecure.</p>
 
 <p>This is especially important for lightweight cryptography, where schemes are designed under strict efficiency constraints. Such constraints often lead to compact internal structures, small-state designs, or carefully optimized nonlinear layers. These features make the schemes efficient, but they also make detailed cryptanalytic evaluation essential.</p>
 
@@ -220,34 +216,6 @@
 </ul>
 
 <p>The broader aim is to develop a clearer understanding of how structural properties of practical symmetric-key primitives can be used in attacks, and how such analysis can guide the design of more secure cryptosystems.</p>
-
-<h2 id="results">Results</h2>
-
-<p>This project includes several works on practical symmetric-key cryptanalysis, especially for permutation-based and lightweight cryptographic designs.</p>
-
-<h3 id="cryptanalysis-of-keccak">Cryptanalysis of Keccak</h3>
-
-<p>Keccak is the permutation-based design underlying SHA-3. We studied the cryptanalysis of reduced-round Keccak, including attacks based on nonlinear structures.</p>
-
-<p>These works investigate how structural properties of Keccak can be used to distinguish reduced-round versions from ideal random behavior. The goal is not to break full SHA-3, but to understand the security margin of the design and the limits of known cryptanalytic techniques.</p>
-
-<h3 id="cryptanalysis-of-ascon">Cryptanalysis of Ascon</h3>
-
-<p>Ascon is a lightweight authenticated encryption scheme and has become an important design in modern symmetric-key cryptography.</p>
-
-<p>We studied the hardness of monomial prediction and zero-sum distinguishers for Ascon. This line of work examines whether algebraic properties of the primitive can be exploited to obtain distinguishers, and how difficult such attacks are as the number of rounds increases.</p>
-
-<h3 id="weak-keys-and-key-recovery-for-tinyjambu">Weak keys and key recovery for TinyJAMBU</h3>
-
-<p>TinyJAMBU is a lightweight authenticated encryption scheme designed for constrained environments.</p>
-
-<p>We studied weak keys and key-recovery attacks for TinyJAMBU. This work investigates whether certain classes of keys lead to weaker behavior and whether such weaknesses can be turned into concrete attacks.</p>
-
-<h3 id="monomial-prediction-and-algebraic-cryptanalysis">Monomial prediction and algebraic cryptanalysis</h3>
-
-<p>Monomial prediction is a technique used to analyze the algebraic behavior of symmetric-key primitives. It studies how certain monomials propagate through the rounds of a cryptographic construction.</p>
-
-<p>This project also studies the complexity of monomial prediction, both from a cryptographic perspective and from a broader computational perspective. Understanding this complexity helps clarify when monomial-prediction-based attacks are feasible and when they become computationally hard.</p>
 
           </article>
 
