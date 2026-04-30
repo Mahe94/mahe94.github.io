@@ -6,7 +6,7 @@ img: assets/img/LLM.png
 importance: 1
 category: Work
 related_publications: true
-bibliography_query: "@*[project_LLM=true]"
+bibliography_query: "@*[project_llm=true]"
 ---
 
 <div class="row mt-3">
