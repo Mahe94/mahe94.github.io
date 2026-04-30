@@ -308,15 +308,35 @@ However, as the day progressed, a less pleasant task awaited me. It was notified
   <script async src="https://badge.dimensions.ai/badge.js"></script>
 
     <!-- MathJax -->
-  <script type="text/javascript">
-    window.MathJax = {
-      tex: {
-        tags: 'ams'
+<script>
+  window.MathJax = {
+    tex: {
+      tags: 'ams',
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],
+      packages: {'[+]': ['ams']},
+      macros: {
+        Z: "\\mathbb{Z}",
+        R: "\\mathbb{R}",
+        Q: "\\mathbb{Q}",
+        N: "\\mathbb{N}",
+        F: "\\mathbb{F}",
+        L: "\\mathcal{L}",
+        basis: "\\mathbf{b}",
+        norm: ["\\left\\lVert #1 \\right\\rVert", 1],
+        inner: ["\\left\\langle #1, #2 \\right\\rangle", 2]
       }
-    };
-  </script>
-  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
-  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    },
+    options: {
+      skipHtmlTags: [
+        'script', 'noscript', 'style', 'textarea', 'pre', 'code'
+      ]
+    }
+  };
+</script>
+
+<script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js">
+</script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCTSHLJEXH"></script>
