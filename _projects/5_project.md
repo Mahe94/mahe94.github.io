@@ -5,7 +5,15 @@ description: Structural, algorithmic, and complexity-theoretic questions in latt
 img: assets/img/lattices.png
 importance: 6
 category: Work
+related_publications: true
+bibliography_query: "@*[project_lattice=true]"
 ---
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/lattices.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 Lattices are fundamental mathematical objects with deep connections to geometry, number theory, algorithms, complexity theory, and cryptography.
 
