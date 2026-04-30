@@ -157,7 +157,28 @@
           </header>
 
           <article>
-            <p>Modern cryptography typically focuses on hiding <em>information</em>. Incompressible cryptography takes a different perspective: it asks whether we can design systems where ciphertexts are not only secure, but also inherently <strong>non-compressible</strong>.</p>
+            <div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/IC-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/IC-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/IC-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/IC.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<p>Modern cryptography typically focuses on hiding <em>information</em>. Incompressible cryptography takes a different perspective: it asks whether we can design systems where ciphertexts are not only secure, but also inherently <strong>non-compressible</strong>.</p>
 
 <p>Intuitively, a ciphertext is <em>incompressible</em> if it cannot be represented using significantly fewer bits without losing essential information. This notion captures a strong form of pseudorandomness and structural complexity: even if an adversary does not learn the plaintext, they also cannot “summarize” or “shrink” the ciphertext in any meaningful way.</p>
 
