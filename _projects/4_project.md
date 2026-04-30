@@ -5,7 +5,15 @@ description: Distinguishers and structural analysis of practical symmetric-key d
 img: assets/img/symmetric-key.png
 importance: 5
 category: Work
+related_publications: true
+bibliography_query: "@*[project_symmetric=true]"
 ---
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/symmetric-key.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 Symmetric-key cryptography is the backbone of modern secure communication.
 
