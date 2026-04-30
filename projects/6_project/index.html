@@ -157,7 +157,28 @@
           </header>
 
           <article>
-            <p>Quantum cryptography studies how cryptographic security changes when computation, information, and adversaries are quantum.</p>
+            <div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/quantum-cryptography-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/quantum-cryptography-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/quantum-cryptography-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/quantum-cryptography.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<p>Quantum cryptography studies how cryptographic security changes when computation, information, and adversaries are quantum.</p>
 
 <p>It includes cryptographic schemes secure against quantum computers, security proofs in quantum oracle models, quantum analogues of classical primitives, and new objects that use quantum states as part of the construction itself. These questions are central to the long-term security of cryptography, especially as quantum algorithms challenge many classical assumptions and force us to revisit the foundations of cryptographic security.</p>
 
@@ -233,29 +254,16 @@
 
 <p>This direction is motivated by the search for quantum analogues of pseudorandom codes and by the broader question of how to combine cryptographic pseudorandomness with quantum error correction.</p>
 
-<h2 id="results">Results</h2>
-
-<p>This project includes several works and ongoing directions related to quantum-secure cryptography, pseudorandomness, and cryptographic security in quantum models.</p>
-
-<h3 id="non-committing-encryption-in-the-quantum-random-oracle-model">Non-committing encryption in the quantum random oracle model</h3>
-
-<p>The manuscript <strong>A Note on Non-Committing Encryption in the Quantum Random Oracle Model</strong> studies the security of non-committing encryption in the QROM. The work revisits classical non-committing encryption techniques and investigates whether they remain secure when the adversary can make quantum superposition queries to the random oracle.</p>
-
-<p>The main purpose of this line of work is to understand how far classical programmable-random-oracle techniques can be pushed in a quantum setting. Since quantum adversaries interact with the oracle in a fundamentally different way, the proof techniques must account for the possibility of superposition queries and the limitations of classical reprogramming arguments.</p>
-
-<h2 id="related-publications">Related Publications</h2>
-
-<p>This project includes the following papers and works.</p>
-
-<ul>
-  <li>
-<strong>A Note on Non-Committing Encryption in the Quantum Random Oracle Model</strong><br>
-Anish Banerjee, Shankh Gupta, Venkata Koppula, and Mahesh Sreekumar Rajasree.<br>
-Manuscript, 2025.</li>
-</ul>
-
           </article>
 
+        
+
+        <h2>References</h2>
+            <div class="publications">
+                
+                        <ol class="bibliography"></ol>
+                
+            </div>
         
 
         </div>
