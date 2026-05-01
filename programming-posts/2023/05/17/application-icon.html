@@ -304,8 +304,9 @@ To make the script run automatically on start up, we just need to run <code clas
   window.MathJax = {
     tex: {
       tags: 'ams',
-      inlineMath: [['\\(', '\\)']],
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
       displayMath: [['\\[', '\\]'], ['$$', '$$']],
+      processEscapes: true,
       packages: {'[+]': ['ams']},
       macros: {
         Z: "\\mathbb{Z}",

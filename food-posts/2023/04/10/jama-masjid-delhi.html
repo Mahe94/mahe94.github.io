@@ -282,8 +282,9 @@ To conclude our extraordinary food trip, we decided to treat ourselves to a trad
   window.MathJax = {
     tex: {
       tags: 'ams',
-      inlineMath: [['\\(', '\\)']],
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
       displayMath: [['\\[', '\\]'], ['$$', '$$']],
+      processEscapes: true,
       packages: {'[+]': ['ams']},
       macros: {
         Z: "\\mathbb{Z}",

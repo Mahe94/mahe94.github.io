@@ -312,8 +312,9 @@ However, as the day progressed, a less pleasant task awaited me. It was notified
   window.MathJax = {
     tex: {
       tags: 'ams',
-      inlineMath: [['\\(', '\\)']],
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
       displayMath: [['\\[', '\\]'], ['$$', '$$']],
+      processEscapes: true,
       packages: {'[+]': ['ams']},
       macros: {
         Z: "\\mathbb{Z}",

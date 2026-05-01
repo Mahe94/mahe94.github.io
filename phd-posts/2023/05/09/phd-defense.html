@@ -277,8 +277,9 @@ With little time left to prepare, I decided to reuse the slides from my Open sem
   window.MathJax = {
     tex: {
       tags: 'ams',
-      inlineMath: [['\\(', '\\)']],
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
       displayMath: [['\\[', '\\]'], ['$$', '$$']],
+      processEscapes: true,
       packages: {'[+]': ['ams']},
       macros: {
         Z: "\\mathbb{Z}",
