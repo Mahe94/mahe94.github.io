@@ -17,7 +17,7 @@ bibliography_query: "@*[project_subsetsum=true]"
 
 Subset sum is one of the most fundamental problems in theoretical computer science.
 
-Given numbers \(a_1,\ldots,a_n\) and a target \(t\), the goal is to decide whether some subset of the numbers adds up exactly to \(t\). Despite its simple statement, subset sum sits at the intersection of algorithms, complexity theory, cryptography, and lattice problems.
+Given numbers $a_1,\ldots,a_n$ and a target $t$, the goal is to decide whether some subset of the numbers adds up exactly to $t$. Despite its simple statement, subset sum sits at the intersection of algorithms, complexity theory, cryptography, and lattice problems.
 
 This project studies faster algorithms and structural variants of subset-sum-type problems.
 
