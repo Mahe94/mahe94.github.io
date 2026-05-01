@@ -19,7 +19,7 @@ Lattices are fundamental mathematical objects with deep connections to geometry,
 
 A lattice is a discrete additive subgroup of Euclidean space. Equivalently, it can be viewed as the set of all integer linear combinations of a collection of basis vectors. Despite this simple definition, lattices exhibit rich geometric structure and give rise to many difficult algorithmic problems.
 
-This project studies structural and algorithmic questions about lattices, especially integer lattices such as \(\Z^n\), lattice bases, sublattices, and computational problems such as the Closest Vector Problem. The broader aim is to understand how geometric properties of lattices influence algorithmic hardness, reductions between lattice problems, and the structure of lattice bases.
+This project studies structural and algorithmic questions about lattices, especially integer lattices such as $\Z^n$, lattice bases, sublattices, and computational problems such as the Closest Vector Problem. The broader aim is to understand how geometric properties of lattices influence algorithmic hardness, reductions between lattice problems, and the structure of lattice bases.
 
 ## Motivation
 
@@ -35,8 +35,8 @@ This project investigates such questions from both structural and computational 
 
 This project focuses on questions such as:
 
-- What structural properties do bases of \(\Z^n\) satisfy?
-- When can a given integer vector be extended to a basis of \(\Z^n\)?
+- What structural properties do bases of $\Z^n$ satisfy?
+- When can a given integer vector be extended to a basis of $\Z^n$?
 - How short can the remaining basis vectors be made after fixing one vector?
 - How are sublattices related to classical lattice problems such as the Closest Vector Problem?
 - Can new lattice problems be reduced to well-studied problems such as CVP?
@@ -47,7 +47,7 @@ This project focuses on questions such as:
 
 The project studies several themes in lattice theory and lattice algorithms, including:
 
-- Bases of the integer lattice \(\Z^n\)
+- Bases of the integer lattice $\Z^n$
 - Primitive integer vectors and unimodular matrices
 - Structural properties of lattice bases
 - Sublattice problems
