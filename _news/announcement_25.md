@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-"Non-Committing Identity-Based Encryption: Constructions and Applications" accepted in <a href="https://pkc.iacr.org/2025/">PKC 2025</a>!
+"Non-Committing Identity-Based Encryption: Constructions and Applications" accepted at <a href="https://pkc.iacr.org/2025/">PKC 2025</a>!
