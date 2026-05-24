@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Visited <a href="https://www.icts.res.in/">International Center for Theoretical Sciences</a>, Bangalore 
+Research visit to <a href="https://www.icts.res.in/">International Center for Theoretical Sciences</a>, Bangalore, hosted by <a href="https://www.icts.res.in/people/jaikumar-radhakrishnan1">Prof. Jaikumar Radhakrishnan</a>. 
