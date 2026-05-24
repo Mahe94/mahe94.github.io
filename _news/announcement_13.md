@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Co-teaching <a href="https://kumarmadhukar.github.io/courses/col100-summer24/index.html">COL100: Introduction to Computer Science</a> at IIT Delhi
+Co-teaching <a href="https://kumarmadhukar.github.io/courses/col100-summer24/index.html">COL100: Introduction to Computer Science</a> at IIT Delhi.
