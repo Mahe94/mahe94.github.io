@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Submitted PhD Thesis
+Submitted <a href="/assets/bibliography/phd_thesis.pdf">PhD Thesis</a>.
