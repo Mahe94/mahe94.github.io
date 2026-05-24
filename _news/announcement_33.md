@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Visiting <a href="https://www.christianmajenz.info/about-me.html">Prof. Christian Majenz</a> at <a href="https://www.dtu.dk/english/">DTU</a>, Denmark. 
+Research visit at <a href="https://www.dtu.dk/english/">DTU</a>, Denmark, hosted by <a href="https://www.christianmajenz.info/about-me.html">Prof. Christian Majenz</a>.
