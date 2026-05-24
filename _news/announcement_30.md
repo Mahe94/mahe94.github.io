@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-"Separating Pseudorandom Codes from Local Oracles" accepted at <a href="https://tcc.iacr.org/2025/">TCC 2025</a>, Aarhus, Denmark. 
+"Separating Pseudorandom Codes from Local Oracles" accepted at <a href="https://tcc.iacr.org/2025/">TCC 2025</a>! 
