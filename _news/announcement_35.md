@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Visiting <a href="https://www.mimuw.edu.pl/en/">Faculty of Mathematics, Informatics, and Mechanics</a>, University of Warsaw, Poland. 
+Research visit at <a href="https://www.mimuw.edu.pl/en/">Faculty of Mathematics, Informatics, and Mechanics</a>, University of Warsaw, Poland. 
