@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Visiting <a href="https://simons.berkeley.edu/homepage">Simons Institute for the Theory of Computing</a>, Berkeley, US.
+Research visit at <a href="https://simons.berkeley.edu/homepage">Simons Institute for the Theory of Computing</a>, Berkeley, US.
