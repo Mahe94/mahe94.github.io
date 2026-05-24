@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Visited and Talk at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research Lab</a>, Bangalore
+Visited and Talk at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research Lab</a>, Bangalore, hosted by <a href="https://www.microsoft.com/en-us/research/people/satya/">Satya Lokam</a>.
