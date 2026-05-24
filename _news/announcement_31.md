@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Attending <a href="https://tcc.iacr.org/2025/">TCC 2025</a>, Aarhus, Denmark. 
+Attended <a href="https://tcc.iacr.org/2025/">TCC 2025</a>, Aarhus, Denmark. 
