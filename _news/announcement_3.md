@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined <a href="https://home.iitd.ac.in/">IIT Delhi</a> as a Post-Doctoral Fellow.
+Joined <a href="https://home.iitd.ac.in/">IIT Delhi</a> as a post-doctoral fellow in <a href="https://web.iitd.ac.in/~kvenkata/">Prof. Venkata Koppula</a>'s group.
