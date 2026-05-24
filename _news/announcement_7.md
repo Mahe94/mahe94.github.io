@@ -5,4 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Visited <a href="https://trustlab.iitb.ac.in/">TrustLab</a>, IIT Bombay
+Research visit to <a href="https://trustlab.iitb.ac.in/">TrustLab</a>, IIT Bombay, hosted by <a href="https://www.cse.iitb.ac.in/~mp/">Prof. 
+Manoj M. Prabhakaran</a>.
