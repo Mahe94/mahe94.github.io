@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Participation and talk at <a href="https://x.com/Wsusilo/status/1775768358568550566">AICCTP workshop</a>, <a href="https://www.uow.edu.au">University of Wollongong</a>, Australia.
+Participated in and gave a talk at the <a href="https://x.com/Wsusilo/status/1775768358568550566">AICCTP workshop</a>, <a href="https://www.uow.edu.au">University of Wollongong</a>, Australia.

@@ -2,6 +2,8 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+@use "variables" as *;
+
 // Typography
 
 p,
@@ -358,20 +360,247 @@ footer.sticky-bottom {
 
 .cv {
   margin-bottom: 40px;
+  margin-top: 1rem;
 
-  .card {
+  .cv-section {
     background-color: var(--global-card-bg-color);
     border: 1px solid var(--global-divider-color);
+    border-radius: 0.75rem;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding: 1.15rem 1.25rem 1.35rem;
+    margin-bottom: 0.85rem;
+  }
 
-    .list-group-item {
-      background-color: inherit;
-      border-color: var(--global-divider-color);
+  .cv-section:first-child {
+    padding-top: 1.15rem;
+  }
 
-      .badge {
-        color: var(--global-card-bg-color) !important;
-        background-color: var(--global-theme-color) !important;
-      }
+  .cv-section:last-child {
+    padding-bottom: 1.35rem;
+    margin-bottom: 0;
+  }
+
+  .cv-section-title {
+    color: var(--global-text-color);
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .cv-text {
+    color: var(--global-text-color);
+    line-height: 1.7;
+  }
+
+  .cv-map-row {
+    display: grid;
+    grid-template-columns: minmax(160px, 220px) 1fr;
+    gap: 1rem;
+    padding: 0.2rem 0;
+  }
+
+  .cv-map-key {
+    color: var(--global-text-color);
+    font-weight: 600;
+  }
+
+  .cv-map-value {
+    color: var(--global-text-color-light);
+  }
+
+  .cv-list,
+  .cv-item-list,
+  .cv-subitems {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  .cv-list li,
+  .cv-item-list li,
+  .cv-subitems li {
+    color: var(--global-text-color);
+    margin-bottom: 0.45rem;
+  }
+
+  .cv-nested-list > li {
+    margin-bottom: 0.9rem;
+  }
+
+  .cv-timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cv-timeline-item {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 1.25rem;
+    padding: 0.2rem 0 1.2rem;
+  }
+
+  .cv-timeline-item:last-child {
+    padding-bottom: 0;
+  }
+
+  .cv-timeline-period {
+    color: var(--global-text-color-light);
+    font-size: 0.95rem;
+    padding-top: 0.1rem;
+    white-space: nowrap;
+  }
+
+  .cv-entry-title {
+    color: var(--global-text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+
+  .cv-entry-subtitle,
+  .cv-entry-meta,
+  .cv-entry-description {
+    color: var(--global-text-color-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0.2rem;
+  }
+
+  .cv-item-title {
+    color: var(--global-text-color);
+    font-weight: 600;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 767.98px) {
+    .cv-map-row,
+    .cv-timeline-item {
+      grid-template-columns: 1fr;
+      gap: 0.3rem;
     }
+
+    .cv-timeline-period {
+      padding-top: 0;
+    }
+  }
+}
+
+.cv-page-header {
+  align-items: flex-start;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.cv-page-heading {
+  min-width: 0;
+}
+
+.cv-page-heading .post-title {
+  margin-bottom: 0.35rem;
+}
+
+.cv-page-heading .post-description {
+  margin-bottom: 0;
+  max-width: 56rem;
+}
+
+.cv-pdf-link,
+.cv-pdf-link i {
+  color: var(--global-theme-color);
+}
+
+.cv-pdf-link {
+  flex-shrink: 0;
+  font-size: 2.8rem;
+  line-height: 1;
+}
+
+.cv-pdf-link:hover,
+.cv-pdf-link:hover i {
+  color: var(--global-hover-color);
+  text-decoration: none;
+}
+
+.cv-page-layout {
+  align-items: start;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(0, 1fr) 220px;
+}
+
+.cv-main {
+  min-width: 0;
+}
+
+.cv-sidebar {
+  display: block;
+  margin-top: 1rem;
+}
+
+.cv-sidebar-inner {
+  border-left: 1px solid var(--global-divider-color);
+  padding-left: 1rem;
+  position: sticky;
+  top: 88px;
+}
+
+.cv-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.cv-sidebar-nav a {
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.cv-sidebar-nav a:hover {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+@media (max-width: 991.98px) {
+  .cv-page-layout {
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .cv-sidebar {
+    margin-top: 0;
+    order: -1;
+  }
+
+  .cv-sidebar-inner {
+    border-left: 0;
+    border-top: 1px solid var(--global-divider-color);
+    padding-left: 0;
+    padding-top: 1rem;
+    position: static;
+  }
+
+  .cv-sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cv-page-header {
+    flex-direction: column;
+  }
+
+  .cv-pdf-link {
+    align-self: flex-end;
   }
 }
 
@@ -970,4 +1199,3 @@ nav[data-toggle="toc"] {
     top: 0;
   }
 }
-

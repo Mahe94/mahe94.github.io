@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined <a href="https://homecse.iitd.ac.in">CSE, IIT Delhi</a> as a post-doctoral fellow in <a href="https://web.iitd.ac.in/~kvenkata/">Prof. Venkata Koppula</a>'s group.
+Joined <a href="https://homecse.iitd.ac.in">CSE, IIT Delhi</a> as a postdoctoral fellow in <a href="https://web.iitd.ac.in/~kvenkata/">Prof. Venkata Koppula</a>'s group.

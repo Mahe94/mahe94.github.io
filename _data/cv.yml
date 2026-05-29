@@ -1,12 +1,36 @@
-- title: General Information
+- title: Contact Information
   type: map
   contents:
     - name: Full Name
       value: Mahesh Sreekumar Rajasree
-    #- name: Date of Birth
-    #  value: 20th January 1994
-    - name: Languages
-      value: English, Malayalam, Hindi
+    - name: Professional Title
+      value: Postdoctoral Researcher
+    - name: Email
+      value: mahesh.sreekumar-rajasree@cispa.de
+    - name: Location
+      value: Sankt Ingbert, Germany
+
+- title: Professional Summary
+  contents: >
+    Postdoctoral researcher at CISPA Helmholtz Center for Information Security working on
+    public-key cryptography, quantum cryptography, incompressible cryptography, and related
+    areas of theoretical cryptography.
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Postdoctoral Researcher
+      institution: CISPA Helmholtz Center for Information Security
+      year: 2025
+      location: Sankt Ingbert, Germany
+      description:
+        - "Host: Prof. Nico Döttling"
+    - title: Postdoctoral Fellow
+      institution: Indian Institute of Technology Delhi
+      year: 2023
+      location: New Delhi, India
+      description:
+        - "Supervisor: Prof. Venkata Koppula"
 
 - title: Education
   type: time_table
@@ -14,77 +38,72 @@
     - title: PhD & MTech
       institution: Indian Institute of Technology Kanpur
       year: 2016
+      location: Kanpur, India
       description:
-        - Advisor. Prof. Manindra Agrawal
-        - PhD Thesis. Analysis of Symmetric-Key Cryptosystems and Subset-Sum Problem
-        - MTech Thesis. New Results and Proofs in Lattice Theory
-        - CPI. 10/10
+        - "Advisor: Prof. Manindra Agrawal"
+        - "PhD Thesis: Analysis of Symmetric-Key Cryptosystems and the Subset-Sum Problem"
+        - "MTech Thesis: New Results and Proofs in Lattice Theory"
+        - "CPI: 10/10"
 
     - title: BTech
       institution: National Institute of Technology Calicut
       year: 2012
+      location: Calicut, India
       description:
-        - Advisor. Dr. Sumesh T.A.
-        - BTech Thesis. Firewall for Preventing Anonymous Proxy Usage
-        - CPI. 8.89/10
+        - "Advisor: Dr. Sumesh T.A."
+        - "BTech Thesis: Firewall for Preventing Anonymous Proxy Usage"
+        - "CPI: 8.89/10"
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Post-Doctoral Fellow
-      institution: Indian Institute of Technology Delhi
-      year: 2023
-      description:
-        - Supervisor. Prof. Venkata Koppula
-    - title: Post-Doctoral Researcher
-      institution: CISPA Helmholtz Center for Information Security
-      year: 2025
-      description:
-        - Host. Prof. Nico Döttling
-
-
-
-- title: Honors and Awards
+- title: Awards
   type: time_table
   contents:
     - year: 2025
       items:
-        - <a href="https://www.linkedin.com/posts/cispa_congratulations-on-the-tcc-outstanding-ugcPost-7407070985310580737-7lt2?utm_source=share&utm_medium=member_desktop&rcm=ACoAACTz6fQBs27BwJxjG_fen9iqLzLlrNMFprs">Outstanding Paper</a> award in TCC 2025
+        - <a href="https://www.linkedin.com/posts/cispa_congratulations-on-the-tcc-outstanding-ugcPost-7407070985310580737-7lt2?utm_source=share&utm_medium=member_desktop&rcm=ACoAACTz6fQBs27BwJxjG_fen9iqLzLlrNMFprs">Outstanding Paper Award</a> at TCC 2025
     - year: 2023
       items:
-        - <a href="http://acsdm.in/acsdm/awards/">Best Student Presentation</a> award in CALDAM 2023
+        - <a href="http://acsdm.in/acsdm/awards/">Best Student Presentation Award</a> at CALDAM 2023
     - year: 2022
       items:
-        - <a href="http://acsdm.in/acsdm/awards/">Best Student Presentation</a> award in CALDAM 2022
+        - <a href="http://acsdm.in/acsdm/awards/">Best Student Presentation Award</a> at CALDAM 2022
     - year: 2018
       items: 
         - <a href="https://pmrf.in">Prime Minister’s Research Fellowship</a>
     - year: 2017
       items: 
-        - Awarded <a href="https://mahe94.github.io/assets/pdf/excellence_certificate.pdf">Academic Excellence</a>, IIT Kanpur
+        - Awarded <a href="https://mahe94.github.io/assets/pdf/excellence_certificate.pdf">Academic Excellence</a> at IIT Kanpur
 
 - title: Professional Activities
   type: list
   contents:
     - Reviewed papers for INDOCRYPT 2021, MFCS 2023, FSTTCS 2023, Journal of Cryptology, EUROCRYPT 2023, ASIACRYPT 2024, ITCS 2025, EUROCRYPT 2025, PKC 2025, ICALP 2025, CRYPTO 2025, STOC 2026, ICALP 2026.
-    - Part of the Indian team for the <a href="https://iitk.ac.in/institute-and-uow-cloud-computing">Australian-India Cyber and Critical Technology Partnership</a> (AICCTP). The partnership involves activities that facilitate Australia-India research partnerships to strengthen  understanding of ethical frameworks for emerging and critical technologies, and the development of best practices on translating ethical frameworks into practical action and initiatives that encourage the development of technical critical technology standards that advance Australia and India’s interests.
+    - Part of the Indian team for the <a href="https://iitk.ac.in/institute-and-uow-cloud-computing">Australian-India Cyber and Critical Technology Partnership</a> (AICCTP). The partnership supports Australia-India research collaborations on ethical frameworks for emerging and critical technologies, along with best practices and standards that advance the interests of Australia and India.
 
-- title: Volunteer Works
+- title: Volunteer Work
   type: list
   contents:
-    - Lecture delivered at Continuing Education Programme for employees at Centre For Railway Information Systems, IIT Delhi 2024.
-    - Lecture delivered at <a href="https://home.iitd.ac.in/show.php?id=397&in_sections=News">STEM Mentorship Program for High School Girl Students</a>, IIT Delhi 2023.
+    - Delivered a lecture in the Continuing Education Programme for employees at the Centre for Railway Information Systems, IIT Delhi, 2024.
+    - Delivered a lecture in the <a href="https://home.iitd.ac.in/show.php?id=397&in_sections=News">STEM Mentorship Program for High School Girl Students</a>, IIT Delhi, 2023.
     - Volunteer at <a href="https://www.fsttcs.org.in/archives/2017/#oc">Foundations of Software Technology and Theoretical Computer Science</a>, FSTTCS 2017.
     - Volunteer at <a href="https://cse.iitk.ac.in/doc/CSAW'17%20agenda-1%20(002).pdf">Cybersecurity Awareness Week</a> CSAW 2017.
     - Head Coordinator of <a href="https://sigtacs.github.io">Special Interest Group on Theoretical Aspects of Computer Science</a> SIGTACS at IIT Kanpur.
+
+- title: Languages
+  type: list
+  contents:
+    - English
+    - Malayalam
+    - Hindi
   
 - title: Stack Exchange Flairs
   type: list
   contents:
     - <a href="https://crypto.stackexchange.com/users/116220/mahesh-s-r"><img src="https://crypto.stackexchange.com/users/flair/116220.png?theme=clean" width="208" height="58" alt="profile for Mahesh S R at Cryptography Stack Exchange, Q&amp;A for software developers, mathematicians and others interested in cryptography" title="profile for Mahesh S R at Cryptography Stack Exchange, Q&amp;A for software developers, mathematicians and others interested in cryptography"></a> <a href="https://math.stackexchange.com/users/932011/mahesh-s-r"><img src="https://math.stackexchange.com/users/flair/932011.png?theme=clean" width="208" height="58" alt="profile for Mahesh S R at Mathematics Stack Exchange, Q&amp;A for people studying math at any level and professionals in related fields" title="profile for Mahesh S R at Mathematics Stack Exchange, Q&amp;A for people studying math at any level and professionals in related fields"></a> 
     - <a href="https://stackexchange.com/users/21726955"><img src="https://stackexchange.com/users/flair/21726955.png?theme=clean" width="208" height="58" alt="profile for Mahesh S R on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Mahesh S R on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
-    
-- title: Other Interests
+
+- title: Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Playing paino, wall climbing, photography.
+    - Playing piano
+    - Wall climbing
+    - Photography

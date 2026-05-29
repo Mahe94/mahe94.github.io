@@ -54,7 +54,7 @@ This gives a clearer understanding of why pseudorandom codes are difficult to co
 
 ---
 
-## For Researcher
+## For Researchers
 
 This paper studies the assumption complexity of **pseudorandom codes** (PRCs), recently introduced by Christ and Gunn. A PRC is an error-correcting code whose codewords are computationally indistinguishable from uniformly random strings. The decoder uses a secret key and should recover the message even after the codeword is corrupted by noise, while an adversary without the key should not distinguish codewords from random strings.
 
@@ -116,7 +116,7 @@ The main conceptual contribution is the identification of **locality** as a barr
 
 ---
 
-## For Computer Scientist
+## For Computer Scientists
 
 This paper studies the relationship between **error correction**, **pseudorandomness**, and **black-box cryptographic constructions**.
 
@@ -217,7 +217,7 @@ The proof therefore has three main ingredients:
 3. **Oracle-query compilation.**  
    Heavy queries can be learned, light unrelated queries can be simulated, and light related queries occur with small probability.
 
-The paper also proves a complementary positive result for large alphabets. Let the alphabet size be `q = 2^lambda`. The construction uses a `$`-CPA secure secret-key encryption scheme, a Reed–Solomon code over `F_q`, and a pseudorandom permutation over the alphabet symbols.
+The paper also proves a complementary positive result for large alphabets. Let the alphabet size be `q = 2^λ`. The construction uses an IND$-CPA-secure secret-key encryption scheme, a Reed–Solomon code over `F_q`, and a pseudorandom permutation over the alphabet symbols.
 
 The encoder first encrypts the message, then encodes the ciphertext using a Reed–Solomon code, and finally applies a pseudorandom permutation to the symbols. The decoder applies the inverse permutation, Reed–Solomon decodes, and decrypts.
 

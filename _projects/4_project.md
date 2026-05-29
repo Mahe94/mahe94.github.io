@@ -15,7 +15,7 @@ bibliography_query: "@*[project_symmetric=true]"
     </div>
 </div>
 
-Symmetric-key cryptography is the backbone of modern secure communication.It includes block ciphers, stream ciphers, hash functions, authenticated encryption schemes, and permutation-based constructions. These primitives are used everywhere: in secure messaging, internet protocols, embedded devices, lightweight cryptography, and post-quantum secure systems.
+Symmetric-key cryptography is the backbone of modern secure communication. It includes block ciphers, stream ciphers, hash functions, authenticated encryption schemes, and permutation-based constructions. These primitives are used everywhere: in secure messaging, internet protocols, embedded devices, lightweight cryptography, and post-quantum secure systems.
 
 This project studies the security of practical symmetric-key cryptosystems through cryptanalysis. The goal is to understand whether proposed designs behave like ideal cryptographic objects, or whether their internal structure can be exploited to obtain attacks, distinguishers, weak keys, or key-recovery methods.
 
