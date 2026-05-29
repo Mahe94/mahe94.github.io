@@ -224,7 +224,7 @@
 
 <hr>
 
-<h2 id="for-researcher">For Researcher</h2>
+<h2 id="for-researchers">For Researchers</h2>
 
 <p>This paper studies the assumption complexity of <strong>pseudorandom codes</strong> (PRCs), recently introduced by Christ and Gunn. A PRC is an error-correcting code whose codewords are computationally indistinguishable from uniformly random strings. The decoder uses a secret key and should recover the message even after the codeword is corrupted by noise, while an adversary without the key should not distinguish codewords from random strings.</p>
 
@@ -292,7 +292,7 @@
 
 <hr>
 
-<h2 id="for-computer-scientist">For Computer Scientist</h2>
+<h2 id="for-computer-scientists">For Computer Scientists</h2>
 
 <p>This paper studies the relationship between <strong>error correction</strong>, <strong>pseudorandomness</strong>, and <strong>black-box cryptographic constructions</strong>.</p>
 
@@ -396,7 +396,7 @@ Heavy queries can be learned, light unrelated queries can be simulated, and ligh
   </li>
 </ol>
 
-<p>The paper also proves a complementary positive result for large alphabets. Let the alphabet size be <code class="language-plaintext highlighter-rouge">q = 2^lambda</code>. The construction uses a <code class="language-plaintext highlighter-rouge">$</code>-CPA secure secret-key encryption scheme, a Reed–Solomon code over <code class="language-plaintext highlighter-rouge">F_q</code>, and a pseudorandom permutation over the alphabet symbols.</p>
+<p>The paper also proves a complementary positive result for large alphabets. Let the alphabet size be <code class="language-plaintext highlighter-rouge">q = 2^λ</code>. The construction uses an IND$-CPA-secure secret-key encryption scheme, a Reed–Solomon code over <code class="language-plaintext highlighter-rouge">F_q</code>, and a pseudorandom permutation over the alphabet symbols.</p>
 
 <p>The encoder first encrypts the message, then encodes the ciphertext using a Reed–Solomon code, and finally applies a pseudorandom permutation to the symbols. The decoder applies the inverse permutation, Reed–Solomon decodes, and decrypts.</p>
 
