@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Quantum Cryptography
+title: Quantum Algorithms and Cryptography
 description: Quantum-secure primitives, pseudorandomness, and cryptography in quantum models
 img: assets/img/quantum-cryptography.png
-importance: 2
-category: Work
-related_publications: true
+importance: 4
+category: Ongoing Projects
+related_publications: false
 bibliography_query: "@*[project_quantum=true]"
 ---
 
@@ -15,32 +15,33 @@ bibliography_query: "@*[project_quantum=true]"
     </div>
 </div>
 
-Quantum cryptography studies how cryptographic security changes when computation, information, and adversaries are quantum.
+## Introduction
 
-It includes cryptographic schemes secure against quantum computers, security proofs in quantum oracle models, quantum analogues of classical primitives, and new objects that use quantum states as part of the construction itself. These questions are central to the long-term security of cryptography, especially as quantum algorithms challenge many classical assumptions and force us to revisit the foundations of cryptographic security.
+Cryptographic systems are often expected to protect information far longer than the hardware they run on today. A medical archive may need confidentiality for decades. Government records, industrial secrets, legal contracts, and identity systems may outlive several generations of software and key infrastructure. That long time horizon is what makes quantum cryptography urgent: even if large quantum computers are not available today, the data being collected and encrypted now may still need to remain secure when the threat model changes.
 
-This project studies quantum and post-quantum aspects of cryptography, with a focus on quantum-secure definitions, pseudorandomness, non-committing encryption, oracle-model security, and robust encodings of information. The goal is to understand which classical cryptographic techniques remain secure in the presence of quantum adversaries, which ones fail, and what genuinely new possibilities arise from quantum information.
+The first layer of the problem is familiar from post-quantum cryptography. Quantum algorithms threaten several number-theoretic assumptions that supported classical public-key systems for decades, so we need primitives whose security is expected to survive quantum computation. But the second layer is more subtle and, in many ways, more interesting: quantum adversaries are not just faster classical adversaries. They can hold superpositions, manipulate quantum side information, and query oracles in ways that have no direct classical analogue.
+
+That shift changes how cryptographic proofs have to be written. Techniques that work comfortably in the classical random oracle model do not automatically survive in the quantum random oracle model. Definitions of pseudorandomness, simulation, equivocation, and robustness may need to be reformulated when an adversary can interact with a system through quantum access. Even when a primitive looks "classical" on the surface, the surrounding proof technology may need fundamentally different ideas.
+
+This project studies these quantum and post-quantum aspects of cryptography, with a focus on quantum-secure definitions, non-committing encryption, oracle-model security, pseudorandomness, and robust encodings of information. The broader aim is to understand which classical methods remain reliable, which ones fail, and what new tools are needed to build cryptography that still makes sense once quantum computation becomes part of the adversarial landscape.
 
 ## Motivation
 
-Classical cryptography is usually analyzed against classical adversaries. However, quantum computers change this picture in two important ways.
+Quantum computers threaten more than a few legacy assumptions. They also change the way we reason about security proofs, because a quantum adversary can interact with an oracle in ways that no classical attacker can imitate. That makes standard definitions for pseudorandomness, simulation, and non-committing security worth revisiting from the ground up.
 
-First, quantum algorithms can break several number-theoretic assumptions that have traditionally supported public-key cryptography. This motivates the study of post-quantum cryptography: cryptographic schemes whose security is expected to survive even against quantum computation.
-
-Second, quantum adversaries are not merely faster classical adversaries. They can query oracles in superposition, manipulate quantum states, and use interference in ways that have no classical analogue. As a result, security proofs that are valid in the classical random oracle model may not automatically remain valid in the quantum random oracle model. Similarly, classical notions of pseudorandomness, robustness, simulation, and equivocation may need to be reformulated when quantum access or quantum information is involved.
-
-This project is motivated by these foundational issues. It asks how classical cryptographic primitives behave in quantum models, and how one can design cryptographic objects that remain meaningful and secure when adversaries have quantum capabilities.
+The project is motivated by the need for cryptography that remains meaningful under long-term quantum risk, not just cryptography that is efficient under today's threat model.
 
 ## Core Questions
 
-This project focuses on questions such as:
+- Which classical constructions remain secure when the adversary has quantum computation or quantum oracle access?
+- How should non-committing encryption be modeled and proved in the quantum random oracle setting?
+- What forms of pseudorandomness continue to make sense in the presence of quantum information?
+- Can coding-based tools support quantum-secure primitives or quantum-state-based constructions?
+- What new lower bounds or separations are needed to explain the limits of black-box techniques?
 
-- Which classical cryptographic constructions remain secure against quantum adversaries?
-- How should non-committing encryption be analyzed in the quantum random oracle model?
-- Can programmable random-oracle techniques survive quantum superposition queries?
-- What kinds of pseudorandomness are meaningful in the presence of quantum information?
-- Can pseudorandom codes be used as a foundation for quantum-secure or quantum-state-based primitives?
-- What are the barriers to constructing pseudorandom codes from general assumptions?
-- Can one build robust quantum encodings that are simultaneously error-correcting and pseudorandom?
-- How do oracle separations clarify the limitations of black-box cryptographic constructions?
-- What new techniques are needed to prove security in quantum-access settings?
+## Main Results
+
+- **Pseudorandom codes in quantum settings:** Investigates whether coding-based pseudorandom objects can survive quantum access and support stronger quantum-secure constructions.
+- **Robust encodings of quantum information:** Explores encodings that combine error correction with computational pseudorandomness for quantum data.
+- **Quantum random-oracle security for simulation-based primitives:** Studies how non-committing and programmable-oracle techniques must change when adversaries query in superposition.
+- **Oracle separations for quantum cryptography:** Uses black-box separations to identify which classical proof strategies fail once quantum access is allowed.

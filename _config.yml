@@ -203,7 +203,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ['_pages']
+include: ['_pages', '_teachings']
 exclude:
   - bin
   - Gemfile
@@ -320,7 +320,7 @@ external_links:
 # -----------------------------------------------------------------------------
 
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # disable locally unless ImageMagick's `convert` command is installed
   widths:
     - 480
     - 800

@@ -4,52 +4,38 @@ title: Lattice Problems and Geometry of Integer Lattices
 description: Structural, algorithmic, and complexity-theoretic questions in lattice theory
 img: assets/img/lattices.png
 importance: 6
-category: Work
+category: Past Projects
 related_publications: true
 bibliography_query: "@*[project_lattice=true]"
 ---
 
 {% include figure.html path="assets/img/lattices.png" class="img-fluid rounded z-depth-1" %}
 
-Lattices are fundamental mathematical objects with deep connections to geometry, number theory, algorithms, complexity theory, and cryptography.
+## Introduction
 
-A lattice is a discrete additive subgroup of Euclidean space. Equivalently, it can be viewed as the set of all integer linear combinations of a collection of basis vectors. Despite this simple definition, lattices exhibit rich geometric structure and give rise to many difficult algorithmic problems.
+Lattice problems arise whenever discrete arithmetic structure meets continuous geometry. That combination shows up in post-quantum cryptography, integer optimization, number-theoretic computation, and high-dimensional algorithm design. In practical terms, lattices matter because many modern cryptographic systems rely on the assumption that certain geometric problems on integer point sets remain hard even for very powerful attackers.
 
-This project studies structural and algorithmic questions about lattices, especially integer lattices such as $\Z^n$, lattice bases, sublattices, and computational problems such as the Closest Vector Problem. The broader aim is to understand how geometric properties of lattices influence algorithmic hardness, reductions between lattice problems, and the structure of lattice bases.
+An integer lattice can be viewed as the set of all integer combinations of a chosen basis of vectors. But the same lattice can have many very different bases, and that flexibility is exactly where the interesting mathematics begins. Some bases are short and well balanced, others are long and skewed, and the geometry of those choices strongly affects what algorithms can or cannot do. Even basic-looking questions about extending a vector to a basis or comparing related sublattices can lead to rich structural problems.
+
+This project studies the geometry and algorithmics of integer lattices, especially the structure of bases, primitive vectors, sublattices, and reductions to classical problems such as the Closest Vector Problem. A major theme is that the internal geometry of a lattice is not just background information; it is a source of computational power and computational difficulty. Understanding that geometry can reveal both new algorithmic opportunities and new hardness phenomena.
+
+The motivation is therefore twofold. On the one hand, lattice theory provides a clean mathematical language for studying high-dimensional discrete structure. On the other hand, it has direct consequences for cryptography, where subtle geometric properties can influence security assumptions and algorithmic attacks. This project aims to connect those viewpoints by studying how local structural constraints on bases and sublattices interact with the global complexity of lattice problems.
 
 ## Motivation
 
-Lattices play a central role in modern theoretical computer science.
+Lattices are central to post-quantum cryptography because many lattice problems are believed to resist both classical and quantum attacks. At the same time, lattice algorithms depend strongly on the choice of basis, and small structural changes can make a problem much easier or much harder.
 
-They are used in the design of post-quantum cryptographic schemes, in algorithms for integer programming and number theory, and in the study of computational hardness. Many important lattice problems are believed to be difficult even for quantum computers, which is one of the reasons lattices form a major foundation of post-quantum cryptography.
-
-At the same time, lattices are also beautiful geometric objects. A lattice basis may look very different from another basis of the same lattice, and the geometry of these bases can strongly affect the complexity of algorithmic tasks. Understanding which bases exist, how short or long they can be, and how they relate to each other is a fundamental question in lattice theory.
-
-This project investigates such questions from both structural and computational viewpoints. The goal is to understand not only how hard lattice problems are, but also what the internal geometry of lattices reveals about these problems.
+Studying bases of $\mathbb{Z}^n$, primitive vectors, and sublattice constructions helps connect abstract geometry to the concrete algorithmic questions that arise in cryptography and complexity theory.
 
 ## Core Questions
 
-This project focuses on questions such as:
+- When can a given integer vector be extended to a basis of $\mathbb{Z}^n$?
+- How much control can we maintain over the lengths and geometry of the remaining basis vectors?
+- How should sublattice optimization problems be formalized and analyzed?
+- What is the relationship between new sublattice problems and classical problems such as CVP?
+- Which lattice-theoretic structures are most relevant to algorithm design and cryptographic hardness?
 
-- What structural properties do bases of $\Z^n$ satisfy?
-- When can a given integer vector be extended to a basis of $\Z^n$?
-- How short can the remaining basis vectors be made after fixing one vector?
-- How are sublattices related to classical lattice problems such as the Closest Vector Problem?
-- Can new lattice problems be reduced to well-studied problems such as CVP?
-- What is the computational complexity of finding sublattices satisfying geometric constraints?
-- How do lattice-theoretic properties interact with subset-sum-type and integer-combination problems?
+## Main Results
 
-## Research Direction
-
-The project studies several themes in lattice theory and lattice algorithms, including:
-
-- Bases of the integer lattice $\Z^n$
-- Primitive integer vectors and unimodular matrices
-- Structural properties of lattice bases
-- Sublattice problems
-- The Maximum Distance Sublattice Problem
-- Connections between sublattice problems and the Closest Vector Problem
-- Geometric and algebraic methods in lattice theory
-- Algorithmic questions related to integer combinations and subset-sum-type problems
-
-The broader aim is to develop a clearer understanding of the relationship between the geometry of lattice bases and the complexity of computational lattice problems.
+- **On the Maximum Distance Sublattice Problem and Closest Vector Problem (2024):** Connects a new sublattice optimization problem to the classical Closest Vector Problem and clarifies their algorithmic relationship.
+- **On the bases of Zn lattice (2022):** Studies how integer vectors extend to bases of $\mathbb{Z}^n$ and what structural constraints these bases satisfy.

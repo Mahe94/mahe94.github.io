@@ -4,7 +4,7 @@ title: Cryptanalysis of Practical Symmetric-Key Cryptosystems
 description: Distinguishers and structural analysis of practical symmetric-key designs
 img: assets/img/symmetric-key.png
 importance: 5
-category: Work
+category: Past Projects
 related_publications: true
 bibliography_query: "@*[project_symmetric=true]"
 ---
@@ -15,19 +15,23 @@ bibliography_query: "@*[project_symmetric=true]"
     </div>
 </div>
 
-Symmetric-key cryptography is the backbone of modern secure communication. It includes block ciphers, stream ciphers, hash functions, authenticated encryption schemes, and permutation-based constructions. These primitives are used everywhere: in secure messaging, internet protocols, embedded devices, lightweight cryptography, and post-quantum secure systems.
+## Introduction
 
-This project studies the security of practical symmetric-key cryptosystems through cryptanalysis. The goal is to understand whether proposed designs behave like ideal cryptographic objects, or whether their internal structure can be exploited to obtain attacks, distinguishers, weak keys, or key-recovery methods.
+Every time a browser opens an HTTPS connection, a phone verifies an update, a payment device authenticates a transaction, or a lightweight sensor protects a short packet, symmetric-key cryptography is doing the heavy lifting. These primitives sit on the performance-critical path of modern security. They must run quickly on servers, laptops, smart cards, and constrained embedded devices, often under severe latency, power, and memory constraints.
+
+That constant pressure for speed is exactly why cryptanalysis matters. Designers aim for compact rounds, efficient nonlinear layers, and implementation-friendly permutations, but those same choices can accidentally create hidden algebraic patterns or statistical regularities. A design may look elegant and efficient on paper while still admitting distinguishers, weak-key classes, or reduced-round attacks that reveal how narrow its true safety margin is.
+
+This project studies the cryptanalysis of practical symmetric-key designs, with an emphasis on reduced-round analysis, weak-key behavior, nonlinear structures, and structural distinguishers. The central question is whether real constructions behave like ideal random objects for as long as designers claim, or whether deeper analysis uncovers exploitable structure before the advertised security boundary is reached.
+
+The work spans both conceptual and practical concerns. On one side, it develops tools for analyzing monomial prediction, zero-sum phenomena, and algebraic structure in modern designs such as Keccak, Ascon, and TinyJAMBU. On the other side, it contributes to the public evaluation process that helps the community trust, tune, or revise practical cryptographic standards. In symmetric-key cryptography, good attacks are not merely negative results; they are one of the main ways we learn what secure design should look like.
 
 ## Motivation
 
-A symmetric-key primitive may have a clean and elegant design, but its security depends on the absence of hidden exploitable structure. Cryptanalysis plays an important role in this process. It tests the security margins of practical designs, identifies weaknesses in reduced-round versions, and develops new techniques that help the community understand why certain constructions are secure or insecure.
+Designers often optimize for speed, small state, low area, or hardware efficiency. Those same choices can create algebraic regularities or combinatorial patterns that only appear under careful analysis. Cryptanalysis is how we test whether the claimed security margin is real or just optimistic.
 
-This is especially important for lightweight cryptography, where schemes are designed under strict efficiency constraints. Such constraints often lead to compact internal structures, small-state designs, or carefully optimized nonlinear layers. These features make the schemes efficient, but they also make detailed cryptanalytic evaluation essential.
+This is especially important for lightweight and standardized primitives, where a careful public analysis can influence confidence, parameter choices, and future designs.
 
 ## Core Questions
-
-This project focuses on questions such as:
 
 - Can we find distinguishers for reduced-round symmetric-key primitives?
 - Do practical designs contain exploitable nonlinear structures?
@@ -36,16 +40,10 @@ This project focuses on questions such as:
 - Can zero-sum distinguishers reveal non-random behavior in permutation-based designs?
 - What do these attacks say about the security margin of practical cryptographic schemes?
 
-## Research Direction
+## Main Results
 
-The project studies several themes in symmetric-key cryptanalysis, including:
-
-- Cryptanalysis of Keccak and round-reduced Keccak
-- Cryptanalysis of Ascon
-- Weak-key and key-recovery attacks on TinyJAMBU
-- Nonlinear structures in cryptographic permutations
-- Zero-sum distinguishers
-- Monomial prediction problems
-- Algebraic and combinatorial methods in symmetric-key cryptanalysis
-
-The broader aim is to develop a clearer understanding of how structural properties of practical symmetric-key primitives can be used in attacks, and how such analysis can guide the design of more secure cryptosystems.
+- **Complexity of Monomial Prediction in Cryptography and Machine Learning (2024):** Studies the computational difficulty of monomial prediction and connects it to broader algorithmic questions.
+- **Weak-keys and key-recovery attack for TinyJAMBU (2022):** Identifies weak-key behavior and a key-recovery attack for the lightweight authenticated cipher TinyJAMBU.
+- **On the hardness of monomial prediction and zero-sum distinguishers for Ascon (2022):** Analyzes monomial prediction and zero-sum techniques in the context of Ascon.
+- **Cryptanalysis of round-reduced Keccak using non-linear structures (2019):** Shows how nonlinear structures can be turned into distinguishers for reduced-round Keccak.
+- **Cryptanalysis of 1-round KECCAK (2018):** Gives concrete cryptanalytic insight into simplified Keccak and the behavior of its round structure.

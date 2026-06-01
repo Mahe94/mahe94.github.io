@@ -140,6 +140,8 @@
           {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
         {%- elsif proceedings contains entry.type -%}
           {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
+        {%- elsif entry.type == "unpublished" -%}
+          {%- capture entrytype -%}<em>{{ entry.howpublished | default: "Manuscript" }}</em>{%- endcapture -%}
         {%- elsif thesis contains entry.type -%}
           {%- capture entrytype -%}<em>{{entry.school}}</em> {%- endcapture -%}
         {%- else -%}
@@ -170,8 +172,11 @@
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           {%- endif %}
           {%- if entry.pdf %}
+            {% assign pdf_prefix = entry.pdf | slice: 0, 1 %}
             {% if entry.pdf contains '://' -%}
             <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            {%- elsif pdf_prefix == '/' -%}
+            <a href="{{ entry.pdf | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
             {%- else -%}
             <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
             {%- endif %}

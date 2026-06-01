@@ -9,6 +9,7 @@ nav_order: 4
 ---
 
 * Invited Talks
+    * _Limits of Black-Box Constructions of Pseudorandom Codes_, IMDEA Software Institute, Madrid 2026 [<a href='../assets/pdf/slides/IMDEA 2026 - Limits of Black-Box Constructions of Pseudorandom Codes.pdf'>Slides</a>]
     * _Leakage-Resilience meets Incompressibility_, IIT-Delhi, India 2024 [<a href='../assets/pdf/slides/Leakage-Incompressible.pdf'>Slides</a>]
     * _Leakage-Resilience meets Incompressibility_, IIIT-Hyderabad, India 2024 [<a href='../assets/pdf/slides/Leakage-Incompressible.pdf'>Slides</a>]
     * _Incompressible Encryption beyond Public Key Encryption_, University of Wollongong, Australia 2024 [<a href='../assets/pdf/slides/Main-Incompressible_Encryption.pdf'>Slides</a>]
