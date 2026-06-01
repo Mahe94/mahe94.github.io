@@ -2,7 +2,7 @@
 layout: page
 title: Watermarking LLMs
 description: Cryptographic foundations for detecting and protecting AI-generated text
-img: assets/img/LLM.png
+img: assets/img/llm.png
 importance: 1
 category: Ongoing Projects
 related_publications: true
