@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Quantum Cryptography | Mahesh Sreekumar Rajasree</title>
+    <title>Quantum Algorithms and Cryptography | Mahesh Sreekumar Rajasree</title>
     <meta name="author" content="Mahesh Sreekumar Rajasree">
     <meta name="description" content="Quantum-secure primitives, pseudorandomness, and cryptography in quantum models">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
@@ -152,7 +152,7 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Quantum Cryptography</h1>
+            <h1 class="post-title">Quantum Algorithms and Cryptography</h1>
             <p class="post-description">Quantum-secure primitives, pseudorandomness, and cryptography in quantum models</p>
           </header>
 
@@ -162,10 +162,6 @@
         <figure>
 
   <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/quantum-cryptography-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/quantum-cryptography-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/quantum-cryptography-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -178,49 +174,47 @@
     </div>
 </div>
 
-<p>Quantum cryptography studies how cryptographic security changes when computation, information, and adversaries are quantum.</p>
+<h2 id="introduction">Introduction</h2>
 
-<p>It includes cryptographic schemes secure against quantum computers, security proofs in quantum oracle models, quantum analogues of classical primitives, and new objects that use quantum states as part of the construction itself. These questions are central to the long-term security of cryptography, especially as quantum algorithms challenge many classical assumptions and force us to revisit the foundations of cryptographic security.</p>
+<p>Cryptographic systems are often expected to protect information far longer than the hardware they run on today. A medical archive may need confidentiality for decades. Government records, industrial secrets, legal contracts, and identity systems may outlive several generations of software and key infrastructure. That long time horizon is what makes quantum cryptography urgent: even if large quantum computers are not available today, the data being collected and encrypted now may still need to remain secure when the threat model changes.</p>
 
-<p>This project studies quantum and post-quantum aspects of cryptography, with a focus on quantum-secure definitions, pseudorandomness, non-committing encryption, oracle-model security, and robust encodings of information. The goal is to understand which classical cryptographic techniques remain secure in the presence of quantum adversaries, which ones fail, and what genuinely new possibilities arise from quantum information.</p>
+<p>The first layer of the problem is familiar from post-quantum cryptography. Quantum algorithms threaten several number-theoretic assumptions that supported classical public-key systems for decades, so we need primitives whose security is expected to survive quantum computation. But the second layer is more subtle and, in many ways, more interesting: quantum adversaries are not just faster classical adversaries. They can hold superpositions, manipulate quantum side information, and query oracles in ways that have no direct classical analogue.</p>
+
+<p>That shift changes how cryptographic proofs have to be written. Techniques that work comfortably in the classical random oracle model do not automatically survive in the quantum random oracle model. Definitions of pseudorandomness, simulation, equivocation, and robustness may need to be reformulated when an adversary can interact with a system through quantum access. Even when a primitive looks “classical” on the surface, the surrounding proof technology may need fundamentally different ideas.</p>
+
+<p>This project studies these quantum and post-quantum aspects of cryptography, with a focus on quantum-secure definitions, non-committing encryption, oracle-model security, pseudorandomness, and robust encodings of information. The broader aim is to understand which classical methods remain reliable, which ones fail, and what new tools are needed to build cryptography that still makes sense once quantum computation becomes part of the adversarial landscape.</p>
 
 <h2 id="motivation">Motivation</h2>
 
-<p>Classical cryptography is usually analyzed against classical adversaries. However, quantum computers change this picture in two important ways.</p>
+<p>Quantum computers threaten more than a few legacy assumptions. They also change the way we reason about security proofs, because a quantum adversary can interact with an oracle in ways that no classical attacker can imitate. That makes standard definitions for pseudorandomness, simulation, and non-committing security worth revisiting from the ground up.</p>
 
-<p>First, quantum algorithms can break several number-theoretic assumptions that have traditionally supported public-key cryptography. This motivates the study of post-quantum cryptography: cryptographic schemes whose security is expected to survive even against quantum computation.</p>
-
-<p>Second, quantum adversaries are not merely faster classical adversaries. They can query oracles in superposition, manipulate quantum states, and use interference in ways that have no classical analogue. As a result, security proofs that are valid in the classical random oracle model may not automatically remain valid in the quantum random oracle model. Similarly, classical notions of pseudorandomness, robustness, simulation, and equivocation may need to be reformulated when quantum access or quantum information is involved.</p>
-
-<p>This project is motivated by these foundational issues. It asks how classical cryptographic primitives behave in quantum models, and how one can design cryptographic objects that remain meaningful and secure when adversaries have quantum capabilities.</p>
+<p>The project is motivated by the need for cryptography that remains meaningful under long-term quantum risk, not just cryptography that is efficient under today’s threat model.</p>
 
 <h2 id="core-questions">Core Questions</h2>
 
-<p>This project focuses on questions such as:</p>
+<ul>
+  <li>Which classical constructions remain secure when the adversary has quantum computation or quantum oracle access?</li>
+  <li>How should non-committing encryption be modeled and proved in the quantum random oracle setting?</li>
+  <li>What forms of pseudorandomness continue to make sense in the presence of quantum information?</li>
+  <li>Can coding-based tools support quantum-secure primitives or quantum-state-based constructions?</li>
+  <li>What new lower bounds or separations are needed to explain the limits of black-box techniques?</li>
+</ul>
+
+<h2 id="main-results">Main Results</h2>
 
 <ul>
-  <li>Which classical cryptographic constructions remain secure against quantum adversaries?</li>
-  <li>How should non-committing encryption be analyzed in the quantum random oracle model?</li>
-  <li>Can programmable random-oracle techniques survive quantum superposition queries?</li>
-  <li>What kinds of pseudorandomness are meaningful in the presence of quantum information?</li>
-  <li>Can pseudorandom codes be used as a foundation for quantum-secure or quantum-state-based primitives?</li>
-  <li>What are the barriers to constructing pseudorandom codes from general assumptions?</li>
-  <li>Can one build robust quantum encodings that are simultaneously error-correcting and pseudorandom?</li>
-  <li>How do oracle separations clarify the limitations of black-box cryptographic constructions?</li>
-  <li>What new techniques are needed to prove security in quantum-access settings?</li>
+  <li>
+<strong>Pseudorandom codes in quantum settings:</strong> Investigates whether coding-based pseudorandom objects can survive quantum access and support stronger quantum-secure constructions.</li>
+  <li>
+<strong>Robust encodings of quantum information:</strong> Explores encodings that combine error correction with computational pseudorandomness for quantum data.</li>
+  <li>
+<strong>Quantum random-oracle security for simulation-based primitives:</strong> Studies how non-committing and programmable-oracle techniques must change when adversaries query in superposition.</li>
+  <li>
+<strong>Oracle separations for quantum cryptography:</strong> Uses black-box separations to identify which classical proof strategies fail once quantum access is allowed.</li>
 </ul>
 
           </article>
 
-        
-        <br>
-        <hr>
-        <h2>References</h2>
-            <div class="publications">
-                
-                        <ol class="bibliography"></ol>
-                
-            </div>
         
 
         </div>
@@ -231,7 +225,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: May 29, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: June 01, 2026.
       </div>
     </footer>
 

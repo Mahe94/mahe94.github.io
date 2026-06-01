@@ -163,10 +163,6 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/symmetric-key-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/symmetric-key-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/symmetric-key-1400.webp"></source>
-    
 
     <!-- Fallback to the original file -->
     <img src="/assets/img/symmetric-key.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
@@ -178,19 +174,23 @@
     </div>
 </div>
 
-<p>Symmetric-key cryptography is the backbone of modern secure communication. It includes block ciphers, stream ciphers, hash functions, authenticated encryption schemes, and permutation-based constructions. These primitives are used everywhere: in secure messaging, internet protocols, embedded devices, lightweight cryptography, and post-quantum secure systems.</p>
+<h2 id="introduction">Introduction</h2>
 
-<p>This project studies the security of practical symmetric-key cryptosystems through cryptanalysis. The goal is to understand whether proposed designs behave like ideal cryptographic objects, or whether their internal structure can be exploited to obtain attacks, distinguishers, weak keys, or key-recovery methods.</p>
+<p>Every time a browser opens an HTTPS connection, a phone verifies an update, a payment device authenticates a transaction, or a lightweight sensor protects a short packet, symmetric-key cryptography is doing the heavy lifting. These primitives sit on the performance-critical path of modern security. They must run quickly on servers, laptops, smart cards, and constrained embedded devices, often under severe latency, power, and memory constraints.</p>
+
+<p>That constant pressure for speed is exactly why cryptanalysis matters. Designers aim for compact rounds, efficient nonlinear layers, and implementation-friendly permutations, but those same choices can accidentally create hidden algebraic patterns or statistical regularities. A design may look elegant and efficient on paper while still admitting distinguishers, weak-key classes, or reduced-round attacks that reveal how narrow its true safety margin is.</p>
+
+<p>This project studies the cryptanalysis of practical symmetric-key designs, with an emphasis on reduced-round analysis, weak-key behavior, nonlinear structures, and structural distinguishers. The central question is whether real constructions behave like ideal random objects for as long as designers claim, or whether deeper analysis uncovers exploitable structure before the advertised security boundary is reached.</p>
+
+<p>The work spans both conceptual and practical concerns. On one side, it develops tools for analyzing monomial prediction, zero-sum phenomena, and algebraic structure in modern designs such as Keccak, Ascon, and TinyJAMBU. On the other side, it contributes to the public evaluation process that helps the community trust, tune, or revise practical cryptographic standards. In symmetric-key cryptography, good attacks are not merely negative results; they are one of the main ways we learn what secure design should look like.</p>
 
 <h2 id="motivation">Motivation</h2>
 
-<p>A symmetric-key primitive may have a clean and elegant design, but its security depends on the absence of hidden exploitable structure. Cryptanalysis plays an important role in this process. It tests the security margins of practical designs, identifies weaknesses in reduced-round versions, and develops new techniques that help the community understand why certain constructions are secure or insecure.</p>
+<p>Designers often optimize for speed, small state, low area, or hardware efficiency. Those same choices can create algebraic regularities or combinatorial patterns that only appear under careful analysis. Cryptanalysis is how we test whether the claimed security margin is real or just optimistic.</p>
 
-<p>This is especially important for lightweight cryptography, where schemes are designed under strict efficiency constraints. Such constraints often lead to compact internal structures, small-state designs, or carefully optimized nonlinear layers. These features make the schemes efficient, but they also make detailed cryptanalytic evaluation essential.</p>
+<p>This is especially important for lightweight and standardized primitives, where a careful public analysis can influence confidence, parameter choices, and future designs.</p>
 
 <h2 id="core-questions">Core Questions</h2>
-
-<p>This project focuses on questions such as:</p>
 
 <ul>
   <li>Can we find distinguishers for reduced-round symmetric-key primitives?</li>
@@ -201,21 +201,20 @@
   <li>What do these attacks say about the security margin of practical cryptographic schemes?</li>
 </ul>
 
-<h2 id="research-direction">Research Direction</h2>
-
-<p>The project studies several themes in symmetric-key cryptanalysis, including:</p>
+<h2 id="main-results">Main Results</h2>
 
 <ul>
-  <li>Cryptanalysis of Keccak and round-reduced Keccak</li>
-  <li>Cryptanalysis of Ascon</li>
-  <li>Weak-key and key-recovery attacks on TinyJAMBU</li>
-  <li>Nonlinear structures in cryptographic permutations</li>
-  <li>Zero-sum distinguishers</li>
-  <li>Monomial prediction problems</li>
-  <li>Algebraic and combinatorial methods in symmetric-key cryptanalysis</li>
+  <li>
+<strong>Complexity of Monomial Prediction in Cryptography and Machine Learning (2024):</strong> Studies the computational difficulty of monomial prediction and connects it to broader algorithmic questions.</li>
+  <li>
+<strong>Weak-keys and key-recovery attack for TinyJAMBU (2022):</strong> Identifies weak-key behavior and a key-recovery attack for the lightweight authenticated cipher TinyJAMBU.</li>
+  <li>
+<strong>On the hardness of monomial prediction and zero-sum distinguishers for Ascon (2022):</strong> Analyzes monomial prediction and zero-sum techniques in the context of Ascon.</li>
+  <li>
+<strong>Cryptanalysis of round-reduced Keccak using non-linear structures (2019):</strong> Shows how nonlinear structures can be turned into distinguishers for reduced-round Keccak.</li>
+  <li>
+<strong>Cryptanalysis of 1-round KECCAK (2018):</strong> Gives concrete cryptanalytic insight into simplified Keccak and the behavior of its round structure.</li>
 </ul>
-
-<p>The broader aim is to develop a clearer understanding of how structural properties of practical symmetric-key primitives can be used in attacks, and how such analysis can guide the design of more secure cryptosystems.</p>
 
           </article>
 
@@ -253,6 +252,7 @@
         </div>
         <!-- Links/Buttons -->
           <div class="links">
+            
             <a href="https://easychair.org/publications/preprint/QQtN/open" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
             <a href="/assets/pdf/slides/SYNASC%202024(1).pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
           </div>
@@ -293,6 +293,7 @@
         </div>
         <!-- Links/Buttons -->
           <div class="links">
+            
             <a href="https://eprint.iacr.org/2017/1028.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
           
@@ -332,6 +333,7 @@
         </div>
         <!-- Links/Buttons -->
           <div class="links">
+            
             <a href="https://eprint.iacr.org/2019/884.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
             <a href="/assets/pdf/slides/INDOCRYPT_2019.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
           </div>
@@ -372,6 +374,7 @@
         </div>
         <!-- Links/Buttons -->
           <div class="links">
+            
             <a href="https://www.nature.com/articles/s41598-022-19046-2.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
           
@@ -411,6 +414,7 @@
         </div>
         <!-- Links/Buttons -->
           <div class="links">
+            
             <a href="https://www.wcc2022.uni-rostock.de/storages/uni-rostock/Tagungen/WCC2022/Papers/WCC_2022_paper_74.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
             <a href="/assets/pdf/slides/WCC%202022.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
           </div>
@@ -437,7 +441,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: May 29, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: June 01, 2026.
       </div>
     </footer>
 

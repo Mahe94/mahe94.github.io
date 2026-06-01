@@ -163,10 +163,6 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/SSUM-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/SSUM-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/SSUM-1400.webp"></source>
-    
 
     <!-- Fallback to the original file -->
     <img src="/assets/img/SSUM.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
@@ -178,44 +174,48 @@
     </div>
 </div>
 
-<p>Subset sum is one of the most fundamental problems in theoretical computer science.</p>
+<h2 id="introduction">Introduction</h2>
 
-<p>Given numbers $a_1,\ldots,a_n$ and a target $t$, the goal is to decide whether some subset of the numbers adds up exactly to $t$. Despite its simple statement, subset sum sits at the intersection of algorithms, complexity theory, cryptography, and lattice problems.</p>
+<p>Many everyday planning problems hide a subset-sum structure. A shipping system may need to pack items so that the total weight hits a narrow limit. A financial tool may search for a set of transactions that balances an account discrepancy. A scheduler may try to combine available resources to match a fixed target. In each case, the hard part is not understanding the goal but searching through an enormous number of possible combinations quickly enough to be useful.</p>
 
-<p>This project studies faster algorithms and structural variants of subset-sum-type problems.</p>
+<p>The classical subset sum problem captures this tension in one of its cleanest forms: given numbers $a_1,\ldots,a_n$ and a target $t$, decide whether some subset adds up exactly to $t$. The statement fits in a single line, but the problem sits at the center of algorithms, complexity theory, lattice methods, and cryptography. Over time, it has become a testing ground for some of the most important ideas in exact algorithms and fine-grained complexity.</p>
+
+<p>This project studies faster algorithms and structural variants of subset-sum-type problems. A recurring theme is that small changes in the model can have large algorithmic consequences. The difficulty of the problem shifts when we move from ordinary sums to modular sums, from exact target matching to equal-sum phenomena, or from bounded choices to unbounded and projected variants. Those changes are mathematically natural, and they also line up with questions that arise in cryptography and related optimization tasks.</p>
+
+<p>The broader objective is to understand which forms of structure can be exploited algorithmically and which ones reflect genuine hardness. That means developing better reductions, sharper lower bounds, and more refined algorithms for special regimes such as dense instances or highly redundant inputs. In this area, cleaner theory is not just an aesthetic improvement; it often reveals new algorithmic routes that were hidden by the apparent simplicity of the original formulation.</p>
 
 <h2 id="motivation">Motivation</h2>
 
-<p>Subset sum is a central benchmark for understanding the limits of algorithmic techniques. It is also deeply connected to cryptography, especially to problems used in post-quantum cryptography and lattice-based constructions.</p>
+<p>Subset sum is a benchmark problem for exact exponential algorithms, fine-grained complexity, and cryptographic hardness. It is simple enough to reason about cleanly, but rich enough to expose the limits of algebraic, combinatorial, and lattice-based techniques.</p>
 
-<p>A major goal is to understand when subset sum is genuinely hard and when additional structure can be exploited to design faster algorithms.</p>
+<p>The motivating question is not only whether subset sum is hard in the worst case, but which kinds of structure make real instances easier. Understanding that boundary helps both algorithm designers and cryptographers.</p>
 
 <h2 id="core-questions">Core Questions</h2>
 
-<p>This project focuses on questions such as:</p>
-
 <ul>
-  <li>Can we design faster algorithms for dense subset sum instances?</li>
-  <li>What happens when many different subsets have the same sum?</li>
-  <li>Can lattice techniques improve subset-sum algorithms?</li>
-  <li>How do subset-sum variants behave in modular settings?</li>
-  <li>What are the right lower-bound assumptions for these problems?</li>
+  <li>When do dense or highly structured instances admit algorithms faster than brute force?</li>
+  <li>How do modular, projected, equal-sum, and unbounded variants differ from classical subset sum?</li>
+  <li>Can algebraic or lattice-based techniques improve performance on specific regimes?</li>
+  <li>What lower bounds explain why certain improvements are impossible?</li>
+  <li>How do these variants connect to cryptographic and fine-grained complexity assumptions?</li>
 </ul>
 
-<h2 id="research-direction">Research Direction</h2>
-
-<p>The project studies several related problems, including:</p>
+<h2 id="main-results">Main Results</h2>
 
 <ul>
-  <li>Classical subset sum</li>
-  <li>Modular subset sum</li>
-  <li>Equal subset sum</li>
-  <li>Pigeonhole equal sums</li>
-  <li>Projection subset sum</li>
-  <li>Lattice-based formulations of subset-sum problems</li>
+  <li>
+<strong>Pigeonhole Equal Subset Sum: Subexponential Algorithm, Tight Lower Bounds and Average-Case Analysis (2026):</strong> Gives subexponential algorithms together with tight lower-bound evidence and average-case analysis.</li>
+  <li>
+<strong>Weak Pigeonhole Equal-Sums made Simpler and Faster (2026):</strong> Simplifies and improves algorithms for the weak pigeonhole equal-sums setting.</li>
+  <li>
+<strong>On the Variants of Subset Sum: Projected and Unbounded (2023):</strong> Studies projected and unbounded versions of the problem and clarifies their algorithmic behavior.</li>
+  <li>
+<strong>Efficient Reductions and Algorithms for Subset Product (2023):</strong> Extends subset-sum-style methods to multiplicative analogues through new reductions and algorithms.</li>
+  <li>
+<strong>Algebraic Algorithms for Variants of Subset Sum (2022):</strong> Uses algebraic techniques to speed up structured versions of subset sum.</li>
+  <li>
+<strong>Efficient Reductions and Algorithms for Variants of Subset Sum (2021):</strong> Organizes several subset-sum variants through reductions and gives a cleaner algorithmic toolkit for studying them.</li>
 </ul>
-
-<p>The broader aim is to develop a clearer algorithmic picture of subset sum and its variants, especially in regimes that are important for cryptography and fine-grained complexity.</p>
 
           </article>
 
@@ -347,6 +347,7 @@
         </div>
         <!-- Links/Buttons -->
           <div class="links">
+            
             <a href="/assets/pdf/SYNASC_2023.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
             <a href="https://ieeexplore.ieee.org/document/10522690" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
             <a href="/assets/pdf/slides/SYNASC2023.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
@@ -388,6 +389,7 @@
         </div>
         <!-- Links/Buttons -->
           <div class="links">
+            
             <a href="https://arxiv.org/pdf/2112.11020" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
           
@@ -429,6 +431,7 @@
             <div class="font-weight-bold">Best Student Presentation Award</div>
 <!-- Links/Buttons -->
           <div class="links">
+            
             <a href="/assets/pdf/CALDAM_2022.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
             <a href="https://link.springer.com/chapter/10.1007/978-3-030-95018-7_19" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
           </div>
@@ -471,6 +474,7 @@
             <div class="font-weight-bold">Best Student Presentation Award</div>
 <!-- Links/Buttons -->
           <div class="links">
+            
             <a href="/assets/pdf/CALDAM_2023.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
             <a href="https://link.springer.com/chapter/10.1007/978-3-031-25211-2_1" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
             <a href="/assets/pdf/slides/CALDAM2023.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
@@ -498,7 +502,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: May 29, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: June 01, 2026.
       </div>
     </footer>
 

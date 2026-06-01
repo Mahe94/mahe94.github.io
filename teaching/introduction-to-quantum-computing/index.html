@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Introduction to Quantum Computing | Mahesh Sreekumar Rajasree</title>
+    <meta name="author" content="Mahesh Sreekumar Rajasree">
+    <meta name="description" content="Course description">
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Bootstrap Table -->
+    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="/assets/img/msr.png">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://mahe94.github.io/teaching/introduction-to-quantum-computing/">
+
+    <!-- Dark Mode -->
+    
+
+
+  <!-- ChatGPT -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://mahe94.github.io/#me",
+      "name": "Mahesh Sreekumar Rajasree",
+      "alternateName": [
+        "Mahesh Rajasree",
+        "M S Rajasree"
+      ],
+      "url": "https://mahe94.github.io/",
+      "image": "https://mahe94.github.io/assets/img/mahe.jpeg",
+      "jobTitle": "Postdoctoral Researcher",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "CISPA Helmholtz Center for Information Security",
+        "url": "https://cispa.de/"
+      },
+      "sameAs": [
+        "https://scholar.google.com/citations?user=ywTR5voAAAAJ",
+        "https://dblp.org/pid/216/6012.html",
+        "https://orcid.org/0000-0002-8219-8270",
+        "https://github.com/mahe94",
+        "https://www.youtube.com/@MaheshSreekumarRajasree",
+        "https://iacr.org/cryptodb/data/author.php?authorkey=13350",
+        "https://sites.google.com/view/mahesh-sreekumar-rajasree/home?authuser=0",
+        "https://cispa.de/en/people/c01masr",
+        "https://www.linkedin.com/in/mahesh-sreekumar-rajasree/",
+        "https://www.researchgate.net/scientific-contributions/Mahesh-Sreekumar-Rajasree-2149335067",
+        "https://x.com/maheshrajasree?lang=en",
+        "https://crypto.stackexchange.com/users/116220/mahesh-sreekumar-rajasree",
+        "https://math.stackexchange.com/users/932011/mahesh-sreekumar-rajasree",
+        "https://quantumcomputing.stackexchange.com/users/29559/mahesh-sreekumar-rajasree",
+        "https://stackexchange.com/users/21726955/mahesh-s-r",
+        "https://www.instagram.com/mahe_94/",
+        "https://www.csauthors.net/mahesh-sreekumar-rajasree/"
+      ]
+    }
+    </script>
+
+    <meta name="google-site-verification" content="nE9l9HPql18xXr0PQWRn809HZDwChERamemzWC3rtuk">
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav sticky-bottom-footer">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Mahesh </span>Sreekumar Rajasree</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">About Me</a>
+              </li>
+              
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">Publications</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/cv/">CV</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/talks/">Talks</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">Teaching</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/posts/">Posts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      
+        <!-- page.html -->
+        <div class="post">
+
+          <header class="post-header">
+            <h1 class="post-title">Introduction to Quantum Computing</h1>
+            <p class="post-description">Course description</p>
+          </header>
+
+          <article>
+            <!-- This page contains the course description and expected structure for **Introduction to Quantum Computing** at **MIMUW**. -->
+
+<h2 id="short-description">Short Description</h2>
+
+<p>Quantum computing introduces a fundamentally different paradigm for information processing, with striking consequences for algorithms, cryptography, and computation. This introductory course combines mathematical foundations with a hands-on laboratory component focused on the implementation and simulation of quantum circuits and basic quantum algorithms using Qiskit or similar tools. The course covers quantum states, measurements, unitary operations, multiple-qubit systems, entanglement, and the quantum circuit model, followed by fundamental quantum algorithms and selected topics in quantum information. It provides a foundation for advanced topics such as quantum cryptography, quantum information theory, and quantum complexity theory.</p>
+
+<h2 id="full-description">Full Description</h2>
+
+<p>The lecture component will cover the following topics:</p>
+
+<ol>
+  <li>
+<strong>Single and multiple quantum systems</strong><br>
+Qubits, quantum states, Dirac notation, measurements, unitary operations, tensor products, product states, and entanglement.</li>
+  <li>
+<strong>Quantum circuits and entanglement in action</strong><br>
+Quantum gates, circuit model, controlled operations, Bell states, teleportation, superdense coding, and the CHSH game.</li>
+  <li>
+<strong>Quantum query algorithms and algorithmic foundations</strong><br>
+Query model, Deutsch-Jozsa, Bernstein-Vazirani, Simon’s algorithm, reversible computation, phase kickback, and quantum Fourier transform.</li>
+  <li>
+<strong>Phase estimation, factoring, and Grover’s algorithm</strong><br>
+Quantum phase estimation, order finding, Shor’s factoring algorithm, unstructured search, and amplitude amplification.</li>
+  <li>
+<strong>Density matrices</strong><br>
+Mixed states, reduced states, partial trace, ensembles, and the density-matrix formulation of quantum information.</li>
+  <li>
+<strong>Quantum channels</strong><br>
+Quantum operations, noise, examples of channels, Kraus representations, and basic properties of quantum channels.</li>
+  <li>
+<strong>General measurements</strong><br>
+Projective measurements, POVMs, measurement implementation, and state discrimination.</li>
+  <li>
+<strong>Purifications and fidelity</strong><br>
+Purifications, fidelity, trace distance, Uhlmann-type intuition, and selected applications in quantum information.</li>
+  <li>
+<strong>Quick introduction to quantum cryptography</strong><br>
+Microcrypts and quantum-secure one-way functions.</li>
+</ol>
+
+<p>The tutorials will reinforce the mathematical material through problem-solving sessions.</p>
+
+<p>The laboratory sessions will focus on the implementation and simulation of basic quantum circuits and algorithms using Qiskit or similar tools. Possible lab topics include single- and multi-qubit gates, Bell states, teleportation, Deutsch-Jozsa and Bernstein-Vazirani algorithms, Grover search, quantum Fourier transform, phase estimation, and more.</p>
+
+<h2 id="learning-outcomes">Learning Outcomes</h2>
+
+<h3 id="knowledge">Knowledge</h3>
+
+<ol>
+  <li>Has knowledge of the basic mathematical formalism of quantum computation.</li>
+  <li>Knows the quantum circuit model and the role of gates, measurements, and entanglement.</li>
+  <li>Knows selected fundamental quantum algorithms and basic notions of quantum information.</li>
+</ol>
+
+<h3 id="skills">Skills</h3>
+
+<ol>
+  <li>Can analyze simple quantum states, measurements, circuits, and protocols.</li>
+  <li>Can reason about the correctness and limitations of basic quantum algorithms.</li>
+  <li>Can implement and simulate simple quantum circuits using Qiskit or similar tools.</li>
+</ol>
+
+<h3 id="competences">Competences</h3>
+
+<ol>
+  <li>Understands the need for mathematical rigor in quantum computation.</li>
+  <li>Knows the basic possibilities and limitations of quantum information processing.</li>
+  <li>Can assess the suitability of basic quantum algorithms for selected computational problems.</li>
+</ol>
+
+<h2 id="bibliography">Bibliography</h2>
+
+<ul>
+  <li>
+<a href="https://arxiv.org/pdf/2507.11536" rel="external nofollow noopener" target="_blank"><em>John Watrous</em>, Understanding Quantum Information and Computation</a>.</li>
+  <li>
+<a href="https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf" rel="external nofollow noopener" target="_blank"><em>Michael A. Nielsen and Isaac L. Chuang</em>, Quantum Computation and Quantum Information</a>.</li>
+  <li>
+<a href="https://arxiv.org/pdf/1907.09415" rel="external nofollow noopener" target="_blank"><em>Ronald de Wolf</em>, Quantum Computing: Lecture Notes</a>.</li>
+</ul>
+
+<h2 id="assessment-methods-and-criteria">Assessment Methods and Criteria</h2>
+
+<p>To pass the course, the student must pass both the theoretical part and the practical/tutorial part. The theoretical part will be assessed by a mid-term exam and a final written exam. The practical/tutorial part will be assessed through homework, tutorial activity, and a programming/lab test or assignment involving the implementation and simulation of simple quantum circuits using Qiskit or similar tools.</p>
+
+<p>The final grade will be based on the following components:</p>
+
+<ul>
+  <li>Mid-term exam: 25%.</li>
+  <li>Final exam: 25%.</li>
+  <li>Programming/lab test or assignment: 20%.</li>
+  <li>Homework, tutorial activity, and participation: 30%.</li>
+</ul>
+
+<p>For PhD students, an additional paper presentation and oral discussion/viva will be required. The presentation should concern an advanced topic related to quantum computing, quantum algorithms, quantum information theory, or quantum cryptography. This component may be used to increase the final grade or may be required for obtaining the highest grade.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ol>
+  <li>Algorithms and data structures</li>
+  <li>Discrete mathematics</li>
+  <li>Foundations of mathematics</li>
+  <li>Geometry with linear algebra</li>
+  <li>Languages, automata and computations</li>
+  <li>Mathematical analysis for computer science I</li>
+  <li>Probability theory and statistics</li>
+  <li>Basics of Python programming</li>
+</ol>
+
+<h3 id="assumed-background">Assumed Background</h3>
+
+<ul>
+  <li>Basic algorithms and theory of computation</li>
+  <li>Linear algebra, including vectors, matrices, inner products, and tensor products</li>
+  <li>Complex numbers</li>
+  <li>Elementary probability</li>
+  <li>Basic Python programming</li>
+</ul>
+
+          </article>
+
+        
+
+        </div>
+
+      
+    </div>
+
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: June 01, 2026.
+      </div>
+    </footer>
+
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script>
+
+  <!-- Bootstrap Table -->
+  <script defer src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
+
+  <!-- Load Common JS -->
+  <script src="/assets/js/no_defer.js"></script>
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    <!-- MathJax -->
+<script>
+  window.MathJax = {
+    tex: {
+      tags: 'ams',
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],
+      processEscapes: true,
+      packages: {'[+]': ['ams']},
+      macros: {
+        Z: "\\mathbb{Z}",
+        R: "\\mathbb{R}",
+        Q: "\\mathbb{Q}",
+        N: "\\mathbb{N}",
+        F: "\\mathbb{F}",
+        L: "\\mathcal{L}",
+        basis: "\\mathbf{b}",
+        norm: ["\\left\\lVert #1 \\right\\rVert", 1],
+        inner: ["\\left\\langle #1, #2 \\right\\rangle", 2]
+      }
+    },
+    options: {
+      skipHtmlTags: [
+        'script', 'noscript', 'style', 'textarea', 'pre', 'code'
+      ]
+    }
+  };
+</script>
+
+<script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js">
+</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCTSHLJEXH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-QCTSHLJEXH');
+  </script>
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
+  </body>
+</html>

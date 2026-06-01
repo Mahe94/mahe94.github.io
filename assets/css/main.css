@@ -762,6 +762,11 @@ footer.sticky-bottom {
   margin-bottom: -2rem;
   text-align: right;
 }
+@media (max-width: 575.98px) {
+  .publications h2.year {
+    margin-bottom: 0.75rem;
+  }
+}
 .publications ol.bibliography {
   list-style: none;
   padding: 0;

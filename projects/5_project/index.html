@@ -161,10 +161,6 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/lattices-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/lattices-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/lattices-1400.webp"></source>
-    
 
     <!-- Fallback to the original file -->
     <img src="/assets/img/lattices.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
@@ -173,52 +169,40 @@
 
 </figure>
 
-<p>Lattices are fundamental mathematical objects with deep connections to geometry, number theory, algorithms, complexity theory, and cryptography.</p>
+<h2 id="introduction">Introduction</h2>
 
-<p>A lattice is a discrete additive subgroup of Euclidean space. Equivalently, it can be viewed as the set of all integer linear combinations of a collection of basis vectors. Despite this simple definition, lattices exhibit rich geometric structure and give rise to many difficult algorithmic problems.</p>
+<p>Lattice problems arise whenever discrete arithmetic structure meets continuous geometry. That combination shows up in post-quantum cryptography, integer optimization, number-theoretic computation, and high-dimensional algorithm design. In practical terms, lattices matter because many modern cryptographic systems rely on the assumption that certain geometric problems on integer point sets remain hard even for very powerful attackers.</p>
 
-<p>This project studies structural and algorithmic questions about lattices, especially integer lattices such as $\Z^n$, lattice bases, sublattices, and computational problems such as the Closest Vector Problem. The broader aim is to understand how geometric properties of lattices influence algorithmic hardness, reductions between lattice problems, and the structure of lattice bases.</p>
+<p>An integer lattice can be viewed as the set of all integer combinations of a chosen basis of vectors. But the same lattice can have many very different bases, and that flexibility is exactly where the interesting mathematics begins. Some bases are short and well balanced, others are long and skewed, and the geometry of those choices strongly affects what algorithms can or cannot do. Even basic-looking questions about extending a vector to a basis or comparing related sublattices can lead to rich structural problems.</p>
+
+<p>This project studies the geometry and algorithmics of integer lattices, especially the structure of bases, primitive vectors, sublattices, and reductions to classical problems such as the Closest Vector Problem. A major theme is that the internal geometry of a lattice is not just background information; it is a source of computational power and computational difficulty. Understanding that geometry can reveal both new algorithmic opportunities and new hardness phenomena.</p>
+
+<p>The motivation is therefore twofold. On the one hand, lattice theory provides a clean mathematical language for studying high-dimensional discrete structure. On the other hand, it has direct consequences for cryptography, where subtle geometric properties can influence security assumptions and algorithmic attacks. This project aims to connect those viewpoints by studying how local structural constraints on bases and sublattices interact with the global complexity of lattice problems.</p>
 
 <h2 id="motivation">Motivation</h2>
 
-<p>Lattices play a central role in modern theoretical computer science.</p>
+<p>Lattices are central to post-quantum cryptography because many lattice problems are believed to resist both classical and quantum attacks. At the same time, lattice algorithms depend strongly on the choice of basis, and small structural changes can make a problem much easier or much harder.</p>
 
-<p>They are used in the design of post-quantum cryptographic schemes, in algorithms for integer programming and number theory, and in the study of computational hardness. Many important lattice problems are believed to be difficult even for quantum computers, which is one of the reasons lattices form a major foundation of post-quantum cryptography.</p>
-
-<p>At the same time, lattices are also beautiful geometric objects. A lattice basis may look very different from another basis of the same lattice, and the geometry of these bases can strongly affect the complexity of algorithmic tasks. Understanding which bases exist, how short or long they can be, and how they relate to each other is a fundamental question in lattice theory.</p>
-
-<p>This project investigates such questions from both structural and computational viewpoints. The goal is to understand not only how hard lattice problems are, but also what the internal geometry of lattices reveals about these problems.</p>
+<p>Studying bases of $\mathbb{Z}^n$, primitive vectors, and sublattice constructions helps connect abstract geometry to the concrete algorithmic questions that arise in cryptography and complexity theory.</p>
 
 <h2 id="core-questions">Core Questions</h2>
 
-<p>This project focuses on questions such as:</p>
-
 <ul>
-  <li>What structural properties do bases of $\Z^n$ satisfy?</li>
-  <li>When can a given integer vector be extended to a basis of $\Z^n$?</li>
-  <li>How short can the remaining basis vectors be made after fixing one vector?</li>
-  <li>How are sublattices related to classical lattice problems such as the Closest Vector Problem?</li>
-  <li>Can new lattice problems be reduced to well-studied problems such as CVP?</li>
-  <li>What is the computational complexity of finding sublattices satisfying geometric constraints?</li>
-  <li>How do lattice-theoretic properties interact with subset-sum-type and integer-combination problems?</li>
+  <li>When can a given integer vector be extended to a basis of $\mathbb{Z}^n$?</li>
+  <li>How much control can we maintain over the lengths and geometry of the remaining basis vectors?</li>
+  <li>How should sublattice optimization problems be formalized and analyzed?</li>
+  <li>What is the relationship between new sublattice problems and classical problems such as CVP?</li>
+  <li>Which lattice-theoretic structures are most relevant to algorithm design and cryptographic hardness?</li>
 </ul>
 
-<h2 id="research-direction">Research Direction</h2>
-
-<p>The project studies several themes in lattice theory and lattice algorithms, including:</p>
+<h2 id="main-results">Main Results</h2>
 
 <ul>
-  <li>Bases of the integer lattice $\Z^n$</li>
-  <li>Primitive integer vectors and unimodular matrices</li>
-  <li>Structural properties of lattice bases</li>
-  <li>Sublattice problems</li>
-  <li>The Maximum Distance Sublattice Problem</li>
-  <li>Connections between sublattice problems and the Closest Vector Problem</li>
-  <li>Geometric and algebraic methods in lattice theory</li>
-  <li>Algorithmic questions related to integer combinations and subset-sum-type problems</li>
+  <li>
+<strong>On the Maximum Distance Sublattice Problem and Closest Vector Problem (2024):</strong> Connects a new sublattice optimization problem to the classical Closest Vector Problem and clarifies their algorithmic relationship.</li>
+  <li>
+<strong>On the bases of Zn lattice (2022):</strong> Studies how integer vectors extend to bases of $\mathbb{Z}^n$ and what structural constraints these bases satisfy.</li>
 </ul>
-
-<p>The broader aim is to develop a clearer understanding of the relationship between the geometry of lattice bases and the complexity of computational lattice problems.</p>
 
           </article>
 
@@ -256,6 +240,7 @@
         </div>
         <!-- Links/Buttons -->
           <div class="links">
+            
             <a href="https://easychair.org/publications/preprint/Bfc6/open" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
             <a href="/assets/pdf/slides/SYNASC%202024.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
           </div>
@@ -296,6 +281,7 @@
         </div>
         <!-- Links/Buttons -->
           <div class="links">
+            
             <a href="/assets/pdf/SYNASC_2022.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
             <a href="https://ieeexplore.ieee.org/document/10131006" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
             <a href="/assets/pdf/slides/SYNASC%202022.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
@@ -323,7 +309,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: May 29, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: June 01, 2026.
       </div>
     </footer>
 
