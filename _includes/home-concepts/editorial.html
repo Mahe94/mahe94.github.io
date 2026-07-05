@@ -1,0 +1,72 @@
+<section class="cover-shell">
+  <div class="cover-post">
+    <header class="cover-header">
+      <h1 class="cover-title">
+        {% if site.title == "blank" -%}
+          <span class="cover-first-name font-weight-bold"><a href="">{{ site.first_name }}</a></span> {{ site.middle_name }} {{ site.last_name }}
+        {%- else -%}
+          {{ site.title }}
+        {%- endif %}
+      </h1>
+      <p class="cover-desc">{{ page.subtitle }}</p>
+    </header>
+
+    <article class="cover-article">
+      {% if page.profile -%}
+        <aside class="cover-profile">
+          {%- if page.profile.image %}
+            {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+            {% if page.profile.image_circular %}
+              {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+            {% else %}
+              {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+            {% endif %}
+            {% include figure.html
+              path=profile_image_path
+              class=profile_image_class
+              alt=page.profile.image
+            -%}
+          {% endif -%}
+          {%- if page.profile.address %}
+            <div class="address">{{ page.profile.address }}</div>
+          {%- endif %}
+        </aside>
+      {%- endif %}
+
+      <div class="cover-body">
+        <div class="clearfix">
+          {{ include.content }}
+        </div>
+      </div>
+    </article>
+
+    {% if page.news and site.announcements.enabled or page.selected_papers %}
+      <section class="cover-lower">
+        {% if page.news and site.announcements.enabled -%}
+          <section class="cover-panel cover-panel--news">
+            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
+            {%- include news.html limit=true %}
+          </section>
+        {%- endif %}
+
+        {% if page.selected_papers -%}
+          <section class="cover-panel cover-panel--publications">
+            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications</a></h2>
+            {%- include selected_papers.html %}
+          </section>
+        {%- endif %}
+      </section>
+    {% endif %}
+
+    {% if page.social %}
+      <div class="social cover-social">
+        <div class="contact-icons">
+          {% include social.html %}
+        </div>
+        <div class="contact-note">
+          {{ site.contact_note }}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>

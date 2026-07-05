@@ -5,7 +5,7 @@ description: Quantum-secure primitives, pseudorandomness, and cryptography in qu
 img: assets/img/quantum-cryptography.png
 importance: 4
 category: Ongoing Projects
-related_publications: false
+related_publications: true
 bibliography_query: "@*[project_quantum=true]"
 ---
 
@@ -41,7 +41,5 @@ The project is motivated by the need for cryptography that remains meaningful un
 
 ## Main Results
 
-- **Pseudorandom codes in quantum settings:** Investigates whether coding-based pseudorandom objects can survive quantum access and support stronger quantum-secure constructions.
-- **Robust encodings of quantum information:** Explores encodings that combine error correction with computational pseudorandomness for quantum data.
-- **Quantum random-oracle security for simulation-based primitives:** Studies how non-committing and programmable-oracle techniques must change when adversaries query in superposition.
-- **Oracle separations for quantum cryptography:** Uses black-box separations to identify which classical proof strategies fail once quantum access is allowed.
+- **A Note on Non-Committing Encryption in the Quantum Random Oracle Model (2025):** Studies how non-committing encryption should be formulated and analyzed when oracle access is quantum.
+- **Quantum Pseudorandom Codes (2026):** Investigates pseudorandom code constructions designed for quantum settings and their role in quantum-secure cryptography.

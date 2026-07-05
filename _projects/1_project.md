@@ -17,7 +17,10 @@ bibliography_query: "@*[project_llm=true]"
 
 ## Introduction
 
-AI-generated text now appears in places where provenance matters. A help-desk reply may be drafted by a model and lightly edited by a human. A student submission may contain a mixture of original writing and generated paragraphs. A company report may begin as a model summary and then pass through several rounds of internal revision. Once such text starts moving through email threads, document editors, translation tools, and social platforms, it becomes surprisingly hard to answer a simple but important question: where did this text come from?
+AI-generated text now appears in places where provenance matters. A help-desk reply may be drafted by a model and lightly edited by a human. A student submission may contain a mixture of original writing and generated paragraphs. A company report may begin as a model summary and then pass through several rounds of internal revision. Once such text starts moving through email threads, document editors, translation tools, and social platforms, it becomes surprisingly hard to answer a simple but important question: 
+
+
+> Where did this text come from?
 
 This project studies watermarking for large language models from a cryptographic perspective. The broad idea is to make a model produce text that still reads naturally to people, but also contains a hidden signal that can later be detected by an authorized party. Unlike visible labels or metadata, the signal should travel with the text itself. That is useful in real settings where formatting is stripped away, files are copied into new systems, or outputs are intentionally reposted without attribution.
 

@@ -24,13 +24,13 @@
       year: 2025
       location: Sankt Ingbert, Germany
       description:
-        - "Host: Prof. Nico Döttling"
+        - "Host: <a href='https://sites.google.com/site/nicodoettling/'>Prof. Nico Döttling</a>"
     - title: Postdoctoral Fellow
       institution: Indian Institute of Technology Delhi
       year: 2023
       location: New Delhi, India
       description:
-        - "Supervisor: Prof. Venkata Koppula"
+        - "Supervisor: <a href='https://web.iitd.ac.in/~kvenkata/'>Prof. Venkata Koppula</a>"
 
 - title: Education
   type: time_table
@@ -40,9 +40,9 @@
       year: 2016
       location: Kanpur, India
       description:
-        - "Advisor: Prof. Manindra Agrawal"
-        - "PhD Thesis: Analysis of Symmetric-Key Cryptosystems and the Subset-Sum Problem"
-        - "MTech Thesis: New Results and Proofs in Lattice Theory"
+        - "Advisor: <a href='https://sites.google.com/view/manindra/home'>Prof. Manindra Agrawal</a>"
+        - "PhD Thesis: <a href='/assets/bibliography/phd_thesis.pdf'>Analysis of Symmetric-Key Cryptosystems and the Subset-Sum Problem</a>"
+        - "MTech Thesis: <a href='/assets/bibliography/mtech_thesis.pdf'>New Results and Proofs in Lattice Theory</a>"
         - "CPI: 10/10"
 
     - title: BTech
@@ -50,8 +50,8 @@
       year: 2012
       location: Calicut, India
       description:
-        - "Advisor: Dr. Sumesh T.A."
-        - "BTech Thesis: Firewall for Preventing Anonymous Proxy Usage"
+        - "Advisor: <a href='https://people.cse.nitc.ac.in/sumeshta/'>Dr. Sumesh T.A.</a>"
+        - "BTech Thesis: <a href='/assets/bibliography/btech_thesis.pdf'>Firewall for Preventing Anonymous Proxy Usage</a>"
         - "CPI: 8.89/10"
 
 - title: Awards

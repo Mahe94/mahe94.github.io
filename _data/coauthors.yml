@@ -14,6 +14,10 @@
   - firstname: ["Rishab"]
     url: https://pages.cs.wisc.edu/~rishab/
 
+"Banerjee":
+  - firstname: ["Anish"]
+    url: https://ab271202.github.io/
+
 "Verma":
   - firstname: ["Aman"]
     url: https://www.linkedin.com/in/aman-v1729/?originalSubdomain=in
@@ -29,6 +33,10 @@
 "AlKhzaimi":
   - firstname: ["Hoda"]
     url: https://nyuad.nyu.edu/en/academics/divisions/engineering/faculty/hoda-al-khzaimi.html
+
+"Kandikuppa":
+  - firstname: ["Anant"]
+    url: https://sts.cs.illinois.edu/team/anant-kandikuppa.html
 
 "Bhushan":
   - firstname: ["Kaartik"]
@@ -77,3 +85,7 @@
 "Waldner":
   - firstname: ["Hendrik"]
     url: https://hendrikwaldner.github.io
+
+"Vipparti":
+  - firstname: ["Sri Harsha"]
+    url: https://www.linkedin.com/in/harsha-vipparti

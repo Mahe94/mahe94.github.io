@@ -1,12 +1,14 @@
 ---
 layout: page
-permalink: /posts/
-title: Posts
+permalink: /resources/
+title: Resources
 description: 
 
 nav: true
 nav_order: 6
 ---
+
+## Posts
 
 This page collects some of my answers on Cryptography Stack Exchange and Mathematics Stack Exchange. I used these platforms to clarify ideas, explain definitions, work through proof techniques, and discuss questions that arise naturally in cryptography, lattices, complexity theory, and related areas. The answers linked here are informal, but I hope they are useful to students and researchers looking for accessible explanations of technical concepts.
 
