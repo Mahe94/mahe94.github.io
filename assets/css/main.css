@@ -404,6 +404,7 @@ footer.sticky-bottom {
   padding: 1.15rem 1.25rem 1.35rem;
   margin-bottom: 0.85rem;
   scroll-margin-top: calc(56px + 0.425rem);
+  scroll-snap-margin-top: calc(56px + 0.425rem);
 }
 .cv .cv-section:first-child {
   padding-top: 1.15rem;
