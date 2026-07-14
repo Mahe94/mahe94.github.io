@@ -386,6 +386,7 @@ footer.sticky-bottom {
     border-bottom: 1px solid var(--global-divider-color);
     padding: 1.15rem 1.25rem 1.35rem;
     margin-bottom: 0.85rem;
+    scroll-margin-top: calc(56px + 0.425rem);
   }
 
   .cv-section:first-child {
@@ -555,15 +556,16 @@ footer.sticky-bottom {
 }
 
 .cv-sidebar {
+  align-self: start;
   display: block;
   margin-top: 1rem;
+  position: sticky;
+  top: 88px;
 }
 
 .cv-sidebar-inner {
   border-left: 1px solid var(--global-divider-color);
   padding-left: 1rem;
-  position: sticky;
-  top: 88px;
 }
 
 .cv-sidebar-nav {
@@ -593,6 +595,7 @@ footer.sticky-bottom {
   .cv-sidebar {
     margin-top: 0;
     order: -1;
+    position: static;
   }
 
   .cv-sidebar-inner {
