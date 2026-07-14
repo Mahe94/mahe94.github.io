@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-"Leakage-Resilient Incompressible Cryptography: Constructions and Barriers" accepted at <a href="https://asiacrypt.iacr.org/2024/">Asiacrypt 2024</a>!
+**"Leakage-Resilient Incompressible Cryptography: Constructions and Barriers"** accepted at <a href="https://asiacrypt.iacr.org/2024/">Asiacrypt 2024</a>!

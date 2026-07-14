@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-"Incompressible Functional Encryption" accepted at <a href="http://itcs-conf.org/itcs25/itcs25-cfp.html">ITCS 2025</a>!
+**"Incompressible Functional Encryption"** accepted at <a href="http://itcs-conf.org/itcs25/itcs25-cfp.html">ITCS 2025</a>!
