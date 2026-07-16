@@ -153,8 +153,9 @@
 
           <article>
             <!-- _pages/publications.md -->
-<div class="publications">
-<h2 class="year">2026</h2>
+<div class="publications publications-with-year-index">
+  <div class="publications-list">
+<h2 class="year publications-main-year" id="publications-2026" aria-label="2026"><span class="publications-main-year-placeholder" aria-hidden="true">2026</span></h2>
   <ol class="bibliography"><li>
 <!-- _layouts/bib.html -->
       <div class="row">
@@ -300,7 +301,7 @@
       </div>
 </li>
 </ol>
-<h2 class="year">2025</h2>
+<h2 class="year publications-main-year" id="publications-2025" aria-label="2025"><span class="publications-main-year-placeholder" aria-hidden="true">2025</span></h2>
   <ol class="bibliography"></ol>
   <ol class="bibliography">
 <li>
@@ -541,7 +542,7 @@
       </div>
 </li>
 </ol>
-<h2 class="year">2024</h2>
+<h2 class="year publications-main-year" id="publications-2024" aria-label="2024"><span class="publications-main-year-placeholder" aria-hidden="true">2024</span></h2>
   <ol class="bibliography"></ol>
   <ol class="bibliography">
 <li>
@@ -718,7 +719,7 @@
       </div>
 </li>
 </ol>
-<h2 class="year">2023</h2>
+<h2 class="year publications-main-year" id="publications-2023" aria-label="2023"><span class="publications-main-year-placeholder" aria-hidden="true">2023</span></h2>
   <ol class="bibliography"></ol>
   <ol class="bibliography">
 <li>
@@ -808,7 +809,7 @@
       </div>
 </li>
 </ol>
-<h2 class="year">2022</h2>
+<h2 class="year publications-main-year" id="publications-2022" aria-label="2022"><span class="publications-main-year-placeholder" aria-hidden="true">2022</span></h2>
   <ol class="bibliography"></ol>
   <ol class="bibliography">
 <li>
@@ -978,7 +979,7 @@
       </div>
 </li>
 </ol>
-<h2 class="year">2021</h2>
+<h2 class="year publications-main-year" id="publications-2021" aria-label="2021"><span class="publications-main-year-placeholder" aria-hidden="true">2021</span></h2>
   <ol class="bibliography"></ol>
   <ol class="bibliography"><li>
 <!-- _layouts/bib.html -->
@@ -1020,7 +1021,7 @@
         </div>
       </div>
 </li></ol>
-<h2 class="year">2019</h2>
+<h2 class="year publications-main-year" id="publications-2019" aria-label="2019"><span class="publications-main-year-placeholder" aria-hidden="true">2019</span></h2>
   <ol class="bibliography"></ol>
   <ol class="bibliography"><li>
 <!-- _layouts/bib.html -->
@@ -1063,7 +1064,7 @@
         </div>
       </div>
 </li></ol>
-<h2 class="year">2018</h2>
+<h2 class="year publications-main-year" id="publications-2018" aria-label="2018"><span class="publications-main-year-placeholder" aria-hidden="true">2018</span></h2>
   <ol class="bibliography"></ol>
   <ol class="bibliography"><li>
 <!-- _layouts/bib.html -->
@@ -1107,7 +1108,90 @@
 </li></ol>
 
 
+  </div>
+
+  <nav class="publications-year-rail" aria-label="Jump to publication year">
+      <a href="#publications-2026" aria-label="Jump to publications from 2026">
+        <h2 class="year publications-year-rail-label" aria-hidden="true"><span>2026</span></h2>
+      </a>
+      <a href="#publications-2025" aria-label="Jump to publications from 2025">
+        <h2 class="year publications-year-rail-label" aria-hidden="true"><span>2025</span></h2>
+      </a>
+      <a href="#publications-2024" aria-label="Jump to publications from 2024">
+        <h2 class="year publications-year-rail-label" aria-hidden="true"><span>2024</span></h2>
+      </a>
+      <a href="#publications-2023" aria-label="Jump to publications from 2023">
+        <h2 class="year publications-year-rail-label" aria-hidden="true"><span>2023</span></h2>
+      </a>
+      <a href="#publications-2022" aria-label="Jump to publications from 2022">
+        <h2 class="year publications-year-rail-label" aria-hidden="true"><span>2022</span></h2>
+      </a>
+      <a href="#publications-2021" aria-label="Jump to publications from 2021">
+        <h2 class="year publications-year-rail-label" aria-hidden="true"><span>2021</span></h2>
+      </a>
+      <a href="#publications-2019" aria-label="Jump to publications from 2019">
+        <h2 class="year publications-year-rail-label" aria-hidden="true"><span>2019</span></h2>
+      </a>
+      <a href="#publications-2018" aria-label="Jump to publications from 2018">
+        <h2 class="year publications-year-rail-label" aria-hidden="true"><span>2018</span></h2>
+      </a>
+  </nav>
 </div>
+
+<script>
+  (() => {
+    const headings = Array.from(document.querySelectorAll('.publications-main-year'));
+    const links = Array.from(document.querySelectorAll('.publications-year-rail a'));
+    if (!headings.length || !links.length) return;
+
+    let activeIndex = 0;
+    let lastScrollY = -1;
+    let ticking = false;
+
+    const setActiveYear = (index) => {
+      activeIndex = index;
+      links.forEach((link, linkIndex) => {
+        const isActive = linkIndex === activeIndex;
+        link.classList.toggle('is-active', isActive);
+        if (isActive) link.setAttribute('aria-current', 'true');
+        else link.removeAttribute('aria-current');
+      });
+    };
+
+    const updateActiveYear = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        while (activeIndex < headings.length - 1) {
+          const activeYear = links[activeIndex].querySelector('.publications-year-rail-label');
+          const nextSeparatorTop = headings[activeIndex + 1].getBoundingClientRect().top;
+          if (nextSeparatorTop > activeYear.getBoundingClientRect().top) break;
+          setActiveYear(activeIndex + 1);
+        }
+      } else if (currentScrollY < lastScrollY) {
+        while (activeIndex > 0) {
+          const activeYear = links[activeIndex].querySelector('.publications-year-rail-label');
+          const currentSeparatorTop = headings[activeIndex].getBoundingClientRect().top;
+          if (currentSeparatorTop < activeYear.getBoundingClientRect().bottom) break;
+          setActiveYear(activeIndex - 1);
+        }
+      }
+
+      lastScrollY = currentScrollY;
+      ticking = false;
+    };
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateActiveYear);
+        ticking = true;
+      }
+    }, { passive: true });
+    window.addEventListener('resize', updateActiveYear);
+    setActiveYear(0);
+    updateActiveYear();
+  })();
+</script>
 
 <p><br><br></p>
 
@@ -1407,7 +1491,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: July 14, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: July 16, 2026.
       </div>
     </footer>
 
