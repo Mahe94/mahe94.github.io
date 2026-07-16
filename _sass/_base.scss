@@ -811,7 +811,88 @@ footer.sticky-bottom {
 
 // Publications
 
+.publications.publications-with-year-index {
+  --publications-year-mask-width: 5rem;
+  align-items: start;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: 0;
+}
+
+.publications-list {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+}
+
+.publications-year-rail {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: var(--publications-year-line-gap);
+  padding: 0 0 0.5rem;
+  pointer-events: none;
+  position: sticky;
+  top: 88px;
+  width: 100%;
+  z-index: 1;
+
+  &::before {
+    background-color: var(--global-bg-color);
+    bottom: 0;
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    top: 0;
+    width: var(--publications-year-mask-width);
+    z-index: 0;
+  }
+
+  a {
+    display: block;
+    padding-right: 0;
+    pointer-events: none;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    z-index: 1;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.publications .publications-year-rail h2.year {
+  border-top: 0;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.publications .publications-year-rail h2.year span {
+  color: inherit;
+  font-size: inherit;
+  pointer-events: auto;
+}
+
+.publications .publications-year-rail a:not(.is-active) h2.year {
+  font-size: 0.72rem;
+  opacity: 0.28;
+}
+
+.publications .publications-year-rail a:not(.is-active):hover h2.year,
+.publications .publications-year-rail a:not(.is-active):focus h2.year {
+  opacity: 0.7;
+}
+
 .publications {
+  --publications-year-line-gap: 1rem;
   margin-top: 2rem;
 
   h1 {
@@ -833,10 +914,25 @@ footer.sticky-bottom {
   h2.year {
     color: var(--global-text-color);
     border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
+    padding-top: var(--publications-year-line-gap);
     margin-top: 2rem;
     margin-bottom: -2rem;
+    scroll-margin-top: calc(56px + 0.425rem);
+    scroll-snap-margin-top: calc(56px + 0.425rem);
     text-align: right;
+  }
+
+  h2.publications-main-year {
+    margin-top: 2rem;
+  }
+
+  .publications-list h2.publications-main-year:first-child {
+    margin-top: 0;
+  }
+
+  h2.publications-main-year .publications-main-year-placeholder {
+    font-size: inherit;
+    visibility: hidden;
   }
 
   @media (max-width: 575.98px) {

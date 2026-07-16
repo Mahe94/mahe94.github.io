@@ -10,17 +10,82 @@ nav: true
 nav_order: 1
 ---
 <!-- _pages/publications.md -->
-<div class="publications">
+<div class="publications publications-with-year-index">
+  <div class="publications-list">
 
 {%- for y in page.years %}
   {%- capture submissions_query -%}@*[year={{ y }} && status=submission]*{%- endcapture -%}
   {%- capture publications_query -%}@*[year={{ y }} && status!=submission && status!=manuscript && status!=thesis]*{%- endcapture -%}
-  <h2 class="year">{{y}}</h2>
+  <h2 class="year publications-main-year" id="publications-{{ y }}" aria-label="{{ y }}"><span class="publications-main-year-placeholder" aria-hidden="true">{{ y }}</span></h2>
   {% bibliography -f {{ site.scholar.bibliography }} -q {{ submissions_query }} %}
   {% bibliography -f {{ site.scholar.bibliography }} -q {{ publications_query }} %}
 {% endfor %}
 
+  </div>
+
+  <nav class="publications-year-rail" aria-label="Jump to publication year">
+    {%- for y in page.years %}
+      <a href="#publications-{{ y }}" aria-label="Jump to publications from {{ y }}">
+        <h2 class="year publications-year-rail-label" aria-hidden="true"><span>{{ y }}</span></h2>
+      </a>
+    {%- endfor %}
+  </nav>
 </div>
+
+<script>
+  (() => {
+    const headings = Array.from(document.querySelectorAll('.publications-main-year'));
+    const links = Array.from(document.querySelectorAll('.publications-year-rail a'));
+    if (!headings.length || !links.length) return;
+
+    let activeIndex = 0;
+    let lastScrollY = -1;
+    let ticking = false;
+
+    const setActiveYear = (index) => {
+      activeIndex = index;
+      links.forEach((link, linkIndex) => {
+        const isActive = linkIndex === activeIndex;
+        link.classList.toggle('is-active', isActive);
+        if (isActive) link.setAttribute('aria-current', 'true');
+        else link.removeAttribute('aria-current');
+      });
+    };
+
+    const updateActiveYear = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        while (activeIndex < headings.length - 1) {
+          const activeYear = links[activeIndex].querySelector('.publications-year-rail-label');
+          const nextSeparatorTop = headings[activeIndex + 1].getBoundingClientRect().top;
+          if (nextSeparatorTop > activeYear.getBoundingClientRect().top) break;
+          setActiveYear(activeIndex + 1);
+        }
+      } else if (currentScrollY < lastScrollY) {
+        while (activeIndex > 0) {
+          const activeYear = links[activeIndex].querySelector('.publications-year-rail-label');
+          const currentSeparatorTop = headings[activeIndex].getBoundingClientRect().top;
+          if (currentSeparatorTop < activeYear.getBoundingClientRect().bottom) break;
+          setActiveYear(activeIndex - 1);
+        }
+      }
+
+      lastScrollY = currentScrollY;
+      ticking = false;
+    };
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateActiveYear);
+        ticking = true;
+      }
+    }, { passive: true });
+    window.addEventListener('resize', updateActiveYear);
+    setActiveYear(0);
+    updateActiveYear();
+  })();
+</script>
 
 <br><br>
 
