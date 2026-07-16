@@ -874,6 +874,12 @@ footer.sticky-bottom {
   .publications h2.year {
     margin-bottom: 0.75rem;
   }
+  .publications .publications-year-rail {
+    display: none;
+  }
+  .publications h2.publications-main-year .publications-main-year-placeholder {
+    visibility: visible;
+  }
 }
 .publications ol.bibliography {
   list-style: none;
