@@ -829,12 +829,12 @@ footer.sticky-bottom {
   align-self: start;
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
   grid-column: 1;
   grid-row: 1;
   margin-top: var(--publications-year-line-gap);
   padding: 0 0 0.5rem;
   pointer-events: none;
+  position: -webkit-sticky;
   position: sticky;
   top: 88px;
   width: 100%;
@@ -860,6 +860,10 @@ footer.sticky-bottom {
     text-decoration: none;
     width: 100%;
     z-index: 1;
+
+    & + a {
+      margin-top: 0.45rem;
+    }
 
     &:hover,
     &:focus {
