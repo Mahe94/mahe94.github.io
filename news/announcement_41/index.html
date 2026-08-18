@@ -10,9 +10,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Quantum Algorithms and Cryptography | Mahesh Sreekumar Rajasree</title>
+    <title>Announcement_41 | Mahesh Sreekumar Rajasree</title>
     <meta name="author" content="Mahesh Sreekumar Rajasree">
-    <meta name="description" content="Quantum-secure primitives, pseudorandomness, and cryptography in quantum models">
+    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -38,7 +39,7 @@
     <link rel="shortcut icon" href="/assets/img/msr.png">
     
     <link rel="stylesheet" href="/assets/css/main.css?v=1787059569">
-    <link rel="canonical" href="https://mahe94.github.io/projects/6_project/">
+    <link rel="canonical" href="https://mahe94.github.io/news/announcement_41/">
 
     <!-- Dark Mode -->
     
@@ -143,169 +144,27 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- page.html -->
-        <div class="post">
+        <!-- _layouts/post.html -->
 
-          <header class="post-header">
-            <h1 class="post-title">Quantum Algorithms and Cryptography</h1>
-            <p class="post-description">Quantum-secure primitives, pseudorandomness, and cryptography in quantum models</p>
-          </header>
+<div class="post">
 
-          <article>
-            <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+  <header class="post-header">
+    <h1 class="post-title">Announcement_41</h1>
+    <p class="post-meta">August 18, 2026</p>
+    <p class="post-tags">
+      <a href="/blog/2026"> <i class="fas fa-calendar fa-sm"></i> 2026 </a>
 
-  <picture>
+    </p>
+  </header>
+
+  <article class="post-content">
     
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/quantum-cryptography.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
+    <div id="markdown-content">
+      <p>Research visit and talk at <a href="https://www.iist.ac.in/" rel="external nofollow noopener" target="_blank">Indian Institute of Space Science and Technology</a>, Trivandrum, hosted by <a href="https://www.iist.ac.in/people-faculty-profile/deepak-mishra" rel="external nofollow noopener" target="_blank">Prof. Deepak Mishra</a>.</p>
 
     </div>
+  </article>
 </div>
-
-<h2 id="introduction">Introduction</h2>
-
-<p>Cryptographic systems are often expected to protect information far longer than the hardware they run on today. A medical archive may need confidentiality for decades. Government records, industrial secrets, legal contracts, and identity systems may outlive several generations of software and key infrastructure. That long time horizon is what makes quantum cryptography urgent: even if large quantum computers are not available today, the data being collected and encrypted now may still need to remain secure when the threat model changes.</p>
-
-<p>The first layer of the problem is familiar from post-quantum cryptography. Quantum algorithms threaten several number-theoretic assumptions that supported classical public-key systems for decades, so we need primitives whose security is expected to survive quantum computation. But the second layer is more subtle and, in many ways, more interesting: quantum adversaries are not just faster classical adversaries. They can hold superpositions, manipulate quantum side information, and query oracles in ways that have no direct classical analogue.</p>
-
-<p>That shift changes how cryptographic proofs have to be written. Techniques that work comfortably in the classical random oracle model do not automatically survive in the quantum random oracle model. Definitions of pseudorandomness, simulation, equivocation, and robustness may need to be reformulated when an adversary can interact with a system through quantum access. Even when a primitive looks “classical” on the surface, the surrounding proof technology may need fundamentally different ideas.</p>
-
-<p>This project studies these quantum and post-quantum aspects of cryptography, with a focus on quantum-secure definitions, non-committing encryption, oracle-model security, pseudorandomness, and robust encodings of information. The broader aim is to understand which classical methods remain reliable, which ones fail, and what new tools are needed to build cryptography that still makes sense once quantum computation becomes part of the adversarial landscape.</p>
-
-<h2 id="motivation">Motivation</h2>
-
-<p>Quantum computers threaten more than a few legacy assumptions. They also change the way we reason about security proofs, because a quantum adversary can interact with an oracle in ways that no classical attacker can imitate. That makes standard definitions for pseudorandomness, simulation, and non-committing security worth revisiting from the ground up.</p>
-
-<p>The project is motivated by the need for cryptography that remains meaningful under long-term quantum risk, not just cryptography that is efficient under today’s threat model.</p>
-
-<h2 id="core-questions">Core Questions</h2>
-
-<ul>
-  <li>Which classical constructions remain secure when the adversary has quantum computation or quantum oracle access?</li>
-  <li>How should non-committing encryption be modeled and proved in the quantum random oracle setting?</li>
-  <li>What forms of pseudorandomness continue to make sense in the presence of quantum information?</li>
-  <li>Can coding-based tools support quantum-secure primitives or quantum-state-based constructions?</li>
-  <li>What new lower bounds or separations are needed to explain the limits of black-box techniques?</li>
-</ul>
-
-<h2 id="main-results">Main Results</h2>
-
-<ul>
-  <li>
-<strong>A Note on Non-Committing Encryption in the Quantum Random Oracle Model (2025):</strong> Studies how non-committing encryption should be formulated and analyzed when oracle access is quantum.</li>
-  <li>
-<strong>Quantum Pseudorandom Codes (2026):</strong> Investigates pseudorandom code constructions designed for quantum settings and their role in quantum-secure cryptography.</li>
-</ul>
-
-          </article>
-
-        
-        <br>
-        <hr>
-        <h2>References</h2>
-            <div class="publications">
-                
-                        <ol class="bibliography">
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <!-- <div class="col-sm-2 abbr"></div> -->
-
-        <!-- Entry bib key -->
-        <div id="doettling2026QPC" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Quantum Pseudorandom Codes</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        <a href="https://sites.google.com/site/nicodoettling/" rel="external nofollow noopener" target="_blank">Nico Döttling</a>, <a href="https://anne-me.github.io/" rel="external nofollow noopener" target="_blank">Anne Müller</a>, and <em>Mahesh Sreekumar Rajasree</em>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Manuscript</em>, 2026
-        </div>
-        <div class="periodical">
-          
-        </div>
-        <!-- Links/Buttons -->
-          <div class="links">
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <!-- <div class="col-sm-2 abbr"></div> -->
-
-        <!-- Entry bib key -->
-        <div id="banerjee2025QNCE" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">A Note on Non-Committing Encryption in the Quantum Random Oracle Model</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        <a href="https://ab271202.github.io/" rel="external nofollow noopener" target="_blank">Anish Banerjee</a>, Shankh Gupta, <a href="https://web.iitd.ac.in/~kvenkata/" rel="external nofollow noopener" target="_blank">Venkata Koppula</a>, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var authors = document.getElementById('banerjee2025QNCE-more-authors');
-                if (authors) {
-                  authors.style.display = 'inline';
-                }
-                this.remove();
-              ">1 more author</span>
-
-          <span id="banerjee2025QNCE-more-authors" style="display: none;"><em>Mahesh Sreekumar Rajasree</em></span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Manuscript</em>, 2025
-        </div>
-        <div class="periodical">
-          
-        </div>
-        <!-- Links/Buttons -->
-          <div class="links">
-            
-            <a href="/assets/pdf/QNCE.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          
-        </div>
-      </div>
-</li>
-</ol>
-                
-            </div>
-        
-
-        </div>
 
       
     </div>
