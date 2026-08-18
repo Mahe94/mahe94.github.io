@@ -9,6 +9,7 @@ nav_order: 4
 ---
 
 * Invited Talks
+    * _Secrets, Quantum and AI_, IIST, Trivandrum 2026 [<a href='../assets/pdf/slides/IIST_2026.pdf'>Slides</a>]
     * _Limits of Black-Box Constructions of Pseudorandom Codes_, IMDEA Software Institute, Madrid 2026 [<a href='../assets/pdf/slides/IMDEA 2026 - Limits of Black-Box Constructions of Pseudorandom Codes.pdf'>Slides</a>]
     * _Leakage-Resilience meets Incompressibility_, IIT-Delhi, India 2024 [<a href='../assets/pdf/slides/Leakage-Incompressible.pdf'>Slides</a>]
     * _Leakage-Resilience meets Incompressibility_, IIIT-Hyderabad, India 2024 [<a href='../assets/pdf/slides/Leakage-Incompressible.pdf'>Slides</a>]
