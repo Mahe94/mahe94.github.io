@@ -21,4 +21,6 @@ Previously, I was a Postdoctoral Fellow in the Department of Computer Science an
 
 I completed my PhD (as a <a href="https://pmrf.in">Prime Minister’s Research Fellow</a>) and MTech degree under the guidance of <a href='https://en.wikipedia.org/wiki/Manindra_Agrawal'>Prof. Manindra Agrawal</a> in the Department of Computer Science and Engineering, Indian Institute of Technology, Kanpur. During that time, I was actively working on the cryptanalysis of symmetric-key cryptosystems and variants of the subset-sum problem.
 
+I received my BTech in Computer Science and Engineering from the National Institute of Technology Calicut.
+
 My <i>Erd<span>&#337;</span>s</i> number is 3 (Me -> <a href='https://cispa.de/en/people/c01anjo'>Antoine Joux</a> -> Andrew M. Odlyzko -> Paul Erd<span>&#337;</span>s).
