@@ -5,6 +5,7 @@ description: Quantum-secure primitives, pseudorandomness, and cryptography in qu
 img: assets/img/quantum-cryptography.png
 importance: 4
 category: Ongoing Projects
+permalink: /projects/6_project/
 related_publications: true
 bibliography_query: "@*[project_quantum=true]"
 ---

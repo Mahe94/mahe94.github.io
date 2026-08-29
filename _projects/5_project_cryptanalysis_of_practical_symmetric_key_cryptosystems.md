@@ -5,6 +5,7 @@ description: Distinguishers and structural analysis of practical symmetric-key d
 img: assets/img/symmetric-key.png
 importance: 5
 category: Past Projects
+permalink: /projects/4_project/
 related_publications: true
 bibliography_query: "@*[project_symmetric=true]"
 ---

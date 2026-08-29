@@ -5,6 +5,7 @@ description: Structural, algorithmic, and complexity-theoretic questions in latt
 img: assets/img/lattices.png
 importance: 6
 category: Past Projects
+permalink: /projects/5_project/
 related_publications: true
 bibliography_query: "@*[project_lattice=true]"
 ---

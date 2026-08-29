@@ -5,6 +5,7 @@ description: Faster algorithms and structural insights for subset-sum-type probl
 img: assets/img/SSUM.png
 importance: 3
 category: Ongoing Projects
+permalink: /projects/3_project/
 related_publications: true
 bibliography_query: "@*[project_subsetsum=true]"
 ---

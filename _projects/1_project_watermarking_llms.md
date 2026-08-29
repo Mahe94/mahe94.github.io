@@ -5,6 +5,7 @@ description: Cryptographic foundations for detecting and protecting AI-generated
 img: assets/img/llm.png
 importance: 1
 category: Ongoing Projects
+permalink: /projects/1_project/
 related_publications: true
 bibliography_query: "@*[project_llm=true]"
 ---
