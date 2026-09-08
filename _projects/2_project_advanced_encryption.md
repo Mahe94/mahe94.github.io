@@ -17,11 +17,11 @@ related_publications: false
 
 ## Introduction
 
-Advanced encryption asks for more than basic confidentiality. In many modern systems, encrypted data may be stored for years, shared across organizational hierarchies, or processed in large batches by servers that need strong security guarantees and efficient performance at the same time. Those settings push us beyond the standard picture of public-key encryption and raise questions about post-compromise safety, delegated access control, and scalable decryption.
+Encryption is often described as placing information in a locked box that only the intended recipient can open. That picture captures confidentiality, but modern systems ask much more of the box. Encrypted data may be stored for years, shared across an organization, processed by remote services, or decrypted in large batches. During that lifetime, keys may leak, responsibilities may be delegated, and efficiency constraints may become as important as the original secrecy requirement.
 
-This project brings together a group of related directions in modern encryption theory. One line studies incompressibility, where an attacker should not be able to keep only a tiny summary of a ciphertext and still benefit from a future key exposure. Another studies identity-based and hierarchical encryption, where secret keys are derived from identities and secret-key capabilities can be delegated across levels of authority. A third studies batch decryption, where many ciphertexts must be handled efficiently without weakening security.
+Advanced encryption develops definitions and constructions for these richer settings. One direction studies incompressibility, where an attacker should not be able to retain only a short summary of a ciphertext and later exploit a key exposure. Another studies identity-based and hierarchical encryption, where identities serve as public keys and secret-key capabilities can be delegated across levels of authority. A third studies batch decryption, where shared computation should reduce the cost of processing many ciphertexts without introducing new attacks.
 
-Taken together, these directions ask how encryption should behave in realistic long-term systems: when keys may be revealed later, when access rights are structured, and when decryption work must scale. The common goal is to design encryption that remains meaningful under stronger functionality and stronger threat models than the classical baseline.
+Taken together, these directions examine how correctness, indistinguishability, simulation, post-compromise security, and efficiency interact beyond the classical public-key encryption model. The common goal is to identify security notions that remain meaningful under richer functionality and to realize them from well-understood cryptographic assumptions.
 
 ## Subprojects
 

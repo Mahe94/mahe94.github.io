@@ -18,19 +18,19 @@ related_publications: false
 
 ## Introduction
 
-Many real systems do not decrypt one ciphertext at a time. A server may need to process large encrypted logs, a storage service may recover many archived records together, or a privacy-preserving workflow may need to handle an entire batch of encrypted inputs before producing an output. In those settings, the main question is not only whether decryption is correct, but whether it can scale gracefully as the workload grows.
+Many real systems do not decrypt one ciphertext at a time. A server may need to process large encrypted logs, a storage service may recover many archived records together, or a privacy-preserving workflow may handle an entire batch of encrypted inputs before producing an output. Repeating an expensive decryption procedure independently for every item can become a serious bottleneck.
 
-Batch decryption studies techniques for handling many ciphertexts together while preserving the security guarantees expected from the underlying encryption scheme. Depending on the setting, the goal may be to amortize computation, reduce communication, streamline key usage, or support structured post-processing across a whole collection of ciphertexts. The challenge is to gain efficiency without opening a shortcut that an attacker can exploit.
+Batch decryption asks whether common work can be shared across many ciphertexts. Depending on the setting, the goal may be to amortize computation, reduce communication, streamline key usage, or support structured post-processing across a collection. Any gain must preserve correctness for valid ciphertexts and prevent malformed or adversarially chosen inputs from turning the shared computation into a new attack surface.
 
-This project focuses on the theory behind secure and efficient large-scale decryption workflows. It sits naturally alongside other advanced encryption questions, because once ciphertexts are numerous, long-lived, or tied to structured access policies, efficiency and security can no longer be treated as separate concerns.
-
-## Motivation
-
-Decryption cost becomes a real systems issue when encrypted workloads are large or repetitive. A principled understanding of batch decryption helps identify when efficiency gains are genuinely safe and when they quietly weaken the security model.
+At a technical level, the project studies when decryption algorithms admit secure batching, how the cost should scale with the batch size, and which security definitions capture attacks involving correlated or adaptively generated ciphertexts. It sits naturally alongside other advanced-encryption questions because large, long-lived, or access-controlled ciphertext collections require efficiency and security to be analyzed together.
 
 ## Core Questions
 
-- Which encryption settings admit meaningful amortization across many ciphertexts?
-- How should batch decryption be modeled so that efficiency gains do not hide new attack surfaces?
-- What tradeoffs arise between computation, communication, and key-management complexity?
-- How does batch processing interact with richer notions of public-key and post-compromise security?
+- Which classes of public-key or functional-encryption schemes admit asymptotic or concrete amortization across ciphertexts?
+- How should correctness and CCA-style security be defined for correlated, malformed, or adaptively chosen ciphertext batches?
+- Can preprocessing or shared auxiliary state reduce online decryption cost without weakening key or message privacy?
+- What lower bounds govern the tradeoffs among computation, communication, batch size, and key-management complexity?
+
+## Main Results
+
+This project is ongoing. Concrete results and corresponding publications will be added here as they become available.

@@ -24,27 +24,21 @@ The classical subset sum problem captures this tension in one of its cleanest fo
 
 This project studies faster algorithms and structural variants of subset-sum-type problems. A recurring theme is that small changes in the model can have large algorithmic consequences. The difficulty of the problem shifts when we move from ordinary sums to modular sums, from exact target matching to equal-sum phenomena, or from bounded choices to unbounded and projected variants. Those changes are mathematically natural, and they also line up with questions that arise in cryptography and related optimization tasks.
 
-The broader objective is to understand which forms of structure can be exploited algorithmically and which ones reflect genuine hardness. That means developing better reductions, sharper lower bounds, and more refined algorithms for special regimes such as dense instances or highly redundant inputs. In this area, cleaner theory is not just an aesthetic improvement; it often reveals new algorithmic routes that were hidden by the apparent simplicity of the original formulation.
-
-## Motivation
-
-Subset sum is a benchmark problem for exact exponential algorithms, fine-grained complexity, and cryptographic hardness. It is simple enough to reason about cleanly, but rich enough to expose the limits of algebraic, combinatorial, and lattice-based techniques.
-
-The motivating question is not only whether subset sum is hard in the worst case, but which kinds of structure make real instances easier. Understanding that boundary helps both algorithm designers and cryptographers.
+The broader objective is to understand which forms of structure can be exploited algorithmically and which ones reflect genuine hardness. Subset sum is a benchmark for exact exponential algorithms, fine-grained complexity, and cryptographic assumptions, and its variants expose the limits of algebraic, combinatorial, and lattice-based techniques. The project develops reductions, upper bounds, lower bounds, and average-case analyses for regimes such as dense instances, projected or unbounded choices, subset product, and pigeonhole equal-sum problems.
 
 ## Core Questions
 
-- When do dense or highly structured instances admit algorithms faster than brute force?
-- How do modular, projected, equal-sum, and unbounded variants differ from classical subset sum?
-- Can algebraic or lattice-based techniques improve performance on specific regimes?
-- What lower bounds explain why certain improvements are impossible?
-- How do these variants connect to cryptographic and fine-grained complexity assumptions?
+- Which density and redundancy regimes permit subexponential or pseudopolynomial algorithms beyond meet-in-the-middle bounds?
+- How do projected, unbounded, multiplicative, and pigeonhole equal-sum variants reduce to or separate from classical Subset Sum?
+- Can algebraic sieving, representation techniques, or lattice methods improve worst-case and average-case running times?
+- Which fine-grained or parameterized lower bounds match the achievable algorithms in the relevant regimes?
+- When do average-case distributions exhibit a provable gap from worst-case complexity, and can that gap support cryptographic applications?
 
 ## Main Results
 
-- **Pigeonhole Equal Subset Sum: Subexponential Algorithm, Tight Lower Bounds and Average-Case Analysis (2026):** Gives subexponential algorithms together with tight lower-bound evidence and average-case analysis.
-- **Weak Pigeonhole Equal-Sums made Simpler and Faster (2026):** Simplifies and improves algorithms for the weak pigeonhole equal-sums setting.
-- **On the Variants of Subset Sum: Projected and Unbounded (2023):** Studies projected and unbounded versions of the problem and clarifies their algorithmic behavior.
-- **Efficient Reductions and Algorithms for Subset Product (2023):** Extends subset-sum-style methods to multiplicative analogues through new reductions and algorithms.
-- **Algebraic Algorithms for Variants of Subset Sum (2022):** Uses algebraic techniques to speed up structured versions of subset sum.
-- **Efficient Reductions and Algorithms for Variants of Subset Sum (2021):** Organizes several subset-sum variants through reductions and gives a cleaner algorithmic toolkit for studying them.
+- **Pigeonhole Equal Subset Sum: Subexponential Algorithm, Tight Lower Bounds and Average-Case Analysis (2026):** Gives a subexponential algorithm, matching lower-bound evidence in the studied model, and an average-case analysis of Pigeonhole Equal Subset Sum.
+- **Weak Pigeonhole Equal-Sums made Simpler and Faster (2026):** Simplifies the algorithmic treatment of Weak Pigeonhole Equal-Sums and improves its running time.
+- **On the Variants of Subset Sum: Projected and Unbounded (2023):** Develops algorithms and reductions for projected and unbounded variants, clarifying their relationship with classical Subset Sum.
+- **Efficient Reductions and Algorithms for Subset Product (2023):** Establishes reductions and algorithms for the multiplicative analogue of Subset Sum.
+- **Algebraic Algorithms for Variants of Subset Sum (2022):** Applies algebraic techniques to structured Subset Sum variants and derives improved algorithms in the corresponding regimes.
+- **Efficient Reductions and Algorithms for Variants of Subset Sum (2021):** Systematizes reductions among several variants and develops a shared algorithmic framework for them.

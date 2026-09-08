@@ -19,24 +19,20 @@ bibliography_query: "@*[project_hibe=true]"
 
 ## Introduction
 
-Identity-based encryption replaces conventional public keys with meaningful identifiers such as email addresses, usernames, or organizational labels. Hierarchical identity-based encryption extends that idea by allowing secret-key capabilities to be delegated down a tree of identities, which makes the model especially natural for large systems with layered authority. These primitives are appealing because they combine public-key functionality with a much richer access structure.
+Sending encrypted information normally requires obtaining and authenticating the recipient's public key. In a large organization, maintaining that directory of keys and certificates can itself become a difficult administrative problem. Identity-based encryption offers a different approach: a familiar identifier, such as an email address or organizational label, serves as the public key, while a trusted authority issues the corresponding secret key.
 
-The hard part is security. In realistic settings, an adversary may adaptively choose which identities to attack, which secret keys to request, and which ciphertexts to challenge. Proving security in these models requires careful control over delegation, simulation, and exposure patterns. That is where hierarchical and identity-based encryption become both practically relevant and theoretically subtle.
+Hierarchical identity-based encryption extends this idea to organizations with several levels of authority. A root authority can delegate key-generation capabilities to departments, which can in turn delegate to teams or individuals. The resulting identity tree mirrors real administrative structure and avoids routing every key request through a single central authority.
 
-This project studies adaptive security, delegation, and simulation-friendly constructions for identity-based and hierarchical encryption. The broader goal is to understand how far we can push these systems while preserving the strong guarantees needed in modern public-key applications.
-
-## Motivation
-
-Hierarchical and identity-based systems are useful when key management needs to follow real organizational structure rather than a flat list of independent users. They also provide a natural setting for studying advanced proof techniques, because adaptive corruption and delegated authority place strong demands on the security argument.
+The cryptographic challenge is to prove security when an adversary adaptively chooses identities, requests secret keys for related nodes, and decides on its challenge only after observing the system. Reductions must preserve delegation while embedding a hardness challenge without answering a prohibited key query. This project studies adaptive security, delegation, and simulation-friendly notions such as non-committing encryption, with the goal of obtaining expressive identity-based systems from standard assumptions.
 
 ## Core Questions
 
-- How can hierarchical identity-based encryption achieve adaptive security under standard assumptions?
-- What proof techniques support delegation without losing tight control over exposure patterns?
-- When can identity-based encryption be made non-committing or simulation friendly?
-- How do these primitives connect to broader goals in advanced public-key encryption?
+- Can HIBE achieve adaptive security for unbounded or polynomial-depth identity spaces under standard assumptions?
+- Which partitioning, dual-system, or complexity-leveraging techniques preserve delegation while answering adaptive extraction queries?
+- What efficiency or reduction losses separate selective-identity security from full adaptive security?
+- How can identity-based encryption satisfy non-committing or simulation-based notions needed by adaptively secure protocols?
 
 ## Main Results
 
-- **A Note on Adaptive Security in Hierarchical Identity-Based Encryption (2025):** Studies adaptive security in hierarchical identity-based encryption and clarifies how delegation can be handled in stronger threat models.
-- **Non-Committing Identity-Based Encryption: Constructions and Applications (2025):** Develops simulation-friendly identity-based encryption with applications to stronger notions of public-key security.
+- **A Note on Adaptive Security in Hierarchical Identity-Based Encryption (2025):** Establishes and analyzes adaptive security for HIBE, focusing on the interaction between delegated secret keys and adaptive identity selection.
+- **Non-Committing Identity-Based Encryption: Constructions and Applications (2025):** Develops non-committing identity-based encryption and applies its simulation properties to stronger adaptive-security settings.

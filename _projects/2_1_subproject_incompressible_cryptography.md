@@ -23,26 +23,20 @@ Encrypted data is often created long before anyone knows whether the underlying 
 
 That possibility exposes a gap in the usual way we think about encryption. Standard security says that a ciphertext should hide the message as long as the secret key is unavailable. But in long-lived storage systems, the more realistic story is often "steal first, decrypt later." If an attacker can replace a large ciphertext with a tiny summary that still preserves enough information for future recovery, then the real cost of stealing and archiving encrypted data may be much lower than we intended.
 
-This project studies incompressible cryptography: cryptographic objects that should not admit a much shorter representation that remains useful after the key is later revealed. Intuitively, incompressibility forces an adversary to keep essentially the whole ciphertext, or else lose the ability to benefit from a later compromise. That turns storage itself into part of the security story. The attacker should not be able to hedge by cheaply storing a compressed version and waiting for a better opportunity.
+This project studies incompressible cryptography: cryptographic objects that should not admit a much shorter representation that remains useful after the key is later revealed. Intuitively, incompressibility forces an adversary to retain essentially the whole ciphertext or lose the ability to benefit from a later compromise. That turns storage itself into part of the security guarantee.
 
-The project explores this idea across several settings, from basic encryption to richer primitives such as functional encryption and leakage-resilient constructions. The larger goal is to understand how post-compromise guarantees can be formalized, what assumptions are enough to build such systems, and where the strongest barriers appear. In that sense, incompressible cryptography is not just about compression; it is about designing encryption whose security remains meaningful even when time, storage, and delayed key exposure all enter the picture.
-
-## Motivation
-
-Standard encryption protects the message while the key remains secret, but it says much less about what happens after compromise. If an attacker can replace a large ciphertext with a tiny compressed summary and still decrypt later, then long-term storage security is weaker than it first appears.
-
-That question matters in outsourced storage, delayed forensics, archived communications, and any system where keys may be exposed months or years after the data was collected. Incompressibility captures this post-compromise viewpoint in a precise way.
+Formally, the security experiment must account for an adversary that processes a ciphertext before key exposure, stores a bounded-length state, and later tries to recover information after receiving secret material. The project investigates how this post-compromise requirement interacts with CPA and CCA security, functional encryption, leakage resilience, and key-dependent messages. Its broader goal is to determine which standard assumptions support incompressibility and where richer functionality creates inherent barriers.
 
 ## Core Questions
 
-- What does it mean to compress a ciphertext without destroying its future usefulness?
-- Can incompressibility be achieved together with strong notions such as CCA security, functional encryption, or leakage resilience?
-- How does incompressibility interact with structured messages and key-dependent information?
-- Which constructions can be proved secure from standard assumptions?
-- What barriers prevent incompressibility in richer cryptographic models?
+- Which storage-bounded security experiments correctly capture useful compression before adaptive key exposure?
+- Can incompressibility be composed with IND-CCA security, functional encryption, or simulation-based security notions?
+- How do leakage, auxiliary information, and key-dependent messages affect the achievable compression lower bound?
+- Which standard assumptions yield incompressible constructions with meaningful ciphertext expansion and tight parameters?
+- What black-box or information-theoretic barriers arise when decryption functionality becomes more expressive?
 
 ## Main Results
 
-- **Incompressible Encryption Beyond CPA/CCA Security (2025):** Studies incompressible encryption under stronger security notions than the standard CPA and CCA baselines.
-- **Incompressible Functional Encryption (2025):** Extends incompressibility beyond basic encryption to the functional encryption setting.
-- **Leakage-Resilient Incompressible Cryptography: Constructions and Barriers (2024):** Gives both positive constructions and barrier results for incompressibility in the presence of leakage.
+- **Incompressible Encryption Beyond CPA/CCA Security (2025):** Extends incompressibility beyond the conventional CPA/CCA setting and studies how the guarantee behaves under stronger encryption security requirements.
+- **Incompressible Functional Encryption (2025):** Formulates and constructs incompressibility for functional encryption, where exposed keys reveal functions of the plaintext rather than the plaintext itself.
+- **Leakage-Resilient Incompressible Cryptography: Constructions and Barriers (2024):** Develops leakage-resilient constructions and identifies barriers governing the simultaneous treatment of leakage and incompressibility.

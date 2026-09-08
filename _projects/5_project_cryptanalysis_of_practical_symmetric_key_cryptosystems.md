@@ -24,27 +24,21 @@ That constant pressure for speed is exactly why cryptanalysis matters. Designers
 
 This project studies the cryptanalysis of practical symmetric-key designs, with an emphasis on reduced-round analysis, weak-key behavior, nonlinear structures, and structural distinguishers. The central question is whether real constructions behave like ideal random objects for as long as designers claim, or whether deeper analysis uncovers exploitable structure before the advertised security boundary is reached.
 
-The work spans both conceptual and practical concerns. On one side, it develops tools for analyzing monomial prediction, zero-sum phenomena, and algebraic structure in modern designs such as Keccak, Ascon, and TinyJAMBU. On the other side, it contributes to the public evaluation process that helps the community trust, tune, or revise practical cryptographic standards. In symmetric-key cryptography, good attacks are not merely negative results; they are one of the main ways we learn what secure design should look like.
-
-## Motivation
-
-Designers often optimize for speed, small state, low area, or hardware efficiency. Those same choices can create algebraic regularities or combinatorial patterns that only appear under careful analysis. Cryptanalysis is how we test whether the claimed security margin is real or just optimistic.
-
-This is especially important for lightweight and standardized primitives, where a careful public analysis can influence confidence, parameter choices, and future designs.
+The work spans both conceptual and practical concerns. It develops tools for monomial prediction, zero-sum phenomena, nonlinear structures, and weak-key analysis in designs such as Keccak, Ascon, and TinyJAMBU. These techniques are used to construct distinguishers or key-recovery attacks against reduced-round or restricted-key variants and thereby measure the gap between the best known attacks and the full primitive. This public analysis is especially important for lightweight and standardized designs: a precise attack is not merely a negative result, but evidence that informs round counts, parameter choices, and future design principles.
 
 ## Core Questions
 
-- Can we find distinguishers for reduced-round symmetric-key primitives?
-- Do practical designs contain exploitable nonlinear structures?
-- Can weak keys lead to key-recovery attacks?
-- How hard is it to predict monomials arising from cryptographic Boolean functions?
-- Can zero-sum distinguishers reveal non-random behavior in permutation-based designs?
-- What do these attacks say about the security margin of practical cryptographic schemes?
+- Which algebraic or differential structures yield distinguishers for reduced-round permutations and authenticated-encryption schemes?
+- How can nonlinear structures in Keccak-type permutations be characterized and converted into practical distinguishers?
+- Which weak-key classes in lightweight designs permit key recovery, and what fraction of the key space do they occupy?
+- What is the computational complexity of monomial prediction for iterated Boolean transformations?
+- How do monomial-prediction bounds translate into zero-sum distinguishers for designs such as Ascon?
+- How close do the best structural attacks come to the full-round parameters and claimed security levels?
 
 ## Main Results
 
-- **Complexity of Monomial Prediction in Cryptography and Machine Learning (2024):** Studies the computational difficulty of monomial prediction and connects it to broader algorithmic questions.
-- **Weak-keys and key-recovery attack for TinyJAMBU (2022):** Identifies weak-key behavior and a key-recovery attack for the lightweight authenticated cipher TinyJAMBU.
-- **On the hardness of monomial prediction and zero-sum distinguishers for Ascon (2022):** Analyzes monomial prediction and zero-sum techniques in the context of Ascon.
-- **Cryptanalysis of round-reduced Keccak using non-linear structures (2019):** Shows how nonlinear structures can be turned into distinguishers for reduced-round Keccak.
-- **Cryptanalysis of 1-round KECCAK (2018):** Gives concrete cryptanalytic insight into simplified Keccak and the behavior of its round structure.
+- **Complexity of Monomial Prediction in Cryptography and Machine Learning (2024):** Studies the computational complexity of monomial prediction and its connections to structured Boolean computation.
+- **Weak-keys and key-recovery attack for TinyJAMBU (2022):** Identifies a weak-key class and develops a corresponding key-recovery attack against TinyJAMBU.
+- **On the hardness of monomial prediction and zero-sum distinguishers for Ascon (2022):** Relates the hardness of monomial prediction to the construction and limitations of zero-sum distinguishers for Ascon.
+- **Cryptanalysis of round-reduced Keccak using non-linear structures (2019):** Constructs nonlinear structures and uses them to distinguish round-reduced Keccak from an ideal permutation.
+- **Cryptanalysis of 1-round KECCAK (2018):** Gives a dedicated structural analysis of one-round Keccak and derives concrete cryptanalytic consequences.

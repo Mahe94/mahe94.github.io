@@ -462,14 +462,15 @@ For a subproject that itself has children, give that subproject its own `project
 
 ### Project content and images
 
-Project bodies are regular Markdown with optional HTML and Liquid includes. The normal structure is:
+Project bodies are regular Markdown with optional HTML and Liquid includes. Complete research pages use this structure:
 
 1. Project image
-2. Introduction
-3. Motivation
-4. Core questions
-5. Main results
-6. Automatically rendered references, when enabled
+2. Introduction, beginning with an explanation for general readers and gradually developing the technical motivation
+3. Core Questions, written for researchers in cryptography or the relevant area
+4. Main Results, written for researchers in cryptography or the relevant area
+5. Automatically rendered References, when enabled
+
+Do not add a separate Motivation heading; incorporate that material into the Introduction. If a project has no results yet, retain the Main Results heading and state explicitly that results are forthcoming. A parent/container project may instead use `Introduction` followed by its dynamically generated `Subprojects` section.
 
 Store card images in `assets/img/`. The `img` front-matter path and any `{% include figure.html %}` path must both point to the correct file.
 
