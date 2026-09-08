@@ -37,7 +37,7 @@
     
     <link rel="shortcut icon" href="/assets/img/msr.png">
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1787998882">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1788860533">
     <link rel="canonical" href="https://mahe94.github.io/projects/6_project/">
 
     <!-- Dark Mode -->
@@ -177,31 +177,25 @@
 
 <p>That shift changes how cryptographic proofs have to be written. Techniques that work comfortably in the classical random oracle model do not automatically survive in the quantum random oracle model. Definitions of pseudorandomness, simulation, equivocation, and robustness may need to be reformulated when an adversary can interact with a system through quantum access. Even when a primitive looks “classical” on the surface, the surrounding proof technology may need fundamentally different ideas.</p>
 
-<p>This project studies these quantum and post-quantum aspects of cryptography, with a focus on quantum-secure definitions, non-committing encryption, oracle-model security, pseudorandomness, and robust encodings of information. The broader aim is to understand which classical methods remain reliable, which ones fail, and what new tools are needed to build cryptography that still makes sense once quantum computation becomes part of the adversarial landscape.</p>
-
-<h2 id="motivation">Motivation</h2>
-
-<p>Quantum computers threaten more than a few legacy assumptions. They also change the way we reason about security proofs, because a quantum adversary can interact with an oracle in ways that no classical attacker can imitate. That makes standard definitions for pseudorandomness, simulation, and non-committing security worth revisiting from the ground up.</p>
-
-<p>The project is motivated by the need for cryptography that remains meaningful under long-term quantum risk, not just cryptography that is efficient under today’s threat model.</p>
+<p>This project studies these quantum and post-quantum aspects of cryptography, with a focus on quantum-secure definitions, non-committing encryption, oracle-model security, pseudorandomness, and robust encodings of classical or quantum information. At the technical level, it asks how simulation and indistinguishability arguments change in the quantum random oracle model, which classical reductions survive superposition access, and which new primitives are needed when the encoded object or the adversary’s side information is quantum. The broader aim is to distinguish reusable classical proof techniques from those that fundamentally fail in quantum settings.</p>
 
 <h2 id="core-questions">Core Questions</h2>
 
 <ul>
-  <li>Which classical constructions remain secure when the adversary has quantum computation or quantum oracle access?</li>
-  <li>How should non-committing encryption be modeled and proved in the quantum random oracle setting?</li>
-  <li>What forms of pseudorandomness continue to make sense in the presence of quantum information?</li>
-  <li>Can coding-based tools support quantum-secure primitives or quantum-state-based constructions?</li>
-  <li>What new lower bounds or separations are needed to explain the limits of black-box techniques?</li>
+  <li>Which classical constructions and reductions remain sound under quantum computation, quantum side information, or superposition oracle access?</li>
+  <li>How should non-committing encryption be defined and simulated in the quantum random oracle model?</li>
+  <li>Which indistinguishability notions correctly capture pseudorandom classical encodings and pseudorandom quantum states?</li>
+  <li>Can coding-theoretic structure provide robustness and pseudorandomness simultaneously in quantum-secure constructions?</li>
+  <li>Which oracle separations or black-box lower bounds delineate the assumptions necessary for quantum pseudorandom codes?</li>
 </ul>
 
 <h2 id="main-results">Main Results</h2>
 
 <ul>
   <li>
-<strong>A Note on Non-Committing Encryption in the Quantum Random Oracle Model (2025):</strong> Studies how non-committing encryption should be formulated and analyzed when oracle access is quantum.</li>
+<strong>A Note on Non-Committing Encryption in the Quantum Random Oracle Model (2025):</strong> Formulates and analyzes non-committing encryption when adversaries may access the random oracle in superposition.</li>
   <li>
-<strong>Quantum Pseudorandom Codes (2026):</strong> Investigates pseudorandom code constructions designed for quantum settings and their role in quantum-secure cryptography.</li>
+<strong>Quantum Pseudorandom Codes (2026):</strong> Develops the notion and construction of pseudorandom codes for quantum settings, combining pseudorandomness with robust recovery in the presence of quantum information.</li>
 </ul>
 
           </article>
@@ -313,7 +307,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: August 29, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: September 08, 2026.
       </div>
     </footer>
 

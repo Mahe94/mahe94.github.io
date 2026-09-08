@@ -37,7 +37,7 @@
     
     <link rel="shortcut icon" href="/assets/img/msr.png">
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1787998882">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1788860533">
     <link rel="canonical" href="https://mahe94.github.io/projects/incompressible-cryptography/">
 
     <!-- Dark Mode -->
@@ -175,35 +175,29 @@
 
 <p>That possibility exposes a gap in the usual way we think about encryption. Standard security says that a ciphertext should hide the message as long as the secret key is unavailable. But in long-lived storage systems, the more realistic story is often “steal first, decrypt later.” If an attacker can replace a large ciphertext with a tiny summary that still preserves enough information for future recovery, then the real cost of stealing and archiving encrypted data may be much lower than we intended.</p>
 
-<p>This project studies incompressible cryptography: cryptographic objects that should not admit a much shorter representation that remains useful after the key is later revealed. Intuitively, incompressibility forces an adversary to keep essentially the whole ciphertext, or else lose the ability to benefit from a later compromise. That turns storage itself into part of the security story. The attacker should not be able to hedge by cheaply storing a compressed version and waiting for a better opportunity.</p>
+<p>This project studies incompressible cryptography: cryptographic objects that should not admit a much shorter representation that remains useful after the key is later revealed. Intuitively, incompressibility forces an adversary to retain essentially the whole ciphertext or lose the ability to benefit from a later compromise. That turns storage itself into part of the security guarantee.</p>
 
-<p>The project explores this idea across several settings, from basic encryption to richer primitives such as functional encryption and leakage-resilient constructions. The larger goal is to understand how post-compromise guarantees can be formalized, what assumptions are enough to build such systems, and where the strongest barriers appear. In that sense, incompressible cryptography is not just about compression; it is about designing encryption whose security remains meaningful even when time, storage, and delayed key exposure all enter the picture.</p>
-
-<h2 id="motivation">Motivation</h2>
-
-<p>Standard encryption protects the message while the key remains secret, but it says much less about what happens after compromise. If an attacker can replace a large ciphertext with a tiny compressed summary and still decrypt later, then long-term storage security is weaker than it first appears.</p>
-
-<p>That question matters in outsourced storage, delayed forensics, archived communications, and any system where keys may be exposed months or years after the data was collected. Incompressibility captures this post-compromise viewpoint in a precise way.</p>
+<p>Formally, the security experiment must account for an adversary that processes a ciphertext before key exposure, stores a bounded-length state, and later tries to recover information after receiving secret material. The project investigates how this post-compromise requirement interacts with CPA and CCA security, functional encryption, leakage resilience, and key-dependent messages. Its broader goal is to determine which standard assumptions support incompressibility and where richer functionality creates inherent barriers.</p>
 
 <h2 id="core-questions">Core Questions</h2>
 
 <ul>
-  <li>What does it mean to compress a ciphertext without destroying its future usefulness?</li>
-  <li>Can incompressibility be achieved together with strong notions such as CCA security, functional encryption, or leakage resilience?</li>
-  <li>How does incompressibility interact with structured messages and key-dependent information?</li>
-  <li>Which constructions can be proved secure from standard assumptions?</li>
-  <li>What barriers prevent incompressibility in richer cryptographic models?</li>
+  <li>Which storage-bounded security experiments correctly capture useful compression before adaptive key exposure?</li>
+  <li>Can incompressibility be composed with IND-CCA security, functional encryption, or simulation-based security notions?</li>
+  <li>How do leakage, auxiliary information, and key-dependent messages affect the achievable compression lower bound?</li>
+  <li>Which standard assumptions yield incompressible constructions with meaningful ciphertext expansion and tight parameters?</li>
+  <li>What black-box or information-theoretic barriers arise when decryption functionality becomes more expressive?</li>
 </ul>
 
 <h2 id="main-results">Main Results</h2>
 
 <ul>
   <li>
-<strong>Incompressible Encryption Beyond CPA/CCA Security (2025):</strong> Studies incompressible encryption under stronger security notions than the standard CPA and CCA baselines.</li>
+<strong>Incompressible Encryption Beyond CPA/CCA Security (2025):</strong> Extends incompressibility beyond the conventional CPA/CCA setting and studies how the guarantee behaves under stronger encryption security requirements.</li>
   <li>
-<strong>Incompressible Functional Encryption (2025):</strong> Extends incompressibility beyond basic encryption to the functional encryption setting.</li>
+<strong>Incompressible Functional Encryption (2025):</strong> Formulates and constructs incompressibility for functional encryption, where exposed keys reveal functions of the plaintext rather than the plaintext itself.</li>
   <li>
-<strong>Leakage-Resilient Incompressible Cryptography: Constructions and Barriers (2024):</strong> Gives both positive constructions and barrier results for incompressibility in the presence of leakage.</li>
+<strong>Leakage-Resilient Incompressible Cryptography: Constructions and Barriers (2024):</strong> Develops leakage-resilient constructions and identifies barriers governing the simultaneous treatment of leakage and incompressibility.</li>
 </ul>
 
           </article>
@@ -377,7 +371,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: August 29, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: September 08, 2026.
       </div>
     </footer>
 

@@ -37,7 +37,7 @@
     
     <link rel="shortcut icon" href="/assets/img/msr.png">
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1787998882">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1788860533">
     <link rel="canonical" href="https://mahe94.github.io/projects/5_project/">
 
     <!-- Dark Mode -->
@@ -152,7 +152,9 @@
           </header>
 
           <article>
-            <figure>
+            <div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
   <picture>
     
@@ -164,39 +166,36 @@
 
 </figure>
 
+    </div>
+</div>
+
 <h2 id="introduction">Introduction</h2>
 
-<p>Lattice problems arise whenever discrete arithmetic structure meets continuous geometry. That combination shows up in post-quantum cryptography, integer optimization, number-theoretic computation, and high-dimensional algorithm design. In practical terms, lattices matter because many modern cryptographic systems rely on the assumption that certain geometric problems on integer point sets remain hard even for very powerful attackers.</p>
+<p>A lattice begins with a familiar picture: the regularly spaced points at the corners of square floor tiles or on a sheet of graph paper. The pattern extends without gaps, and every point can be reached by taking whole-number steps in a few fixed directions. Mathematicians generalize this simple grid to three, four, or hundreds of dimensions, where it becomes a powerful way to study discrete structure using geometry.</p>
 
-<p>An integer lattice can be viewed as the set of all integer combinations of a chosen basis of vectors. But the same lattice can have many very different bases, and that flexibility is exactly where the interesting mathematics begins. Some bases are short and well balanced, others are long and skewed, and the geometry of those choices strongly affects what algorithms can or cannot do. Even basic-looking questions about extending a vector to a basis or comparing related sublattices can lead to rich structural problems.</p>
+<p>An integer lattice is the set of all integer combinations of a chosen basis of vectors. The same lattice can have many very different bases: some are short and well balanced, while others are long and highly skewed. This flexibility is where the algorithmic difficulty begins, because the geometry of the available basis can determine whether a computational problem is easy to navigate or conceals the short and nearby vectors one wants to find.</p>
 
 <p>This project studies the geometry and algorithmics of integer lattices, especially the structure of bases, primitive vectors, sublattices, and reductions to classical problems such as the Closest Vector Problem. A major theme is that the internal geometry of a lattice is not just background information; it is a source of computational power and computational difficulty. Understanding that geometry can reveal both new algorithmic opportunities and new hardness phenomena.</p>
 
-<p>The motivation is therefore twofold. On the one hand, lattice theory provides a clean mathematical language for studying high-dimensional discrete structure. On the other hand, it has direct consequences for cryptography, where subtle geometric properties can influence security assumptions and algorithmic attacks. This project aims to connect those viewpoints by studying how local structural constraints on bases and sublattices interact with the global complexity of lattice problems.</p>
-
-<h2 id="motivation">Motivation</h2>
-
-<p>Lattices are central to post-quantum cryptography because many lattice problems are believed to resist both classical and quantum attacks. At the same time, lattice algorithms depend strongly on the choice of basis, and small structural changes can make a problem much easier or much harder.</p>
-
-<p>Studying bases of $\mathbb{Z}^n$, primitive vectors, and sublattice constructions helps connect abstract geometry to the concrete algorithmic questions that arise in cryptography and complexity theory.</p>
+<p>The motivation is therefore twofold. Lattice theory provides a clean mathematical language for high-dimensional discrete structure, while lattice problems also underpin prominent post-quantum security assumptions. At the technical level, the project studies bases of $\mathbb{Z}^n$, primitive vectors, controlled basis extensions, sublattice optimization, and reductions to classical problems such as the Closest Vector Problem (CVP). The objective is to understand how local geometric constraints on bases and sublattices affect global algorithmic complexity and cryptographic hardness.</p>
 
 <h2 id="core-questions">Core Questions</h2>
 
 <ul>
-  <li>When can a given integer vector be extended to a basis of $\mathbb{Z}^n$?</li>
-  <li>How much control can we maintain over the lengths and geometry of the remaining basis vectors?</li>
-  <li>How should sublattice optimization problems be formalized and analyzed?</li>
-  <li>What is the relationship between new sublattice problems and classical problems such as CVP?</li>
-  <li>Which lattice-theoretic structures are most relevant to algorithm design and cryptographic hardness?</li>
+  <li>Under which arithmetic conditions can a primitive vector be extended to a basis of $\mathbb{Z}^n$ with controlled norm or orthogonality defect?</li>
+  <li>What upper and lower bounds govern the geometry of the remaining basis vectors in constrained basis-extension problems?</li>
+  <li>How should maximum-distance sublattice problems be parameterized and related to standard lattice optimization problems?</li>
+  <li>Which approximation-preserving reductions connect sublattice optimization to CVP or related closest-point problems?</li>
+  <li>Which structural properties of primitive sublattices are algorithmically exploitable, and which encode worst-case hardness?</li>
 </ul>
 
 <h2 id="main-results">Main Results</h2>
 
 <ul>
   <li>
-<strong>On the Maximum Distance Sublattice Problem and Closest Vector Problem (2024):</strong> Connects a new sublattice optimization problem to the classical Closest Vector Problem and clarifies their algorithmic relationship.</li>
+<strong>On the Maximum Distance Sublattice Problem and Closest Vector Problem (2024):</strong> Formalizes the Maximum Distance Sublattice Problem and establishes its algorithmic relationship with the Closest Vector Problem.</li>
   <li>
-<strong>On the bases of Zn lattice (2022):</strong> Studies how integer vectors extend to bases of $\mathbb{Z}^n$ and what structural constraints these bases satisfy.</li>
+<strong>On the bases of Zn lattice (2022):</strong> Studies extensions of integer vectors to bases of $\mathbb{Z}^n$ and derives structural constraints on the resulting basis vectors.</li>
 </ul>
 
           </article>
@@ -304,7 +303,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: August 29, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: September 08, 2026.
       </div>
     </footer>
 

@@ -37,7 +37,7 @@
     
     <link rel="shortcut icon" href="/assets/img/msr.png">
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1787998882">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1788860533">
     <link rel="canonical" href="https://mahe94.github.io/projects/3_project/">
 
     <!-- Dark Mode -->
@@ -177,39 +177,33 @@
 
 <p>This project studies faster algorithms and structural variants of subset-sum-type problems. A recurring theme is that small changes in the model can have large algorithmic consequences. The difficulty of the problem shifts when we move from ordinary sums to modular sums, from exact target matching to equal-sum phenomena, or from bounded choices to unbounded and projected variants. Those changes are mathematically natural, and they also line up with questions that arise in cryptography and related optimization tasks.</p>
 
-<p>The broader objective is to understand which forms of structure can be exploited algorithmically and which ones reflect genuine hardness. That means developing better reductions, sharper lower bounds, and more refined algorithms for special regimes such as dense instances or highly redundant inputs. In this area, cleaner theory is not just an aesthetic improvement; it often reveals new algorithmic routes that were hidden by the apparent simplicity of the original formulation.</p>
-
-<h2 id="motivation">Motivation</h2>
-
-<p>Subset sum is a benchmark problem for exact exponential algorithms, fine-grained complexity, and cryptographic hardness. It is simple enough to reason about cleanly, but rich enough to expose the limits of algebraic, combinatorial, and lattice-based techniques.</p>
-
-<p>The motivating question is not only whether subset sum is hard in the worst case, but which kinds of structure make real instances easier. Understanding that boundary helps both algorithm designers and cryptographers.</p>
+<p>The broader objective is to understand which forms of structure can be exploited algorithmically and which ones reflect genuine hardness. Subset sum is a benchmark for exact exponential algorithms, fine-grained complexity, and cryptographic assumptions, and its variants expose the limits of algebraic, combinatorial, and lattice-based techniques. The project develops reductions, upper bounds, lower bounds, and average-case analyses for regimes such as dense instances, projected or unbounded choices, subset product, and pigeonhole equal-sum problems.</p>
 
 <h2 id="core-questions">Core Questions</h2>
 
 <ul>
-  <li>When do dense or highly structured instances admit algorithms faster than brute force?</li>
-  <li>How do modular, projected, equal-sum, and unbounded variants differ from classical subset sum?</li>
-  <li>Can algebraic or lattice-based techniques improve performance on specific regimes?</li>
-  <li>What lower bounds explain why certain improvements are impossible?</li>
-  <li>How do these variants connect to cryptographic and fine-grained complexity assumptions?</li>
+  <li>Which density and redundancy regimes permit subexponential or pseudopolynomial algorithms beyond meet-in-the-middle bounds?</li>
+  <li>How do projected, unbounded, multiplicative, and pigeonhole equal-sum variants reduce to or separate from classical Subset Sum?</li>
+  <li>Can algebraic sieving, representation techniques, or lattice methods improve worst-case and average-case running times?</li>
+  <li>Which fine-grained or parameterized lower bounds match the achievable algorithms in the relevant regimes?</li>
+  <li>When do average-case distributions exhibit a provable gap from worst-case complexity, and can that gap support cryptographic applications?</li>
 </ul>
 
 <h2 id="main-results">Main Results</h2>
 
 <ul>
   <li>
-<strong>Pigeonhole Equal Subset Sum: Subexponential Algorithm, Tight Lower Bounds and Average-Case Analysis (2026):</strong> Gives subexponential algorithms together with tight lower-bound evidence and average-case analysis.</li>
+<strong>Pigeonhole Equal Subset Sum: Subexponential Algorithm, Tight Lower Bounds and Average-Case Analysis (2026):</strong> Gives a subexponential algorithm, matching lower-bound evidence in the studied model, and an average-case analysis of Pigeonhole Equal Subset Sum.</li>
   <li>
-<strong>Weak Pigeonhole Equal-Sums made Simpler and Faster (2026):</strong> Simplifies and improves algorithms for the weak pigeonhole equal-sums setting.</li>
+<strong>Weak Pigeonhole Equal-Sums made Simpler and Faster (2026):</strong> Simplifies the algorithmic treatment of Weak Pigeonhole Equal-Sums and improves its running time.</li>
   <li>
-<strong>On the Variants of Subset Sum: Projected and Unbounded (2023):</strong> Studies projected and unbounded versions of the problem and clarifies their algorithmic behavior.</li>
+<strong>On the Variants of Subset Sum: Projected and Unbounded (2023):</strong> Develops algorithms and reductions for projected and unbounded variants, clarifying their relationship with classical Subset Sum.</li>
   <li>
-<strong>Efficient Reductions and Algorithms for Subset Product (2023):</strong> Extends subset-sum-style methods to multiplicative analogues through new reductions and algorithms.</li>
+<strong>Efficient Reductions and Algorithms for Subset Product (2023):</strong> Establishes reductions and algorithms for the multiplicative analogue of Subset Sum.</li>
   <li>
-<strong>Algebraic Algorithms for Variants of Subset Sum (2022):</strong> Uses algebraic techniques to speed up structured versions of subset sum.</li>
+<strong>Algebraic Algorithms for Variants of Subset Sum (2022):</strong> Applies algebraic techniques to structured Subset Sum variants and derives improved algorithms in the corresponding regimes.</li>
   <li>
-<strong>Efficient Reductions and Algorithms for Variants of Subset Sum (2021):</strong> Organizes several subset-sum variants through reductions and gives a cleaner algorithmic toolkit for studying them.</li>
+<strong>Efficient Reductions and Algorithms for Variants of Subset Sum (2021):</strong> Systematizes reductions among several variants and develops a shared algorithmic framework for them.</li>
 </ul>
 
           </article>
@@ -497,7 +491,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: August 29, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: September 08, 2026.
       </div>
     </footer>
 

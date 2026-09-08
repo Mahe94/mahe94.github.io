@@ -37,7 +37,7 @@
     
     <link rel="shortcut icon" href="/assets/img/msr.png">
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1787998882">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1788860533">
     <link rel="canonical" href="https://mahe94.github.io/projects/4_project/">
 
     <!-- Dark Mode -->
@@ -177,38 +177,32 @@
 
 <p>This project studies the cryptanalysis of practical symmetric-key designs, with an emphasis on reduced-round analysis, weak-key behavior, nonlinear structures, and structural distinguishers. The central question is whether real constructions behave like ideal random objects for as long as designers claim, or whether deeper analysis uncovers exploitable structure before the advertised security boundary is reached.</p>
 
-<p>The work spans both conceptual and practical concerns. On one side, it develops tools for analyzing monomial prediction, zero-sum phenomena, and algebraic structure in modern designs such as Keccak, Ascon, and TinyJAMBU. On the other side, it contributes to the public evaluation process that helps the community trust, tune, or revise practical cryptographic standards. In symmetric-key cryptography, good attacks are not merely negative results; they are one of the main ways we learn what secure design should look like.</p>
-
-<h2 id="motivation">Motivation</h2>
-
-<p>Designers often optimize for speed, small state, low area, or hardware efficiency. Those same choices can create algebraic regularities or combinatorial patterns that only appear under careful analysis. Cryptanalysis is how we test whether the claimed security margin is real or just optimistic.</p>
-
-<p>This is especially important for lightweight and standardized primitives, where a careful public analysis can influence confidence, parameter choices, and future designs.</p>
+<p>The work spans both conceptual and practical concerns. It develops tools for monomial prediction, zero-sum phenomena, nonlinear structures, and weak-key analysis in designs such as Keccak, Ascon, and TinyJAMBU. These techniques are used to construct distinguishers or key-recovery attacks against reduced-round or restricted-key variants and thereby measure the gap between the best known attacks and the full primitive. This public analysis is especially important for lightweight and standardized designs: a precise attack is not merely a negative result, but evidence that informs round counts, parameter choices, and future design principles.</p>
 
 <h2 id="core-questions">Core Questions</h2>
 
 <ul>
-  <li>Can we find distinguishers for reduced-round symmetric-key primitives?</li>
-  <li>Do practical designs contain exploitable nonlinear structures?</li>
-  <li>Can weak keys lead to key-recovery attacks?</li>
-  <li>How hard is it to predict monomials arising from cryptographic Boolean functions?</li>
-  <li>Can zero-sum distinguishers reveal non-random behavior in permutation-based designs?</li>
-  <li>What do these attacks say about the security margin of practical cryptographic schemes?</li>
+  <li>Which algebraic or differential structures yield distinguishers for reduced-round permutations and authenticated-encryption schemes?</li>
+  <li>How can nonlinear structures in Keccak-type permutations be characterized and converted into practical distinguishers?</li>
+  <li>Which weak-key classes in lightweight designs permit key recovery, and what fraction of the key space do they occupy?</li>
+  <li>What is the computational complexity of monomial prediction for iterated Boolean transformations?</li>
+  <li>How do monomial-prediction bounds translate into zero-sum distinguishers for designs such as Ascon?</li>
+  <li>How close do the best structural attacks come to the full-round parameters and claimed security levels?</li>
 </ul>
 
 <h2 id="main-results">Main Results</h2>
 
 <ul>
   <li>
-<strong>Complexity of Monomial Prediction in Cryptography and Machine Learning (2024):</strong> Studies the computational difficulty of monomial prediction and connects it to broader algorithmic questions.</li>
+<strong>Complexity of Monomial Prediction in Cryptography and Machine Learning (2024):</strong> Studies the computational complexity of monomial prediction and its connections to structured Boolean computation.</li>
   <li>
-<strong>Weak-keys and key-recovery attack for TinyJAMBU (2022):</strong> Identifies weak-key behavior and a key-recovery attack for the lightweight authenticated cipher TinyJAMBU.</li>
+<strong>Weak-keys and key-recovery attack for TinyJAMBU (2022):</strong> Identifies a weak-key class and develops a corresponding key-recovery attack against TinyJAMBU.</li>
   <li>
-<strong>On the hardness of monomial prediction and zero-sum distinguishers for Ascon (2022):</strong> Analyzes monomial prediction and zero-sum techniques in the context of Ascon.</li>
+<strong>On the hardness of monomial prediction and zero-sum distinguishers for Ascon (2022):</strong> Relates the hardness of monomial prediction to the construction and limitations of zero-sum distinguishers for Ascon.</li>
   <li>
-<strong>Cryptanalysis of round-reduced Keccak using non-linear structures (2019):</strong> Shows how nonlinear structures can be turned into distinguishers for reduced-round Keccak.</li>
+<strong>Cryptanalysis of round-reduced Keccak using non-linear structures (2019):</strong> Constructs nonlinear structures and uses them to distinguish round-reduced Keccak from an ideal permutation.</li>
   <li>
-<strong>Cryptanalysis of 1-round KECCAK (2018):</strong> Gives concrete cryptanalytic insight into simplified Keccak and the behavior of its round structure.</li>
+<strong>Cryptanalysis of 1-round KECCAK (2018):</strong> Gives a dedicated structural analysis of one-round Keccak and derives concrete cryptanalytic consequences.</li>
 </ul>
 
           </article>
@@ -436,7 +430,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: August 29, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: September 08, 2026.
       </div>
     </footer>
 

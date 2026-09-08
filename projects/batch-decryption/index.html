@@ -37,7 +37,7 @@
     
     <link rel="shortcut icon" href="/assets/img/msr.png">
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1787998882">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1788860533">
     <link rel="canonical" href="https://mahe94.github.io/projects/batch-decryption/">
 
     <!-- Dark Mode -->
@@ -171,24 +171,24 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p>Many real systems do not decrypt one ciphertext at a time. A server may need to process large encrypted logs, a storage service may recover many archived records together, or a privacy-preserving workflow may need to handle an entire batch of encrypted inputs before producing an output. In those settings, the main question is not only whether decryption is correct, but whether it can scale gracefully as the workload grows.</p>
+<p>Many real systems do not decrypt one ciphertext at a time. A server may need to process large encrypted logs, a storage service may recover many archived records together, or a privacy-preserving workflow may handle an entire batch of encrypted inputs before producing an output. Repeating an expensive decryption procedure independently for every item can become a serious bottleneck.</p>
 
-<p>Batch decryption studies techniques for handling many ciphertexts together while preserving the security guarantees expected from the underlying encryption scheme. Depending on the setting, the goal may be to amortize computation, reduce communication, streamline key usage, or support structured post-processing across a whole collection of ciphertexts. The challenge is to gain efficiency without opening a shortcut that an attacker can exploit.</p>
+<p>Batch decryption asks whether common work can be shared across many ciphertexts. Depending on the setting, the goal may be to amortize computation, reduce communication, streamline key usage, or support structured post-processing across a collection. Any gain must preserve correctness for valid ciphertexts and prevent malformed or adversarially chosen inputs from turning the shared computation into a new attack surface.</p>
 
-<p>This project focuses on the theory behind secure and efficient large-scale decryption workflows. It sits naturally alongside other advanced encryption questions, because once ciphertexts are numerous, long-lived, or tied to structured access policies, efficiency and security can no longer be treated as separate concerns.</p>
-
-<h2 id="motivation">Motivation</h2>
-
-<p>Decryption cost becomes a real systems issue when encrypted workloads are large or repetitive. A principled understanding of batch decryption helps identify when efficiency gains are genuinely safe and when they quietly weaken the security model.</p>
+<p>At a technical level, the project studies when decryption algorithms admit secure batching, how the cost should scale with the batch size, and which security definitions capture attacks involving correlated or adaptively generated ciphertexts. It sits naturally alongside other advanced-encryption questions because large, long-lived, or access-controlled ciphertext collections require efficiency and security to be analyzed together.</p>
 
 <h2 id="core-questions">Core Questions</h2>
 
 <ul>
-  <li>Which encryption settings admit meaningful amortization across many ciphertexts?</li>
-  <li>How should batch decryption be modeled so that efficiency gains do not hide new attack surfaces?</li>
-  <li>What tradeoffs arise between computation, communication, and key-management complexity?</li>
-  <li>How does batch processing interact with richer notions of public-key and post-compromise security?</li>
+  <li>Which classes of public-key or functional-encryption schemes admit asymptotic or concrete amortization across ciphertexts?</li>
+  <li>How should correctness and CCA-style security be defined for correlated, malformed, or adaptively chosen ciphertext batches?</li>
+  <li>Can preprocessing or shared auxiliary state reduce online decryption cost without weakening key or message privacy?</li>
+  <li>What lower bounds govern the tradeoffs among computation, communication, batch size, and key-management complexity?</li>
 </ul>
+
+<h2 id="main-results">Main Results</h2>
+
+<p>This project is ongoing. Concrete results and corresponding publications will be added here as they become available.</p>
 
           </article>
 
@@ -202,7 +202,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: August 29, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: September 08, 2026.
       </div>
     </footer>
 

@@ -37,7 +37,7 @@
     
     <link rel="shortcut icon" href="/assets/img/msr.png">
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1787998882">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1788860533">
     <link rel="canonical" href="https://mahe94.github.io/projects/hierarchical-identity-based-encryption/">
 
     <!-- Dark Mode -->
@@ -171,32 +171,28 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p>Identity-based encryption replaces conventional public keys with meaningful identifiers such as email addresses, usernames, or organizational labels. Hierarchical identity-based encryption extends that idea by allowing secret-key capabilities to be delegated down a tree of identities, which makes the model especially natural for large systems with layered authority. These primitives are appealing because they combine public-key functionality with a much richer access structure.</p>
+<p>Sending encrypted information normally requires obtaining and authenticating the recipient’s public key. In a large organization, maintaining that directory of keys and certificates can itself become a difficult administrative problem. Identity-based encryption offers a different approach: a familiar identifier, such as an email address or organizational label, serves as the public key, while a trusted authority issues the corresponding secret key.</p>
 
-<p>The hard part is security. In realistic settings, an adversary may adaptively choose which identities to attack, which secret keys to request, and which ciphertexts to challenge. Proving security in these models requires careful control over delegation, simulation, and exposure patterns. That is where hierarchical and identity-based encryption become both practically relevant and theoretically subtle.</p>
+<p>Hierarchical identity-based encryption extends this idea to organizations with several levels of authority. A root authority can delegate key-generation capabilities to departments, which can in turn delegate to teams or individuals. The resulting identity tree mirrors real administrative structure and avoids routing every key request through a single central authority.</p>
 
-<p>This project studies adaptive security, delegation, and simulation-friendly constructions for identity-based and hierarchical encryption. The broader goal is to understand how far we can push these systems while preserving the strong guarantees needed in modern public-key applications.</p>
-
-<h2 id="motivation">Motivation</h2>
-
-<p>Hierarchical and identity-based systems are useful when key management needs to follow real organizational structure rather than a flat list of independent users. They also provide a natural setting for studying advanced proof techniques, because adaptive corruption and delegated authority place strong demands on the security argument.</p>
+<p>The cryptographic challenge is to prove security when an adversary adaptively chooses identities, requests secret keys for related nodes, and decides on its challenge only after observing the system. Reductions must preserve delegation while embedding a hardness challenge without answering a prohibited key query. This project studies adaptive security, delegation, and simulation-friendly notions such as non-committing encryption, with the goal of obtaining expressive identity-based systems from standard assumptions.</p>
 
 <h2 id="core-questions">Core Questions</h2>
 
 <ul>
-  <li>How can hierarchical identity-based encryption achieve adaptive security under standard assumptions?</li>
-  <li>What proof techniques support delegation without losing tight control over exposure patterns?</li>
-  <li>When can identity-based encryption be made non-committing or simulation friendly?</li>
-  <li>How do these primitives connect to broader goals in advanced public-key encryption?</li>
+  <li>Can HIBE achieve adaptive security for unbounded or polynomial-depth identity spaces under standard assumptions?</li>
+  <li>Which partitioning, dual-system, or complexity-leveraging techniques preserve delegation while answering adaptive extraction queries?</li>
+  <li>What efficiency or reduction losses separate selective-identity security from full adaptive security?</li>
+  <li>How can identity-based encryption satisfy non-committing or simulation-based notions needed by adaptively secure protocols?</li>
 </ul>
 
 <h2 id="main-results">Main Results</h2>
 
 <ul>
   <li>
-<strong>A Note on Adaptive Security in Hierarchical Identity-Based Encryption (2025):</strong> Studies adaptive security in hierarchical identity-based encryption and clarifies how delegation can be handled in stronger threat models.</li>
+<strong>A Note on Adaptive Security in Hierarchical Identity-Based Encryption (2025):</strong> Establishes and analyzes adaptive security for HIBE, focusing on the interaction between delegated secret keys and adaptive identity selection.</li>
   <li>
-<strong>Non-Committing Identity-Based Encryption: Constructions and Applications (2025):</strong> Develops simulation-friendly identity-based encryption with applications to stronger notions of public-key security.</li>
+<strong>Non-Committing Identity-Based Encryption: Constructions and Applications (2025):</strong> Develops non-committing identity-based encryption and applies its simulation properties to stronger adaptive-security settings.</li>
 </ul>
 
           </article>
@@ -315,7 +311,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: August 29, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: September 08, 2026.
       </div>
     </footer>
 
