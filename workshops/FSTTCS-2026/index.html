@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Recent Trends in Cryptography | Mahesh Sreekumar Rajasree</title>
+    <meta name="author" content="Mahesh Sreekumar Rajasree">
+    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Bootstrap Table -->
+    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="/assets/img/msr.png">
+    
+    <link rel="stylesheet" href="/assets/css/main.css?v=1788944997">
+    <link rel="canonical" href="https://mahe94.github.io/workshops/FSTTCS-2026/">
+
+    <!-- Dark Mode -->
+    
+
+
+  <!-- ChatGPT -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://mahe94.github.io/#me",
+      "name": "Mahesh Sreekumar Rajasree",
+      "alternateName": [
+        "Mahesh Rajasree",
+        "M S Rajasree"
+      ],
+      "url": "https://mahe94.github.io/",
+      "image": "https://mahe94.github.io/assets/img/mahe.jpeg",
+      "jobTitle": "Postdoctoral Researcher",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "CISPA Helmholtz Center for Information Security",
+        "url": "https://cispa.de/"
+      },
+      "sameAs": [
+        "https://scholar.google.com/citations?user=ywTR5voAAAAJ",
+        "https://dblp.org/pid/216/6012.html",
+        "https://orcid.org/0000-0002-8219-8270",
+        "https://github.com/mahe94",
+        "https://www.youtube.com/@MaheshSreekumarRajasree",
+        "https://iacr.org/cryptodb/data/author.php?authorkey=13350",
+        "https://sites.google.com/view/mahesh-sreekumar-rajasree/home?authuser=0",
+        "https://cispa.de/en/people/c01masr",
+        "https://www.linkedin.com/in/mahesh-sreekumar-rajasree/",
+        "https://www.researchgate.net/scientific-contributions/Mahesh-Sreekumar-Rajasree-2149335067",
+        "https://x.com/maheshrajasree?lang=en",
+        "https://crypto.stackexchange.com/users/116220/mahesh-sreekumar-rajasree",
+        "https://math.stackexchange.com/users/932011/mahesh-sreekumar-rajasree",
+        "https://quantumcomputing.stackexchange.com/users/29559/mahesh-sreekumar-rajasree",
+        "https://stackexchange.com/users/21726955/mahesh-s-r",
+        "https://www.instagram.com/mahe_94/",
+        "https://www.csauthors.net/mahesh-sreekumar-rajasree/"
+      ]
+    }
+    </script>
+
+    <meta name="google-site-verification" content="nE9l9HPql18xXr0PQWRn809HZDwChERamemzWC3rtuk">
+  </head>
+
+  <!-- Body -->
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <!-- Content -->
+    <div class="container mt-0">
+      
+        <style>
+/* =========================================================
+   Recent Trends in Cryptography — Workshop Page
+   Styles are scoped to .rtc-workshop to avoid interfering
+   with the rest of the Jekyll website.
+   ========================================================= */
+
+.rtc-workshop {
+  --rtc-text: #172033;
+  --rtc-muted: #687386;
+  --rtc-accent: #173f68;
+  --rtc-accent-light: #eaf1f7;
+  --rtc-bg: #ffffff;
+  --rtc-soft-bg: #f7f8fa;
+  --rtc-border: #e3e7ec;
+
+  color: var(--rtc-text);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+/* Remove theme's default page title if it displays one */
+.rtc-workshop .rtc-hidden {
+  display: none;
+}
+
+.rtc-page-layout {
+  position: relative;
+  display: grid;
+  grid-template-areas: "content";
+  margin: 0 calc(50% - 50vw);
+}
+
+.rtc-main {
+  grid-area: content;
+  width: min(100%, 800px);
+  margin: 0 auto;
+  min-width: 0;
+}
+
+.rtc-section {
+  scroll-margin-top: 1.5rem;
+}
+
+.rtc-sidebar {
+  grid-area: content;
+  justify-self: start;
+  align-self: start;
+  display: block;
+  width: 190px;
+  margin-top: 4.5rem;
+  margin-left: calc(50vw + 430px);
+  padding-right: 0;
+  position: sticky;
+  top: 1.5rem;
+  z-index: 2;
+}
+
+.rtc-sidebar-inner {
+  border-left: 1px solid var(--rtc-border);
+  padding-left: 1rem;
+}
+
+.rtc-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.rtc-sidebar-nav a {
+  color: var(--rtc-muted);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-decoration: none !important;
+}
+
+.rtc-sidebar-nav a:hover,
+.rtc-sidebar-nav a:focus-visible {
+  color: var(--rtc-accent);
+  text-decoration: none !important;
+}
+
+.rtc-sidebar-nav a:focus-visible {
+  outline: 2px solid var(--rtc-accent);
+  outline-offset: 4px;
+}
+
+/* ---------- Hero ---------- */
+
+.rtc-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 1.5rem 3.5rem;
+  margin: 0 calc(50% - 50vw);
+  text-align: left;
+  background: #171c1b;
+  color: #f5f6f2;
+  letter-spacing: 0;
+  isolation: isolate;
+}
+
+.rtc-hero::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  background: url("/assets/img/fsttcs-2026-lattice.jpg") center / cover no-repeat;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.rtc-hero-inner {
+  position: relative;
+  max-width: 1002px;
+  margin: 0 auto;
+}
+
+.rtc-hero-context {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-bottom: 3.25rem;
+  color: #d0d7d2;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.rtc-hero .rtc-hero-conference {
+  padding-left: 0.85rem;
+  border-left: 3px solid #b6d99c;
+  color: #f5f6f2;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.rtc-hero .rtc-hero-conference:hover {
+  color: #b6d99c;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.rtc-hero .rtc-hero-conference:focus-visible {
+  outline: 2px solid #b6d99c;
+  outline-offset: 5px;
+}
+
+.rtc-hero h1 {
+  margin: 0;
+  color: #f5f6f2;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.rtc-hero-title-lead {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 3rem;
+}
+
+.rtc-hero-title-subject {
+  display: block;
+  color: #b6d99c;
+}
+
+.rtc-hero .rtc-hero-description {
+  max-width: 470px;
+  margin: 1.5rem 0 0;
+  color: #d0d7d2;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+.rtc-hero-meta {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 2.75rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid #626f65;
+}
+
+.rtc-hero .rtc-meta-item {
+  min-width: 0;
+}
+
+.rtc-hero .rtc-meta-label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #c0c9c2;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.rtc-hero .rtc-meta-value {
+  display: block;
+  color: #f5f6f2;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+
+/* ---------- General sections ---------- */
+
+.rtc-section {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem;
+}
+
+.rtc-section + .rtc-section {
+  border-top: 1px solid var(--rtc-border);
+}
+
+.rtc-section-header {
+  max-width: 750px;
+  margin-bottom: 2.4rem;
+}
+
+.rtc-section h2 {
+  margin: 0 0 1rem;
+  color: var(--rtc-text);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.rtc-section-intro {
+  color: var(--rtc-muted);
+  font-size: 1.05rem;
+}
+
+
+/* ---------- Placeholder ---------- */
+
+.rtc-placeholder {
+  color: var(--rtc-muted);
+  font-style: italic;
+}
+
+.rtc-placeholder-box {
+  padding: 1.5rem;
+  border: 1px dashed #b9c2cc;
+  border-radius: 8px;
+  background: var(--rtc-soft-bg);
+  color: var(--rtc-muted);
+}
+
+
+/* ---------- Information cards ---------- */
+
+.rtc-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.rtc-info-card {
+  padding: 1.6rem;
+  border: 1px solid var(--rtc-border);
+  border-radius: 8px;
+  background: var(--rtc-bg);
+}
+
+.rtc-info-label {
+  margin-bottom: 0.4rem;
+  color: var(--rtc-accent);
+  font-size: 0.77rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.rtc-info-value {
+  font-size: 1.02rem;
+}
+
+
+/* ---------- Speakers ---------- */
+
+.rtc-speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.rtc-speaker {
+  display: block;
+  min-height: 190px;
+  padding: 1.6rem;
+  border: 1px solid var(--rtc-border);
+  border-radius: 8px;
+  background: white;
+  color: inherit;
+  text-decoration: none !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.rtc-speaker:hover,
+.rtc-organiser:hover {
+  border-color: rgba(23, 63, 104, 0.45);
+  box-shadow: 0 14px 30px rgba(23, 63, 104, 0.12);
+  color: inherit;
+  text-decoration: none !important;
+  transform: translateY(-2px);
+}
+
+.rtc-speaker-photo,
+.rtc-organiser-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 1.2rem;
+  border: 1px dashed #b9c2cc;
+  border-radius: 8px;
+  background: var(--rtc-soft-bg);
+  color: var(--rtc-muted);
+  font-size: 0.82rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.rtc-speaker-photo img,
+.rtc-organiser-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.rtc-speaker h3 {
+  margin: 0 0 0.35rem;
+  color: var(--rtc-text);
+  font-size: 1.2rem;
+}
+
+.rtc-speaker-affiliation {
+  color: var(--rtc-muted);
+  font-size: 0.93rem;
+}
+
+
+/* ---------- Programme ---------- */
+
+.rtc-programme {
+  border-top: 1px solid var(--rtc-border);
+}
+
+.rtc-programme-day {
+  padding: 1.6rem 0 0.6rem;
+  border-bottom: 1px solid var(--rtc-border);
+  color: var(--rtc-text);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.rtc-programme-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--rtc-border);
+}
+
+.rtc-programme-break {
+  background: var(--rtc-soft-bg);
+}
+
+.rtc-programme-break .rtc-programme-title {
+  color: var(--rtc-muted);
+}
+
+.rtc-programme-time {
+  color: var(--rtc-accent);
+  font-weight: 650;
+}
+
+.rtc-programme-title {
+  font-weight: 600;
+}
+
+.rtc-abstract {
+  margin-top: 0.8rem;
+}
+
+.rtc-abstract summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--rtc-accent);
+  cursor: pointer;
+  font-size: 0.92rem;
+  font-weight: 650;
+  list-style: none;
+}
+
+.rtc-abstract summary::-webkit-details-marker {
+  display: none;
+}
+
+.rtc-abstract summary::before {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 0.32rem solid transparent;
+  border-bottom: 0.32rem solid transparent;
+  border-left: 0.48rem solid var(--rtc-accent);
+  content: "";
+  transition: transform 0.2s ease;
+}
+
+.rtc-abstract[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.rtc-abstract-content {
+  margin-top: 0.65rem;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid var(--rtc-accent);
+  background: var(--rtc-soft-bg);
+  color: var(--rtc-muted);
+}
+
+.rtc-abstract-content p {
+  margin: 0;
+}
+
+
+/* ---------- Organisers ---------- */
+
+.rtc-organiser-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.rtc-organiser {
+  display: block;
+  padding: 2rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: var(--rtc-soft-bg);
+  color: inherit;
+  text-decoration: none !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.rtc-organiser h3 {
+  margin: 0 0 0.3rem;
+  color: var(--rtc-text);
+  font-size: 1.35rem;
+}
+
+.rtc-organiser-role {
+  margin-bottom: 0.8rem;
+  color: var(--rtc-accent);
+  font-size: 0.88rem;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.rtc-organiser-affiliation {
+  color: var(--rtc-muted);
+}
+
+
+/* ---------- Registration ---------- */
+
+.rtc-registration {
+  padding: 3rem;
+  border-radius: 10px;
+  background: var(--rtc-accent-light);
+}
+
+.rtc-button {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 5px;
+  background: var(--rtc-accent);
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.rtc-button:hover {
+  opacity: 0.9;
+}
+
+
+/* ---------- Venue ---------- */
+
+.rtc-venue-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.rtc-venue-details {
+  padding: 1.5rem;
+  border: 1px solid var(--rtc-border);
+  border-radius: 8px;
+  background: var(--rtc-bg);
+}
+
+.rtc-venue-details h3 {
+  margin: 0 0 0.45rem;
+  color: var(--rtc-text);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.rtc-venue-details p {
+  margin-bottom: 1.2rem;
+}
+
+.rtc-venue-details ul {
+  margin: 0 0 1.2rem;
+  padding-left: 1.2rem;
+}
+
+.rtc-map {
+  min-height: 420px;
+  overflow: hidden;
+  border: 1px solid var(--rtc-border);
+  border-radius: 8px;
+  background: var(--rtc-soft-bg);
+}
+
+.rtc-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: 0;
+}
+
+
+/* ---------- Sponsors ---------- */
+
+.rtc-sponsor-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 260px);
+  gap: 1.2rem;
+}
+
+.rtc-sponsor {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 104px;
+  padding: 1.4rem;
+  border: 1px solid var(--rtc-border);
+  border-radius: 8px;
+  background: white;
+  color: inherit;
+  text-decoration: none !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.rtc-sponsor:hover {
+  border-color: rgba(23, 63, 104, 0.45);
+  box-shadow: 0 14px 30px rgba(23, 63, 104, 0.12);
+  color: inherit;
+  text-decoration: none !important;
+  transform: translateY(-2px);
+}
+
+.rtc-sponsor-logo {
+  display: grid;
+  place-items: center;
+  flex: 0 0 72px;
+  width: 72px;
+  height: 72px;
+  border: 1px solid var(--rtc-border);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.rtc-sponsor-logo img {
+  display: block;
+  max-width: 58px;
+  max-height: 58px;
+  object-fit: contain;
+}
+
+.rtc-sponsor-name {
+  color: var(--rtc-text);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+
+/* ---------- Footer ---------- */
+
+.rtc-footer {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+  border-top: 1px solid var(--rtc-border);
+  color: var(--rtc-muted);
+  font-size: 0.9rem;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 1259.98px) {
+  .rtc-sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .rtc-info-grid,
+  .rtc-speaker-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rtc-organiser-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .rtc-hero {
+    padding: 2rem 1.5rem 2.5rem;
+  }
+
+  .rtc-hero::before {
+    background-position: 65% center;
+    opacity: 0.22;
+  }
+
+  .rtc-hero-context {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .rtc-hero h1 {
+    font-size: 2.375rem;
+  }
+
+  .rtc-hero-title-lead {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .rtc-hero .rtc-hero-description {
+    font-size: 1rem;
+    max-width: 320px;
+  }
+
+  .rtc-hero-meta {
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1.25rem;
+    flex-direction: column;
+  }
+
+  .rtc-hero .rtc-meta-value {
+    font-size: 1.125rem;
+  }
+
+  .rtc-section {
+    padding: 3.2rem 1.1rem;
+  }
+
+  .rtc-info-grid,
+  .rtc-speaker-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rtc-programme-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .rtc-registration {
+    padding: 2rem 1.4rem;
+  }
+
+  .rtc-map,
+  .rtc-map iframe {
+    min-height: 320px;
+  }
+}
+</style>
+
+<div class="rtc-workshop">
+
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
+
+  <section class="rtc-hero" aria-labelledby="rtc-workshop-title">
+    <div class="rtc-hero-inner">
+
+      <div class="rtc-hero-context">
+        <a class="rtc-hero-conference" href="https://www.fsttcs.org.in/2026/" rel="external nofollow noopener" target="_blank">FSTTCS 2026</a>
+        Post-conference workshop
+      </div>
+
+      <h1 id="rtc-workshop-title"><span class="rtc-hero-title-subject">Recent Trends in Cryptography</span></h1>
+
+      <!-- <p class="rtc-hero-description">Two days of ideas, techniques, and conversations shaping modern cryptography.</p> -->
+
+      <div class="rtc-hero-meta">
+        <div class="rtc-meta-item">
+          <span class="rtc-meta-label">Date</span>
+          <span class="rtc-meta-value"><time datetime="2026-12-19">December 19</time>–<time datetime="2026-12-20">20, 2026</time></span>
+        </div>
+        <div class="rtc-meta-item">
+          <span class="rtc-meta-label">Venue</span>
+          <span class="rtc-meta-value">IIT Delhi, India</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="rtc-page-layout">
+    <main class="rtc-main">
+
+  <!-- =====================================================
+       OVERVIEW
+       ===================================================== -->
+
+  <section class="rtc-section" id="about-the-workshop">
+
+    <div class="rtc-section-header">
+
+      <h2>About the Workshop</h2>
+
+    </div>
+
+    <p>
+      The workshop aims to brings together graduate students, postdoctoral researchers, early-career academics, senior researchers, and experts from across the cryptography community to explore some of the most significant recent developments in modern cryptography. The program will feature a combination of introductory and advanced lectures delivered by leading researchers, focusing on influential ideas, techniques, and results that have shaped the field, including work appearing in leading international conferences in cryptography and theoretical computer science over the past few years.
+    </p>
+
+  </section>
+
+
+  <!-- =====================================================
+       EVENT INFORMATION
+       ===================================================== -->
+
+  <!-- <section class="rtc-section">
+
+    <div class="rtc-section-header">
+
+      <h2>At a Glance</h2>
+
+    </div>
+
+    <div class="rtc-info-grid">
+
+      <div class="rtc-info-card">
+        <div class="rtc-info-label">Date</div>
+        <div class="rtc-info-value rtc-placeholder">
+          December 19-20, 2026
+        </div>
+      </div>
+
+      <div class="rtc-info-card">
+        <div class="rtc-info-label">Venue</div>
+        <div class="rtc-info-value rtc-placeholder">
+          IIT Delhi, India
+        </div>
+      </div>
+
+      <div class="rtc-info-card">
+        <div class="rtc-info-label">Time</div>
+        <div class="rtc-info-value rtc-placeholder">
+          [START TIME – END TIME]
+        </div>
+      </div>
+
+    </div>
+
+  </section> -->
+
+
+  <!-- =====================================================
+       THEMES
+       ===================================================== -->
+
+  <!-- <section class="rtc-section">
+
+    <div class="rtc-section-header">
+
+      <h2>Topics</h2>
+
+      <p class="rtc-section-intro rtc-placeholder">
+        [PLACEHOLDER: Short introduction to the themes covered by the
+        workshop.]
+      </p>
+
+    </div>
+
+    <div class="rtc-placeholder-box">
+      [PLACEHOLDER: List the main cryptographic themes/topics here.]
+    </div>
+
+  </section> -->
+
+
+  <!-- =====================================================
+       ENTRY REQUIREMENTS
+       ===================================================== -->
+
+  <section class="rtc-section" id="entry-requirements">
+
+    <div class="rtc-section-header">
+
+      <h2>Entry Requirements</h2>
+
+    </div>
+
+    <p>
+      This workshop is primarily intended for graduate students
+      (Master's and PhD), postdoctoral researchers, and early-career
+      academics. We also welcome other participants, including those
+      from industry or with a general interest in recent developments
+      in cryptography.
+    </p>
+
+    <p>
+      Participants should have a solid foundation in undergraduate-level
+      mathematics, particularly linear algebra, probability, and discrete
+      mathematics. Prior experience across all areas covered by the
+      workshop is not required, but familiarity with cryptography or
+      related theoretical computer science topics will be helpful for
+      getting the most out of the event.
+    </p>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       SPEAKERS
+       Mahesh and Venkata are organisers as well as speakers.
+       Replace/add cards once the speaker list is finalized.
+       ===================================================== -->
+
+  <section class="rtc-section" id="speakers">
+
+    <div class="rtc-section-header">
+
+      <h2>Speakers</h2>
+
+      <!-- <p class="rtc-section-intro rtc-placeholder">
+        [PLACEHOLDER: Introductory sentence about the invited speakers.]
+      </p> -->
+
+    </div>
+
+    <div class="rtc-speaker-grid">
+
+      <!-- Mahesh is an organiser and speaker -->
+      <a class="rtc-speaker" href="/">
+        <div class="rtc-speaker-photo">
+          <img src="/assets/img/mahe.jpeg" alt="Mahesh Sreekumar Rajasree">
+        </div>
+        <h3>Mahesh Sreekumar Rajasree</h3>
+        <div class="rtc-speaker-affiliation">
+          CISPA Helmholtz, Germany
+        </div>
+      </a>
+
+      <!-- Venkata is an organiser and speaker -->
+      <a class="rtc-speaker" href="https://web.iitd.ac.in/~kvenkata/" rel="external nofollow noopener" target="_blank">
+        <div class="rtc-speaker-photo">
+          <img src="/assets/img/kvenkata.jpg" alt="Venkata Koppula">
+        </div>
+        <h3>Venkata Koppula</h3>
+        <div class="rtc-speaker-affiliation">
+          Indian Institute of Technology, Delhi
+        </div>
+      </a>
+
+      <a class="rtc-speaker" href="https://kabirtomer.github.io" rel="external nofollow noopener" target="_blank">
+        <div class="rtc-speaker-photo">
+          <img src="/assets/img/kabir.jpeg" alt="Kabir Tomer">
+        </div>
+        <h3>Kabir Tomer</h3>
+        <div class="rtc-speaker-affiliation">
+          University of Illinois Urbana-Champaign
+        </div>
+      </a>
+
+      <a class="rtc-speaker" href="#">
+        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
+        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
+        <div class="rtc-speaker-affiliation rtc-placeholder">
+          [AFFILIATION]
+        </div>
+      </a>
+
+      <a class="rtc-speaker" href="#">
+        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
+        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
+        <div class="rtc-speaker-affiliation rtc-placeholder">
+          [AFFILIATION]
+        </div>
+      </a>
+
+      <a class="rtc-speaker" href="#">
+        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
+        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
+        <div class="rtc-speaker-affiliation rtc-placeholder">
+          [AFFILIATION]
+        </div>
+      </a>
+
+      <a class="rtc-speaker" href="#">
+        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
+        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
+        <div class="rtc-speaker-affiliation rtc-placeholder">
+          [AFFILIATION]
+        </div>
+      </a>
+
+      <a class="rtc-speaker" href="#">
+        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
+        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
+        <div class="rtc-speaker-affiliation rtc-placeholder">
+          [AFFILIATION]
+        </div>
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       PROGRAMME
+       ===================================================== -->
+
+  <section class="rtc-section" id="schedule">
+
+    <div class="rtc-section-header">
+
+      <h2>Schedule</h2>
+
+      <!-- <p class="rtc-section-intro rtc-placeholder">
+        [PLACEHOLDER: Programme details will be announced.]
+      </p> -->
+
+    </div>
+
+    <div class="rtc-programme">
+
+      <div class="rtc-programme-day">
+        Day 1: December 19, 2026
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          09:30-09:45
+        </div>
+        <div>
+          <div class="rtc-programme-title">
+            Opening Remarks
+          </div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          09:45-10:45
+        </div>
+        <div>
+          <div class="rtc-programme-title">
+            Pseudorandom Codes: Constructions and Limitations
+          </div>
+          <div>
+            Mahesh Sreekumar Rajasree
+          </div>
+          <details class="rtc-abstract">
+            <summary>Abstract</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Abstract covering pseudorandom codes, constructions, and limitations of building them.]</p>
+            </div>
+          </details>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content">
+              <p>Mahesh Sreekumar Rajasree is a postdoctoral researcher at CISPA Helmholtz Center for Information Security, hosted by Prof. Nico Doettling. His research focuses on public-key cryptography and quantum cryptography. Previously, he was a Postdoctoral Fellow at IITD under the guidance of Prof. Venkata Koppula. He completed his PhD and MTech at IIT Kanpur under Prof. Manindra Agrawal, where he worked on cryptanalysis of symmetric-key cryptosystems and variants of the subset-sum problem.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row rtc-programme-break">
+        <div class="rtc-programme-time">
+          10:45-11:15
+        </div>
+        <div>
+          <div class="rtc-programme-title">
+            Tea Break
+          </div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          11:15-12:15
+        </div>
+        <div>
+          <div class="rtc-programme-title">
+            Quantum Lower Bounds
+          </div>
+          <div>
+            Kabir Tomer
+          </div>
+          <details class="rtc-abstract">
+            <summary>Abstract</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Abstract.]</p>
+            </div>
+          </details>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content">
+              <p>Kabir Tomer is a fourth-year PhD student at UIUC, advised by Dakshita Khurana. He is broadly interested in theoretical computer science, with research focusing on questions at the intersection of quantum computing and cryptography. Previously, he was an undergraduate at IIT Delhi advised by Venkata Koppula.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row rtc-programme-break">
+        <div class="rtc-programme-time">
+          12:15-14:00
+        </div>
+        <div>
+          <div class="rtc-programme-title">
+            Lunch Break
+          </div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          14:00-15:00
+        </div>
+        <div>
+          <div class="rtc-programme-title rtc-placeholder">
+            Talk 3
+          </div>
+          <div class="rtc-placeholder">
+            [SPEAKER / TITLE]
+          </div>
+          <details class="rtc-abstract">
+            <summary>Abstract</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Abstract.]</p>
+            </div>
+          </details>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Speaker bio.]</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row rtc-programme-break">
+        <div class="rtc-programme-time">
+          15:00-15:30
+        </div>
+        <div>
+          <div class="rtc-programme-title">
+            Tea Break
+          </div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          15:30-16:30
+        </div>
+        <div>
+          <div class="rtc-programme-title rtc-placeholder">
+            Talk 4
+          </div>
+          <div class="rtc-placeholder">
+            [SPEAKER / TITLE]
+          </div>
+          <details class="rtc-abstract">
+            <summary>Abstract</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Abstract.]</p>
+            </div>
+          </details>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Speaker bio.]</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-day">
+        Day 2: December 20, 2026
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          09:45-10:45
+        </div>
+        <div>
+          <div class="rtc-programme-title rtc-placeholder">
+            Talk 5
+          </div>
+          <div class="rtc-placeholder">
+            [SPEAKER / TITLE]
+          </div>
+          <details class="rtc-abstract">
+            <summary>Abstract</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Abstract.]</p>
+            </div>
+          </details>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Speaker bio.]</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row rtc-programme-break">
+        <div class="rtc-programme-time">
+          10:45-11:15
+        </div>
+        <div>
+          <div class="rtc-programme-title">
+            Tea Break
+          </div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          11:15-12:15
+        </div>
+        <div>
+          <div class="rtc-programme-title rtc-placeholder">
+            Talk 6
+          </div>
+          <div class="rtc-placeholder">
+            [SPEAKER / TITLE]
+          </div>
+          <details class="rtc-abstract">
+            <summary>Abstract</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Abstract.]</p>
+            </div>
+          </details>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Speaker bio.]</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row rtc-programme-break">
+        <div class="rtc-programme-time">
+          12:15-14:00
+        </div>
+        <div>
+          <div class="rtc-programme-title">
+            Lunch Break
+          </div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          14:00-15:00
+        </div>
+        <div>
+          <div class="rtc-programme-title rtc-placeholder">
+            Talk 7
+          </div>
+          <div class="rtc-placeholder">
+            [SPEAKER / TITLE]
+          </div>
+          <details class="rtc-abstract">
+            <summary>Abstract</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Abstract.]</p>
+            </div>
+          </details>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Speaker bio.]</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row rtc-programme-break">
+        <div class="rtc-programme-time">
+          15:00-15:30
+        </div>
+        <div>
+          <div class="rtc-programme-title">
+            Tea Break
+          </div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          15:30-16:30
+        </div>
+        <div>
+          <div class="rtc-programme-title rtc-placeholder">
+            Talk 8
+          </div>
+          <div class="rtc-placeholder">
+            [SPEAKER / TITLE]
+          </div>
+          <details class="rtc-abstract">
+            <summary>Abstract</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Abstract.]</p>
+            </div>
+          </details>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Speaker bio.]</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          16:30-17:00
+        </div>
+        <div>
+          <div class="rtc-programme-title">
+            Closing Remarks
+          </div>
+          <div class="rtc-placeholder">
+            [SPEAKER / DETAILS]
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       ORGANISERS
+       ===================================================== -->
+
+  <section class="rtc-section" id="organisers">
+
+    <div class="rtc-section-header">
+
+      <h2>Organisers</h2>
+
+    </div>
+
+    <div class="rtc-organiser-grid">
+
+      <a class="rtc-organiser" href="https://web.iitd.ac.in/~kvenkata/" rel="external nofollow noopener" target="_blank">
+
+        <div class="rtc-organiser-photo">
+          <img src="/assets/img/kvenkata.jpg" alt="Venkata Koppula">
+        </div>
+
+        <h3>Venkata Koppula</h3>
+
+        <div class="rtc-organiser-role">
+          Organiser &amp; Speaker
+        </div>
+
+        <div class="rtc-organiser-affiliation">
+          Indian Institute of Technology, Delhi
+        </div>
+
+      </a>
+
+      <a class="rtc-organiser" href="/">
+
+        <div class="rtc-organiser-photo">
+          <img src="/assets/img/mahe.jpeg" alt="Mahesh Sreekumar Rajasree">
+        </div>
+
+        <h3>Mahesh Sreekumar Rajasree</h3>
+
+        <div class="rtc-organiser-role">
+          Organiser &amp; Speaker
+        </div>
+
+        <div class="rtc-organiser-affiliation">
+          CISPA Helmholtz, Germany
+        </div>
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       REGISTRATION
+       ===================================================== -->
+
+  <section class="rtc-section" id="participate">
+
+    <div class="rtc-registration">
+
+      <h2>Participate</h2>
+
+      <p class="rtc-placeholder">
+        [PLACEHOLDER: Registration information, eligibility,
+        registration deadline, fees if any, and other instructions.]
+      </p>
+
+      <!-- Replace # with the registration URL -->
+      <a class="rtc-button" href="#">
+        Registration Coming Soon
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       VENUE & TRAVEL
+       ===================================================== -->
+
+  <section class="rtc-section" id="venue-travel">
+
+    <div class="rtc-section-header">
+
+      <h2>Venue &amp; Travel</h2>
+
+    </div>
+
+    <div class="rtc-venue-grid">
+
+      <div class="rtc-map">
+        <iframe src="https://www.google.com/maps?q=Bharti%20Building%20IIT%20Delhi&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Bharti Building, IIT Delhi">
+        </iframe>
+      </div>
+
+      <div class="rtc-venue-details">
+        <h3>Venue</h3>
+        <p>
+          The workshop is part of FSTTCS 2026, which will be held at
+          Indian Institute of Technology Delhi, Hauz Khas, New Delhi
+          110016, India. The workshop venue is Bharti Building, IIT Delhi.
+        </p>
+
+        <h3>Getting There</h3>
+        <ul>
+          <li>
+            <strong>By air:</strong> Indira Gandhi International Airport
+            (DEL) is about 10-12 km from IIT Delhi. Prepaid taxis and
+            app-based cabs are available from the airport. From Terminal 1,
+            the Delhi Metro Magenta Line connects to IIT Delhi Metro Station;
+            from Terminal 3, use the airport shuttle to Terminal 1 or take a
+            cab directly.
+          </li>
+          <li>
+            <strong>By train:</strong> New Delhi Railway Station and Hazrat
+            Nizamuddin Railway Station are both about 14-15 km from IIT
+            Delhi. Taxis and app-based cabs are available from the stations.
+            By metro, travel towards Hauz Khas/IIT Delhi and continue to IIT
+            Delhi Metro Station on the Magenta Line.
+          </li>
+          <li>
+            <strong>By metro:</strong> IIT Delhi Metro Station is on the
+            Magenta Line and is the closest metro stop for the campus.
+          </li>
+        </ul>
+
+        <h3>Accommodation</h3>
+        <p class="rtc-placeholder">
+          [PLACEHOLDER: Accommodation information will be updated.]
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       CONTACT
+       ===================================================== -->
+
+  <section class="rtc-section" id="questions">
+
+    <div class="rtc-section-header">
+
+      <h2>Questions?</h2>
+
+    </div>
+
+    <div class="rtc-placeholder-box">
+      [PLACEHOLDER: Contact email and other relevant information.]
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       SPONSORS
+       ===================================================== -->
+
+  <section class="rtc-section" id="sponsors">
+
+    <div class="rtc-section-header">
+
+      <h2>Sponsors</h2>
+
+    </div>
+
+    <div class="rtc-sponsor-grid">
+
+      <a class="rtc-sponsor" href="https://trustlab.iitb.ac.in" rel="external nofollow noopener" target="_blank">
+        <span class="rtc-sponsor-logo">
+          <img src="https://trustlab.iitb.ac.in/wp-content/uploads/2022/08/logo-TL-short.png" alt="Trust Lab">
+        </span>
+        <span class="rtc-sponsor-name">Trust Lab</span>
+      </a>
+
+    </div>
+
+  </section>
+
+    </main>
+
+    <aside class="rtc-sidebar" aria-label="Workshop sections">
+      <div class="rtc-sidebar-inner">
+        <nav class="rtc-sidebar-nav">
+          <a href="#about-the-workshop">About the Workshop</a>
+          <a href="#entry-requirements">Entry Requirements</a>
+          <a href="#speakers">Speakers</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#organisers">Organisers</a>
+          <a href="#participate">Participate</a>
+          <a href="#venue-travel">Venue &amp; Travel</a>
+          <a href="#questions">Questions?</a>
+          <a href="#sponsors">Sponsors</a>
+        </nav>
+      </div>
+    </aside>
+  </div>
+
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: September 09, 2026.
+      </div>
+    </footer>
+
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script>
+
+  <!-- Bootstrap Table -->
+  <script defer src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
+
+  <!-- Load Common JS -->
+  <script src="/assets/js/no_defer.js"></script>
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    <!-- MathJax -->
+<script>
+  window.MathJax = {
+    tex: {
+      tags: 'ams',
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],
+      processEscapes: true,
+      packages: {'[+]': ['ams']},
+      macros: {
+        Z: "\\mathbb{Z}",
+        R: "\\mathbb{R}",
+        Q: "\\mathbb{Q}",
+        N: "\\mathbb{N}",
+        F: "\\mathbb{F}",
+        L: "\\mathcal{L}",
+        basis: "\\mathbf{b}",
+        norm: ["\\left\\lVert #1 \\right\\rVert", 1],
+        inner: ["\\left\\langle #1, #2 \\right\\rangle", 2]
+      }
+    },
+    options: {
+      skipHtmlTags: [
+        'script', 'noscript', 'style', 'textarea', 'pre', 'code'
+      ]
+    }
+  };
+</script>
+
+<script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js">
+</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCTSHLJEXH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-QCTSHLJEXH');
+  </script>
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
+  </body>
+</html>
