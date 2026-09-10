@@ -3,7 +3,7 @@ layout: page
 title: Workshops
 permalink: /workshops/
 description:
-nav: true
+nav: false
 nav_order: 6
 ---
 
