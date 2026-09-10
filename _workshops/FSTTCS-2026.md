@@ -910,11 +910,13 @@ flush_top: true
         </div>
       </a> -->
 
-      <a class="rtc-speaker" href="#">
-        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
-        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
-        <div class="rtc-speaker-affiliation rtc-placeholder">
-          [AFFILIATION]
+      <a class="rtc-speaker" href="https://varunnkv.github.io">
+        <div class="rtc-speaker-photo">
+          <img src="{{ '/assets/img/varun.jpg' | relative_url }}" alt="Varun Narayanan">
+        </div>
+        <h3>Varun Narayanan</h3>
+        <div class="rtc-speaker-affiliation">
+          Chennai Mathematical Institute
         </div>
       </a>
 
@@ -1067,8 +1069,8 @@ flush_top: true
           <div class="rtc-programme-title rtc-placeholder">
             Talk 2
           </div>
-          <div class="rtc-placeholder">
-            [SPEAKER / TITLE]
+          <div>
+            Varun Narayanan
           </div>
           <details class="rtc-abstract">
             <summary>Abstract</summary>
@@ -1079,7 +1081,7 @@ flush_top: true
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
-              [PLACEHOLDER: Speaker bio.]
+              <p>Varun Narayanan is an assistant professor in Chennai Mathematical Institute. His research interests include secure multi-party computation, cryptography, and information theory. He was previously a postdoctoral research fellow at UCLA and Technion, and completed his PhD under Vinod Prabhakaran.</p>
             </div>
           </details>
         </div>
@@ -1101,11 +1103,11 @@ flush_top: true
           14:00-15:00
         </div>
         <div>
-          <div class="rtc-programme-title rtc-placeholder">
-            Talk 3
+          <div class="rtc-programme-title">
+            CCA Encryption Schemes
           </div>
-          <div class="rtc-placeholder">
-            [SPEAKER / TITLE]
+          <div>
+            Venkata Koppula
           </div>
           <details class="rtc-abstract">
             <summary>Abstract</summary>
@@ -1115,8 +1117,8 @@ flush_top: true
           </details>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Speaker bio.]</p>
+            <div class="rtc-abstract-content">
+              <p>Venkata Koppula is an Assistant Professor in the Department of Computer Science and Engineering at IIT Delhi. His research interests are in theoretical cryptography, including both classical and quantum cryptography. Before joining IIT Delhi, he was a postdoctoral researcher at the Weizmann Institute of Science, hosted by Zvika Brakerski. He obtained his PhD from the University of Texas at Austin, advised by Brent Waters.</p>
             </div>
           </details>
         </div>
