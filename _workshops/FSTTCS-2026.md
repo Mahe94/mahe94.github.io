@@ -755,7 +755,7 @@ flush_top: true
     </div>
 
     <p>
-      The workshop aims to brings together graduate students, postdoctoral researchers, early-career academics, senior researchers, and experts from across the cryptography community to explore some of the most significant recent developments in modern cryptography. The program will feature a combination of introductory and advanced lectures delivered by leading researchers, focusing on influential ideas, techniques, and results that have shaped the field, including work appearing in leading international conferences in cryptography and theoretical computer science over the past few years.
+      The workshop aims to brings together graduate students, postdoctoral researchers, early-career academics, senior researchers, and experts from across the cryptography community to discuss some of the most significant recent developments. The program will feature a combination of introductory and advanced lectures delivered by leading researchers, focusing on influential ideas, techniques, and results that have shaped the field, including work appearing in leading international conferences in cryptography and theoretical computer science over the past few years.
     </p>
 
   </section>
@@ -829,7 +829,7 @@ flush_top: true
        ENTRY REQUIREMENTS
        ===================================================== -->
 
-  <section class="rtc-section" id="entry-requirements">
+  <!-- <section class="rtc-section" id="entry-requirements">
 
     <div class="rtc-section-header">
 
@@ -854,7 +854,7 @@ flush_top: true
       getting the most out of the event.
     </p>
 
-  </section>
+  </section> -->
 
 
 
@@ -900,13 +900,21 @@ flush_top: true
         </div>
       </a>
 
-      <a class="rtc-speaker" href="https://kabirtomer.github.io">
+      <!-- <a class="rtc-speaker" href="https://kabirtomer.github.io">
         <div class="rtc-speaker-photo">
           <img src="{{ '/assets/img/kabir.jpeg' | relative_url }}" alt="Kabir Tomer">
         </div>
         <h3>Kabir Tomer</h3>
         <div class="rtc-speaker-affiliation">
           University of Illinois Urbana-Champaign
+        </div>
+      </a> -->
+
+      <a class="rtc-speaker" href="#">
+        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
+        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
+        <div class="rtc-speaker-affiliation rtc-placeholder">
+          [AFFILIATION]
         </div>
       </a>
 
@@ -1025,7 +1033,7 @@ flush_top: true
         </div>
       </div>
 
-      <div class="rtc-programme-row">
+      <!-- <div class="rtc-programme-row">
         <div class="rtc-programme-time">
           11:15-12:15
         </div>
@@ -1046,6 +1054,32 @@ flush_top: true
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
               <p>Kabir Tomer is a fourth-year PhD student at UIUC, advised by Dakshita Khurana. He is broadly interested in theoretical computer science, with research focusing on questions at the intersection of quantum computing and cryptography. Previously, he was an undergraduate at IIT Delhi advised by Venkata Koppula.</p>
+            </div>
+          </details>
+        </div>
+      </div> -->
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          11:15-12:15
+        </div>
+        <div>
+          <div class="rtc-programme-title rtc-placeholder">
+            Talk 2
+          </div>
+          <div class="rtc-placeholder">
+            [SPEAKER / TITLE]
+          </div>
+          <details class="rtc-abstract">
+            <summary>Abstract</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Abstract.]</p>
+            </div>
+          </details>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content">
+              [PLACEHOLDER: Speaker bio.]
             </div>
           </details>
         </div>
