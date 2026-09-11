@@ -920,6 +920,24 @@ flush_top: true
         </div>
       </a>
 
+      <a class="rtc-speaker" href="https://sruthisekar.in">
+        <div class="rtc-speaker-photo">
+          <img src="https://i0.wp.com/sruthisekar.in/wp-content/uploads/2026/07/white_background_photo-edited.png?resize=1100%2C1044&amp;ssl=1" alt="Sruthi Sekar">
+        </div>
+        <h3>Sruthi Sekar</h3>
+        <div class="rtc-speaker-affiliation">
+          Indian Institute of Technology Bombay
+        </div>
+      </a>
+
+      <a class="rtc-speaker" href="#">
+        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
+        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
+        <div class="rtc-speaker-affiliation rtc-placeholder">
+          [AFFILIATION]
+        </div>
+      </a>
+
       <a class="rtc-speaker" href="#">
         <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
         <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
@@ -989,7 +1007,7 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          09:30-09:45
+          09:30–09:45
         </div>
         <div>
           <div class="rtc-programme-title">
@@ -1000,7 +1018,7 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          09:45-10:45
+          09:45–10:45
         </div>
         <div>
           <div class="rtc-programme-title">
@@ -1018,7 +1036,7 @@ flush_top: true
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
-              <p>Mahesh Sreekumar Rajasree is a postdoctoral researcher at CISPA Helmholtz Center for Information Security, hosted by Prof. Nico Doettling. His research focuses on public-key cryptography and quantum cryptography. Previously, he was a Postdoctoral Fellow at IITD under the guidance of Prof. Venkata Koppula. He completed his PhD and MTech at IIT Kanpur under Prof. Manindra Agrawal, where he worked on cryptanalysis of symmetric-key cryptosystems and variants of the subset-sum problem.</p>
+              <p>Mahesh Sreekumar Rajasree is a postdoctoral researcher at CISPA Helmholtz Center for Information Security, hosted by Prof. Nico Doettling. His research focuses on public-key cryptography and quantum cryptography. Previously, he was a Postdoctoral Fellow at IITD under the guidance of Prof. Venkata Koppula. He completed his PhD and MTech at IIT Kanpur under Prof. Manindra Agrawal.</p>
             </div>
           </details>
         </div>
@@ -1026,11 +1044,11 @@ flush_top: true
 
       <div class="rtc-programme-row rtc-programme-break">
         <div class="rtc-programme-time">
-          10:45-11:15
+          10:45–11:15
         </div>
         <div>
           <div class="rtc-programme-title">
-            Tea Break
+            Tea
           </div>
         </div>
       </div>
@@ -1063,7 +1081,7 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          11:15-12:15
+          11:15–12:15
         </div>
         <div>
           <div class="rtc-programme-title rtc-placeholder">
@@ -1089,18 +1107,18 @@ flush_top: true
 
       <div class="rtc-programme-row rtc-programme-break">
         <div class="rtc-programme-time">
-          12:15-14:00
+          12:15–14:00
         </div>
         <div>
           <div class="rtc-programme-title">
-            Lunch Break
+            Lunch
           </div>
         </div>
       </div>
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          14:00-15:00
+          14:00–15:00
         </div>
         <div>
           <div class="rtc-programme-title">
@@ -1126,22 +1144,48 @@ flush_top: true
 
       <div class="rtc-programme-row rtc-programme-break">
         <div class="rtc-programme-time">
-          15:00-15:30
+          15:00–15:30
         </div>
         <div>
           <div class="rtc-programme-title">
-            Tea Break
+            Tea
           </div>
         </div>
       </div>
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          15:30-16:30
+          15:30–16:30
+        </div>
+        <div>
+          <div class="rtc-programme-title">
+            SNARKs
+          </div>
+          <div>
+            Sruthi Sekar
+          </div>
+          <details class="rtc-abstract">
+            <summary>Abstract</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Abstract.]</p>
+            </div>
+          </details>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content">
+              <p>Sruthi Sekar is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay and a Principal Investigator at IITB Trust Lab. Her research interests are in cryptography and theoretical computer science. Before joining IIT Bombay, she was a postdoctoral researcher at UC Berkeley, hosted by Sanjam Garg. She completed her PhD at the Indian Institute of Science, advised by Bhavana Kanukurthi and Manjunath Krishnapur.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          16:30–17:30
         </div>
         <div>
           <div class="rtc-programme-title rtc-placeholder">
-            Talk 4
+            Talk 5
           </div>
           <div class="rtc-placeholder">
             [SPEAKER / TITLE]
@@ -1167,44 +1211,7 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          09:45-10:45
-        </div>
-        <div>
-          <div class="rtc-programme-title rtc-placeholder">
-            Talk 5
-          </div>
-          <div class="rtc-placeholder">
-            [SPEAKER / TITLE]
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Speaker bio.]</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row rtc-programme-break">
-        <div class="rtc-programme-time">
-          10:45-11:15
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Tea Break
-          </div>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          11:15-12:15
+          09:45–10:45
         </div>
         <div>
           <div class="rtc-programme-title rtc-placeholder">
@@ -1230,18 +1237,18 @@ flush_top: true
 
       <div class="rtc-programme-row rtc-programme-break">
         <div class="rtc-programme-time">
-          12:15-14:00
+          10:45–11:15
         </div>
         <div>
           <div class="rtc-programme-title">
-            Lunch Break
+            Tea
           </div>
         </div>
       </div>
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          14:00-15:00
+          11:15–12:15
         </div>
         <div>
           <div class="rtc-programme-title rtc-placeholder">
@@ -1267,18 +1274,18 @@ flush_top: true
 
       <div class="rtc-programme-row rtc-programme-break">
         <div class="rtc-programme-time">
-          15:00-15:30
+          12:15–14:00
         </div>
         <div>
           <div class="rtc-programme-title">
-            Tea Break
+            Lunch
           </div>
         </div>
       </div>
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          15:30-16:30
+          14:00–15:00
         </div>
         <div>
           <div class="rtc-programme-title rtc-placeholder">
@@ -1302,9 +1309,72 @@ flush_top: true
         </div>
       </div>
 
+      <div class="rtc-programme-row rtc-programme-break">
+        <div class="rtc-programme-time">
+          15:00–15:30
+        </div>
+        <div>
+          <div class="rtc-programme-title">
+            Tea
+          </div>
+        </div>
+      </div>
+
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          16:30-17:00
+          15:30–16:30
+        </div>
+        <div>
+          <div class="rtc-programme-title rtc-placeholder">
+            Talk 9
+          </div>
+          <div class="rtc-placeholder">
+            [SPEAKER / TITLE]
+          </div>
+          <details class="rtc-abstract">
+            <summary>Abstract</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Abstract.]</p>
+            </div>
+          </details>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Speaker bio.]</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          16:30–17:30
+        </div>
+        <div>
+          <div class="rtc-programme-title rtc-placeholder">
+            Talk 10
+          </div>
+          <div class="rtc-placeholder">
+            [SPEAKER / TITLE]
+          </div>
+          <details class="rtc-abstract">
+            <summary>Abstract</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Abstract.]</p>
+            </div>
+          </details>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content rtc-placeholder">
+              <p>[PLACEHOLDER: Speaker bio.]</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          17:30–17:45
         </div>
         <div>
           <div class="rtc-programme-title">
