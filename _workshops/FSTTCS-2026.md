@@ -930,11 +930,13 @@ flush_top: true
         </div>
       </a>
 
-      <a class="rtc-speaker" href="#">
-        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
-        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
-        <div class="rtc-speaker-affiliation rtc-placeholder">
-          [AFFILIATION]
+      <a class="rtc-speaker" href="https://yadav-anshu.github.io">
+        <div class="rtc-speaker-photo">
+          <img src="{{ '/assets/img/anshu.jpeg' | relative_url }}" alt="Anshu Yadav">
+        </div>
+        <h3>Anshu Yadav</h3>
+        <div class="rtc-speaker-affiliation">
+          Indian Institute of Technology Kanpur
         </div>
       </a>
 
@@ -1184,11 +1186,11 @@ flush_top: true
           16:30–17:30
         </div>
         <div>
-          <div class="rtc-programme-title rtc-placeholder">
-            Talk 5
+          <div class="rtc-programme-title">
+            On the Variants of LWE
           </div>
-          <div class="rtc-placeholder">
-            [SPEAKER / TITLE]
+          <div>
+            Anshu Yadav
           </div>
           <details class="rtc-abstract">
             <summary>Abstract</summary>
@@ -1198,8 +1200,8 @@ flush_top: true
           </details>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Speaker bio.]</p>
+            <div class="rtc-abstract-content">
+              <p>Anshu Yadav is an Assistant Professor in the Computer Science and Engineering Department at IIT Kanpur. Her research interests are in theoretical cryptography, especially constructions of advanced cryptographic primitives under various assumptions. Before joining IIT Kanpur, she was a postdoctoral researcher in Krzysztof Pietrzak's group at the Institute of Science and Technology Austria. She completed her PhD at IIT Madras.</p>
             </div>
           </details>
         </div>
@@ -1379,9 +1381,6 @@ flush_top: true
         <div>
           <div class="rtc-programme-title">
             Closing Remarks
-          </div>
-          <div class="rtc-placeholder">
-            [SPEAKER / DETAILS]
           </div>
         </div>
       </div>
