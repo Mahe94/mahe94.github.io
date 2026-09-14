@@ -15,7 +15,7 @@ latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-I am currently a <b>Postdoctoral Researcher</b> at CISPA Helmholtz Center for Information Security, hosted by <a href='https://sites.google.com/site/nicodoettling/'>Prof. Nico Döttling</a>. My research focuses on public-key cryptography and quantum cryptography.
+I am currently a <b>Postdoctoral Researcher</b> at CISPA Helmholtz Center for Information Security, hosted by <a href='https://sites.google.com/site/nicodoettling/'>Prof. Nico Döttling</a>. My research focuses on algorithms and cryptography.
 
 Previously, I was a Postdoctoral Fellow in the Department of Computer Science and Engineering, Indian Institute of Technology Delhi, where I worked under the guidance of <a href='https://web.iitd.ac.in/~kvenkata/'>Prof. Venkata Koppula</a>.
 
