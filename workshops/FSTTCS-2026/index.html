@@ -38,7 +38,7 @@
     
     <link rel="shortcut icon" href="/assets/img/msr.png">
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1789402607">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1789475735">
     <link rel="canonical" href="https://mahe94.github.io/workshops/FSTTCS-2026/">
 
     <!-- Dark Mode -->
@@ -132,7 +132,7 @@
 
 .rtc-main {
   grid-area: content;
-  width: min(100%, 800px);
+  width: min(100%, 1400px);
   margin: 0 auto;
   min-width: 0;
 }
@@ -189,7 +189,7 @@
 .rtc-hero {
   position: relative;
   overflow: hidden;
-  padding: 3rem 1.5rem 3.5rem;
+  padding: 1.6rem 0.75rem 2rem;
   margin: 0 calc(50% - 50vw);
   text-align: left;
   background: #171c1b;
@@ -210,7 +210,7 @@
 
 .rtc-hero-inner {
   position: relative;
-  max-width: 1002px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -219,7 +219,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem 1.25rem;
-  margin-bottom: 3.25rem;
+  margin-bottom: 1.6rem;
   color: #d0d7d2;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -249,7 +249,7 @@
   margin: 0;
   color: #f5f6f2;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 5rem;
+  font-size: 4.68rem;
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: 0;
@@ -280,8 +280,8 @@
   flex-wrap: wrap;
   width: fit-content;
   max-width: 100%;
-  margin-top: 2.75rem;
-  padding-top: 1.4rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
   border-top: 1px solid #626f65;
 }
 
@@ -310,8 +310,8 @@
 
 .rtc-section {
   max-width: 1050px;
-  margin: 0 auto;
-  padding: 4.5rem 1.5rem;
+  margin: 0;
+  padding: 3.15rem 0.75rem;
 }
 
 .rtc-section + .rtc-section {
@@ -386,7 +386,7 @@
 
 .rtc-speaker-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.4rem;
 }
 
@@ -537,7 +537,7 @@
 
 .rtc-organiser-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
@@ -556,6 +556,10 @@
   margin: 0 0 0.3rem;
   color: var(--rtc-text);
   font-size: 1.35rem;
+}
+
+.rtc-organiser h3.rtc-organiser-name-long {
+  font-size: 1.1rem;
 }
 
 .rtc-organiser-role {
@@ -732,7 +736,7 @@
 
 @media (max-width: 550px) {
   .rtc-hero {
-    padding: 2rem 1.5rem 2.5rem;
+    padding: 1.4rem 1.1rem 1.7rem;
   }
 
   .rtc-hero::before {
@@ -743,12 +747,12 @@
   .rtc-hero-context {
     align-items: flex-start;
     flex-direction: column;
-    gap: 0.75rem;
-    margin-bottom: 2.25rem;
+    gap: 0.5rem;
+    margin-bottom: 1.4rem;
   }
 
   .rtc-hero h1 {
-    font-size: 2.375rem;
+    font-size: 2.6rem;
   }
 
   .rtc-hero-title-lead {
@@ -763,8 +767,8 @@
 
   .rtc-hero-meta {
     width: 100%;
-    margin-top: 2rem;
-    gap: 1.25rem;
+    margin-top: 1.25rem;
+    gap: 0.85rem;
     flex-direction: column;
   }
 
@@ -773,7 +777,7 @@
   }
 
   .rtc-section {
-    padding: 3.2rem 1.1rem;
+    padding: 2.24rem 1.1rem;
   }
 
   .rtc-info-grid,
@@ -968,28 +972,6 @@
 
     <div class="rtc-speaker-grid">
 
-      <!-- Mahesh is an organiser and speaker -->
-      <a class="rtc-speaker" href="/">
-        <div class="rtc-speaker-photo">
-          <img src="/assets/img/mahe.jpeg" alt="Mahesh Sreekumar Rajasree">
-        </div>
-        <h3>Mahesh Sreekumar Rajasree</h3>
-        <div class="rtc-speaker-affiliation">
-          CISPA Helmholtz, Germany
-        </div>
-      </a>
-
-      <!-- Venkata is an organiser and speaker -->
-      <a class="rtc-speaker" href="https://web.iitd.ac.in/~kvenkata/" rel="external nofollow noopener" target="_blank">
-        <div class="rtc-speaker-photo">
-          <img src="/assets/img/kvenkata.jpg" alt="Venkata Koppula">
-        </div>
-        <h3>Venkata Koppula</h3>
-        <div class="rtc-speaker-affiliation">
-          Indian Institute of Technology, Delhi
-        </div>
-      </a>
-
       <!-- <a class="rtc-speaker" href="https://kabirtomer.github.io">
         <div class="rtc-speaker-photo">
           <img src="/assets/img/kabir.jpeg" alt="Kabir Tomer">
@@ -1030,27 +1012,33 @@
         </div>
       </a>
 
-      <a class="rtc-speaker" href="#">
-        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
-        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
-        <div class="rtc-speaker-affiliation rtc-placeholder">
-          [AFFILIATION]
+      <a class="rtc-speaker" href="https://www.cse.iitb.ac.in/~ckamath/" rel="external nofollow noopener" target="_blank">
+        <div class="rtc-speaker-photo">
+          <img src="/assets/img/chethan.jpg" alt="Chethan Kamath">
+        </div>
+        <h3>Chethan Kamath</h3>
+        <div class="rtc-speaker-affiliation">
+          Indian Institute of Technology Bombay
         </div>
       </a>
 
-      <a class="rtc-speaker" href="#">
-        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
-        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
-        <div class="rtc-speaker-affiliation rtc-placeholder">
-          [AFFILIATION]
+      <a class="rtc-speaker" href="https://www.csa.iisc.ac.in/~chaya/" rel="external nofollow noopener" target="_blank">
+        <div class="rtc-speaker-photo">
+          <img src="/assets/img/chaya.jpg" alt="Chaya Ganesh">
+        </div>
+        <h3>Chaya Ganesh</h3>
+        <div class="rtc-speaker-affiliation">
+          Indian Institute of Science
         </div>
       </a>
 
-      <a class="rtc-speaker" href="#">
-        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
-        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
-        <div class="rtc-speaker-affiliation rtc-placeholder">
-          [AFFILIATION]
+      <a class="rtc-speaker" href="https://pratyay.net" rel="external nofollow noopener" target="_blank">
+        <div class="rtc-speaker-photo">
+          <img src="/assets/img/pratyay.png" alt="Pratyay Mukherjee">
+        </div>
+        <h3>Pratyay Mukherjee</h3>
+        <div class="rtc-speaker-affiliation">
+          Hashgraph
         </div>
       </a>
 
@@ -1091,391 +1079,11 @@
 
     </div>
 
-    <div class="rtc-programme">
+    <p class="rtc-section-intro rtc-placeholder">
+      Schedule will be announced soon.
+    </p>
 
-      <div class="rtc-programme-day">
-        Day 1: December 19, 2026
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          09:30–09:45
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Opening Remarks
-          </div>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          09:45–10:45
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Pseudorandom Codes: Constructions and Limitations
-          </div>
-          <div>
-            Mahesh Sreekumar Rajasree
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract covering pseudorandom codes, constructions, and limitations of building them.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Mahesh Sreekumar Rajasree is a postdoctoral researcher at CISPA Helmholtz Center for Information Security, hosted by Prof. Nico Doettling. His research focuses on public-key cryptography and quantum cryptography. Previously, he was a Postdoctoral Fellow at IITD under the guidance of Prof. Venkata Koppula. He completed his PhD and MTech at IIT Kanpur under Prof. Manindra Agrawal.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row rtc-programme-break">
-        <div class="rtc-programme-time">
-          10:45–11:15
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Tea
-          </div>
-        </div>
-      </div>
-
-      <!-- <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          11:15-12:15
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Quantum Lower Bounds
-          </div>
-          <div>
-            Kabir Tomer
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Kabir Tomer is a fourth-year PhD student at UIUC, advised by Dakshita Khurana. He is broadly interested in theoretical computer science, with research focusing on questions at the intersection of quantum computing and cryptography. Previously, he was an undergraduate at IIT Delhi advised by Venkata Koppula.</p>
-            </div>
-          </details>
-        </div>
-      </div> -->
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          11:15–12:15
-        </div>
-        <div>
-          <div class="rtc-programme-title rtc-placeholder">
-            Talk 2
-          </div>
-          <div>
-            Varun Narayanan
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Varun Narayanan is an assistant professor in Chennai Mathematical Institute. His research interests include secure multi-party computation, cryptography, and information theory. He was previously a postdoctoral research fellow at UCLA and Technion, and completed his PhD under Vinod Prabhakaran.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row rtc-programme-break">
-        <div class="rtc-programme-time">
-          12:15–14:00
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Lunch
-          </div>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          14:00–15:00
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            CCA Encryption Schemes
-          </div>
-          <div>
-            Venkata Koppula
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Venkata Koppula is an Assistant Professor in the Department of Computer Science and Engineering at IIT Delhi. His research interests are in theoretical cryptography, including both classical and quantum cryptography. Before joining IIT Delhi, he was a postdoctoral researcher at the Weizmann Institute of Science, hosted by Zvika Brakerski. He obtained his PhD from the University of Texas at Austin, advised by Brent Waters.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row rtc-programme-break">
-        <div class="rtc-programme-time">
-          15:00–15:30
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Tea
-          </div>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          15:30–16:30
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            SNARKs
-          </div>
-          <div>
-            Sruthi Sekar
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Sruthi Sekar is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay and a Principal Investigator at IITB Trust Lab. Her research interests are in cryptography and theoretical computer science. Before joining IIT Bombay, she was a postdoctoral researcher at UC Berkeley, hosted by Sanjam Garg. She completed her PhD at the Indian Institute of Science, advised by Bhavana Kanukurthi and Manjunath Krishnapur.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          16:30–17:30
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            On the Variants of LWE
-          </div>
-          <div>
-            Anshu Yadav
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Anshu Yadav is an Assistant Professor in the Computer Science and Engineering Department at IIT Kanpur. Her research interests are in theoretical cryptography, especially constructions of advanced cryptographic primitives under various assumptions. Before joining IIT Kanpur, she was a postdoctoral researcher in Krzysztof Pietrzak's group at the Institute of Science and Technology Austria. She completed her PhD at IIT Madras.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-day">
-        Day 2: December 20, 2026
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          09:45–10:45
-        </div>
-        <div>
-          <div class="rtc-programme-title rtc-placeholder">
-            Talk 6
-          </div>
-          <div class="rtc-placeholder">
-            [SPEAKER / TITLE]
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Speaker bio.]</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row rtc-programme-break">
-        <div class="rtc-programme-time">
-          10:45–11:15
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Tea
-          </div>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          11:15–12:15
-        </div>
-        <div>
-          <div class="rtc-programme-title rtc-placeholder">
-            Talk 7
-          </div>
-          <div class="rtc-placeholder">
-            [SPEAKER / TITLE]
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Speaker bio.]</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row rtc-programme-break">
-        <div class="rtc-programme-time">
-          12:15–14:00
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Lunch
-          </div>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          14:00–15:00
-        </div>
-        <div>
-          <div class="rtc-programme-title rtc-placeholder">
-            Talk 8
-          </div>
-          <div class="rtc-placeholder">
-            [SPEAKER / TITLE]
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Speaker bio.]</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row rtc-programme-break">
-        <div class="rtc-programme-time">
-          15:00–15:30
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Tea
-          </div>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          15:30–16:30
-        </div>
-        <div>
-          <div class="rtc-programme-title rtc-placeholder">
-            Talk 9
-          </div>
-          <div class="rtc-placeholder">
-            [SPEAKER / TITLE]
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Speaker bio.]</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          16:30–17:30
-        </div>
-        <div>
-          <div class="rtc-programme-title rtc-placeholder">
-            Talk 10
-          </div>
-          <div class="rtc-placeholder">
-            [SPEAKER / TITLE]
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Speaker bio.]</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          17:30–17:45
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Closing Remarks
-          </div>
-        </div>
-      </div>
-
-    </div>
+    
 
   </section>
 
@@ -1518,7 +1126,7 @@
           <img src="/assets/img/mahe.jpeg" alt="Mahesh Sreekumar Rajasree">
         </div>
 
-        <h3>Mahesh Sreekumar Rajasree</h3>
+        <h3 class="rtc-organiser-name-long">Mahesh Sreekumar Rajasree</h3>
 
         <div class="rtc-organiser-role">
           Organiser &amp; Speaker
@@ -1693,7 +1301,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: September 14, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: September 15, 2026.
       </div>
     </footer>
 
