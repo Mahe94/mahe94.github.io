@@ -41,7 +41,7 @@ flush_top: true
 
 .rtc-main {
   grid-area: content;
-  width: min(100%, 800px);
+  width: min(100%, 1400px);
   margin: 0 auto;
   min-width: 0;
 }
@@ -98,7 +98,7 @@ flush_top: true
 .rtc-hero {
   position: relative;
   overflow: hidden;
-  padding: 3rem 1.5rem 3.5rem;
+  padding: 1.6rem 0.75rem 2rem;
   margin: 0 calc(50% - 50vw);
   text-align: left;
   background: #171c1b;
@@ -119,7 +119,7 @@ flush_top: true
 
 .rtc-hero-inner {
   position: relative;
-  max-width: 1002px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -128,7 +128,7 @@ flush_top: true
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem 1.25rem;
-  margin-bottom: 3.25rem;
+  margin-bottom: 1.6rem;
   color: #d0d7d2;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -158,7 +158,7 @@ flush_top: true
   margin: 0;
   color: #f5f6f2;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 5rem;
+  font-size: 4.68rem;
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: 0;
@@ -189,8 +189,8 @@ flush_top: true
   flex-wrap: wrap;
   width: fit-content;
   max-width: 100%;
-  margin-top: 2.75rem;
-  padding-top: 1.4rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
   border-top: 1px solid #626f65;
 }
 
@@ -219,8 +219,8 @@ flush_top: true
 
 .rtc-section {
   max-width: 1050px;
-  margin: 0 auto;
-  padding: 4.5rem 1.5rem;
+  margin: 0;
+  padding: 3.15rem 0.75rem;
 }
 
 .rtc-section + .rtc-section {
@@ -295,7 +295,7 @@ flush_top: true
 
 .rtc-speaker-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.4rem;
 }
 
@@ -446,7 +446,7 @@ flush_top: true
 
 .rtc-organiser-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
@@ -465,6 +465,10 @@ flush_top: true
   margin: 0 0 0.3rem;
   color: var(--rtc-text);
   font-size: 1.35rem;
+}
+
+.rtc-organiser h3.rtc-organiser-name-long {
+  font-size: 1.1rem;
 }
 
 .rtc-organiser-role {
@@ -641,7 +645,7 @@ flush_top: true
 
 @media (max-width: 550px) {
   .rtc-hero {
-    padding: 2rem 1.5rem 2.5rem;
+    padding: 1.4rem 1.1rem 1.7rem;
   }
 
   .rtc-hero::before {
@@ -652,12 +656,12 @@ flush_top: true
   .rtc-hero-context {
     align-items: flex-start;
     flex-direction: column;
-    gap: 0.75rem;
-    margin-bottom: 2.25rem;
+    gap: 0.5rem;
+    margin-bottom: 1.4rem;
   }
 
   .rtc-hero h1 {
-    font-size: 2.375rem;
+    font-size: 2.6rem;
   }
 
   .rtc-hero-title-lead {
@@ -672,8 +676,8 @@ flush_top: true
 
   .rtc-hero-meta {
     width: 100%;
-    margin-top: 2rem;
-    gap: 1.25rem;
+    margin-top: 1.25rem;
+    gap: 0.85rem;
     flex-direction: column;
   }
 
@@ -682,7 +686,7 @@ flush_top: true
   }
 
   .rtc-section {
-    padding: 3.2rem 1.1rem;
+    padding: 2.24rem 1.1rem;
   }
 
   .rtc-info-grid,
@@ -878,28 +882,6 @@ flush_top: true
 
     <div class="rtc-speaker-grid">
 
-      <!-- Mahesh is an organiser and speaker -->
-      <a class="rtc-speaker" href="{{ '/' | relative_url }}">
-        <div class="rtc-speaker-photo">
-          <img src="{{ '/assets/img/mahe.jpeg' | relative_url }}" alt="Mahesh Sreekumar Rajasree">
-        </div>
-        <h3>Mahesh Sreekumar Rajasree</h3>
-        <div class="rtc-speaker-affiliation">
-          CISPA Helmholtz, Germany
-        </div>
-      </a>
-
-      <!-- Venkata is an organiser and speaker -->
-      <a class="rtc-speaker" href="https://web.iitd.ac.in/~kvenkata/">
-        <div class="rtc-speaker-photo">
-          <img src="{{ '/assets/img/kvenkata.jpg' | relative_url }}" alt="Venkata Koppula">
-        </div>
-        <h3>Venkata Koppula</h3>
-        <div class="rtc-speaker-affiliation">
-          Indian Institute of Technology, Delhi
-        </div>
-      </a>
-
       <!-- <a class="rtc-speaker" href="https://kabirtomer.github.io">
         <div class="rtc-speaker-photo">
           <img src="{{ '/assets/img/kabir.jpeg' | relative_url }}" alt="Kabir Tomer">
@@ -940,27 +922,33 @@ flush_top: true
         </div>
       </a>
 
-      <a class="rtc-speaker" href="#">
-        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
-        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
-        <div class="rtc-speaker-affiliation rtc-placeholder">
-          [AFFILIATION]
+      <a class="rtc-speaker" href="https://www.cse.iitb.ac.in/~ckamath/">
+        <div class="rtc-speaker-photo">
+          <img src="{{ '/assets/img/chethan.jpg' | relative_url }}" alt="Chethan Kamath">
+        </div>
+        <h3>Chethan Kamath</h3>
+        <div class="rtc-speaker-affiliation">
+          Indian Institute of Technology Bombay
         </div>
       </a>
 
-      <a class="rtc-speaker" href="#">
-        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
-        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
-        <div class="rtc-speaker-affiliation rtc-placeholder">
-          [AFFILIATION]
+      <a class="rtc-speaker" href="https://www.csa.iisc.ac.in/~chaya/">
+        <div class="rtc-speaker-photo">
+          <img src="{{ '/assets/img/chaya.jpg' | relative_url }}" alt="Chaya Ganesh">
+        </div>
+        <h3>Chaya Ganesh</h3>
+        <div class="rtc-speaker-affiliation">
+          Indian Institute of Science
         </div>
       </a>
 
-      <a class="rtc-speaker" href="#">
-        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
-        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
-        <div class="rtc-speaker-affiliation rtc-placeholder">
-          [AFFILIATION]
+      <a class="rtc-speaker" href="https://pratyay.net">
+        <div class="rtc-speaker-photo">
+          <img src="{{ '/assets/img/pratyay.png' | relative_url }}" alt="Pratyay Mukherjee">
+        </div>
+        <h3>Pratyay Mukherjee</h3>
+        <div class="rtc-speaker-affiliation">
+          Hashgraph
         </div>
       </a>
 
@@ -1001,6 +989,11 @@ flush_top: true
 
     </div>
 
+    <p class="rtc-section-intro rtc-placeholder">
+      Schedule will be announced soon.
+    </p>
+
+    {% comment %}
     <div class="rtc-programme">
 
       <div class="rtc-programme-day">
@@ -1219,8 +1212,8 @@ flush_top: true
           <div class="rtc-programme-title rtc-placeholder">
             Talk 6
           </div>
-          <div class="rtc-placeholder">
-            [SPEAKER / TITLE]
+          <div>
+            Chethan Kamath
           </div>
           <details class="rtc-abstract">
             <summary>Abstract</summary>
@@ -1230,8 +1223,8 @@ flush_top: true
           </details>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Speaker bio.]</p>
+            <div class="rtc-abstract-content">
+              <p>Chethan Kamath is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay, where he is a member of the Theory Group and Trust Lab. His primary research area is cryptography, particularly its foundations, with broader interests in theoretical computer science.</p>
             </div>
           </details>
         </div>
@@ -1256,8 +1249,8 @@ flush_top: true
           <div class="rtc-programme-title rtc-placeholder">
             Talk 7
           </div>
-          <div class="rtc-placeholder">
-            [SPEAKER / TITLE]
+          <div>
+            Chaya Ganesh
           </div>
           <details class="rtc-abstract">
             <summary>Abstract</summary>
@@ -1267,8 +1260,8 @@ flush_top: true
           </details>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Speaker bio.]</p>
+            <div class="rtc-abstract-content">
+              <p>Chaya Ganesh is an Associate Professor in the Department of Computer Science and Automation at the Indian Institute of Science. Her research interests are in cryptography and security. Before joining IISc, she was a postdoctoral researcher in the Crypto Group at Aarhus University, and she received her PhD from NYU's Courant Institute of Mathematical Sciences.</p>
             </div>
           </details>
         </div>
@@ -1293,8 +1286,8 @@ flush_top: true
           <div class="rtc-programme-title rtc-placeholder">
             Talk 8
           </div>
-          <div class="rtc-placeholder">
-            [SPEAKER / TITLE]
+          <div>
+            Pratyay Mukherjee
           </div>
           <details class="rtc-abstract">
             <summary>Abstract</summary>
@@ -1304,8 +1297,8 @@ flush_top: true
           </details>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Speaker bio.]</p>
+            <div class="rtc-abstract-content">
+              <p>Pratyay Mukherjee is a Principal Researcher at Hashgraph, a Visiting Scientist and Guest Faculty member at ISI Kolkata, and the Founder and Director of AlgoBengal Research Labs. His research encompasses cryptography and security, with recent work focusing on applications of cryptography in payments and blockchain.</p>
             </div>
           </details>
         </div>
@@ -1386,6 +1379,7 @@ flush_top: true
       </div>
 
     </div>
+    {% endcomment %}
 
   </section>
 
@@ -1428,7 +1422,7 @@ flush_top: true
           <img src="{{ '/assets/img/mahe.jpeg' | relative_url }}" alt="Mahesh Sreekumar Rajasree">
         </div>
 
-        <h3>Mahesh Sreekumar Rajasree</h3>
+        <h3 class="rtc-organiser-name-long">Mahesh Sreekumar Rajasree</h3>
 
         <div class="rtc-organiser-role">
           Organiser &amp; Speaker
