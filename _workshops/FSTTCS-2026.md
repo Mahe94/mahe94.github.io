@@ -882,7 +882,7 @@ flush_top: true
 
     <div class="rtc-speaker-grid">
 
-      <!-- <a class="rtc-speaker" href="https://kabirtomer.github.io">
+      <a class="rtc-speaker" href="https://kabirtomer.github.io">
         <div class="rtc-speaker-photo">
           <img src="{{ '/assets/img/kabir.jpeg' | relative_url }}" alt="Kabir Tomer">
         </div>
@@ -890,7 +890,7 @@ flush_top: true
         <div class="rtc-speaker-affiliation">
           University of Illinois Urbana-Champaign
         </div>
-      </a> -->
+      </a>
 
       <a class="rtc-speaker" href="https://varunnkv.github.io">
         <div class="rtc-speaker-photo">
@@ -949,14 +949,6 @@ flush_top: true
         <h3>Pratyay Mukherjee</h3>
         <div class="rtc-speaker-affiliation">
           Hashgraph
-        </div>
-      </a>
-
-      <a class="rtc-speaker" href="#">
-        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
-        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
-        <div class="rtc-speaker-affiliation rtc-placeholder">
-          [AFFILIATION]
         </div>
       </a>
 
