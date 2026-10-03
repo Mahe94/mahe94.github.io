@@ -4,6 +4,9 @@
       <div class="cv-timeline-period">
         {% if content.year %}
           {{ content.year }}
+          {% if content.end_year %}
+            <br>&ndash; {{ content.end_year }}
+          {% endif %}
         {% endif %}
       </div>
       <div class="cv-timeline-content">

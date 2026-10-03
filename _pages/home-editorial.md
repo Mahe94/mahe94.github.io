@@ -5,7 +5,7 @@ permalink: /review/home-editorial/
 description: Temporary homepage concept review
 nav: false
 hide_navbar_brand: true
-subtitle: <a href='https://cispa.de/en'>CISPA Helmholtz Center for Information Security</a>, Sankt Ingbert, Germany
+subtitle: Institute of Informatics, <a href='https://mimuw.edu.pl/en/faculty/'>Faculty of Mathematics, Informatics and Mechanics</a>, <a href='https://en.uw.edu.pl/'>University of Warsaw</a>, Poland
 
 profile:
   align: right
@@ -17,7 +17,9 @@ news: true
 selected_papers: true
 social: true
 ---
-I am currently a <b>Postdoctoral Researcher</b> at CISPA Helmholtz Center for Information Security, hosted by <a href='https://sites.google.com/site/nicodoettling/'>Prof. Nico Döttling</a>. My research focuses on public-key cryptography and quantum cryptography.
+I am an <b>Assistant Professor</b> at the Institute of Informatics, <a href='https://mimuw.edu.pl/en/faculty/'>Faculty of Mathematics, Informatics and Mechanics</a>, <a href='https://en.uw.edu.pl/'>University of Warsaw</a>, where I joined on 1 October 2026. My research focuses on public-key cryptography and quantum cryptography.
+
+Previously, I was a Postdoctoral Researcher at CISPA Helmholtz Center for Information Security, hosted by <a href='https://sites.google.com/site/nicodoettling/'>Prof. Nico Döttling</a>.
 
 Previously, I was a Postdoctoral Fellow in the Department of Computer Science and Engineering, Indian Institute of Technology Delhi, where I worked under the guidance of <a href='https://web.iitd.ac.in/~kvenkata/'>Prof. Venkata Koppula</a>.
 

@@ -2,7 +2,7 @@
 layout: about
 title: About Me
 permalink: /
-subtitle: <a href='https://cispa.de/en'>CISPA Helmholtz Center for Information Security</a>, Sankt Ingbert, Germany
+subtitle: <a href='https://en.uw.edu.pl/'>University of Warsaw</a>, Poland
 
 profile:
   align: right
@@ -15,9 +15,11 @@ latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-I am currently a <b>Postdoctoral Researcher</b> at CISPA Helmholtz Center for Information Security, hosted by <a href='https://sites.google.com/site/nicodoettling/'>Prof. Nico Döttling</a>. My research focuses on algorithms and cryptography.
+I am an <b>Assistant Professor</b> at the Institute of Informatics, <a href='https://mimuw.edu.pl/en/faculty/'>Faculty of Mathematics, Informatics and Mechanics</a>, <a href='https://en.uw.edu.pl/'>University of Warsaw</a>. My research focuses on algorithms and cryptography.
 
-Previously, I was a Postdoctoral Fellow in the Department of Computer Science and Engineering, Indian Institute of Technology Delhi, where I worked under the guidance of <a href='https://web.iitd.ac.in/~kvenkata/'>Prof. Venkata Koppula</a>.
+Previously, I was a Postdoctoral Researcher at CISPA Helmholtz Center for Information Security, hosted by <a href='https://sites.google.com/site/nicodoettling/'>Prof. Nico Döttling</a>.
+
+Before joining CISPA, I was a Postdoctoral Fellow in the Department of Computer Science and Engineering at the Indian Institute of Technology Delhi, where I worked with <a href='https://web.iitd.ac.in/~kvenkata/'>Prof. Venkata Koppula</a>.
 
 I completed my PhD (as a <a href="https://pmrf.in">Prime Minister’s Research Fellow</a>) and MTech degree under the guidance of <a href='https://en.wikipedia.org/wiki/Manindra_Agrawal'>Prof. Manindra Agrawal</a> in the Department of Computer Science and Engineering, Indian Institute of Technology, Kanpur. During that time, I was actively working on the cryptanalysis of symmetric-key cryptosystems and variants of the subset-sum problem.
 

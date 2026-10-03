@@ -4,30 +4,40 @@
     - name: Full Name
       value: Mahesh Sreekumar Rajasree
     - name: Professional Title
-      value: Postdoctoral Researcher
+      value: Assistant Professor, University of Warsaw
+    - name: Affiliation
+      value: Institute of Informatics, Faculty of Mathematics, Informatics and Mechanics
     - name: Email
-      value: mahesh.sreekumar-rajasree@cispa.de
+      value: ""
     - name: Location
-      value: Sankt Ingbert, Germany
+      value: Warsaw, Poland
 
 - title: Professional Summary
   contents: >
-    Postdoctoral researcher at CISPA Helmholtz Center for Information Security working on
+    Assistant Professor at the Institute of Informatics, Faculty of Mathematics,
+    Informatics and Mechanics, University of Warsaw, working on
     public-key cryptography, quantum cryptography, incompressible cryptography, and related
     areas of theoretical cryptography.
 
 - title: Experience
   type: time_table
   contents:
+    - title: Assistant Professor
+      institution: Institute of Informatics, Faculty of Mathematics, Informatics and Mechanics, University of Warsaw
+      year: "Oct 2026"
+      end_year: "present"
+      location: Warsaw, Poland
     - title: Postdoctoral Researcher
       institution: CISPA Helmholtz Center for Information Security
-      year: 2024
+      year: "Dec 2024"
+      end_year: "Sep 2026"
       location: Sankt Ingbert, Germany
       description:
         - "Host: <a href='https://sites.google.com/site/nicodoettling/'>Prof. Nico Döttling</a>"
     - title: Postdoctoral Fellow
       institution: Indian Institute of Technology Delhi
-      year: 2023
+      year: "Apr 2023"
+      end_year: "Nov 2024"
       location: New Delhi, India
       description:
         - "Supervisor: <a href='https://web.iitd.ac.in/~kvenkata/'>Prof. Venkata Koppula</a>"
@@ -37,7 +47,7 @@
   contents:
     - title: PhD & MTech
       institution: Indian Institute of Technology Kanpur
-      year: 2016
+      year: 2016 - 2023
       location: Kanpur, India
       description:
         - "Advisor: <a href='https://sites.google.com/view/manindra/home'>Prof. Manindra Agrawal</a>"
@@ -47,7 +57,7 @@
 
     - title: BTech
       institution: National Institute of Technology Calicut
-      year: 2012
+      year: 2012 - 2016
       location: Calicut, India
       description:
         - "Advisor: <a href='https://people.cse.nitc.ac.in/sumeshta/'>Dr. Sumesh T.A.</a>"

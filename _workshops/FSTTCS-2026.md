@@ -21,6 +21,7 @@ flush_top: true
   --rtc-bg: #ffffff;
   --rtc-soft-bg: #f7f8fa;
   --rtc-border: #e3e7ec;
+  --rtc-page-padding: max(1.5rem, calc((100vw - 1400px) / 2));
 
   color: var(--rtc-text);
   font-size: 17px;
@@ -35,13 +36,14 @@ flush_top: true
 .rtc-page-layout {
   position: relative;
   display: grid;
-  grid-template-areas: "content";
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: 3rem;
   margin: 0 calc(50% - 50vw);
+  padding-inline: var(--rtc-page-padding);
 }
 
 .rtc-main {
-  grid-area: content;
-  width: min(100%, 1400px);
+  width: 100%;
   margin: 0 auto;
   min-width: 0;
 }
@@ -51,13 +53,14 @@ flush_top: true
 }
 
 .rtc-sidebar {
-  grid-area: content;
+  grid-column: 2;
+  grid-row: 1;
   justify-self: start;
   align-self: start;
   display: block;
   width: 190px;
   margin-top: 4.5rem;
-  margin-left: calc(50vw + 430px);
+  margin-left: 0;
   padding-right: 0;
   position: sticky;
   top: 1.5rem;
@@ -98,7 +101,7 @@ flush_top: true
 .rtc-hero {
   position: relative;
   overflow: hidden;
-  padding: 1.6rem 0.75rem 2rem;
+  padding: 1.6rem var(--rtc-page-padding) 2rem;
   margin: 0 calc(50% - 50vw);
   text-align: left;
   background: #171c1b;
@@ -218,9 +221,9 @@ flush_top: true
 /* ---------- General sections ---------- */
 
 .rtc-section {
-  max-width: 1050px;
+  max-width: none;
   margin: 0;
-  padding: 3.15rem 0.75rem;
+  padding: 3.15rem 0;
 }
 
 .rtc-section + .rtc-section {
@@ -627,6 +630,10 @@ flush_top: true
 /* ---------- Mobile ---------- */
 
 @media (max-width: 1259.98px) {
+  .rtc-page-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .rtc-sidebar {
     display: none;
   }
@@ -644,8 +651,12 @@ flush_top: true
 }
 
 @media (max-width: 550px) {
+  .rtc-workshop {
+    --rtc-page-padding: 1.1rem;
+  }
+
   .rtc-hero {
-    padding: 1.4rem 1.1rem 1.7rem;
+    padding: 1.4rem var(--rtc-page-padding) 1.7rem;
   }
 
   .rtc-hero::before {
@@ -686,7 +697,7 @@ flush_top: true
   }
 
   .rtc-section {
-    padding: 2.24rem 1.1rem;
+    padding: 2.24rem 0;
   }
 
   .rtc-info-grid,
@@ -1023,7 +1034,7 @@ flush_top: true
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
-              <p>Mahesh Sreekumar Rajasree is a postdoctoral researcher at CISPA Helmholtz Center for Information Security, hosted by Prof. Nico Doettling. His research focuses on public-key cryptography and quantum cryptography. Previously, he was a Postdoctoral Fellow at IITD under the guidance of Prof. Venkata Koppula. He completed his PhD and MTech at IIT Kanpur under Prof. Manindra Agrawal.</p>
+              <p>Mahesh Sreekumar Rajasree is an Assistant Professor at the University of Warsaw. His research focuses on public-key cryptography and quantum cryptography. Previously, he was a Postdoctoral Researcher at CISPA Helmholtz Center for Information Security, hosted by Prof. Nico Doettling. Before joining CISPA, he was a Postdoctoral Fellow at IITD under the guidance of Prof. Venkata Koppula. He completed his PhD and MTech at IIT Kanpur under Prof. Manindra Agrawal.</p>
             </div>
           </details>
         </div>
@@ -1421,7 +1432,7 @@ flush_top: true
         </div>
 
         <div class="rtc-organiser-affiliation">
-          CISPA Helmholtz, Germany
+          University of Warsaw, Poland
         </div>
 
       </a>
