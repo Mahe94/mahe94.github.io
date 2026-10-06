@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Mahesh
 middle_name: Sreekumar
 last_name: Rajasree
-email: mahesh.sreekumar-rajasree@cispa.de
+email: m.sreekumar-rajasree@uw.edu.pl
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Mahesh Sreekumar Rajasree, Assistant Professor at the University of Warsaw.
   Research in algorithms and cryptography.

@@ -1546,7 +1546,7 @@ flush_top: true
     </div>
 
     <div class="rtc-placeholder-box">
-      [PLACEHOLDER: Contact email and other relevant information.]
+      For questions, please email <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
     </div>
 
   </section>
