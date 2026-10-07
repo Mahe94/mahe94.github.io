@@ -7,6 +7,10 @@ description: Teaching is the greatest act of optimism.
 nav: true
 nav_order: 5
 ---
+* __Current Courses__
+	* [Quantum Computing]({{ '/teaching/introduction-to-quantum-computing/' | relative_url }})
+		* <a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=katalog2/przedmioty/pokazPrzedmiot&amp;prz_kod=1000-2M26QC">1000-2M26QC</a> at MIMUW, UW 2026
+
 * __Courses Taught__
 	* Introduction to Computer Science
 		* <a href="https://kumarmadhukar.github.io/courses/col100-summer24/index.html">COL100 at IITD 2024</a> (Co-taught with Prof. Kumar Madhukar, Dr Ramneek Kaur and Dr Prasad Chaugule)
@@ -32,6 +36,8 @@ nav_order: 5
 		* Ajay R Nair, MTech Intern from CET-Trivandrum, Avionics, IIST 2024 [<a href="../assets/pdf/ajay.pdf">Slides</a>]
 
 * __Teaching Assistance__
+	* Cryptography I
+		* <a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=katalog2/przedmioty/pokazPrzedmiot&amp;prz_kod=1000-2M12KI1">1000-2M12KI1</a> at MIMUW, UW 2026
 	* Special Topics in Cryptography
 		* COL872 at CSE, IITD 2023
 	* Modern Cryptology

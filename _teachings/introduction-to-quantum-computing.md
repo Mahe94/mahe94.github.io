@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Introduction to Quantum Computing
+title: Quantum Computing
 permalink: /teaching/introduction-to-quantum-computing/
 description: Course description
 nav: false
 ---
 
-<!-- This page contains the course description and expected structure for **Introduction to Quantum Computing** at **MIMUW**. -->
+<!-- This page contains the course description and expected structure for **Quantum Computing** at **MIMUW**. -->
 
 ## Short Description
 
