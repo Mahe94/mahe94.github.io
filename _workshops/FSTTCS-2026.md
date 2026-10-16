@@ -34,18 +34,22 @@ flush_top: true
 }
 
 .rtc-page-layout {
+  --rtc-menu-width: 190px;
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 190px;
+  grid-template-columns: var(--rtc-menu-width) minmax(0, 1fr) var(--rtc-menu-width);
   gap: 3rem;
   margin: 0 calc(50% - 50vw);
   padding-inline: var(--rtc-page-padding);
 }
 
 .rtc-main {
+  grid-column: 2;
+  grid-row: 1;
   width: 100%;
   margin: 0 auto;
   min-width: 0;
+  text-align: center;
 }
 
 .rtc-section {
@@ -53,12 +57,12 @@ flush_top: true
 }
 
 .rtc-sidebar {
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 1;
   justify-self: start;
   align-self: start;
   display: block;
-  width: 190px;
+  width: var(--rtc-menu-width);
   margin-top: 4.5rem;
   margin-left: 0;
   padding-right: 0;
@@ -103,7 +107,7 @@ flush_top: true
   overflow: hidden;
   padding: 1.6rem var(--rtc-page-padding) 2rem;
   margin: 0 calc(50% - 50vw);
-  text-align: left;
+  text-align: center;
   background: #171c1b;
   color: #f5f6f2;
   letter-spacing: 0;
@@ -129,6 +133,7 @@ flush_top: true
 .rtc-hero-context {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem 1.25rem;
   margin-bottom: 1.6rem;
@@ -192,7 +197,7 @@ flush_top: true
   flex-wrap: wrap;
   width: fit-content;
   max-width: 100%;
-  margin-top: 1.5rem;
+  margin: 1.5rem auto 0;
   padding-top: 1rem;
   border-top: 1px solid #626f65;
 }
@@ -232,7 +237,7 @@ flush_top: true
 
 .rtc-section-header {
   max-width: 750px;
-  margin-bottom: 2.4rem;
+  margin: 0 auto 2.4rem;
 }
 
 .rtc-section h2 {
@@ -246,6 +251,13 @@ flush_top: true
 .rtc-section-intro {
   color: var(--rtc-muted);
   font-size: 1.05rem;
+}
+
+.rtc-main .rtc-section > p,
+.rtc-abstract-content p,
+.rtc-venue-details p,
+.rtc-venue-details li {
+  text-align: justify;
 }
 
 
@@ -366,7 +378,7 @@ flush_top: true
 }
 
 .rtc-programme-day {
-  padding: 1.6rem 0 0.6rem;
+  padding: 1.6rem 0 0.6rem calc(130px + 1.5rem);
   border-bottom: 1px solid var(--rtc-border);
   color: var(--rtc-text);
   font-size: 1.25rem;
@@ -449,8 +461,9 @@ flush_top: true
 
 .rtc-organiser-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 280px));
   gap: 1.5rem;
+  justify-content: center;
 }
 
 .rtc-organiser {
@@ -460,6 +473,7 @@ flush_top: true
   border-radius: 8px;
   background: var(--rtc-soft-bg);
   color: inherit;
+  text-align: center;
   text-decoration: none !important;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
@@ -539,7 +553,8 @@ flush_top: true
 
 .rtc-venue-details ul {
   margin: 0 0 1.2rem;
-  padding-left: 1.2rem;
+  padding-left: 0;
+  list-style-position: inside;
 }
 
 .rtc-map {
@@ -565,11 +580,14 @@ flush_top: true
   display: grid;
   grid-template-columns: minmax(0, 260px);
   gap: 1.2rem;
+  justify-content: center;
 }
 
 .rtc-sponsor {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
   gap: 1rem;
   min-height: 104px;
   padding: 1.4rem;
@@ -632,6 +650,10 @@ flush_top: true
 @media (max-width: 1259.98px) {
   .rtc-page-layout {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .rtc-main {
+    grid-column: 1;
   }
 
   .rtc-sidebar {
@@ -710,6 +732,10 @@ flush_top: true
     gap: 0.25rem;
   }
 
+  .rtc-programme-day {
+    padding-left: 0;
+  }
+
   .rtc-registration {
     padding: 2rem 1.4rem;
   }
@@ -770,7 +796,7 @@ flush_top: true
     </div>
 
     <p>
-      The workshop aims to brings together graduate students, postdoctoral researchers, early-career academics, senior researchers, and experts from across the cryptography community to discuss some of the most significant recent developments. The program will feature a combination of introductory and advanced lectures delivered by leading researchers, focusing on influential ideas, techniques, and results that have shaped the field, including work appearing in leading international conferences in cryptography and theoretical computer science over the past few years.
+      The workshop aims to bring together graduate students, postdoctoral researchers, early-career academics, senior researchers, and experts from across the cryptography community to discuss some of the most significant recent developments. The program will feature a combination of introductory and advanced lectures delivered by leading researchers, focusing on influential ideas, techniques, and results that have shaped the field, including work appearing in leading international conferences in cryptography and theoretical computer science over the past few years.
     </p>
 
   </section>
@@ -983,20 +1009,9 @@ flush_top: true
   <section class="rtc-section" id="schedule">
 
     <div class="rtc-section-header">
-
       <h2>Schedule</h2>
-
-      <!-- <p class="rtc-section-intro rtc-placeholder">
-        [PLACEHOLDER: Programme details will be announced.]
-      </p> -->
-
     </div>
 
-    <p class="rtc-section-intro rtc-placeholder">
-      Schedule will be announced soon.
-    </p>
-
-    {% comment %}
     <div class="rtc-programme">
 
       <div class="rtc-programme-day">
@@ -1005,169 +1020,22 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          09:30–09:45
+          08:55&ndash;09:00
         </div>
         <div>
-          <div class="rtc-programme-title">
-            Opening Remarks
-          </div>
+          <div class="rtc-programme-title">Opening Remarks</div>
         </div>
       </div>
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          09:45–10:45
+          09:00&ndash;09:45
         </div>
         <div>
-          <div class="rtc-programme-title">
-            Pseudorandom Codes: Constructions and Limitations
-          </div>
-          <div>
-            Mahesh Sreekumar Rajasree
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract covering pseudorandom codes, constructions, and limitations of building them.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Mahesh Sreekumar Rajasree is an Assistant Professor at the University of Warsaw. His research focuses on public-key cryptography and quantum cryptography. Previously, he was a Postdoctoral Researcher at CISPA Helmholtz Center for Information Security, hosted by Prof. Nico Doettling. Before joining CISPA, he was a Postdoctoral Fellow at IITD under the guidance of Prof. Venkata Koppula. He completed his PhD and MTech at IIT Kanpur under Prof. Manindra Agrawal.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row rtc-programme-break">
-        <div class="rtc-programme-time">
-          10:45–11:15
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Tea
-          </div>
-        </div>
-      </div>
-
-      <!-- <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          11:15-12:15
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Quantum Lower Bounds
-          </div>
-          <div>
-            Kabir Tomer
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Kabir Tomer is a fourth-year PhD student at UIUC, advised by Dakshita Khurana. He is broadly interested in theoretical computer science, with research focusing on questions at the intersection of quantum computing and cryptography. Previously, he was an undergraduate at IIT Delhi advised by Venkata Koppula.</p>
-            </div>
-          </details>
-        </div>
-      </div> -->
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          11:15–12:15
-        </div>
-        <div>
-          <div class="rtc-programme-title rtc-placeholder">
-            Talk 2
-          </div>
-          <div>
-            Varun Narayanan
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Varun Narayanan is an assistant professor in Chennai Mathematical Institute. His research interests include secure multi-party computation, cryptography, and information theory. He was previously a postdoctoral research fellow at UCLA and Technion, and completed his PhD under Vinod Prabhakaran.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row rtc-programme-break">
-        <div class="rtc-programme-time">
-          12:15–14:00
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Lunch
-          </div>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          14:00–15:00
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            CCA Encryption Schemes
-          </div>
-          <div>
-            Venkata Koppula
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Venkata Koppula is an Assistant Professor in the Department of Computer Science and Engineering at IIT Delhi. His research interests are in theoretical cryptography, including both classical and quantum cryptography. Before joining IIT Delhi, he was a postdoctoral researcher at the Weizmann Institute of Science, hosted by Zvika Brakerski. He obtained his PhD from the University of Texas at Austin, advised by Brent Waters.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row rtc-programme-break">
-        <div class="rtc-programme-time">
-          15:00–15:30
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Tea
-          </div>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          15:30–16:30
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            SNARKs
-          </div>
+          <div class="rtc-programme-title">Collaborative zkSNARKs</div>
           <div>
             Sruthi Sekar
           </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
@@ -1179,21 +1047,40 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          16:30–17:30
+          09:45&ndash;10:30
         </div>
         <div>
-          <div class="rtc-programme-title">
-            On the Variants of LWE
+          <div class="rtc-programme-title">Applications of Polynomial Preprocessing in Cryptography</div>
+          <div>
+            Varun Narayanan
           </div>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content">
+              <p>Varun Narayanan is an assistant professor in Chennai Mathematical Institute. His research interests include secure multi-party computation, cryptography, and information theory. He was previously a postdoctoral research fellow at UCLA and Technion, and completed his PhD under Vinod Prabhakaran.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row rtc-programme-break">
+        <div class="rtc-programme-time">
+          10:30&ndash;11:00
+        </div>
+        <div>
+          <div class="rtc-programme-title">Tea</div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          11:00&ndash;12:30
+        </div>
+        <div>
+          <div class="rtc-programme-title">LWE assumption - New Variants and Applications</div>
           <div>
             Anshu Yadav
           </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
@@ -1203,64 +1090,42 @@ flush_top: true
         </div>
       </div>
 
-      <div class="rtc-programme-day">
-        Day 2: December 20, 2026
+      <div class="rtc-programme-row rtc-programme-break">
+        <div class="rtc-programme-time">
+          12:30&ndash;14:00
+        </div>
+        <div>
+          <div class="rtc-programme-title">Lunch</div>
+        </div>
       </div>
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          09:45–10:45
+          14:00&ndash;14:45
         </div>
         <div>
-          <div class="rtc-programme-title rtc-placeholder">
-            Talk 6
-          </div>
+          <div class="rtc-programme-title">FracPlonk: Plonkish Proofs without Fiat-Shamir from Partial Fractions</div>
           <div>
-            Chethan Kamath
+            Pratyay Mukherjee
           </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
-              <p>Chethan Kamath is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay, where he is a member of the Theory Group and Trust Lab. His primary research area is cryptography, particularly its foundations, with broader interests in theoretical computer science.</p>
+              <p>Pratyay Mukherjee is a Principal Researcher at Hashgraph, a Visiting Scientist and Guest Faculty member at ISI Kolkata, and the Founder and Director of AlgoBengal Research Labs. His research encompasses cryptography and security, with recent work focusing on applications of cryptography in payments and blockchain.</p>
             </div>
           </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row rtc-programme-break">
-        <div class="rtc-programme-time">
-          10:45–11:15
-        </div>
-        <div>
-          <div class="rtc-programme-title">
-            Tea
-          </div>
         </div>
       </div>
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          11:15–12:15
+          14:45&ndash;15:30
         </div>
         <div>
-          <div class="rtc-programme-title rtc-placeholder">
-            Talk 7
-          </div>
+          <div class="rtc-programme-title">Title to be announced</div>
           <div>
             Chaya Ganesh
           </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
@@ -1272,36 +1137,78 @@ flush_top: true
 
       <div class="rtc-programme-row rtc-programme-break">
         <div class="rtc-programme-time">
-          12:15–14:00
+          15:30&ndash;16:00
         </div>
         <div>
-          <div class="rtc-programme-title">
-            Lunch
-          </div>
+          <div class="rtc-programme-title">Tea</div>
         </div>
       </div>
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          14:00–15:00
+          16:00&ndash;18:00
         </div>
         <div>
-          <div class="rtc-programme-title rtc-placeholder">
-            Talk 8
-          </div>
+          <div class="rtc-programme-title">Panel Discussion</div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-day">
+        Day 2: December 20, 2026
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          09:00&ndash;09:45
+        </div>
+        <div>
+          <div class="rtc-programme-title">Timed Cryptography: Attacks and Separations</div>
           <div>
-            Pratyay Mukherjee
+            Chethan Kamath
           </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
-              <p>Pratyay Mukherjee is a Principal Researcher at Hashgraph, a Visiting Scientist and Guest Faculty member at ISI Kolkata, and the Founder and Director of AlgoBengal Research Labs. His research encompasses cryptography and security, with recent work focusing on applications of cryptography in payments and blockchain.</p>
+              <p>Chethan Kamath is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay, where he is a member of the Theory Group and Trust Lab. His primary research area is cryptography, particularly its foundations, with broader interests in theoretical computer science.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          09:45&ndash;10:30
+        </div>
+        <div>
+          <div class="rtc-programme-title">Title to be announced</div>
+          <div>
+            Speaker to be announced
+          </div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row rtc-programme-break">
+        <div class="rtc-programme-time">
+          10:30&ndash;11:00
+        </div>
+        <div>
+          <div class="rtc-programme-title">Tea</div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          11:00&ndash;12:30
+        </div>
+        <div>
+          <div class="rtc-programme-title">Laying the Foundations of Quantum Cryptography</div>
+          <div>
+            Kabir Tomer
+          </div>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content">
+              <p>Kabir Tomer is a fourth-year PhD student at UIUC, advised by Dakshita Khurana. He is broadly interested in theoretical computer science, with research focusing on questions at the intersection of quantum computing and cryptography. Previously, he was an undergraduate at IIT Delhi advised by Venkata Koppula.</p>
             </div>
           </details>
         </div>
@@ -1309,36 +1216,26 @@ flush_top: true
 
       <div class="rtc-programme-row rtc-programme-break">
         <div class="rtc-programme-time">
-          15:00–15:30
+          12:30&ndash;14:00
         </div>
         <div>
-          <div class="rtc-programme-title">
-            Tea
-          </div>
+          <div class="rtc-programme-title">Lunch</div>
         </div>
       </div>
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          15:30–16:30
+          14:00&ndash;14:45
         </div>
         <div>
-          <div class="rtc-programme-title rtc-placeholder">
-            Talk 9
+          <div class="rtc-programme-title">Pseudorandom Codes: Constructions and Limitations</div>
+          <div>
+            Mahesh Sreekumar Rajasree
           </div>
-          <div class="rtc-placeholder">
-            [SPEAKER / TITLE]
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Speaker bio.]</p>
+            <div class="rtc-abstract-content">
+              <p>Mahesh Sreekumar Rajasree is an Assistant Professor at the University of Warsaw. His research focuses on public-key cryptography and quantum cryptography. Previously, he was a Postdoctoral Researcher at CISPA Helmholtz Center for Information Security, hosted by Prof. Nico Doettling. Before joining CISPA, he was a Postdoctoral Fellow at IITD under the guidance of Prof. Venkata Koppula. He completed his PhD and MTech at IIT Kanpur under Prof. Manindra Agrawal.</p>
             </div>
           </details>
         </div>
@@ -1346,44 +1243,59 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          16:30–17:30
+          14:45&ndash;15:30
         </div>
         <div>
-          <div class="rtc-programme-title rtc-placeholder">
-            Talk 10
+          <div class="rtc-programme-title">CCA Encryption Schemes</div>
+          <div>
+            Venkata Koppula
           </div>
-          <div class="rtc-placeholder">
-            [SPEAKER / TITLE]
-          </div>
-          <details class="rtc-abstract">
-            <summary>Abstract</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Abstract.]</p>
-            </div>
-          </details>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
-            <div class="rtc-abstract-content rtc-placeholder">
-              <p>[PLACEHOLDER: Speaker bio.]</p>
+            <div class="rtc-abstract-content">
+              <p>Venkata Koppula is an Assistant Professor in the Department of Computer Science and Engineering at IIT Delhi. His research interests are in theoretical cryptography, including both classical and quantum cryptography. Before joining IIT Delhi, he was a postdoctoral researcher at the Weizmann Institute of Science, hosted by Zvika Brakerski. He obtained his PhD from the University of Texas at Austin, advised by Brent Waters.</p>
             </div>
           </details>
         </div>
       </div>
 
-      <div class="rtc-programme-row">
+      <div class="rtc-programme-row rtc-programme-break">
         <div class="rtc-programme-time">
-          17:30–17:45
+          15:30&ndash;16:00
         </div>
         <div>
-          <div class="rtc-programme-title">
-            Closing Remarks
-          </div>
+          <div class="rtc-programme-title">Tea</div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          16:00&ndash;17:00
+        </div>
+        <div>
+          <div class="rtc-programme-title">Open slot</div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          17:00&ndash;18:00
+        </div>
+        <div>
+          <div class="rtc-programme-title">Open slot</div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          18:00&ndash;18:15
+        </div>
+        <div>
+          <div class="rtc-programme-title">Closing Remarks</div>
         </div>
       </div>
 
     </div>
-    {% endcomment %}
-
   </section>
 
 
