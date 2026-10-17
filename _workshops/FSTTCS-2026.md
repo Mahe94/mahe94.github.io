@@ -309,13 +309,16 @@ flush_top: true
 /* ---------- Speakers ---------- */
 
 .rtc-speaker-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.4rem;
+  justify-content: center;
 }
 
 .rtc-speaker {
   display: block;
+  box-sizing: border-box;
+  flex: 0 0 calc((100% - 3 * 1.4rem) / 4);
   min-height: 190px;
   padding: 1.6rem;
   border: 1px solid var(--rtc-border);
@@ -662,9 +665,12 @@ flush_top: true
 }
 
 @media (max-width: 800px) {
-  .rtc-info-grid,
-  .rtc-speaker-grid {
+  .rtc-info-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .rtc-speaker {
+    flex-basis: calc((100% - 1.4rem) / 2);
   }
 
   .rtc-organiser-grid {
@@ -722,9 +728,12 @@ flush_top: true
     padding: 2.24rem 0;
   }
 
-  .rtc-info-grid,
-  .rtc-speaker-grid {
+  .rtc-info-grid {
     grid-template-columns: 1fr;
+  }
+
+  .rtc-speaker {
+    flex-basis: 100%;
   }
 
   .rtc-programme-row {
@@ -989,14 +998,6 @@ flush_top: true
         </div>
       </a>
 
-      <a class="rtc-speaker" href="#">
-        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
-        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
-        <div class="rtc-speaker-affiliation rtc-placeholder">
-          [AFFILIATION]
-        </div>
-      </a>
-
     </div>
 
   </section>
@@ -1032,14 +1033,14 @@ flush_top: true
           09:00&ndash;09:45
         </div>
         <div>
-          <div class="rtc-programme-title">Collaborative zkSNARKs</div>
+          <div class="rtc-programme-title">Title to be announced</div>
           <div>
-            Sruthi Sekar
+            Chaya Ganesh
           </div>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
-              <p>Sruthi Sekar is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay and a Principal Investigator at IITB Trust Lab. Her research interests are in cryptography and theoretical computer science. Before joining IIT Bombay, she was a postdoctoral researcher at UC Berkeley, hosted by Sanjam Garg. She completed her PhD at the Indian Institute of Science, advised by Bhavana Kanukurthi and Manjunath Krishnapur.</p>
+              <p>Chaya Ganesh is an Associate Professor in the Department of Computer Science and Automation at the Indian Institute of Science. Her research interests are in cryptography and security. Before joining IISc, she was a postdoctoral researcher in the Crypto Group at Aarhus University, and she received her PhD from NYU's Courant Institute of Mathematical Sciences.</p>
             </div>
           </details>
         </div>
@@ -1050,14 +1051,14 @@ flush_top: true
           09:45&ndash;10:30
         </div>
         <div>
-          <div class="rtc-programme-title">Applications of Polynomial Preprocessing in Cryptography</div>
+          <div class="rtc-programme-title">Collaborative zkSNARKs</div>
           <div>
-            Varun Narayanan
+            Sruthi Sekar
           </div>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
-              <p>Varun Narayanan is an assistant professor in Chennai Mathematical Institute. His research interests include secure multi-party computation, cryptography, and information theory. He was previously a postdoctoral research fellow at UCLA and Technion, and completed his PhD under Vinod Prabhakaran.</p>
+              <p>Sruthi Sekar is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay and a Principal Investigator at IITB Trust Lab. Her research interests are in cryptography and theoretical computer science. Before joining IIT Bombay, she was a postdoctoral researcher at UC Berkeley, hosted by Sanjam Garg. She completed her PhD at the Indian Institute of Science, advised by Bhavana Kanukurthi and Manjunath Krishnapur.</p>
             </div>
           </details>
         </div>
@@ -1124,12 +1125,12 @@ flush_top: true
         <div>
           <div class="rtc-programme-title">Title to be announced</div>
           <div>
-            Chaya Ganesh
+            Venkata Koppula
           </div>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
-              <p>Chaya Ganesh is an Associate Professor in the Department of Computer Science and Automation at the Indian Institute of Science. Her research interests are in cryptography and security. Before joining IISc, she was a postdoctoral researcher in the Crypto Group at Aarhus University, and she received her PhD from NYU's Courant Institute of Mathematical Sciences.</p>
+              <p>Venkata Koppula is an Assistant Professor in the Department of Computer Science and Engineering at IIT Delhi. His research interests are in theoretical cryptography, including both classical and quantum cryptography. Before joining IIT Delhi, he was a postdoctoral researcher at the Weizmann Institute of Science, hosted by Zvika Brakerski. He obtained his PhD from the University of Texas at Austin, advised by Brent Waters.</p>
             </div>
           </details>
         </div>
@@ -1159,7 +1160,16 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          09:00&ndash;09:45
+          09:00&ndash;09:30
+        </div>
+        <div>
+          <div class="rtc-programme-title">Trust Lab</div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          09:30&ndash;10:30
         </div>
         <div>
           <div class="rtc-programme-title">Timed Cryptography: Attacks and Separations</div>
@@ -1172,18 +1182,6 @@ flush_top: true
               <p>Chethan Kamath is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay, where he is a member of the Theory Group and Trust Lab. His primary research area is cryptography, particularly its foundations, with broader interests in theoretical computer science.</p>
             </div>
           </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          09:45&ndash;10:30
-        </div>
-        <div>
-          <div class="rtc-programme-title">Title to be announced</div>
-          <div>
-            Speaker to be announced
-          </div>
         </div>
       </div>
 
@@ -1225,7 +1223,7 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          14:00&ndash;14:45
+          14:00&ndash;15:30
         </div>
         <div>
           <div class="rtc-programme-title">Pseudorandom Codes: Constructions and Limitations</div>
@@ -1236,24 +1234,6 @@ flush_top: true
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
               <p>Mahesh Sreekumar Rajasree is an Assistant Professor at the University of Warsaw. His research focuses on public-key cryptography and quantum cryptography. Previously, he was a Postdoctoral Researcher at CISPA Helmholtz Center for Information Security, hosted by Prof. Nico Doettling. Before joining CISPA, he was a Postdoctoral Fellow at IITD under the guidance of Prof. Venkata Koppula. He completed his PhD and MTech at IIT Kanpur under Prof. Manindra Agrawal.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          14:45&ndash;15:30
-        </div>
-        <div>
-          <div class="rtc-programme-title">CCA Encryption Schemes</div>
-          <div>
-            Venkata Koppula
-          </div>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Venkata Koppula is an Assistant Professor in the Department of Computer Science and Engineering at IIT Delhi. His research interests are in theoretical cryptography, including both classical and quantum cryptography. Before joining IIT Delhi, he was a postdoctoral researcher at the Weizmann Institute of Science, hosted by Zvika Brakerski. He obtained his PhD from the University of Texas at Austin, advised by Brent Waters.</p>
             </div>
           </details>
         </div>
@@ -1270,19 +1250,10 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          16:00&ndash;17:00
+          16:00&ndash;18:00
         </div>
         <div>
-          <div class="rtc-programme-title">Open slot</div>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          17:00&ndash;18:00
-        </div>
-        <div>
-          <div class="rtc-programme-title">Open slot</div>
+          <div class="rtc-programme-title">Lightning Talks</div>
         </div>
       </div>
 
