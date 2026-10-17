@@ -15,6 +15,7 @@ flush_top: true
 
 .rtc-workshop {
   --rtc-text: #172033;
+  --rtc-title-green: #b6d99c;
   --rtc-muted: #687386;
   --rtc-accent: #173f68;
   --rtc-accent-light: #eaf1f7;
@@ -119,7 +120,7 @@ flush_top: true
   inset: 0;
   z-index: -1;
   content: "";
-  background: url("{{ '/assets/img/fsttcs-2026-lattice.jpg' | relative_url }}") center / cover no-repeat;
+  background: url("{{ '/assets/img/FSTTCS-2026/fsttcs-2026-lattice.jpg' | relative_url }}") center / cover no-repeat;
   opacity: 0.55;
   pointer-events: none;
 }
@@ -180,7 +181,7 @@ flush_top: true
 
 .rtc-hero-title-subject {
   display: block;
-  color: #b6d99c;
+  color: var(--rtc-title-green);
 }
 
 .rtc-hero .rtc-hero-description {
@@ -383,8 +384,8 @@ flush_top: true
 .rtc-programme-day {
   padding: 1.6rem 0 0.6rem calc(130px + 1.5rem);
   border-bottom: 1px solid var(--rtc-border);
-  color: var(--rtc-text);
-  font-size: 1.25rem;
+  color: #75945f;
+  font-size: 1.875rem;
   font-weight: 700;
 }
 
@@ -397,7 +398,7 @@ flush_top: true
 }
 
 .rtc-programme-break {
-  background: var(--rtc-soft-bg);
+  background: #e7ebef;
 }
 
 .rtc-programme-break .rtc-programme-title {
@@ -928,59 +929,19 @@ flush_top: true
 
     <div class="rtc-speaker-grid">
 
-      <a class="rtc-speaker" href="https://kabirtomer.github.io">
+      <a class="rtc-speaker" href="https://pratyay.net">
         <div class="rtc-speaker-photo">
-          <img src="{{ '/assets/img/kabir.jpeg' | relative_url }}" alt="Kabir Tomer">
+          <img src="{{ '/assets/img/FSTTCS-2026/pratyay.png' | relative_url }}" alt="Pratyay Mukherjee">
         </div>
-        <h3>Kabir Tomer</h3>
+        <h3>Pratyay Mukherjee</h3>
         <div class="rtc-speaker-affiliation">
-          University of Illinois Urbana-Champaign
-        </div>
-      </a>
-
-      <a class="rtc-speaker" href="https://varunnkv.github.io">
-        <div class="rtc-speaker-photo">
-          <img src="{{ '/assets/img/varun.jpg' | relative_url }}" alt="Varun Narayanan">
-        </div>
-        <h3>Varun Narayanan</h3>
-        <div class="rtc-speaker-affiliation">
-          Chennai Mathematical Institute
-        </div>
-      </a>
-
-      <a class="rtc-speaker" href="https://sruthisekar.in">
-        <div class="rtc-speaker-photo">
-          <img src="https://i0.wp.com/sruthisekar.in/wp-content/uploads/2026/07/white_background_photo-edited.png?resize=1100%2C1044&amp;ssl=1" alt="Sruthi Sekar">
-        </div>
-        <h3>Sruthi Sekar</h3>
-        <div class="rtc-speaker-affiliation">
-          Indian Institute of Technology Bombay
-        </div>
-      </a>
-
-      <a class="rtc-speaker" href="https://yadav-anshu.github.io">
-        <div class="rtc-speaker-photo">
-          <img src="{{ '/assets/img/anshu.jpeg' | relative_url }}" alt="Anshu Yadav">
-        </div>
-        <h3>Anshu Yadav</h3>
-        <div class="rtc-speaker-affiliation">
-          Indian Institute of Technology Kanpur
-        </div>
-      </a>
-
-      <a class="rtc-speaker" href="https://www.cse.iitb.ac.in/~ckamath/">
-        <div class="rtc-speaker-photo">
-          <img src="{{ '/assets/img/chethan.jpg' | relative_url }}" alt="Chethan Kamath">
-        </div>
-        <h3>Chethan Kamath</h3>
-        <div class="rtc-speaker-affiliation">
-          Indian Institute of Technology Bombay
+          Hashgraph
         </div>
       </a>
 
       <a class="rtc-speaker" href="https://www.csa.iisc.ac.in/~chaya/">
         <div class="rtc-speaker-photo">
-          <img src="{{ '/assets/img/chaya.jpg' | relative_url }}" alt="Chaya Ganesh">
+          <img src="{{ '/assets/img/FSTTCS-2026/chaya-enhanced.png' | relative_url }}" alt="Chaya Ganesh">
         </div>
         <h3>Chaya Ganesh</h3>
         <div class="rtc-speaker-affiliation">
@@ -988,13 +949,53 @@ flush_top: true
         </div>
       </a>
 
-      <a class="rtc-speaker" href="https://pratyay.net">
+      <a class="rtc-speaker" href="https://www.cse.iitb.ac.in/~ckamath/">
         <div class="rtc-speaker-photo">
-          <img src="{{ '/assets/img/pratyay.png' | relative_url }}" alt="Pratyay Mukherjee">
+          <img src="{{ '/assets/img/FSTTCS-2026/chethan.jpg' | relative_url }}" alt="Chethan Kamath">
         </div>
-        <h3>Pratyay Mukherjee</h3>
+        <h3>Chethan Kamath</h3>
         <div class="rtc-speaker-affiliation">
-          Hashgraph
+          Indian Institute of Technology Bombay
+        </div>
+      </a>
+
+      <a class="rtc-speaker" href="https://sruthisekar.in">
+        <div class="rtc-speaker-photo">
+          <img src="{{ '/assets/img/FSTTCS-2026/sruthi-cropped.png' | relative_url }}" alt="Sruthi Sekar">
+        </div>
+        <h3>Sruthi Sekar</h3>
+        <div class="rtc-speaker-affiliation">
+          Indian Institute of Technology Bombay
+        </div>
+      </a>
+
+      <a class="rtc-speaker" href="https://varunnkv.github.io">
+        <div class="rtc-speaker-photo">
+          <img src="{{ '/assets/img/FSTTCS-2026/varun-cropped.png' | relative_url }}" alt="Varun Narayanan">
+        </div>
+        <h3>Varun Narayanan</h3>
+        <div class="rtc-speaker-affiliation">
+          Chennai Mathematical Institute
+        </div>
+      </a>
+
+      <a class="rtc-speaker" href="https://yadav-anshu.github.io">
+        <div class="rtc-speaker-photo">
+          <img src="{{ '/assets/img/FSTTCS-2026/anshu-cropped.png' | relative_url }}" alt="Anshu Yadav">
+        </div>
+        <h3>Anshu Yadav</h3>
+        <div class="rtc-speaker-affiliation">
+          Indian Institute of Technology Kanpur
+        </div>
+      </a>
+
+      <a class="rtc-speaker" href="https://kabirtomer.github.io">
+        <div class="rtc-speaker-photo">
+          <img src="{{ '/assets/img/FSTTCS-2026/kabir.jpeg' | relative_url }}" alt="Kabir Tomer">
+        </div>
+        <h3>Kabir Tomer</h3>
+        <div class="rtc-speaker-affiliation">
+          University of Illinois Urbana-Champaign
         </div>
       </a>
 
@@ -1287,7 +1288,7 @@ flush_top: true
       <a class="rtc-organiser" href="https://web.iitd.ac.in/~kvenkata/">
 
         <div class="rtc-organiser-photo">
-          <img src="{{ '/assets/img/kvenkata.jpg' | relative_url }}" alt="Venkata Koppula">
+          <img src="{{ '/assets/img/FSTTCS-2026/kvenkata.jpg' | relative_url }}" alt="Venkata Koppula">
         </div>
 
         <h3>Venkata Koppula</h3>
@@ -1305,7 +1306,7 @@ flush_top: true
       <a class="rtc-organiser" href="{{ '/' | relative_url }}">
 
         <div class="rtc-organiser-photo">
-          <img src="{{ '/assets/img/mahe.jpeg' | relative_url }}" alt="Mahesh Sreekumar Rajasree">
+          <img src="{{ '/assets/img/FSTTCS-2026/mahe-2-cropped.png' | relative_url }}" alt="Mahesh Sreekumar Rajasree">
         </div>
 
         <h3 class="rtc-organiser-name-long">Mahesh Sreekumar Rajasree</h3>
@@ -1429,7 +1430,7 @@ flush_top: true
     </div>
 
     <div class="rtc-placeholder-box">
-      For questions, please email <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+      For questions, please email <a href="mailto:maheshsr@mimuw.edu.pl">maheshsr@mimuw.edu.pl</a> or <a href="mailto:kvenkata@cse.iitd.ac.in">kvenkata@cse.iitd.ac.in</a>.
     </div>
 
   </section>
@@ -1452,7 +1453,7 @@ flush_top: true
       <a class="rtc-sponsor" href="https://trustlab.iitb.ac.in">
         <span class="rtc-sponsor-logo">
           <img
-            src="https://trustlab.iitb.ac.in/wp-content/uploads/2022/08/logo-TL-short.png"
+            src="{{ '/assets/img/FSTTCS-2026/trust-lab-logo.png' | relative_url }}"
             alt="Trust Lab">
         </span>
         <span class="rtc-sponsor-name">Trust Lab</span>
