@@ -1022,7 +1022,7 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          08:55&ndash;09:00
+          09:00&ndash;09:15
         </div>
         <div>
           <div class="rtc-programme-title">Opening Remarks</div>
@@ -1031,7 +1031,43 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          09:00&ndash;09:45
+          09:15&ndash;09:30
+        </div>
+        <div>
+          <div class="rtc-programme-title">Trust Lab</div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          09:30&ndash;10:30
+        </div>
+        <div>
+          <div class="rtc-programme-title">Timed Cryptography: Attacks and Separations</div>
+          <div>
+            Chethan Kamath
+          </div>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content">
+              <p>Chethan Kamath is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay, where he is a member of the Theory Group and Trust Lab. His primary research area is cryptography, particularly its foundations, with broader interests in theoretical computer science.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row rtc-programme-break">
+        <div class="rtc-programme-time">
+          10:30&ndash;11:00
+        </div>
+        <div>
+          <div class="rtc-programme-title">Tea</div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          11:00&ndash;11:45
         </div>
         <div>
           <div class="rtc-programme-title">Title to be announced</div>
@@ -1049,7 +1085,7 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          09:45&ndash;10:30
+          11:45&ndash;12:30
         </div>
         <div>
           <div class="rtc-programme-title">Collaborative zkSNARKs</div>
@@ -1060,33 +1096,6 @@ flush_top: true
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
               <p>Sruthi Sekar is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay and a Principal Investigator at IITB Trust Lab. Her research interests are in cryptography and theoretical computer science. Before joining IIT Bombay, she was a postdoctoral researcher at UC Berkeley, hosted by Sanjam Garg. She completed her PhD at the Indian Institute of Science, advised by Bhavana Kanukurthi and Manjunath Krishnapur.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row rtc-programme-break">
-        <div class="rtc-programme-time">
-          10:30&ndash;11:00
-        </div>
-        <div>
-          <div class="rtc-programme-title">Tea</div>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          11:00&ndash;12:30
-        </div>
-        <div>
-          <div class="rtc-programme-title">LWE assumption - New Variants and Applications</div>
-          <div>
-            Anshu Yadav
-          </div>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Anshu Yadav is an Assistant Professor in the Computer Science and Engineering Department at IIT Kanpur. Her research interests are in theoretical cryptography, especially constructions of advanced cryptographic primitives under various assumptions. Before joining IIT Kanpur, she was a postdoctoral researcher in Krzysztof Pietrzak's group at the Institute of Science and Technology Austria. She completed her PhD at IIT Madras.</p>
             </div>
           </details>
         </div>
@@ -1124,16 +1133,10 @@ flush_top: true
           14:45&ndash;15:30
         </div>
         <div>
-          <div class="rtc-programme-title">Title to be announced</div>
+          <div class="rtc-programme-title">Applications of Polynomial Preprocessing in Cryptography</div>
           <div>
-            Venkata Koppula
+            Varun Narayanan
           </div>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Venkata Koppula is an Assistant Professor in the Department of Computer Science and Engineering at IIT Delhi. His research interests are in theoretical cryptography, including both classical and quantum cryptography. Before joining IIT Delhi, he was a postdoctoral researcher at the Weizmann Institute of Science, hosted by Zvika Brakerski. He obtained his PhD from the University of Texas at Austin, advised by Brent Waters.</p>
-            </div>
-          </details>
         </div>
       </div>
 
@@ -1161,26 +1164,17 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          09:00&ndash;09:30
+          09:00&ndash;10:30
         </div>
         <div>
-          <div class="rtc-programme-title">Trust Lab</div>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          09:30&ndash;10:30
-        </div>
-        <div>
-          <div class="rtc-programme-title">Timed Cryptography: Attacks and Separations</div>
+          <div class="rtc-programme-title">LWE assumption - New Variants and Applications</div>
           <div>
-            Chethan Kamath
+            Anshu Yadav
           </div>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
-              <p>Chethan Kamath is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay, where he is a member of the Theory Group and Trust Lab. His primary research area is cryptography, particularly its foundations, with broader interests in theoretical computer science.</p>
+              <p>Anshu Yadav is an Assistant Professor in the Computer Science and Engineering Department at IIT Kanpur. Her research interests are in theoretical cryptography, especially constructions of advanced cryptographic primitives under various assumptions. Before joining IIT Kanpur, she was a postdoctoral researcher in Krzysztof Pietrzak's group at the Institute of Science and Technology Austria. She completed her PhD at IIT Madras.</p>
             </div>
           </details>
         </div>
@@ -1224,7 +1218,25 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          14:00&ndash;15:30
+          14:00&ndash;14:45
+        </div>
+        <div>
+          <div class="rtc-programme-title">Title to be announced</div>
+          <div>
+            Venkata Koppula
+          </div>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content">
+              <p>Venkata Koppula is an Assistant Professor in the Department of Computer Science and Engineering at IIT Delhi. His research interests are in theoretical cryptography, including both classical and quantum cryptography. Before joining IIT Delhi, he was a postdoctoral researcher at the Weizmann Institute of Science, hosted by Zvika Brakerski. He obtained his PhD from the University of Texas at Austin, advised by Brent Waters.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          14:45&ndash;15:30
         </div>
         <div>
           <div class="rtc-programme-title">Pseudorandom Codes: Constructions and Limitations</div>
