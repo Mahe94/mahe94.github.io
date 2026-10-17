@@ -38,7 +38,7 @@
     
     <link rel="shortcut icon" href="/assets/img/msr.png">
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1792163249">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1792226913">
     <link rel="canonical" href="https://mahe94.github.io/workshops/FSTTCS-2026/">
 
     <!-- Dark Mode -->
@@ -400,13 +400,16 @@
 /* ---------- Speakers ---------- */
 
 .rtc-speaker-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.4rem;
+  justify-content: center;
 }
 
 .rtc-speaker {
   display: block;
+  box-sizing: border-box;
+  flex: 0 0 calc((100% - 3 * 1.4rem) / 4);
   min-height: 190px;
   padding: 1.6rem;
   border: 1px solid var(--rtc-border);
@@ -753,9 +756,12 @@
 }
 
 @media (max-width: 800px) {
-  .rtc-info-grid,
-  .rtc-speaker-grid {
+  .rtc-info-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .rtc-speaker {
+    flex-basis: calc((100% - 1.4rem) / 2);
   }
 
   .rtc-organiser-grid {
@@ -813,9 +819,12 @@
     padding: 2.24rem 0;
   }
 
-  .rtc-info-grid,
-  .rtc-speaker-grid {
+  .rtc-info-grid {
     grid-template-columns: 1fr;
+  }
+
+  .rtc-speaker {
+    flex-basis: 100%;
   }
 
   .rtc-programme-row {
@@ -1079,14 +1088,6 @@
         </div>
       </a>
 
-      <a class="rtc-speaker" href="#">
-        <div class="rtc-speaker-photo">[SPEAKER PHOTO]</div>
-        <h3 class="rtc-placeholder">[SPEAKER NAME]</h3>
-        <div class="rtc-speaker-affiliation rtc-placeholder">
-          [AFFILIATION]
-        </div>
-      </a>
-
     </div>
 
   </section>
@@ -1122,14 +1123,14 @@
           09:00–09:45
         </div>
         <div>
-          <div class="rtc-programme-title">Collaborative zkSNARKs</div>
+          <div class="rtc-programme-title">Title to be announced</div>
           <div>
-            Sruthi Sekar
+            Chaya Ganesh
           </div>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
-              <p>Sruthi Sekar is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay and a Principal Investigator at IITB Trust Lab. Her research interests are in cryptography and theoretical computer science. Before joining IIT Bombay, she was a postdoctoral researcher at UC Berkeley, hosted by Sanjam Garg. She completed her PhD at the Indian Institute of Science, advised by Bhavana Kanukurthi and Manjunath Krishnapur.</p>
+              <p>Chaya Ganesh is an Associate Professor in the Department of Computer Science and Automation at the Indian Institute of Science. Her research interests are in cryptography and security. Before joining IISc, she was a postdoctoral researcher in the Crypto Group at Aarhus University, and she received her PhD from NYU's Courant Institute of Mathematical Sciences.</p>
             </div>
           </details>
         </div>
@@ -1140,14 +1141,14 @@
           09:45–10:30
         </div>
         <div>
-          <div class="rtc-programme-title">Applications of Polynomial Preprocessing in Cryptography</div>
+          <div class="rtc-programme-title">Collaborative zkSNARKs</div>
           <div>
-            Varun Narayanan
+            Sruthi Sekar
           </div>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
-              <p>Varun Narayanan is an assistant professor in Chennai Mathematical Institute. His research interests include secure multi-party computation, cryptography, and information theory. He was previously a postdoctoral research fellow at UCLA and Technion, and completed his PhD under Vinod Prabhakaran.</p>
+              <p>Sruthi Sekar is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay and a Principal Investigator at IITB Trust Lab. Her research interests are in cryptography and theoretical computer science. Before joining IIT Bombay, she was a postdoctoral researcher at UC Berkeley, hosted by Sanjam Garg. She completed her PhD at the Indian Institute of Science, advised by Bhavana Kanukurthi and Manjunath Krishnapur.</p>
             </div>
           </details>
         </div>
@@ -1214,12 +1215,12 @@
         <div>
           <div class="rtc-programme-title">Title to be announced</div>
           <div>
-            Chaya Ganesh
+            Venkata Koppula
           </div>
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
-              <p>Chaya Ganesh is an Associate Professor in the Department of Computer Science and Automation at the Indian Institute of Science. Her research interests are in cryptography and security. Before joining IISc, she was a postdoctoral researcher in the Crypto Group at Aarhus University, and she received her PhD from NYU's Courant Institute of Mathematical Sciences.</p>
+              <p>Venkata Koppula is an Assistant Professor in the Department of Computer Science and Engineering at IIT Delhi. His research interests are in theoretical cryptography, including both classical and quantum cryptography. Before joining IIT Delhi, he was a postdoctoral researcher at the Weizmann Institute of Science, hosted by Zvika Brakerski. He obtained his PhD from the University of Texas at Austin, advised by Brent Waters.</p>
             </div>
           </details>
         </div>
@@ -1249,7 +1250,16 @@
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          09:00–09:45
+          09:00–09:30
+        </div>
+        <div>
+          <div class="rtc-programme-title">Trust Lab</div>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          09:30–10:30
         </div>
         <div>
           <div class="rtc-programme-title">Timed Cryptography: Attacks and Separations</div>
@@ -1262,18 +1272,6 @@
               <p>Chethan Kamath is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay, where he is a member of the Theory Group and Trust Lab. His primary research area is cryptography, particularly its foundations, with broader interests in theoretical computer science.</p>
             </div>
           </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          09:45–10:30
-        </div>
-        <div>
-          <div class="rtc-programme-title">Title to be announced</div>
-          <div>
-            Speaker to be announced
-          </div>
         </div>
       </div>
 
@@ -1315,7 +1313,7 @@
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          14:00–14:45
+          14:00–15:30
         </div>
         <div>
           <div class="rtc-programme-title">Pseudorandom Codes: Constructions and Limitations</div>
@@ -1326,24 +1324,6 @@
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
               <p>Mahesh Sreekumar Rajasree is an Assistant Professor at the University of Warsaw. His research focuses on public-key cryptography and quantum cryptography. Previously, he was a Postdoctoral Researcher at CISPA Helmholtz Center for Information Security, hosted by Prof. Nico Doettling. Before joining CISPA, he was a Postdoctoral Fellow at IITD under the guidance of Prof. Venkata Koppula. He completed his PhD and MTech at IIT Kanpur under Prof. Manindra Agrawal.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          14:45–15:30
-        </div>
-        <div>
-          <div class="rtc-programme-title">CCA Encryption Schemes</div>
-          <div>
-            Venkata Koppula
-          </div>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Venkata Koppula is an Assistant Professor in the Department of Computer Science and Engineering at IIT Delhi. His research interests are in theoretical cryptography, including both classical and quantum cryptography. Before joining IIT Delhi, he was a postdoctoral researcher at the Weizmann Institute of Science, hosted by Zvika Brakerski. He obtained his PhD from the University of Texas at Austin, advised by Brent Waters.</p>
             </div>
           </details>
         </div>
@@ -1360,19 +1340,10 @@
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          16:00–17:00
+          16:00–18:00
         </div>
         <div>
-          <div class="rtc-programme-title">Open slot</div>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          17:00–18:00
-        </div>
-        <div>
-          <div class="rtc-programme-title">Open slot</div>
+          <div class="rtc-programme-title">Lightning Talks</div>
         </div>
       </div>
 
@@ -1602,7 +1573,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: October 16, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: October 17, 2026.
       </div>
     </footer>
 
