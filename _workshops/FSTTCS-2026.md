@@ -319,7 +319,7 @@ flush_top: true
 .rtc-speaker {
   display: block;
   box-sizing: border-box;
-  flex: 0 0 calc((100% - 3 * 1.4rem) / 4);
+  flex: 0 0 calc((100% - 2 * 1.4rem) / 3);
   min-height: 190px;
   padding: 1.6rem;
   border: 1px solid var(--rtc-border);
@@ -939,16 +939,6 @@ flush_top: true
         </div>
       </a>
 
-      <a class="rtc-speaker" href="https://www.csa.iisc.ac.in/~chaya/">
-        <div class="rtc-speaker-photo">
-          <img src="{{ '/assets/img/FSTTCS-2026/chaya-enhanced.png' | relative_url }}" alt="Chaya Ganesh">
-        </div>
-        <h3>Chaya Ganesh</h3>
-        <div class="rtc-speaker-affiliation">
-          Indian Institute of Science
-        </div>
-      </a>
-
       <a class="rtc-speaker" href="https://www.cse.iitb.ac.in/~ckamath/">
         <div class="rtc-speaker-photo">
           <img src="{{ '/assets/img/FSTTCS-2026/chethan.jpg' | relative_url }}" alt="Chethan Kamath">
@@ -1067,25 +1057,7 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          11:00&ndash;11:45
-        </div>
-        <div>
-          <div class="rtc-programme-title">Title to be announced</div>
-          <div>
-            Chaya Ganesh
-          </div>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Chaya Ganesh is an Associate Professor in the Department of Computer Science and Automation at the Indian Institute of Science. Her research interests are in cryptography and security. Before joining IISc, she was a postdoctoral researcher in the Crypto Group at Aarhus University, and she received her PhD from NYU's Courant Institute of Mathematical Sciences.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          11:45&ndash;12:30
+          11:00&ndash;12:00
         </div>
         <div>
           <div class="rtc-programme-title">Collaborative zkSNARKs</div>
@@ -1103,7 +1075,7 @@ flush_top: true
 
       <div class="rtc-programme-row rtc-programme-break">
         <div class="rtc-programme-time">
-          12:30&ndash;14:00
+          12:00&ndash;13:30
         </div>
         <div>
           <div class="rtc-programme-title">Lunch</div>
@@ -1112,7 +1084,7 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          14:00&ndash;14:45
+          13:30&ndash;14:30
         </div>
         <div>
           <div class="rtc-programme-title">FracPlonk: Plonkish Proofs without Fiat-Shamir from Partial Fractions</div>
@@ -1130,7 +1102,7 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          14:45&ndash;15:30
+          14:30&ndash;15:30
         </div>
         <div>
           <div class="rtc-programme-title">Applications of Polynomial Preprocessing in Cryptography</div>
@@ -1218,10 +1190,10 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          14:00&ndash;14:45
+          14:00&ndash;15:30
         </div>
         <div>
-          <div class="rtc-programme-title">Title to be announced</div>
+          <div class="rtc-programme-title">Tutorial on Pseudorandom Codes - I</div>
           <div>
             Venkata Koppula
           </div>
@@ -1229,24 +1201,6 @@ flush_top: true
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
               <p>Venkata Koppula is an Assistant Professor in the Department of Computer Science and Engineering at IIT Delhi. His research interests are in theoretical cryptography, including both classical and quantum cryptography. Before joining IIT Delhi, he was a postdoctoral researcher at the Weizmann Institute of Science, hosted by Zvika Brakerski. He obtained his PhD from the University of Texas at Austin, advised by Brent Waters.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <div class="rtc-programme-row">
-        <div class="rtc-programme-time">
-          14:45&ndash;15:30
-        </div>
-        <div>
-          <div class="rtc-programme-title">Pseudorandom Codes: Constructions and Limitations</div>
-          <div>
-            Mahesh Sreekumar Rajasree
-          </div>
-          <details class="rtc-abstract rtc-bio">
-            <summary>Bio</summary>
-            <div class="rtc-abstract-content">
-              <p>Mahesh Sreekumar Rajasree is an Assistant Professor at the University of Warsaw. His research focuses on public-key cryptography and quantum cryptography. Previously, he was a Postdoctoral Researcher at CISPA Helmholtz Center for Information Security, hosted by Prof. Nico Doettling. Before joining CISPA, he was a Postdoctoral Fellow at IITD under the guidance of Prof. Venkata Koppula. He completed his PhD and MTech at IIT Kanpur under Prof. Manindra Agrawal.</p>
             </div>
           </details>
         </div>
@@ -1263,7 +1217,25 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          16:00&ndash;18:00
+          16:00&ndash;17:30
+        </div>
+        <div>
+          <div class="rtc-programme-title">Tutorial on Pseudorandom Codes - II</div>
+          <div>
+            Mahesh Sreekumar Rajasree
+          </div>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content">
+              <p>Mahesh Sreekumar Rajasree is an Assistant Professor at the University of Warsaw. His research focuses on public-key cryptography and quantum cryptography. Previously, he was a Postdoctoral Researcher at CISPA Helmholtz Center for Information Security, hosted by Prof. Nico Doettling. Before joining CISPA, he was a Postdoctoral Fellow at IITD under the guidance of Prof. Venkata Koppula. He completed his PhD and MTech at IIT Kanpur under Prof. Manindra Agrawal.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="rtc-programme-row">
+        <div class="rtc-programme-time">
+          17:30&ndash;18:30
         </div>
         <div>
           <div class="rtc-programme-title">Lightning Talks</div>
@@ -1272,7 +1244,7 @@ flush_top: true
 
       <div class="rtc-programme-row">
         <div class="rtc-programme-time">
-          18:00&ndash;18:15
+          18:30&ndash;18:40
         </div>
         <div>
           <div class="rtc-programme-title">Closing Remarks</div>
