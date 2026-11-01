@@ -502,10 +502,10 @@ The order of sections in `_data/cv.yml` is the order displayed on the page and i
 
 ### PDF CV
 
-Replace `assets/pdf/Mahesh_Sreekumar_Rajasree_CV.pdf`, or change `cv_pdf` in `_pages/cv.md` if the filename changes:
+Edit `assets/pdf/CV/Mahesh_Sreekumar_Rajasree_CV.tex` and run `powershell -File bin/build-cv.ps1` to regenerate the PDF linked by the website. The download is configured in `_pages/cv.md`:
 
 ```yaml
-cv_pdf: Mahesh_Sreekumar_Rajasree_CV.pdf
+cv_pdf: CV/Mahesh_Sreekumar_Rajasree_CV.pdf
 ```
 
 Updating the PDF does not update `_data/cv.yml`, and updating `_data/cv.yml` does not regenerate the PDF. Keep both versions synchronized manually.
