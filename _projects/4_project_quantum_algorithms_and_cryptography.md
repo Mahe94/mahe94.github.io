@@ -37,4 +37,4 @@ This project studies these quantum and post-quantum aspects of cryptography, wit
 ## Main Results
 
 - **A Note on Non-Committing Encryption in the Quantum Random Oracle Model (2025):** Formulates and analyzes non-committing encryption when adversaries may access the random oracle in superposition.
-- **Quantum Pseudorandom Codes (2026):** Develops the notion and construction of pseudorandom codes for quantum settings, combining pseudorandomness with robust recovery in the presence of quantum information.
+- **Quantum Pseudorandom Codes (2026, under submission):** Studies pseudorandom codes for quantum settings, with a focus on pseudorandomness and robust recovery in the presence of quantum information.

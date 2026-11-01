@@ -36,6 +36,8 @@ The broader objective is to understand which forms of structure can be exploited
 
 ## Main Results
 
+- **On the Largest Cardinality Subset Sum (2026, submitted):** Studies the optimization variant that asks for a maximum-cardinality subset summing to a specified target. [Paper](https://arxiv.org/abs/2610.29280).
+
 - **Pigeonhole Equal Subset Sum: Subexponential Algorithm, Tight Lower Bounds and Average-Case Analysis (2026):** Gives a subexponential algorithm, matching lower-bound evidence in the studied model, and an average-case analysis of Pigeonhole Equal Subset Sum.
 - **Weak Pigeonhole Equal-Sums made Simpler and Faster (2026):** Simplifies the algorithmic treatment of Weak Pigeonhole Equal-Sums and improves its running time.
 - **On the Variants of Subset Sum: Projected and Unbounded (2023):** Develops algorithms and reductions for projected and unbounded variants, clarifying their relationship with classical Subset Sum.

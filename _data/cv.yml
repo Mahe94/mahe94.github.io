@@ -51,7 +51,7 @@
       location: Kanpur, India
       description:
         - "Advisor: <a href='https://sites.google.com/view/manindra/home'>Prof. Manindra Agrawal</a>"
-        - "PhD Thesis: <a href='/assets/bibliography/phd_thesis.pdf'>Analysis of Symmetric-Key Cryptosystems and the Subset-Sum Problem</a>"
+        - "PhD Thesis: <a href='/assets/bibliography/phd_thesis.pdf'>Analysis of Symmetric-Key Cryptosystems and Subset-Sum Problem</a>"
         - "MTech Thesis: <a href='/assets/bibliography/mtech_thesis.pdf'>New Results and Proofs in Lattice Theory</a>"
         - "CPI: 10/10"
 
@@ -86,8 +86,29 @@
 - title: Professional Activities
   type: list
   contents:
-    - Reviewed papers for INDOCRYPT 2021, MFCS 2023, FSTTCS 2023, Journal of Cryptology, EUROCRYPT 2023, ASIACRYPT 2024, ITCS 2025, EUROCRYPT 2025, PKC 2025, ICALP 2025, CRYPTO 2025, STOC 2026, ICALP 2026.
-    - Part of the Indian team for the <a href="https://iitk.ac.in/institute-and-uow-cloud-computing">Australian-India Cyber and Critical Technology Partnership</a> (AICCTP). The partnership supports Australia-India research collaborations on ethical frameworks for emerging and critical technologies, along with best practices and standards that advance the interests of Australia and India.
+    - Co-organizer with Prof. Venkata Koppula of <a href="/workshops/FSTTCS-2026/">Recent Trends in Cryptography</a>, FSTTCS 2026 workshop, IIT Delhi, scheduled for 19–20 December 2026.
+    - PhD defence committee member for Renas Bacho, Saarland University, 19 March 2026.
+    - Reviewed papers for INDOCRYPT 2021, MFCS 2023, FSTTCS 2023, Journal of Cryptology, EUROCRYPT 2023, ASIACRYPT 2024, ITCS 2025, EUROCRYPT 2025, PKC 2025, ICALP 2025, CRYPTO 2025, STOC 2026, ICALP 2026, TCC 2026, ASIACRYPT 2026.
+    - Part of the Indian team for the <a href="https://iitk.ac.in/institute-and-uow-cloud-computing">Australia–India Cyber and Critical Technology Partnership</a> (AICCTP). The IIT Kanpur–University of Wollongong collaboration studies privacy-enhancing cryptography and cloud-computing standardization.
+
+- title: Earlier Research Visits
+  type: time_table
+  contents:
+    - title: Research visit
+      institution: Institute of Science and Technology Austria (ISTA)
+      year: "Sep 2022"
+      description:
+        - "Host: Prof. Krzysztof Pietrzak"
+    - title: Visiting scholar
+      institution: Microsoft Research India
+      year: "2018–2019"
+      description:
+        - "June and October 2018; March and September 2019. Host: Satya Lokam."
+    - title: Visiting scholar
+      institution: New York University Abu Dhabi
+      year: "Oct 2017"
+      description:
+        - "Host: Prof. Hoda AlKhzaimi"
 
 - title: Volunteer Work
   type: list

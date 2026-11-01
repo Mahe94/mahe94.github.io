@@ -210,6 +210,15 @@ kramdown:
 include: ['_pages', '_teachings']
 exclude:
   - bin
+  - assets/pdf/CV/audit-evidence
+  - assets/pdf/CV/*.md
+  - assets/pdf/CV/*.py
+  - assets/pdf/CV/*.png
+  - assets/pdf/CV/*.aux
+  - assets/pdf/CV/*.log
+  - assets/pdf/CV/*.fls
+  - assets/pdf/CV/*.fdb_latexmk
+  - assets/pdf/CV/*.cls
   - Gemfile
   - Gemfile.lock
   - vendor

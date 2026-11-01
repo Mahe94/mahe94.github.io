@@ -40,5 +40,8 @@ The project develops rigorous security definitions, constructions, and limitatio
 
 ## Main Results
 
+- **On Robust Combiners for Pseudorandom Codes and PKE with Pseudorandom Ciphertexts (TCC 2026, accepted):** Studies robust combiners for pseudorandom codes and public-key encryption with pseudorandom ciphertexts. [Paper](https://eprint.iacr.org/2026/2650).
+- **A Simple Compiler for CCA2-Secure Pseudorandom Codes in the Standard Model (2026, under submission):** Studies a compiler for CCA2-secure pseudorandom codes in the standard model.
+
 - **Chosen Ciphertext Secure Pseudorandom Codes in the Standard Model (2026):** Constructs pseudorandom codes satisfying a chosen-ciphertext-style security notion in the standard model, strengthening the cryptographic foundations available for adversarially robust watermarking.
 - **Separating Pseudorandom Codes from Local Oracles (2025):** Rules out black-box constructions of binary secret-key pseudorandom codes tolerating constant Bernoulli noise from the broad class of local oracles, which includes random-oracle and trapdoor-permutation oracles.

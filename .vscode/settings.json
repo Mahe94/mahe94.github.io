@@ -1,0 +1,26 @@
+{
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.recipe.default": "latexmk (MiKTeX)",
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk (MiKTeX)",
+            "command": "C:\\Users\\Mahesh\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\latexmk.exe",
+            "args": [
+                "-cd",
+                "-pdf",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-halt-on-error",
+                "%DOC%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk (MiKTeX)",
+            "tools": [
+                "latexmk (MiKTeX)"
+            ]
+        }
+    ]
+}

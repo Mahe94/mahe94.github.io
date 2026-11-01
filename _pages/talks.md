@@ -8,8 +8,11 @@ nav: true
 nav_order: 4
 ---
 
+* Upcoming Talks
+    * Scheduled speaker, [Recent Trends in Cryptography]({{ "/workshops/FSTTCS-2026/" | relative_url }}), FSTTCS 2026 workshop, IIT Delhi, 19–20 December 2026.
+
 * Invited Talks
-    * _Limits of Black-Box Constructions of Pseudorandom Codes_, National Institute of Technology Calicut, India 2026 [<a href='../assets/pdf/slides/NITC_Talk.pdf'>Slides</a>]
+    * _Limits of Black-Box Constructions of Pseudorandom Codes_, National Institute of Technology Calicut, India 2026 [<a href='../assets/pdf/slides/NITC_Talk.pdf'>Slides (IMDEA version)</a>]
     * _Secrets, Quantum and AI_, IIST, Trivandrum 2026 [<a href='../assets/pdf/slides/IIST_2026.pdf'>Slides</a>]
     * _Limits of Black-Box Constructions of Pseudorandom Codes_, IMDEA Software Institute, Madrid 2026 [<a href='../assets/pdf/slides/IMDEA 2026 - Limits of Black-Box Constructions of Pseudorandom Codes.pdf'>Slides</a>]
     * _Leakage-Resilience meets Incompressibility_, IIT-Delhi, India 2024 [<a href='../assets/pdf/slides/Leakage-Incompressible.pdf'>Slides</a>]
@@ -17,10 +20,11 @@ nav_order: 4
     * _Incompressible Encryption beyond Public Key Encryption_, University of Wollongong, Australia 2024 [<a href='../assets/pdf/slides/Main-Incompressible_Encryption.pdf'>Slides</a>]
     * _Incompressible Encryption beyond Public Key Encryption_, IIST, Trivandrum 2024 [<a href='../assets/pdf/slides/Main-Incompressible_Encryption.pdf'>Slides</a>]   
     * _Incompressible Encryption beyond Public Key Encryption_, Microsoft Research, Bangalore 2023 [<a href='../assets/pdf/slides/Main-Incompressible_Encryption.pdf'>Slides</a>]  
-    * _Incompressible Cryptography_, TrustLab, IIT Bombay 2023 (Online) [<a href='https://youtu.be/k2pbL3cd9f8?list=PLeHhvTGj_0A-1pM3KQEn5MwyvPG0lmb9d'>Video</a>] [<a href='../assets/pdf/slides/Incompressible Encryption.pdf'>Slides</a>]
+    * _Incompressible Encryption_, TrustLab, IIT Bombay, 12 July 2023 (Online) [<a href='https://youtu.be/k2pbL3cd9f8?list=PLeHhvTGj_0A-1pM3KQEn5MwyvPG0lmb9d'>Video</a>] [<a href='../assets/pdf/slides/Incompressible Encryption.pdf'>Slides</a>]
+    * Guest lecture, Continuing Education Programme for Centre for Railway Information Systems employees, IIT Delhi 2024.
     * _Cryptography: Performing a Task Securely_, STEM Mentorship Program, IIT Delhi 2023 	
     * _On the Subset Sum Problem_, CSE, IUST Jammu & Kashmir 2022.
-    * _Cryptanalysis of KECCAK & Algorithms for Lattice Problems_, PMRF Symposium 2021 [<a href="https://youtu.be/5l_gCF5caNg">Video</a>] [<a href='../assets/pdf/slides/PMRF Symposium 2022.pdf'>Slides</a>]
+    * _Cryptanalysis of KECCAK & Algorithms for Lattice Problems_, PMRF Symposium 2022 [<a href="https://youtu.be/5l_gCF5caNg">Video</a>] [<a href='../assets/pdf/slides/PMRF Symposium 2022.pdf'>Slides</a>]
 
 
 ---
@@ -42,6 +46,7 @@ nav_order: 4
 ---
 
 * Informal Talks
+    * On the hardness of monomial prediction problem, SIGTACS, IIT Kanpur
     * ITCS Graduating Bits ITCS [<a href='../assets/pdf/slides/ITCS Graduating Bits.pdf'>Slides</a>]
     * An Algebraic Algorithm for Hamming Subset-Sum Problem
     * Cryptanalysis of Round-Reduced KECCAK using Non-linear Structures (Jan 2020) 

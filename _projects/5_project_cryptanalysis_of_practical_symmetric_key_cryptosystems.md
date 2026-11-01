@@ -40,5 +40,9 @@ The work spans both conceptual and practical concerns. It develops tools for mon
 - **Complexity of Monomial Prediction in Cryptography and Machine Learning (2024):** Studies the computational complexity of monomial prediction and its connections to structured Boolean computation.
 - **Weak-keys and key-recovery attack for TinyJAMBU (2022):** Identifies a weak-key class and develops a corresponding key-recovery attack against TinyJAMBU.
 - **On the hardness of monomial prediction and zero-sum distinguishers for Ascon (2022):** Relates the hardness of monomial prediction to the construction and limitations of zero-sum distinguishers for Ascon.
-- **Cryptanalysis of round-reduced Keccak using non-linear structures (2019):** Constructs nonlinear structures and uses them to distinguish round-reduced Keccak from an ideal permutation.
+- **Cryptanalysis of round-reduced Keccak using non-linear structures (2019):** Uses nonlinear structures to develop preimage attacks on reduced-round KECCAK-384 and KECCAK-512.
 - **Cryptanalysis of 1-round KECCAK (2018):** Gives a dedicated structural analysis of one-round Keccak and derives concrete cryptanalytic consequences.
+
+## Research Coverage
+
+IIT Madras featured our TinyJAMBU research in [A Tiny Cipher](https://tech-talk.iitm.ac.in/a-tiny-cipher/) (20 December 2022).

@@ -160,9 +160,11 @@
         <div class="periodical">
           {{ periodical | strip }}
         </div>
-        <div class="periodical">
-          {{ entry.note | strip }}
-        </div>
+        {% unless entry.status == "submission" and entry.note == "Under submission" %}
+          <div class="periodical">
+            {{ entry.note | strip }}
+          </div>
+        {% endunless %}
         {% if entry.award -%}
           <!-- Award block -->
             <div class="font-weight-bold">{{ (entry.award) }}</div>
