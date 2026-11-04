@@ -10,6 +10,8 @@ nav_order: 5
 * __Current Courses__
 	* [Quantum Computing]({{ '/teaching/introduction-to-quantum-computing/' | relative_url }})
 		* <a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=katalog2/przedmioty/pokazPrzedmiot&amp;prz_kod=1000-2M26QC">1000-2M26QC</a> at MIMUW, UW, winter semester 2026–2027 — coordinator and instructor (lectures, tutorials and labs; English, 9 ECTS)
+	* Cryptography I
+		* <a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=katalog2/przedmioty/pokazPrzedmiot&amp;prz_kod=1000-2M12KI1">1000-2M12KI1</a> at MIMUW, UW, winter semester 2026–2027 — tutorial instructor for two class groups
 	* Cryptography, Blockchain & Fintech
 		* <a href="https://informatorects.uw.edu.pl/en/courses/view?prz_kod=1000-2D21KBF">1000-2D21KBF</a> at MIMUW, UW, 2026–2027 — master’s seminar co-coordinated with Prof. Stefan Dziembowski and Prof. Tomasz Michalak; seminar instructor
 
@@ -42,8 +44,6 @@ nav_order: 5
 		* Ajay R Nair, MTech Intern from CET-Trivandrum, Avionics, IIST 2024 [<a href="../assets/pdf/ajay.pdf">Report</a>]
 
 * __Teaching Assistance__
-	* Cryptography I
-		* <a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=katalog2/przedmioty/pokazPrzedmiot&amp;prz_kod=1000-2M12KI1">1000-2M12KI1</a> at MIMUW, UW, winter semester 2026–2027 — tutorial instructor for two class groups
 	* Special Topics in Cryptography
 		* COL872 at CSE, IITD 2023
 	* Modern Cryptology
