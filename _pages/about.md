@@ -23,8 +23,6 @@ Before joining CISPA, I was a Postdoctoral Fellow in the Department of Computer 
 
 I completed my PhD (as a <a href="https://pmrf.in">Prime Minister’s Research Fellow</a>) and MTech degree under the guidance of <a href='https://en.wikipedia.org/wiki/Manindra_Agrawal'>Prof. Manindra Agrawal</a> in the Department of Computer Science and Engineering, Indian Institute of Technology, Kanpur. During that time, I was actively working on the cryptanalysis of symmetric-key cryptosystems and variants of the subset-sum problem.
 
-I received my BTech in Computer Science and Engineering from the National Institute of Technology Calicut.
+I received my BTech in Computer Science and Engineering from the National Institute of Technology Calicut. My <i>Erd<span>&#337;</span>s</i> number is 3 (Me -> <a href='https://cispa.de/en/people/c01anjo'>Antoine Joux</a> -> Andrew M. Odlyzko -> Paul Erd<span>&#337;</span>s).
 
-My <i>Erd<span>&#337;</span>s</i> number is 3 (Me -> <a href='https://cispa.de/en/people/c01anjo'>Antoine Joux</a> -> Andrew M. Odlyzko -> Paul Erd<span>&#337;</span>s).
-
-My office is in Room 1.51 of the <a href='https://www.google.com/maps/search/?api=1&query=Centrum+Nowych+Technologii+UW%2C+Banacha+2c%2C+02-097+Warsaw%2C+Poland'>CeNT Building</a>. Students are welcome to visit by appointment arranged via email.
+My office is in Room 1.51 of the <a href='https://www.google.com/maps/search/?api=1&query=Centrum+Nowych+Technologii+UW%2C+Banacha+2c%2C+02-097+Warsaw%2C+Poland'>CeNT Building</a>. Feel free to email me if you would like to stop by.
