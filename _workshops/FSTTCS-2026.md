@@ -1193,7 +1193,7 @@ flush_top: true
           14:00&ndash;15:30
         </div>
         <div>
-          <div class="rtc-programme-title">Tutorial on Pseudorandom Codes - I</div>
+          <div class="rtc-programme-title">Pseudorandom Error-Correcting Codes</div>
           <div>
             Venkata Koppula
           </div>
@@ -1220,7 +1220,7 @@ flush_top: true
           16:00&ndash;17:30
         </div>
         <div>
-          <div class="rtc-programme-title">Tutorial on Pseudorandom Codes - II</div>
+          <div class="rtc-programme-title">Incompressible Cryptography</div>
           <div>
             Mahesh Sreekumar Rajasree
           </div>
