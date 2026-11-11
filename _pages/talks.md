@@ -12,6 +12,7 @@ nav_order: 4
     * Scheduled speaker, [Recent Trends in Cryptography]({{ "/workshops/FSTTCS-2026/" | relative_url }}), FSTTCS 2026 workshop, IIT Delhi, 19–20 December 2026.
 
 * Invited Talks
+    * _A simple compiler for CCA2-PRC in the standard model_, [Cryptography and Blockchain Group](https://www.crypto.edu.pl/), MIMUW, University of Warsaw, 2026 [<a href='../assets/pdf/slides/crypto_seminar_cca_prc.pdf'>Slides</a>]
     * _Limits of Black-Box Constructions of Pseudorandom Codes_, National Institute of Technology Calicut, India 2026 [<a href='../assets/pdf/slides/NITC_Talk.pdf'>Slides (IMDEA version)</a>]
     * _Secrets, Quantum and AI_, IIST, Trivandrum 2026 [<a href='../assets/pdf/slides/IIST_2026.pdf'>Slides</a>]
     * _Limits of Black-Box Constructions of Pseudorandom Codes_, IMDEA Software Institute, Madrid 2026 [<a href='../assets/pdf/slides/IMDEA 2026 - Limits of Black-Box Constructions of Pseudorandom Codes.pdf'>Slides</a>]
