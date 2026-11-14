@@ -18,21 +18,22 @@ bibliography_query: "@*[project_lattice=true]"
 
 ## Introduction
 
-A lattice begins with a familiar picture: the regularly spaced points at the corners of square floor tiles or on a sheet of graph paper. The pattern extends without gaps, and every point can be reached by taking whole-number steps in a few fixed directions. Mathematicians generalize this simple grid to three, four, or hundreds of dimensions, where it becomes a powerful way to study discrete structure using geometry.
+Imagine the points where the lines of a sheet of square graph paper meet. Starting from one point, you can reach every other point by taking a whole number of horizontal and vertical steps. This is a simple example of a **lattice**. More generally, a lattice consists of points obtained by taking whole-number combinations of a fixed set of independent directions. Those directions form a basis.
 
-An integer lattice is the set of all integer combinations of a chosen basis of vectors. The same lattice can have many very different bases: some are short and well balanced, while others are long and highly skewed. This flexibility is where the algorithmic difficulty begins, because the geometry of the available basis can determine whether a computational problem is easy to navigate or conceals the short and nearby vectors one wants to find.
+The same collection of points can have very different bases. On a square grid, one basis might use a horizontal step and a vertical step; another might use a horizontal step and a diagonal step. Both describe the whole grid, but they present its geometry differently. In many dimensions, the choice of basis can make it much harder to recognize short vectors, nearby points, or other useful structure.
 
-This project studies the geometry and algorithmics of integer lattices, especially the structure of bases, primitive vectors, sublattices, and reductions to classical problems such as the Closest Vector Problem. A major theme is that the internal geometry of a lattice is not just background information; it is a source of computational power and computational difficulty. Understanding that geometry can reveal both new algorithmic opportunities and new hardness phenomena.
+One direction of my work asks when a given integer vector can be made part of a basis for the full integer lattice. A small example shows why there is a restriction: the vector (2, 0), together with any single integer vector, cannot form a basis of the entire two-dimensional integer grid. A vector whose coordinates have no common factor greater than one is called primitive, and primitive vectors play a central role in basis-extension questions. My work studies the structure and constraints involved in extending vectors to complete bases.
 
-The motivation is therefore twofold. Lattice theory provides a clean mathematical language for high-dimensional discrete structure, while lattice problems also underpin prominent post-quantum security assumptions. At the technical level, the project studies bases of $\mathbb{Z}^n$, primitive vectors, controlled basis extensions, sublattice optimization, and reductions to classical problems such as the Closest Vector Problem (CVP). The objective is to understand how local geometric constraints on bases and sublattices affect global algorithmic complexity and cryptographic hardness.
+Another direction concerns **sublattices**, which are lattice patterns contained within a larger lattice. For example, selecting only grid points with even coordinates gives a more widely spaced pattern inside the original grid. I study a geometric optimization problem called the Maximum Distance Sublattice Problem and its relationship with the **Closest Vector Problem**, which asks for a lattice point nearest to a given target. Connections between problems allow algorithms and complexity results to inform one another.
+
+Lattice problems are also important in cryptography, where certain computational tasks on lattices serve as foundations for security assumptions. This project examines the underlying mathematics of bases, sublattices, and geometric computation. Its aim is to understand how the way a lattice is described affects what can be computed about it and how apparently different geometric questions are related.
 
 ## Core Questions
 
-- Under which arithmetic conditions can a primitive vector be extended to a basis of $\mathbb{Z}^n$ with controlled norm or orthogonality defect?
-- What upper and lower bounds govern the geometry of the remaining basis vectors in constrained basis-extension problems?
-- How should maximum-distance sublattice problems be parameterized and related to standard lattice optimization problems?
-- Which approximation-preserving reductions connect sublattice optimization to CVP or related closest-point problems?
-- Which structural properties of primitive sublattices are algorithmically exploitable, and which encode worst-case hardness?
+- When can a given integer vector be included in a basis of the full integer lattice?
+- What constraints does that vector impose on the geometry of the remaining basis vectors?
+- How can we formulate and solve geometric optimization problems over sublattices?
+- What can reductions to the Closest Vector Problem tell us about their computational difficulty?
 
 ## Main Results
 

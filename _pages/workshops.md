@@ -3,8 +3,8 @@ layout: page
 title: Workshops
 permalink: /workshops/
 description:
-nav: false
-nav_order: 6
+nav: true
+nav_order: 7
 ---
 
 {% assign workshops = site.workshops | sort: "title" %}

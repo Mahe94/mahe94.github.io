@@ -18,29 +18,26 @@ bibliography_query: "@*[project_llm=true]"
 
 ## Introduction
 
-AI-generated text now appears in places where provenance matters. A help-desk reply may be drafted by a model and lightly edited by a human. A student submission may contain a mixture of original writing and generated paragraphs. A company report may begin as a model summary and then pass through several rounds of internal revision. Once such text moves through email threads, document editors, translation tools, and social platforms, it becomes surprisingly hard to answer a simple but important question:
+A paragraph written by an AI model can look much like one written by a person. Once it has been copied into a document, shared in a message, or posted online, the record of how it was produced may disappear. A visible label can be removed, and information attached to the original file may not survive copying. This makes it difficult to establish where a piece of text came from, even when the service that generated it would like to provide a way to check.
 
-> Where did this text come from?
+Watermarking explores whether evidence of origin can be carried within the text itself. The idea is to guide the model's choices so that its output contains a hidden statistical signal while still reading naturally. A detector with the appropriate information can then look for that signal. Such a signal would provide evidence about how the text was generated; it would not, by itself, establish whether its statements are true or who is responsible for sharing them.
 
-This project studies watermarking for large language models from a cryptographic perspective. The broad idea is to make a model produce text that still reads naturally to people, but also contains a hidden signal that can later be detected by an authorized party. Unlike visible labels or metadata, the signal should travel with the text itself. That is useful in real settings where formatting is stripped away, files are copied into new systems, or outputs are intentionally reposted without attribution.
+The difficulty is that useful text rarely stays unchanged. Someone may correct a sentence, remove a passage, or combine generated material with their own writing. An attacker might also deliberately try to remove the watermark or make unrelated text appear watermarked. A meaningful guarantee must therefore specify which changes the watermark can tolerate and how reliably the detector distinguishes marked material from other text. Surviving a limited amount of corruption is a different requirement from surviving every possible rewrite.
 
-The challenge is that text is a delicate medium. A watermark cannot simply insert obvious markers or strange phrasing, because users will notice. It also cannot rely on the text staying unchanged, because generated content is often summarized, paraphrased, spell-checked, translated, or blended with human edits. In practice, a robust watermark should survive useful transformations while remaining imperceptible to ordinary readers and difficult for an adversary to erase.
+My work approaches these questions through **pseudorandom codes**, a cryptographic building block that combines two ideas. Error correction adds carefully arranged redundancy so that information can be recovered after some damage. Pseudorandomness makes an encoding look like random data to someone who lacks the secret information needed to recognize it. Bringing these properties together creates a way to hide a recoverable signal, which is one foundation for watermarking.
 
-These requirements make the problem theoretically subtle. Language-model outputs must remain fluent, semantically coherent, diverse, and statistically close to unwatermarked text, while the detector must maintain low false-positive and false-negative rates. This leads naturally to cryptographic formulations based on pseudorandomness, indistinguishability, and robustness under adversarial channels. Pseudorandom codes provide one important abstraction: they combine random-looking encodings with error correction, allowing a hidden signal to remain detectable after controlled corruption.
-
-The project develops rigorous security definitions, constructions, and limitations for such mechanisms. Its aim is to identify which watermarking guarantees can be based on standard cryptographic assumptions, which require additional coding-theoretic structure, and which are impossible under black-box or overly permissive editing models.
+I study how these codes behave when attackers can interact with a decoder, how several candidate constructions can be combined securely, and which underlying cryptographic tools are insufficient to construct them. The project develops the foundations behind watermarking: what protection can be proved, what assumptions it requires, and where mathematical limitations rule out an appealing approach.
 
 ## Core Questions
 
-- How should undetectability and soundness be defined when the adversary has adaptive access to the generator or detector?
-- Which edit channels admit meaningful robustness without making the watermark detectable or degrading the output distribution?
-- Can robust watermarking or pseudorandom codes be constructed from standard assumptions through black-box reductions?
-- How do secret-key, public-detection, and chosen-ciphertext-style security models differ in their achievable guarantees?
-- Which oracle separations or information-theoretic barriers explain the limits of robust binary encodings?
+- How can a hidden signal remain recoverable after noise without becoming distinguishable from ordinary random data?
+- What security is needed when an attacker can submit modified encodings to a decoder and observe its responses?
+- Can several candidate constructions be combined so that security survives if only some of their assumptions hold?
+- Which basic cryptographic tools are insufficient to construct robust pseudorandom codes?
 
 ## Main Results
 
-- **On Robust Combiners for Pseudorandom Codes and PKE with Pseudorandom Ciphertexts (TCC 2026, accepted):** Studies robust combiners for pseudorandom codes and public-key encryption with pseudorandom ciphertexts. [Paper](https://eprint.iacr.org/2026/2650).
+- **On Robust Combiners for Pseudorandom Codes and PKE with Pseudorandom Ciphertexts (TCC 2026, accepted):** Studies robust combiners for pseudorandom codes and public-key encryption with pseudorandom ciphertexts.
 - **A Simple Compiler for CCA2-Secure Pseudorandom Codes in the Standard Model (2026, under submission):** Studies a compiler for CCA2-secure pseudorandom codes in the standard model.
 
 - **Chosen Ciphertext Secure Pseudorandom Codes in the Standard Model (2026):** Constructs pseudorandom codes satisfying a chosen-ciphertext-style security notion in the standard model, strengthening the cryptographic foundations available for adversarially robust watermarking.

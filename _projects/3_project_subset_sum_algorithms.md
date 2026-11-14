@@ -18,25 +18,26 @@ bibliography_query: "@*[project_subsetsum=true]"
 
 ## Introduction
 
-Many everyday planning problems hide a subset-sum structure. A shipping system may need to pack items so that the total weight hits a narrow limit. A financial tool may search for a set of transactions that balances an account discrepancy. A scheduler may try to combine available resources to match a fixed target. In each case, the hard part is not understanding the goal but searching through an enormous number of possible combinations quickly enough to be useful.
+Suppose you have numbers 3, 5, 8, and 12, and want to select some of them that add up to 17. Choosing 5 and 12 solves the problem. This small example captures **subset sum**: given a list of numbers and a target, determine whether some selection adds up exactly to that target. Similar questions arise when matching transactions to a total or choosing items to meet a fixed resource requirement.
 
-The classical subset sum problem captures this tension in one of its cleanest forms: given numbers $a_1,\ldots,a_n$ and a target $t$, decide whether some subset adds up exactly to $t$. The statement fits in a single line, but the problem sits at the center of algorithms, complexity theory, lattice methods, and cryptography. Over time, it has become a testing ground for some of the most important ideas in exact algorithms and fine-grained complexity.
+The difficulty comes from the number of possible selections. With each additional item, the number of subsets doubles. A short list is easy to inspect, but checking every possibility soon becomes impractical. Algorithms try to exploit mathematical structure so that they can find an answer without exploring the entire search space. Which method works best depends on features such as the number of items and the sizes of their values.
 
-This project studies faster algorithms and structural variants of subset-sum-type problems. A recurring theme is that small changes in the model can have large algorithmic consequences. The difficulty of the problem shifts when we move from ordinary sums to modular sums, from exact target matching to equal-sum phenomena, or from bounded choices to unbounded and projected variants. Those changes are mathematically natural, and they also line up with questions that arise in cryptography and related optimization tasks.
+My work studies several variations on this basic question. We might ask for a solution containing as many items as possible, allow an item to be used repeatedly, or replace addition with multiplication. Each change alters what an algorithm can exploit. Studying relationships between the variants helps determine when a technique for one problem can be adapted to another and when genuinely different methods are needed.
 
-The broader objective is to understand which forms of structure can be exploited algorithmically and which ones reflect genuine hardness. Subset sum is a benchmark for exact exponential algorithms, fine-grained complexity, and cryptographic assumptions, and its variants expose the limits of algebraic, combinatorial, and lattice-based techniques. The project develops reductions, upper bounds, lower bounds, and average-case analyses for regimes such as dense instances, projected or unbounded choices, subset product, and pigeonhole equal-sum problems.
+Another direction asks for two different selections with the same sum. In some settings, there are more possible selections than possible totals, so a repeated total must exist. This is an example of the pigeonhole principle: if too many objects are placed into too few boxes, some box contains more than one object. Knowing that a solution exists, however, does not tell us how to find it quickly. My work investigates algorithms for these equal-sum problems, the limits on their efficiency, and their behavior on random inputs.
+
+These questions also matter to cryptography, where security often relies on a computational problem being difficult for an attacker. Understanding an algorithm's scope is essential: success on one class of instances need not imply success on all instances. Across the project, I develop algorithms and connections between problems to clarify where efficiency is possible and where evidence of computational difficulty remains.
 
 ## Core Questions
 
-- Which density and redundancy regimes permit subexponential or pseudopolynomial algorithms beyond meet-in-the-middle bounds?
-- How do projected, unbounded, multiplicative, and pigeonhole equal-sum variants reduce to or separate from classical Subset Sum?
-- Can algebraic sieving, representation techniques, or lattice methods improve worst-case and average-case running times?
-- Which fine-grained or parameterized lower bounds match the achievable algorithms in the relevant regimes?
-- When do average-case distributions exhibit a provable gap from worst-case complexity, and can that gap support cryptographic applications?
+- Which features of an instance allow us to avoid searching through all possible subsets?
+- How does requiring the largest solution, allowing repetitions, or replacing sums with products change the problem?
+- When a counting argument guarantees equal sums, how efficiently can we find them?
+- How do the difficulty of random instances and the strongest lower bounds compare with known algorithms?
 
 ## Main Results
 
-- **On the Largest Cardinality Subset Sum (2026, submitted):** Studies the optimization variant that asks for a maximum-cardinality subset summing to a specified target. [Paper](https://arxiv.org/abs/2610.29280).
+- **On the Largest Cardinality Subset Sum (2026, submitted):** Studies the optimization variant that asks for a maximum-cardinality subset summing to a specified target.
 
 - **Pigeonhole Equal Subset Sum: Subexponential Algorithm, Tight Lower Bounds and Average-Case Analysis (2026):** Gives a subexponential algorithm, matching lower-bound evidence in the studied model, and an average-case analysis of Pigeonhole Equal Subset Sum.
 - **Weak Pigeonhole Equal-Sums made Simpler and Faster (2026):** Simplifies the algorithmic treatment of Weak Pigeonhole Equal-Sums and improves its running time.
