@@ -37,7 +37,7 @@
     
     <link rel="shortcut icon" href="/assets/img/msr.png">
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1794400403">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1794657869">
     <link rel="canonical" href="https://mahe94.github.io/projects/3_project/">
 
     <!-- Dark Mode -->
@@ -126,6 +126,9 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/resources/">Resources</a>
               </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/workshops/">Workshops</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -171,29 +174,30 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p>Many everyday planning problems hide a subset-sum structure. A shipping system may need to pack items so that the total weight hits a narrow limit. A financial tool may search for a set of transactions that balances an account discrepancy. A scheduler may try to combine available resources to match a fixed target. In each case, the hard part is not understanding the goal but searching through an enormous number of possible combinations quickly enough to be useful.</p>
+<p>Suppose you have numbers 3, 5, 8, and 12, and want to select some of them that add up to 17. Choosing 5 and 12 solves the problem. This small example captures <strong>subset sum</strong>: given a list of numbers and a target, determine whether some selection adds up exactly to that target. Similar questions arise when matching transactions to a total or choosing items to meet a fixed resource requirement.</p>
 
-<p>The classical subset sum problem captures this tension in one of its cleanest forms: given numbers $a_1,\ldots,a_n$ and a target $t$, decide whether some subset adds up exactly to $t$. The statement fits in a single line, but the problem sits at the center of algorithms, complexity theory, lattice methods, and cryptography. Over time, it has become a testing ground for some of the most important ideas in exact algorithms and fine-grained complexity.</p>
+<p>The difficulty comes from the number of possible selections. With each additional item, the number of subsets doubles. A short list is easy to inspect, but checking every possibility soon becomes impractical. Algorithms try to exploit mathematical structure so that they can find an answer without exploring the entire search space. Which method works best depends on features such as the number of items and the sizes of their values.</p>
 
-<p>This project studies faster algorithms and structural variants of subset-sum-type problems. A recurring theme is that small changes in the model can have large algorithmic consequences. The difficulty of the problem shifts when we move from ordinary sums to modular sums, from exact target matching to equal-sum phenomena, or from bounded choices to unbounded and projected variants. Those changes are mathematically natural, and they also line up with questions that arise in cryptography and related optimization tasks.</p>
+<p>My work studies several variations on this basic question. We might ask for a solution containing as many items as possible, allow an item to be used repeatedly, or replace addition with multiplication. Each change alters what an algorithm can exploit. Studying relationships between the variants helps determine when a technique for one problem can be adapted to another and when genuinely different methods are needed.</p>
 
-<p>The broader objective is to understand which forms of structure can be exploited algorithmically and which ones reflect genuine hardness. Subset sum is a benchmark for exact exponential algorithms, fine-grained complexity, and cryptographic assumptions, and its variants expose the limits of algebraic, combinatorial, and lattice-based techniques. The project develops reductions, upper bounds, lower bounds, and average-case analyses for regimes such as dense instances, projected or unbounded choices, subset product, and pigeonhole equal-sum problems.</p>
+<p>Another direction asks for two different selections with the same sum. In some settings, there are more possible selections than possible totals, so a repeated total must exist. This is an example of the pigeonhole principle: if too many objects are placed into too few boxes, some box contains more than one object. Knowing that a solution exists, however, does not tell us how to find it quickly. My work investigates algorithms for these equal-sum problems, the limits on their efficiency, and their behavior on random inputs.</p>
+
+<p>These questions also matter to cryptography, where security often relies on a computational problem being difficult for an attacker. Understanding an algorithm’s scope is essential: success on one class of instances need not imply success on all instances. Across the project, I develop algorithms and connections between problems to clarify where efficiency is possible and where evidence of computational difficulty remains.</p>
 
 <h2 id="core-questions">Core Questions</h2>
 
 <ul>
-  <li>Which density and redundancy regimes permit subexponential or pseudopolynomial algorithms beyond meet-in-the-middle bounds?</li>
-  <li>How do projected, unbounded, multiplicative, and pigeonhole equal-sum variants reduce to or separate from classical Subset Sum?</li>
-  <li>Can algebraic sieving, representation techniques, or lattice methods improve worst-case and average-case running times?</li>
-  <li>Which fine-grained or parameterized lower bounds match the achievable algorithms in the relevant regimes?</li>
-  <li>When do average-case distributions exhibit a provable gap from worst-case complexity, and can that gap support cryptographic applications?</li>
+  <li>Which features of an instance allow us to avoid searching through all possible subsets?</li>
+  <li>How does requiring the largest solution, allowing repetitions, or replacing sums with products change the problem?</li>
+  <li>When a counting argument guarantees equal sums, how efficiently can we find them?</li>
+  <li>How do the difficulty of random instances and the strongest lower bounds compare with known algorithms?</li>
 </ul>
 
 <h2 id="main-results">Main Results</h2>
 
 <ul>
   <li>
-    <p><strong>On the Largest Cardinality Subset Sum (2026, submitted):</strong> Studies the optimization variant that asks for a maximum-cardinality subset summing to a specified target. <a href="https://arxiv.org/abs/2610.29280" rel="external nofollow noopener" target="_blank">Paper</a>.</p>
+    <p><strong>On the Largest Cardinality Subset Sum (2026, submitted):</strong> Studies the optimization variant that asks for a maximum-cardinality subset summing to a specified target.</p>
   </li>
   <li>
 <strong>Pigeonhole Equal Subset Sum: Subexponential Algorithm, Tight Lower Bounds and Average-Case Analysis (2026):</strong> Gives a subexponential algorithm, matching lower-bound evidence in the studied model, and an average-case analysis of Pigeonhole Equal Subset Sum.</li>
@@ -559,7 +563,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: November 11, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: November 14, 2026.
       </div>
     </footer>
 

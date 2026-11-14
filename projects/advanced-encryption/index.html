@@ -37,7 +37,7 @@
     
     <link rel="shortcut icon" href="/assets/img/msr.png">
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1794400403">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1794657869">
     <link rel="canonical" href="https://mahe94.github.io/projects/advanced-encryption/">
 
     <!-- Dark Mode -->
@@ -126,6 +126,9 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/resources/">Resources</a>
               </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/workshops/">Workshops</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -171,11 +174,15 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p>Encryption is often described as placing information in a locked box that only the intended recipient can open. That picture captures confidentiality, but modern systems ask much more of the box. Encrypted data may be stored for years, shared across an organization, processed by remote services, or decrypted in large batches. During that lifetime, keys may leak, responsibilities may be delegated, and efficiency constraints may become as important as the original secrecy requirement.</p>
+<p>Encryption turns readable information into a form that can be recovered only with the appropriate secret key. This basic idea supports private communication and secure storage, but the circumstances in which encrypted information is used can be complicated. A file may remain in an archive for years, responsibility for it may pass between people, and a service may need to handle thousands of encrypted records at once. Each situation raises questions that go beyond whether a single message is hidden at the moment it is sent.</p>
 
-<p>Advanced encryption develops definitions and constructions for these richer settings. One direction studies incompressibility, where an attacker should not be able to retain only a short summary of a ciphertext and later exploit a key exposure. Another studies identity-based and hierarchical encryption, where identities serve as public keys and secret-key capabilities can be delegated across levels of authority. A third studies batch decryption, where shared computation should reduce the cost of processing many ciphertexts without introducing new attacks.</p>
+<p>Consider an organization storing confidential records. An attacker might copy some encrypted data and wait for a future key leak. Different departments may need the authority to grant access to different users. When records are ready to be released, the organization may need to authorize public decryption of a selected collection. These examples motivate distinct research problems involving storage, delegation, and controlled release. A precise security guarantee must describe both what the system allows and what an attacker can do.</p>
 
-<p>Taken together, these directions examine how correctness, indistinguishability, simulation, post-compromise security, and efficiency interact beyond the classical public-key encryption model. The common goal is to identify security notions that remain meaningful under richer functionality and to realize them from well-understood cryptographic assumptions.</p>
+<p>My work on <strong>Incompressible Cryptography</strong> examines the first of these concerns. If an attacker has limited storage before a key is exposed, how much encrypted information must be retained to benefit from the exposure? The goal is to make a short stored representation insufficient for the attacker’s later purpose. This direction also studies how the guarantee interacts with partial leakage of secrets and with encryption that allows keys to reveal selected functions of a message.</p>
+
+<p>My work on <strong>Hierarchical &amp; Identity-Based Encryption</strong> concerns the organization of access. An identifier, such as an email address, can be used for encryption, while a trusted authority issues secret keys. A hierarchy allows that authority to delegate key generation to other levels of an organization. I study how to prove security when attackers choose their targets over time and when secret information may be exposed during a larger protocol.</p>
+
+<p><strong>Batch Decryption</strong> studies how an authority can publish a short key that allows anyone to decrypt a selected collection of ciphertexts. It examines how to make this release compact, support different patterns of authorization, and protect messages outside the authorized batches. Across all three directions, the approach is to make the desired protection precise, investigate constructions that achieve it, and understand their limitations. The subprojects below explain the individual problems, results, and supporting papers.</p>
 
 <h2 id="subprojects">Subprojects</h2>
 
@@ -252,7 +259,7 @@
 
         <div class="card-body">
           <h2 class="card-title">Batch Decryption</h2>
-          <p class="card-text">Scalable methods for decrypting many ciphertexts efficiently without giving up security</p>
+          <p class="card-text">Compact keys for authorizing public decryption of selected ciphertext batches</p>
           <div class="row ml-1 mr-1 p-0">
           </div>
         </div>
@@ -261,13 +268,6 @@
 </div>
 </div>
 </div>
-
-<!-- ## Research Themes
-
-- Post-compromise security and incompressibility
-- Identity-based and hierarchical access structures
-- Efficient handling and decryption of many ciphertexts
-- Stronger security guarantees for rich public-key systems -->
 
           </article>
 
@@ -281,7 +281,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: November 11, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: November 14, 2026.
       </div>
     </footer>
 

@@ -37,7 +37,7 @@
     
     <link rel="shortcut icon" href="/assets/img/msr.png">
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1794400403">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1794657869">
     <link rel="canonical" href="https://mahe94.github.io/projects/1_project/">
 
     <!-- Dark Mode -->
@@ -126,6 +126,9 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/resources/">Resources</a>
               </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/workshops/">Workshops</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -171,35 +174,30 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p>AI-generated text now appears in places where provenance matters. A help-desk reply may be drafted by a model and lightly edited by a human. A student submission may contain a mixture of original writing and generated paragraphs. A company report may begin as a model summary and then pass through several rounds of internal revision. Once such text moves through email threads, document editors, translation tools, and social platforms, it becomes surprisingly hard to answer a simple but important question:</p>
+<p>A paragraph written by an AI model can look much like one written by a person. Once it has been copied into a document, shared in a message, or posted online, the record of how it was produced may disappear. A visible label can be removed, and information attached to the original file may not survive copying. This makes it difficult to establish where a piece of text came from, even when the service that generated it would like to provide a way to check.</p>
 
-<blockquote>
-  <p>Where did this text come from?</p>
-</blockquote>
+<p>Watermarking explores whether evidence of origin can be carried within the text itself. The idea is to guide the model’s choices so that its output contains a hidden statistical signal while still reading naturally. A detector with the appropriate information can then look for that signal. Such a signal would provide evidence about how the text was generated; it would not, by itself, establish whether its statements are true or who is responsible for sharing them.</p>
 
-<p>This project studies watermarking for large language models from a cryptographic perspective. The broad idea is to make a model produce text that still reads naturally to people, but also contains a hidden signal that can later be detected by an authorized party. Unlike visible labels or metadata, the signal should travel with the text itself. That is useful in real settings where formatting is stripped away, files are copied into new systems, or outputs are intentionally reposted without attribution.</p>
+<p>The difficulty is that useful text rarely stays unchanged. Someone may correct a sentence, remove a passage, or combine generated material with their own writing. An attacker might also deliberately try to remove the watermark or make unrelated text appear watermarked. A meaningful guarantee must therefore specify which changes the watermark can tolerate and how reliably the detector distinguishes marked material from other text. Surviving a limited amount of corruption is a different requirement from surviving every possible rewrite.</p>
 
-<p>The challenge is that text is a delicate medium. A watermark cannot simply insert obvious markers or strange phrasing, because users will notice. It also cannot rely on the text staying unchanged, because generated content is often summarized, paraphrased, spell-checked, translated, or blended with human edits. In practice, a robust watermark should survive useful transformations while remaining imperceptible to ordinary readers and difficult for an adversary to erase.</p>
+<p>My work approaches these questions through <strong>pseudorandom codes</strong>, a cryptographic building block that combines two ideas. Error correction adds carefully arranged redundancy so that information can be recovered after some damage. Pseudorandomness makes an encoding look like random data to someone who lacks the secret information needed to recognize it. Bringing these properties together creates a way to hide a recoverable signal, which is one foundation for watermarking.</p>
 
-<p>These requirements make the problem theoretically subtle. Language-model outputs must remain fluent, semantically coherent, diverse, and statistically close to unwatermarked text, while the detector must maintain low false-positive and false-negative rates. This leads naturally to cryptographic formulations based on pseudorandomness, indistinguishability, and robustness under adversarial channels. Pseudorandom codes provide one important abstraction: they combine random-looking encodings with error correction, allowing a hidden signal to remain detectable after controlled corruption.</p>
-
-<p>The project develops rigorous security definitions, constructions, and limitations for such mechanisms. Its aim is to identify which watermarking guarantees can be based on standard cryptographic assumptions, which require additional coding-theoretic structure, and which are impossible under black-box or overly permissive editing models.</p>
+<p>I study how these codes behave when attackers can interact with a decoder, how several candidate constructions can be combined securely, and which underlying cryptographic tools are insufficient to construct them. The project develops the foundations behind watermarking: what protection can be proved, what assumptions it requires, and where mathematical limitations rule out an appealing approach.</p>
 
 <h2 id="core-questions">Core Questions</h2>
 
 <ul>
-  <li>How should undetectability and soundness be defined when the adversary has adaptive access to the generator or detector?</li>
-  <li>Which edit channels admit meaningful robustness without making the watermark detectable or degrading the output distribution?</li>
-  <li>Can robust watermarking or pseudorandom codes be constructed from standard assumptions through black-box reductions?</li>
-  <li>How do secret-key, public-detection, and chosen-ciphertext-style security models differ in their achievable guarantees?</li>
-  <li>Which oracle separations or information-theoretic barriers explain the limits of robust binary encodings?</li>
+  <li>How can a hidden signal remain recoverable after noise without becoming distinguishable from ordinary random data?</li>
+  <li>What security is needed when an attacker can submit modified encodings to a decoder and observe its responses?</li>
+  <li>Can several candidate constructions be combined so that security survives if only some of their assumptions hold?</li>
+  <li>Which basic cryptographic tools are insufficient to construct robust pseudorandom codes?</li>
 </ul>
 
 <h2 id="main-results">Main Results</h2>
 
 <ul>
   <li>
-<strong>On Robust Combiners for Pseudorandom Codes and PKE with Pseudorandom Ciphertexts (TCC 2026, accepted):</strong> Studies robust combiners for pseudorandom codes and public-key encryption with pseudorandom ciphertexts. <a href="https://eprint.iacr.org/2026/2650" rel="external nofollow noopener" target="_blank">Paper</a>.</li>
+<strong>On Robust Combiners for Pseudorandom Codes and PKE with Pseudorandom Ciphertexts (TCC 2026, accepted):</strong> Studies robust combiners for pseudorandom codes and public-key encryption with pseudorandom ciphertexts.</li>
   <li>
     <p><strong>A Simple Compiler for CCA2-Secure Pseudorandom Codes in the Standard Model (2026, under submission):</strong> Studies a compiler for CCA2-secure pseudorandom codes in the standard model.</p>
   </li>
@@ -430,7 +428,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Mahesh Sreekumar Rajasree. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: November 11, 2026.
+<a href="https://clustrmaps.com/site/1c0al" title="Visit tracker" rel="external nofollow noopener" target="_blank"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=n&amp;d=mCwmGYLqUwBp8KDcICk6fGV2lSCsVoo27ArlJu6N35k" hidden></a>Last updated: November 14, 2026.
       </div>
     </footer>
 
