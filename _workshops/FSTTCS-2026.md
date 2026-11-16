@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Recent Trends in Cryptography"
+description: "Recent Trends in Cryptography at FSTTCS 2026, December 19–20 at IIT Delhi: invited lectures, posters, lightning talks, schedule, and registration."
 permalink: /workshops/FSTTCS-2026/
 hide_header: true
 flush_top: true
@@ -232,10 +233,6 @@ flush_top: true
   padding: 3.15rem 0;
 }
 
-.rtc-section + .rtc-section {
-  border-top: 1px solid var(--rtc-border);
-}
-
 .rtc-section-header {
   max-width: 750px;
   margin: 0 auto 2.4rem;
@@ -255,6 +252,7 @@ flush_top: true
 }
 
 .rtc-main .rtc-section > p,
+.rtc-registration p,
 .rtc-abstract-content p,
 .rtc-venue-details p,
 .rtc-venue-details li {
@@ -783,7 +781,7 @@ flush_top: true
         </div>
         <div class="rtc-meta-item">
           <span class="rtc-meta-label">Venue</span>
-          <span class="rtc-meta-value">IIT Delhi, India</span>
+          <span class="rtc-meta-value">SIT 001, School of Information Technology, IIT Delhi</span>
         </div>
       </div>
 
@@ -836,7 +834,7 @@ flush_top: true
       <div class="rtc-info-card">
         <div class="rtc-info-label">Venue</div>
         <div class="rtc-info-value rtc-placeholder">
-          IIT Delhi, India
+          SIT 001, School of Information Technology, IIT Delhi
         </div>
       </div>
 
@@ -876,40 +874,7 @@ flush_top: true
   </section> -->
 
 
-  <!-- =====================================================
-       ENTRY REQUIREMENTS
-       ===================================================== -->
-
-  <!-- <section class="rtc-section" id="entry-requirements">
-
-    <div class="rtc-section-header">
-
-      <h2>Entry Requirements</h2>
-
-    </div>
-
-    <p>
-      This workshop is primarily intended for graduate students
-      (Master's and PhD), postdoctoral researchers, and early-career
-      academics. We also welcome other participants, including those
-      from industry or with a general interest in recent developments
-      in cryptography.
-    </p>
-
-    <p>
-      Participants should have a solid foundation in undergraduate-level
-      mathematics, particularly linear algebra, probability, and discrete
-      mathematics. Prior experience across all areas covered by the
-      workshop is not required, but familiarity with cryptography or
-      related theoretical computer science topics will be helpful for
-      getting the most out of the event.
-    </p>
-
-  </section> -->
-
-
-
-  <!-- =====================================================
+<!-- =====================================================
        SPEAKERS
        Mahesh and Venkata are organisers as well as speakers.
        Replace/add cards once the speaker list is finalized.
@@ -919,7 +884,7 @@ flush_top: true
 
     <div class="rtc-section-header">
 
-      <h2>Speakers</h2>
+      <h2>Invited Speakers</h2>
 
       <!-- <p class="rtc-section-intro rtc-placeholder">
         [PLACEHOLDER: Introductory sentence about the invited speakers.]
@@ -1024,7 +989,7 @@ flush_top: true
           09:15&ndash;09:30
         </div>
         <div>
-          <div class="rtc-programme-title">Trust Lab</div>
+          <div class="rtc-programme-title">Sponsor Introduction: Trust Lab</div>
         </div>
       </div>
 
@@ -1051,7 +1016,7 @@ flush_top: true
           10:30&ndash;11:00
         </div>
         <div>
-          <div class="rtc-programme-title">Tea</div>
+          <div class="rtc-programme-title">Tea &amp; Posters</div>
         </div>
       </div>
 
@@ -1109,6 +1074,12 @@ flush_top: true
           <div>
             Varun Narayanan
           </div>
+          <details class="rtc-abstract rtc-bio">
+            <summary>Bio</summary>
+            <div class="rtc-abstract-content">
+              <p>Varun Narayanan is an Assistant Professor at Chennai Mathematical Institute. His research interests include secure multiparty computation, cryptography, and information theory. Previously, he held postdoctoral positions at the Indian Institute of Science, hosted by Chaya Ganesh; UCLA, hosted by Rafail Ostrovsky; and Technion, hosted by Yuval Ishai and Eyal Kushilevitz. He completed his PhD under the guidance of Vinod Prabhakaran at the Tata Institute of Fundamental Research.</p>
+            </div>
+          </details>
         </div>
       </div>
 
@@ -1117,7 +1088,7 @@ flush_top: true
           15:30&ndash;16:00
         </div>
         <div>
-          <div class="rtc-programme-title">Tea</div>
+          <div class="rtc-programme-title">Tea &amp; Posters</div>
         </div>
       </div>
 
@@ -1157,7 +1128,7 @@ flush_top: true
           10:30&ndash;11:00
         </div>
         <div>
-          <div class="rtc-programme-title">Tea</div>
+          <div class="rtc-programme-title">Tea &amp; Posters</div>
         </div>
       </div>
 
@@ -1173,7 +1144,7 @@ flush_top: true
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
-              <p>Kabir Tomer is a fourth-year PhD student at UIUC, advised by Dakshita Khurana. He is broadly interested in theoretical computer science, with research focusing on questions at the intersection of quantum computing and cryptography. Previously, he was an undergraduate at IIT Delhi advised by Venkata Koppula.</p>
+              <p>Kabir Tomer is a fifth-year PhD student at UIUC, advised by Dakshita Khurana. He is broadly interested in theoretical computer science, with research focusing on questions at the intersection of quantum computing and cryptography. Previously, he was an undergraduate at IIT Delhi advised by Venkata Koppula.</p>
             </div>
           </details>
         </div>
@@ -1211,7 +1182,7 @@ flush_top: true
           15:30&ndash;16:00
         </div>
         <div>
-          <div class="rtc-programme-title">Tea</div>
+          <div class="rtc-programme-title">Tea &amp; Posters</div>
         </div>
       </div>
 
@@ -1253,6 +1224,188 @@ flush_top: true
 
     </div>
   </section>
+
+
+  <!-- =====================================================
+       CALL FOR POSTERS AND LIGHTNING TALKS
+       ===================================================== -->
+
+  <section class="rtc-section" id="call-for-posters-and-lightning-talks">
+    <div class="rtc-section-header">
+      <h2>Posters and Lightning Talks</h2>
+    </div>
+
+    <p>
+      We invite students, early-career researchers, and members of the broader
+      research community to present their work at the <em>Recent Trends in
+      Cryptography</em> workshop, held in conjunction with FSTTCS 2026, through
+      <strong>poster presentations and/or 10-minute lightning talks</strong>.
+    </p>
+
+    <p>
+      These sessions provide an opportunity to showcase recent research results,
+      ongoing work, emerging ideas, and interesting open problems in cryptography
+      and related areas of security. They aim to foster scientific discussions,
+      encourage constructive feedback, facilitate the exchange of ideas, and
+      create opportunities for collaboration.
+    </p>
+
+    <p>
+      We particularly encourage undergraduate and postgraduate students, PhD
+      scholars, and postdoctoral researchers to participate. Both completed
+      research and promising work in progress are welcome.
+    </p>
+
+    <p>
+      Participants may submit proposals for <strong>poster presentations,
+      lightning talks, or both</strong>. Please submit a <strong>title and
+      abstract</strong> through the workshop participation form by
+      <strong>December 1, 2026 at 11:59:59 PM IST</strong>.
+      After the submission deadline, proposals
+      will be reviewed and selected based on their relevance to the workshop's
+      themes and the available presentation slots. Further details will be
+      communicated to selected participants after the submission deadline.
+    </p>
+
+    <p>
+      Posters will be presented during the tea breaks. Each lightning talk has a total slot of 10 minutes.
+      Further presentation instructions will be communicated after the
+      submission deadline.
+    </p>
+
+    <p>
+      <strong>Interested participants are requested to complete the
+      <span class="rtc-placeholder">[PLACEHOLDER: workshop participation form link]</span>,
+      indicating their preferred presentation format (poster, lightning talk, or
+      both).</strong> This is the same form linked in the <strong>Participate</strong>
+      section below and serves as a common form for all workshop participants.
+      Those who wish to attend the workshop without presenting are also requested
+      to complete this form, simply indicating that they do not intend to give a
+      presentation.
+    </p>
+
+    <p>
+      <em>Note: Completing the workshop participation form does not replace the
+      mandatory official FSTTCS registration. Please refer to the registration
+      details provided below for fees, deadlines, and registration instructions.</em>
+    </p>
+  </section>
+
+
+
+
+
+  <!-- =====================================================
+       REGISTRATION
+       ===================================================== -->
+
+  <section class="rtc-section" id="participate">
+
+    <div class="rtc-registration">
+
+      <h2>Participate</h2>
+
+      <p>
+        Official registration is mandatory to attend the workshop; the registration
+        fee must be paid unless you receive an approved fee waiver. Register for
+        <strong>both December 19 and 20</strong> to attend the entire two-day
+        workshop. If you plan to attend only one day, the FSTTCS registration
+        system allows you to register for a single workshop day. You must
+        select your exact workshop dates in the official Registration Details Form.
+      </p>
+
+      <p>
+        The official workshop fee is <strong>&#8377;3,000 for two days</strong>
+        with early registration or <strong>&#8377;5,000 for two days</strong>
+        with late registration. A single day costs &#8377;1,500 early or
+        &#8377;2,500 late. These amounts exclude 18% tax and any payment-method
+        markup. Early registration closes on <strong>December 3, 2026 at
+        11:59:59 PM IST</strong>. Registration includes lunch and two tea breaks
+        on each registered workshop day. Please check the
+        <a href="https://fmindia.cmi.ac.in/fsttcs2026-local/registration.html">official FSTTCS registration page</a>
+        for the payment link, fee details, and the Registration Details Form,
+        which must be completed after payment.
+      </p>
+
+      <p>
+        Limited registration fee waivers and travel support are also available
+        for workshop participants. Please check the
+        <a href="https://fmindia.cmi.ac.in/fsttcs2026-local/registration.html">FSTTCS registration page</a>
+        for more details.
+      </p>
+
+      <p>
+        In addition to the official FSTTCS registration, please complete the
+        separate form for this workshop:
+        <span class="rtc-placeholder">[PLACEHOLDER: workshop participation form link]</span>
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       VENUE & TRAVEL
+       ===================================================== -->
+
+  <section class="rtc-section" id="venue-travel">
+
+    <div class="rtc-section-header">
+
+      <h2>Venue &amp; Travel</h2>
+
+    </div>
+
+    <div class="rtc-venue-grid">
+
+      <div class="rtc-map">
+        <iframe
+          src="https://www.google.com/maps?q=Amar%20Nath%20and%20Shashi%20Khosla%20School%20of%20Information%20Technology%20IIT%20Delhi&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Map showing the School of Information Technology, IIT Delhi">
+        </iframe>
+      </div>
+
+      <div class="rtc-venue-details">
+        <h3>Venue</h3>
+        <p>
+          The workshop will be held in room SIT 001 on the ground floor of the
+          <a href="https://sit.iitd.ac.in/">Amar Nath and Shashi Khosla School of Information Technology</a>,
+          Indian Institute of Technology Delhi, Hauz Khas, New Delhi 110016, India.
+        </p>
+
+        <h3>Getting There</h3>
+        <ul>
+          <li>
+            <strong>By air:</strong> Indira Gandhi International Airport
+            (DEL) is approximately 10 km from IIT Delhi's campus from Terminal 1
+            and 15 km from Terminal 3. Prepaid taxis and
+            app-based cabs are available from the airport. From Terminal 1,
+            the Delhi Metro Magenta Line connects to IIT Delhi Metro Station;
+            from Terminal 3, use the airport shuttle to Terminal 1 or take a
+            cab directly.
+          </li>
+          <li>
+            <strong>By train:</strong> New Delhi Railway Station and Hazrat
+            Nizamuddin Railway Station are both about 14-15 km from IIT
+            Delhi. Taxis and app-based cabs are available from the stations.
+            By metro, travel towards Hauz Khas/IIT Delhi and continue to IIT
+            Delhi Metro Station on the Magenta Line.
+          </li>
+          <li>
+            <strong>By metro:</strong> IIT Delhi Metro Station is on the
+            Magenta Line and is the closest metro stop for the campus.
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
 
 
   <!-- =====================================================
@@ -1310,116 +1463,6 @@ flush_top: true
   </section>
 
 
-
-  <!-- =====================================================
-       REGISTRATION
-       ===================================================== -->
-
-  <section class="rtc-section" id="participate">
-
-    <div class="rtc-registration">
-
-      <h2>Participate</h2>
-
-      <p class="rtc-placeholder">
-        [PLACEHOLDER: Registration information, eligibility,
-        registration deadline, fees if any, and other instructions.]
-      </p>
-
-      <!-- Replace # with the registration URL -->
-      <a class="rtc-button" href="#">
-        Registration Coming Soon
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <!-- =====================================================
-       VENUE & TRAVEL
-       ===================================================== -->
-
-  <section class="rtc-section" id="venue-travel">
-
-    <div class="rtc-section-header">
-
-      <h2>Venue &amp; Travel</h2>
-
-    </div>
-
-    <div class="rtc-venue-grid">
-
-      <div class="rtc-map">
-        <iframe
-          src="https://www.google.com/maps?q=Bharti%20Building%20IIT%20Delhi&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Map showing Bharti Building, IIT Delhi">
-        </iframe>
-      </div>
-
-      <div class="rtc-venue-details">
-        <h3>Venue</h3>
-        <p>
-          The workshop is part of FSTTCS 2026, which will be held at
-          Indian Institute of Technology Delhi, Hauz Khas, New Delhi
-          110016, India. The workshop venue is Bharti Building, IIT Delhi.
-        </p>
-
-        <h3>Getting There</h3>
-        <ul>
-          <li>
-            <strong>By air:</strong> Indira Gandhi International Airport
-            (DEL) is about 10-12 km from IIT Delhi. Prepaid taxis and
-            app-based cabs are available from the airport. From Terminal 1,
-            the Delhi Metro Magenta Line connects to IIT Delhi Metro Station;
-            from Terminal 3, use the airport shuttle to Terminal 1 or take a
-            cab directly.
-          </li>
-          <li>
-            <strong>By train:</strong> New Delhi Railway Station and Hazrat
-            Nizamuddin Railway Station are both about 14-15 km from IIT
-            Delhi. Taxis and app-based cabs are available from the stations.
-            By metro, travel towards Hauz Khas/IIT Delhi and continue to IIT
-            Delhi Metro Station on the Magenta Line.
-          </li>
-          <li>
-            <strong>By metro:</strong> IIT Delhi Metro Station is on the
-            Magenta Line and is the closest metro stop for the campus.
-          </li>
-        </ul>
-
-        <h3>Accommodation</h3>
-        <p class="rtc-placeholder">
-          [PLACEHOLDER: Accommodation information will be updated.]
-        </p>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =====================================================
-       CONTACT
-       ===================================================== -->
-
-  <section class="rtc-section" id="questions">
-
-    <div class="rtc-section-header">
-
-      <h2>Questions?</h2>
-
-    </div>
-
-    <div class="rtc-placeholder-box">
-      For questions, please email <a href="mailto:maheshsr@mimuw.edu.pl">maheshsr@mimuw.edu.pl</a> or <a href="mailto:kvenkata@cse.iitd.ac.in">kvenkata@cse.iitd.ac.in</a>.
-    </div>
-
-  </section>
-
-
   <!-- =====================================================
        SPONSORS
        ===================================================== -->
@@ -1447,20 +1490,38 @@ flush_top: true
 
   </section>
 
+  <!-- =====================================================
+       CONTACT
+       ===================================================== -->
+
+  <section class="rtc-section" id="questions">
+
+    <div class="rtc-section-header">
+
+      <h2>Questions?</h2>
+
+    </div>
+
+    <div class="rtc-placeholder-box">
+      For questions, please email <a href="mailto:crypto.fsttcs2026@gmail.com">crypto.fsttcs2026@gmail.com</a>.
+    </div>
+
+  </section>
+
     </main>
 
     <aside class="rtc-sidebar" aria-label="Workshop sections">
       <div class="rtc-sidebar-inner">
         <nav class="rtc-sidebar-nav">
           <a href="#about-the-workshop">About the Workshop</a>
-          <a href="#entry-requirements">Entry Requirements</a>
-          <a href="#speakers">Speakers</a>
+          <a href="#speakers">Invited Speakers</a>
           <a href="#schedule">Schedule</a>
-          <a href="#organisers">Organisers</a>
+          <a href="#call-for-posters-and-lightning-talks">Posters &amp; Lightning Talks</a>
           <a href="#participate">Participate</a>
           <a href="#venue-travel">Venue &amp; Travel</a>
-          <a href="#questions">Questions?</a>
+          <a href="#organisers">Organisers</a>
           <a href="#sponsors">Sponsors</a>
+          <a href="#questions">Questions?</a>
         </nav>
       </div>
     </aside>
