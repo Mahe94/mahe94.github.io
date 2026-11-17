@@ -1025,7 +1025,7 @@ flush_top: true
           11:00&ndash;12:00
         </div>
         <div>
-          <div class="rtc-programme-title">Collaborative zkSNARKs</div>
+          <div class="rtc-programme-title">Collaborative zkSNARKs: How to Outsource Expensive Proof Computation?</div>
           <div>
             Sruthi Sekar
           </div>
@@ -1164,7 +1164,7 @@ flush_top: true
           14:00&ndash;15:30
         </div>
         <div>
-          <div class="rtc-programme-title">Pseudorandom Error-Correcting Codes</div>
+          <div class="rtc-programme-title">Pseudorandom Error-Correcting Codes: Foundations, Constructions and Barriers</div>
           <div>
             Venkata Koppula
           </div>
@@ -1191,7 +1191,7 @@ flush_top: true
           16:00&ndash;17:30
         </div>
         <div>
-          <div class="rtc-programme-title">Incompressible Cryptography</div>
+          <div class="rtc-programme-title">Incompressible Cryptography: How Much Must an Adversary Store?</div>
           <div>
             Mahesh Sreekumar Rajasree
           </div>
