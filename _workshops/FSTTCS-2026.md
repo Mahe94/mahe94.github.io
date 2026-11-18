@@ -507,9 +507,11 @@ flush_top: true
 /* ---------- Registration ---------- */
 
 .rtc-registration {
-  padding: 3rem;
-  border-radius: 10px;
-  background: var(--rtc-accent-light);
+  padding: 0;
+}
+
+.rtc-registration h3 {
+  margin-top: 2.25rem;
 }
 
 .rtc-button {
@@ -742,10 +744,6 @@ flush_top: true
 
   .rtc-programme-day {
     padding-left: 0;
-  }
-
-  .rtc-registration {
-    padding: 2rem 1.4rem;
   }
 
   .rtc-map,
@@ -989,7 +987,7 @@ flush_top: true
           09:15&ndash;09:30
         </div>
         <div>
-          <div class="rtc-programme-title">Sponsor Introduction: Trust Lab</div>
+          <div class="rtc-programme-title">Sponsor Introduction: IITB Trust Lab</div>
         </div>
       </div>
 
@@ -1005,7 +1003,7 @@ flush_top: true
           <details class="rtc-abstract rtc-bio">
             <summary>Bio</summary>
             <div class="rtc-abstract-content">
-              <p>Chethan Kamath is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay, where he is a member of the Theory Group and Trust Lab. His primary research area is cryptography, particularly its foundations, with broader interests in theoretical computer science.</p>
+              <p>Chethan Kamath is an Assistant Professor in the Department of Computer Science and Engineering at IIT Bombay, where he is a member of the Theory Group and IITB Trust Lab. His primary research area is cryptography, particularly its foundations, with broader interests in theoretical computer science.</p>
             </div>
           </details>
         </div>
@@ -1235,14 +1233,11 @@ flush_top: true
       <h2>Posters and Lightning Talks</h2>
     </div>
 
-    <p>
-      We invite students, early-career researchers, and members of the broader
-      research community to present their work at the <em>Recent Trends in
-      Cryptography</em> workshop, held in conjunction with FSTTCS 2026, through
-      <strong>poster presentations and/or 10-minute lightning talks</strong>.
-    </p>
 
     <p>
+      We invite students, early-career researchers, and members of the broader
+      research community to present their work at the workshop through
+      poster presentations and/or 10-minute lightning talks.
       These sessions provide an opportunity to showcase recent research results,
       ongoing work, emerging ideas, and interesting open problems in cryptography
       and related areas of security. They aim to foster scientific discussions,
@@ -1257,38 +1252,40 @@ flush_top: true
     </p>
 
     <p>
-      Participants may submit proposals for <strong>poster presentations,
-      lightning talks, or both</strong>. Please submit a <strong>title and
-      abstract</strong> through the workshop participation form by
-      <strong>December 1, 2026 at 11:59:59 PM IST</strong>.
-      After the submission deadline, proposals
-      will be reviewed and selected based on their relevance to the workshop's
-      themes and the available presentation slots. Further details will be
-      communicated to selected participants after the submission deadline.
+      Participants may submit proposals for poster presentations,
+      lightning talks, or <strong>both</strong>. Interested participants are requested
+      to submit a title and abstract through the
+      <a href="https://forms.gle/ELicYZ7PabnnrPmp6" target="_blank" rel="noopener noreferrer">
+        Call for Poster Presentation and Lightning Talks form</a>
+      by <strong>December 5, 2026, at 11:59 PM IST</strong>.
+      After the submission deadline, proposals will be reviewed and selected
+      based on their relevance to the workshop's themes and the available
+      presentation slots. Further details will be communicated to selected
+      participants.
     </p>
 
     <p>
-      Posters will be presented during the tea breaks. Each lightning talk has a total slot of 10 minutes.
-      Further presentation instructions will be communicated after the
-      submission deadline.
+      Posters will be presented during the tea breaks. Each lightning talk
+      has a total slot of 10 minutes. Further presentation instructions will
+      be communicated after the submission deadline.
     </p>
 
     <p>
-      <strong>Interested participants are requested to complete the
-      <span class="rtc-placeholder">[PLACEHOLDER: workshop participation form link]</span>,
-      indicating their preferred presentation format (poster, lightning talk, or
-      both).</strong> This is the same form linked in the <strong>Participate</strong>
-      section below and serves as a common form for all workshop participants.
-      Those who wish to attend the workshop without presenting are also requested
-      to complete this form, simply indicating that they do not intend to give a
-      presentation.
+      <strong>Please note:</strong> Submission of a poster or lightning-talk
+      proposal does not constitute registration for the workshop.
+      Participants intending to attend in person should complete the separate Participation form,
+      available in the <strong>Participate</strong> section below.
+      Participants who wish to attend without presenting should also complete
+      the workshop participation form.
     </p>
 
     <p>
-      <em>Note: Completing the workshop participation form does not replace the
-      mandatory official FSTTCS registration. Please refer to the registration
-      details provided below for fees, deadlines, and registration instructions.</em>
+      <em>Note: Completing either the proposal submission form or the workshop
+      participation form does not replace the mandatory official FSTTCS
+      registration. Please refer to the registration details provided below
+      for fees, deadlines, and registration instructions.</em>
     </p>
+
   </section>
 
 
@@ -1303,42 +1300,102 @@ flush_top: true
 
     <div class="rtc-registration">
 
-      <h2>Participate</h2>
 
-      <p>
-        Official registration is mandatory to attend the workshop; the registration
-        fee must be paid unless you receive an approved fee waiver. Register for
-        <strong>both December 19 and 20</strong> to attend the entire two-day
-        workshop. If you plan to attend only one day, the FSTTCS registration
-        system allows you to register for a single workshop day. You must
-        select your exact workshop dates in the official Registration Details Form.
-      </p>
+<h2>Participate</h2>
 
-      <p>
-        The official workshop fee is <strong>&#8377;3,000 for two days</strong>
-        with early registration or <strong>&#8377;5,000 for two days</strong>
-        with late registration. A single day costs &#8377;1,500 early or
-        &#8377;2,500 late. These amounts exclude 18% tax and any payment-method
-        markup. Early registration closes on <strong>December 3, 2026 at
-        11:59:59 PM IST</strong>. Registration includes lunch and two tea breaks
-        on each registered workshop day. Please check the
-        <a href="https://fmindia.cmi.ac.in/fsttcs2026-local/registration.html">official FSTTCS registration page</a>
-        for the payment link, fee details, and the Registration Details Form,
-        which must be completed after payment.
-      </p>
+<p>
+  All participants intending to attend the workshop are requested to complete
+  the separate <a href="https://forms.gle/SMkuXSvYeX7bWUKz8" target="_blank" rel="noopener noreferrer">Participation form</a>. This form collects participant details and allows participants to
+  request registration-fee waivers and free on-campus accommodation
+  at IIT Delhi.
 
-      <p>
-        Limited registration fee waivers and travel support are also available
-        for workshop participants. Please check the
-        <a href="https://fmindia.cmi.ac.in/fsttcs2026-local/registration.html">FSTTCS registration page</a>
-        for more details.
-      </p>
+  <center>
+  <strong>Workshop Participation Form Deadline:
+  November 28, 2026, at 11:59 PM IST.</strong></center>
+</p>
 
-      <p>
-        In addition to the official FSTTCS registration, please complete the
-        separate form for this workshop:
-        <span class="rtc-placeholder">[PLACEHOLDER: workshop participation form link]</span>
-      </p>
+<h3>Registration-Fee Waivers</h3>
+
+<p>
+  We are planning to offer a <strong>limited number of registration-fee
+  waivers</strong>, with priority given to students. Other participants
+  are also welcome to apply, subject to availability.
+  The number of waivers and their allocation will be determined
+  after the participation form deadline. The registration-fee waivers are generously funded by
+  <strong>IITB Trust Lab</strong>.
+</p>
+
+<p>
+  Participants requesting a registration-fee waiver should complete
+  the workshop participation form <strong>before paying the registration
+  fee and wait for the waiver decision, which will be communicated
+  by November 30, 2026</strong>. Participants who are not granted a
+  waiver must complete the mandatory registration through the
+  <a href="https://fmindia.cmi.ac.in/fsttcs2026-local/registration.html">
+    official FSTTCS 2026 registration portal</a>.
+  Submitting a waiver request does not guarantee a waiver.
+</p>
+
+<h3>Free Accommodation at IIT Delhi</h3>
+
+<p>
+  A limited number of <strong>free on-campus accommodation slots
+  at IIT Delhi</strong> will be available, with priority given to
+  students. Other participants may also request accommodation,
+  subject to availability. The free on-campus accommodation is generously supported by
+  <strong>IITB Trust Lab</strong>.
+</p>
+
+<p>
+  Accommodation requests must be submitted through the same participation form mentioned above.
+  Accommodation allocation and further details will be
+  communicated after the submission deadline.
+  Please note that submitting a request does not guarantee accommodation.
+</p>
+
+<h3>Official FSTTCS Registration</h3>
+
+<p>
+  Official FSTTCS registration is mandatory to attend the workshop;
+  the registration fee must be paid unless you receive an approved
+  fee waiver. Register for both December 19 and 20
+  to attend the entire two-day workshop. If you plan to attend only
+  one day, the FSTTCS registration system allows you to register
+  for a single workshop day. You must select your exact workshop
+  dates in the official Registration Details Form.
+</p>
+
+<p>
+  The official workshop fee is <strong>&#8377;3,000 for two days</strong>
+  with early registration or <strong>&#8377;5,000 for two days</strong>
+  with late registration. A single day costs &#8377;1,500 early or
+  &#8377;2,500 late. These amounts exclude 18% tax and any
+  payment-method markup. Early registration closes on
+  <strong>December 3, 2026, at 11:59:59 PM IST</strong>.
+  Registration includes lunch and two tea breaks on each registered
+  workshop day. Please check the
+  <a href="https://fmindia.cmi.ac.in/fsttcs2026-local/registration.html">
+    official FSTTCS registration page</a>
+  for the payment link, fee details, and the Registration Details Form,
+  which must be completed after payment.
+</p>
+
+<p>
+  Separately, the FSTTCS organizers also offer limited registration-fee
+  waivers and travel support. These are distinct from the
+  registration-fee waivers offered by our workshop.
+  Please check the
+  <a href="https://fmindia.cmi.ac.in/fsttcs2026-local/registration.html">
+    FSTTCS registration page</a>
+  for details.
+</p>
+
+<p>
+  <strong>Important:</strong> Completing the workshop participation
+  form does not constitute official FSTTCS registration or guarantee
+  a registration-fee waiver or accommodation.
+</p>
+
 
     </div>
 
@@ -1481,9 +1538,9 @@ flush_top: true
         <span class="rtc-sponsor-logo">
           <img
             src="{{ '/assets/img/FSTTCS-2026/trust-lab-logo.png' | relative_url }}"
-            alt="Trust Lab">
+            alt="IITB Trust Lab">
         </span>
-        <span class="rtc-sponsor-name">Trust Lab</span>
+        <span class="rtc-sponsor-name">IITB Trust Lab</span>
       </a>
 
     </div>
