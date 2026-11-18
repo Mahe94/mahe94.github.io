@@ -251,6 +251,32 @@ flush_top: true
   font-size: 1.05rem;
 }
 
+.rtc-main .rtc-section > .rtc-form-link,
+.rtc-main .rtc-registration .rtc-form-link {
+  margin: 0.5rem 0 1rem;
+  text-align: center;
+}
+
+.rtc-form-link a {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  border: 2px solid var(--rtc-accent);
+  border-radius: 0.75rem;
+  color: var(--rtc-accent) !important;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.rtc-form-link a:hover,
+.rtc-form-link a:focus-visible {
+  background: var(--rtc-accent-light);
+}
+
+.rtc-form-link a:focus-visible {
+  outline: 2px solid var(--rtc-accent);
+  outline-offset: 3px;
+}
+
 .rtc-main .rtc-section > p,
 .rtc-registration p,
 .rtc-abstract-content p,
@@ -1249,41 +1275,31 @@ flush_top: true
       We particularly encourage undergraduate and postgraduate students, PhD
       scholars, and postdoctoral researchers to participate. Both completed
       research and promising work in progress are welcome.
-    </p>
-
-    <p>
       Participants may submit proposals for poster presentations,
       lightning talks, or <strong>both</strong>. Interested participants are requested
-      to submit a title and abstract through the
+      to submit a title and abstract through the form below.
+    </p>
+    <p class="rtc-form-link">
       <a href="https://forms.gle/ELicYZ7PabnnrPmp6" target="_blank" rel="noopener noreferrer">
         Call for Poster Presentation and Lightning Talks form</a>
-      by <strong>December 5, 2026, at 11:59 PM IST</strong>.
+    </p>
+    <p>
+      Submit your proposal by <strong>December 5, 2026, at 11:59 PM IST</strong>.
       After the submission deadline, proposals will be reviewed and selected
       based on their relevance to the workshop's themes and the available
-      presentation slots. Further details will be communicated to selected
-      participants.
+      presentation slots. Selected presenters will receive further instructions
+      after the deadline.
     </p>
 
     <p>
       Posters will be presented during the tea breaks. Each lightning talk
-      has a total slot of 10 minutes. Further presentation instructions will
-      be communicated after the submission deadline.
+      has a total slot of 10 minutes.
     </p>
 
     <p>
-      <strong>Please note:</strong> Submission of a poster or lightning-talk
-      proposal does not constitute registration for the workshop.
-      Participants intending to attend in person should complete the separate Participation form,
-      available in the <strong>Participate</strong> section below.
-      Participants who wish to attend without presenting should also complete
-      the workshop participation form.
-    </p>
-
-    <p>
-      <em>Note: Completing either the proposal submission form or the workshop
-      participation form does not replace the mandatory official FSTTCS
-      registration. Please refer to the registration details provided below
-      for fees, deadlines, and registration instructions.</em>
+      Whether you plan to present or attend without presenting, please complete
+      the workshop participation form and the mandatory official FSTTCS registration.
+      See <a href="#participate">Participate</a> for the form, fees, and registration deadlines.
     </p>
 
   </section>
@@ -1304,14 +1320,18 @@ flush_top: true
 <h2>Participate</h2>
 
 <p>
-  All participants intending to attend the workshop are requested to complete
-  the separate <a href="https://forms.gle/SMkuXSvYeX7bWUKz8" target="_blank" rel="noopener noreferrer">Participation form</a>. This form collects participant details and allows participants to
-  request registration-fee waivers and free on-campus accommodation
-  at IIT Delhi.
+  Please complete the workshop participation form to provide your attendee
+  details and, if needed, request a registration-fee waiver or free on-campus
+  accommodation at IIT Delhi. Official FSTTCS registration is a separate step
+  required for all attendees.
+</p>
 
-  <center>
-  <strong>Workshop Participation Form Deadline:
-  November 28, 2026, at 11:59 PM IST.</strong></center>
+<p class="rtc-form-link">
+  <a href="https://forms.gle/SMkuXSvYeX7bWUKz8" target="_blank" rel="noopener noreferrer">Participation form</a>
+</p>
+
+<p>
+  Please submit the participation form by <strong>November 28, 2026, at 11:59 PM IST</strong>.
 </p>
 
 <h3>Registration-Fee Waivers</h3>
@@ -1356,8 +1376,7 @@ flush_top: true
 <h3>Official FSTTCS Registration</h3>
 
 <p>
-  Official FSTTCS registration is mandatory to attend the workshop;
-  the registration fee must be paid unless you receive an approved
+  The registration fee must be paid unless you receive an approved
   fee waiver. Register for both December 19 and 20
   to attend the entire two-day workshop. If you plan to attend only
   one day, the FSTTCS registration system allows you to register
@@ -1390,11 +1409,6 @@ flush_top: true
   for details.
 </p>
 
-<p>
-  <strong>Important:</strong> Completing the workshop participation
-  form does not constitute official FSTTCS registration or guarantee
-  a registration-fee waiver or accommodation.
-</p>
 
 
     </div>
